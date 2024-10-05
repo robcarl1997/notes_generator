@@ -1,0 +1,2654 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:12.760
+SchÃ¶nen guten Tag meine Damen und Herren. Ich begrÃ¼ÃŸe Sie zu einer neuen Vorlesung
+
+00:00:12.760 --> 00:00:18.180
+rechnergestÃ¼tzter Messtechnik. Wir waren in der letzten Vorlesung stecken geblieben in den
+
+00:00:18.180 --> 00:00:24.560
+Grundlagen und wollen natÃ¼rlich an der Stelle das Ganze fortsetzen. Wir hatten hier so ein paar
+
+00:00:24.560 --> 00:00:30.400
+Wiederholungen eingebaut gehabt, um natÃ¼rlich die selbe Wording dann fÃ¼r unsere Messtechnik zu
+
+00:00:30.400 --> 00:00:35.440
+haben, wie wir das typischerweise bei uns in den ganzen Lehrveranstaltungen nutzen und wie
+
+00:00:35.440 --> 00:00:40.960
+es eigentlich auch international vorgegeben ist. So, jetzt schauen wir uns mal weiter an. Wir hatten,
+
+00:00:40.960 --> 00:00:46.320
+nachdem wir die Messkette uns hier angeschaut hatten, noch ein paar Begriffe offen und zwar,
+
+00:00:46.320 --> 00:00:51.520
+wir wollen das statische Ãœbertragungsverhalten ja etwas genauer beschreiben. Was heiÃŸt das?
+
+00:00:51.520 --> 00:00:59.480
+Eigentlich ist das die Kennlinie des MessgerÃ¤tes, die hier abgebildet werden muss. Das heiÃŸt also,
+
+00:00:59.480 --> 00:01:04.400
+wir haben eine Kennlinie, die irgendwie unsere EingangsgrÃ¶ÃŸe, also die MessgrÃ¶ÃŸe, die wir
+
+00:01:04.400 --> 00:01:12.560
+haben, in irgendeine Relation setzt zu unserer AusgabekrÃ¶ÃŸe des MessgerÃ¤tes, die hier mit Y
+
+00:01:12.560 --> 00:01:19.800
+gekennzeichnet ist. Das heiÃŸt, diese Kennlinie Y gleich F von X wÃ¤re mehr oder weniger dann die
+
+00:01:19.800 --> 00:01:28.800
+Funktion, die wir haben wollen. Wie wÃ¼rde denn die ideale Kennlinie aussehen? Linear und nach
+
+00:01:28.800 --> 00:01:33.960
+MÃ¶glichkeit mit einer 1 eigentlich als Anstieg versehen. So, was wir das 1 zu 1 rauskriegen,
+
+00:01:33.960 --> 00:01:39.320
+was da als MessgrÃ¶ÃŸe sich geÃ¤ndert hat und das auch in derselben Art und Weise in der Ausgabe
+
+00:01:39.320 --> 00:01:44.960
+natÃ¼rlich dann wieder sehen. So, alle Abweichungen, die wir von dieser LinearitÃ¤t haben, fÃ¼hrt dazu,
+
+00:01:44.960 --> 00:01:49.120
+dass wir natÃ¼rlich unseren Messbereich vielleicht einschrÃ¤nken mÃ¼ssen. Das heiÃŸt,
+
+00:01:49.120 --> 00:01:56.080
+der Messbereich ist Ã¼ber die Abweichung zu einer solchen Kennlinie definiert und wir wÃ¼rden
+
+00:01:56.080 --> 00:02:01.760
+natÃ¼rlich dann damit auch entsprechend die Probleme, die mit einer solchen LinearitÃ¤t
+
+00:02:01.760 --> 00:02:08.080
+einhergehen, immer wieder auch sehen. So, wenn wir von einer Kennlinie sprechen, heiÃŸt das aber auch
+
+00:02:08.080 --> 00:02:13.920
+nichts anderes als das, wie ich es beim letzten Mal gezeigt habe, die Einheit in diesem MessgerÃ¤t
+
+00:02:13.920 --> 00:02:19.800
+verkÃ¶rpert sein muss. Wir kÃ¶nnen diese Kennlinie eigentlich nur dadurch gewinnen, dass wir eine
+
+00:02:19.800 --> 00:02:24.760
+Kalibrierung, eine RÃ¼ckfÃ¼hrung dieses GerÃ¤tes durchfÃ¼hren. So kommen wir eigentlich genau auf
+
+00:02:24.760 --> 00:02:30.000
+diesen Begriff der RÃ¼ckfÃ¼hrung auch. Das heiÃŸt, diese metrologische RÃ¼ckfÃ¼hrungskette selbst,
+
+00:02:30.000 --> 00:02:36.680
+oder messtechnische RÃ¼ckfÃ¼hrungskette kann man es auch nennen, ist also eine Folge von normalen und
+
+00:02:36.680 --> 00:02:42.120
+Kalibrierungen, die verwendet wird, um eben ein Ergebnis auf eine Referenz zu beziehen. Also auf
+
+00:02:42.120 --> 00:02:48.600
+die Definition dieser Einheit und natÃ¼rlich deren praktische Realisierung. Vielleicht
+
+00:02:48.600 --> 00:02:54.120
+irgendwann ein Beispiel rausgegriffen, wenn Sie bei irgendeine Temperaturmessung machen wollen,
+
+00:02:54.120 --> 00:03:01.560
+mÃ¼ssen Sie irgendwie an die Definition dieses Kelvins herankommen und das da anschlieÃŸen. Das
+
+00:03:01.560 --> 00:03:06.560
+wÃ¼rden Sie typischerweise Ã¼ber Fixpunktzellen machen, um damit die Kennlinie einzumessen,
+
+00:03:06.560 --> 00:03:11.600
+weil das fÃ¼r die praktische Temperaturmessung eigentlich die Ã¼bliche Variante ist. Ich mÃ¶chte
+
+00:03:11.600 --> 00:03:17.720
+auch nochmal ein anderes Beispiel hier aufzeigen, und zwar die RÃ¼ckfÃ¼hrung der LÃ¤ngenmessung. Wenn
+
+00:03:17.720 --> 00:03:23.440
+wir also davon ausgehen, dass wir im Werkstattbetrieb irgendwo solche einfachen Handmessmittel in Betrieb
+
+00:03:23.440 --> 00:03:29.080
+haben, wie beispielsweise so eine Messuhr oder auch ein Messschieber, dann sind die regelmÃ¤ÃŸig
+
+00:03:29.080 --> 00:03:35.880
+rÃ¼ckzufÃ¼hren. Also man sagt da GrÃ¶ÃŸenordnungsmÃ¤ÃŸig so ein bis drei Jahre irgendwo in dem Zeitraum. So,
+
+00:03:35.960 --> 00:03:42.640
+was heiÃŸt das? Sie werden diese Messschieber an genaueren Normalen kalibrieren. Das werden meistens
+
+00:03:42.640 --> 00:03:48.960
+irgendwelche ParallelendmaÃŸe sein. Auch diese ParallelendmaÃŸe mÃ¼ssen regelmÃ¤ÃŸig kalibriert
+
+00:03:48.960 --> 00:03:54.080
+werden. DafÃ¼r wird es typischerweise dann aus dem Kalibrierlaboratorium dann mehr oder weniger
+
+00:03:54.080 --> 00:04:01.360
+irgendwo in ein genaues Laboratorium gebracht werden, beispielsweise PDB Laboratorium. Und da wÃ¼rde
+
+00:04:01.440 --> 00:04:06.720
+das beispielsweise mit so einem solchen EndmaÃŸmessgerÃ¤t dann die EndmaÃŸgrÃ¶ÃŸe dann
+
+00:04:06.720 --> 00:04:12.600
+genau bestimmt werden. So, dieses EndmaÃŸmessgerÃ¤t funktioniert beispielsweise auch mit einem
+
+00:04:12.600 --> 00:04:17.160
+Laserinterferometer. Und dann stellt sich die Frage, wie kommen wir auf die Einheit? Na ja,
+
+00:04:17.160 --> 00:04:23.520
+durch die interferometrische Messung. Das heiÃŸt, wir fÃ¼hren in diesem EndmaÃŸmessgerÃ¤t, so wie das
+
+00:04:23.520 --> 00:04:30.320
+hier dargestellt ist, eine primÃ¤re Messung durch. Und unserer neuer Bezug ist nicht mehr die LÃ¤nge
+
+00:04:30.320 --> 00:04:36.880
+selbst, sondern die Frequenz des Laserlichtes. Und mit der Frequenz des Laserlichtes, die dieser
+
+00:04:36.880 --> 00:04:42.680
+Laser in dem GerÃ¤t da eingebaut hat, kÃ¶nnen wir dann die RÃ¼ckfÃ¼hrung wiederum bewerkstelligen,
+
+00:04:42.680 --> 00:04:48.600
+indem wir das Ganze an ein anderes Frequenznormal anschlieÃŸen. Und das wÃ¤re beispielsweise ein
+
+00:04:48.600 --> 00:04:54.000
+solcher jodstabilisierter Laser, wie er hier zu sehen ist. Und so wÃ¼rden wir genau diese
+
+00:04:54.000 --> 00:04:58.920
+RÃ¼ckfÃ¼hrungskette beispielsweise fÃ¼r eine LÃ¤ngenmessung realisieren kÃ¶nnen. Das Ganze
+
+00:04:58.960 --> 00:05:04.520
+ist immer so als eine Pyramide dargestellt. Warum? Na ja, wir haben breite Verteilung der
+
+00:05:04.520 --> 00:05:10.120
+MessgerÃ¤te irgendwo in der Industrie. Kalibrierlaboratorium werden es schon immer ein
+
+00:05:10.120 --> 00:05:15.600
+bisschen weniger. Und PTB steht genau an der Spitze, in Deutschland zumindest, fÃ¼r diese
+
+00:05:15.600 --> 00:05:22.560
+RÃ¼ckfÃ¼hrungskette und ist natÃ¼rlich als einziges Institut dazu in der Lage. Das heiÃŸt also, deswegen
+
+00:05:22.560 --> 00:05:26.760
+wird das immer so schÃ¶n als Pyramide auch dargestellt. Jetzt haben wir noch den Begriff
+
+00:05:26.800 --> 00:05:31.960
+Kalibrierung selbst nochmal zu wiederholen. Und mit dem Begriff Kalibrierung verstehen wir eigentlich
+
+00:05:31.960 --> 00:05:37.560
+eine TÃ¤tigkeit, die mit zwei Schritten ausgestattet ist. Sie werden da Ã¶fters mal auch vielleicht
+
+00:05:37.560 --> 00:05:41.000
+in Diskussionen mit anderen Leuten noch kommen kÃ¶nnen, die meinen, das ist eigentlich nur
+
+00:05:41.000 --> 00:05:45.760
+ein Schritt. Ich bin der Meinung, eigentlich sind es zwei Schritte. Der erste Schritt ist nÃ¤mlich,
+
+00:05:45.760 --> 00:05:55.440
+die Abweichung ihrer Kennlinie zu ermitteln. Und der zweite Schritt ist, diese Information zu nutzen,
+
+00:05:55.440 --> 00:06:01.880
+um ihr MessgerÃ¤t in der Anzeige zu verbessern. Wenn Sie den ersten Schritt machen, ist klar,
+
+00:06:01.880 --> 00:06:06.920
+bezeichnen wir alle als Kalibrierung. Aber der zweite Schritt, dass der noch dazugehÃ¶rt,
+
+00:06:06.920 --> 00:06:12.360
+ist in meinen Augen ein wichtiger Punkt, weil Sie nutzen irgendwie diese Information, dass Sie das
+
+00:06:12.360 --> 00:06:17.160
+GerÃ¤t zurÃ¼ckgefÃ¼hrt haben und die systematischen Abweichungen ermittelt haben. Der gehÃ¶rt eigentlich
+
+00:06:17.160 --> 00:06:24.560
+mit dazu. Ansonsten wÃ¤re es eben nur eine Verifikation. Das heiÃŸt also, der erste Schritt
+
+00:06:24.560 --> 00:06:33.240
+funktioniert so, dass ich Ã¼ber normale Praktiken mit deren Unsicherheiten Messungen durchfÃ¼hre.
+
+00:06:33.240 --> 00:06:39.520
+Das heiÃŸt also, diese Abweichungen ermittle und natÃ¼rlich dann im zweiten Schritt auch diese
+
+00:06:39.520 --> 00:06:45.600
+systematischen Abweichungen verwende und damit eine Korrektion durchzufÃ¼hren. Das sind eigentlich
+
+00:06:45.720 --> 00:06:52.800
+die Vorgehensweisen, die wir hier haben. Diese systematischen Abweichungen setzen natÃ¼rlich
+
+00:06:52.800 --> 00:06:58.400
+voraus, dass die auch wÃ¤hrend einer gewissen Zeit konstant bleiben. Das ist bei den meisten
+
+00:06:58.400 --> 00:07:04.760
+MessgerÃ¤ten gegeben. Je nachdem, wenn eben diese konstanten Anteile eben nicht so konstant sind,
+
+00:07:04.760 --> 00:07:09.040
+mit der Zeit weglaufen, mÃ¼ssen die Kalibrierintervalle eben reduziert werden. Man kann das
+
+00:07:09.040 --> 00:07:15.280
+wunderbar eigentlich auch mit der Historie von solchen Messinstrumenten oder normalen auch
+
+00:07:15.280 --> 00:07:21.840
+Ã¼berprÃ¼fen, indem man sich einfach so eine Kalibrierhistorie von einzelnen Teilen anschaut
+
+00:07:21.840 --> 00:07:27.760
+und sieht, wie praktisch das Streuband aussieht und wo das dann irgendwann hinlÃ¤uft. Wir haben dazu
+
+00:07:27.760 --> 00:07:32.600
+auch so eine kleine Publikation gemacht, wo wir unsere ganzen Normale, die wir bei uns im Einsatz
+
+00:07:32.600 --> 00:07:37.160
+haben, im Messzentrum, mal von der Historie her betrachtet haben. Da gab es noch mal so alle zwei
+
+00:07:37.160 --> 00:07:42.040
+Jahre so ein Kalibrierprotokoll dann auch und dann wurde mehr oder weniger auch die Unsicherheit,
+
+00:07:42.040 --> 00:07:45.560
+die da angegeben wurde, auch mitgenutzt. Und dann konnte man eigentlich sehr schÃ¶n so eine
+
+00:07:45.560 --> 00:07:50.440
+Extrapolation machen, wann mÃ¼ssen wir, wenn wir eine gewisse Zielunsicherheit haben, die wir nicht
+
+00:07:50.440 --> 00:07:56.080
+Ã¼berschreiten wollen, die nÃ¤chste Kalibrierung durchfÃ¼hren. Also das kann man auch wunderschÃ¶n
+
+00:07:56.080 --> 00:08:01.920
+auswerten. Das heiÃŸt also diese Kalibrierung ist ein wichtiger Schritt, der bei der RÃ¼ckfÃ¼hrung
+
+00:08:01.920 --> 00:08:06.680
+gebraucht wird, inklusive natÃ¼rlich der Kalibrierunsicherheit. Die musste natÃ¼rlich
+
+00:08:06.680 --> 00:08:12.360
+mit angegeben werden. So, dann haben Sie natÃ¼rlich bei diesen Begriffen, wenn Sie also diese
+
+00:08:12.360 --> 00:08:17.320
+Korrektion durchfÃ¼hren, das MessgerÃ¤t verbessert auch, typischerweise weil Sie die systematischen
+
+00:08:17.320 --> 00:08:22.520
+Abweichungen jetzt abziehen kÃ¶nnen. Der nÃ¤chste Schritt ist eigentlich noch mal zu prÃ¼fen, ob
+
+00:08:22.520 --> 00:08:29.920
+letzten Endes das auch wirklich funktioniert hat und das wÃ¤re dieses Verifizieren. Das heiÃŸt also
+
+00:08:29.920 --> 00:08:40.120
+in gleicher Weise mit Normalen zu Ã¼berprÃ¼fen, ob Ihre Kennlinie passt, ohne eine Korrektur durchzufÃ¼hren.
+
+00:08:40.120 --> 00:08:45.800
+Hier schauen wir nur, ob die innerhalb gegebener Grenzen bleiben. Das nennen wir Verifizieren.
+
+00:08:45.800 --> 00:08:53.280
+So, Frage an Sie. Sollte ich denn dieselben Normale verwenden, die ich bei der Kalibrierung
+
+00:08:53.280 --> 00:09:03.040
+verwendet habe? Richtig, wir verwenden andere normale nach MÃ¶glichkeit. Warum? Wir haben die
+
+00:09:03.040 --> 00:09:10.160
+Kennlinie optimiert auf diese Kalibrierung. Das heiÃŸt dazwischen kÃ¶nnen natÃ¼rlich auch
+
+00:09:10.160 --> 00:09:15.240
+irgendwelche Abweichungen auftreten und sinnvoll ist es, nicht eben nur diese Normale, die wir bei
+
+00:09:15.240 --> 00:09:19.480
+der Kalibrierung verwendet haben, fÃ¼r die Verifizierung zu verwenden, sondern mindestens
+
+00:09:19.480 --> 00:09:24.360
+zusÃ¤tzliche Normale zu verwenden, die dort nicht eingesetzt wurden fÃ¼r die Kalibrierung. Um anhand
+
+00:09:24.360 --> 00:09:29.200
+denen wirklich objektiv nachzuweisen, das passt auch fÃ¼r den grÃ¶ÃŸten Teil der Kennlinie dann auch.
+
+00:09:29.200 --> 00:09:36.320
+Also das heiÃŸt immer zusÃ¤tzliche Normale dann an der Stelle mit einsetzen. So, was ich dann auch
+
+00:09:36.320 --> 00:09:44.920
+relativ hÃ¤ufig immer hÃ¶re ist, ich habe mein MessgerÃ¤t geeicht. Haben die nicht. Dann wÃ¼rden
+
+00:09:44.920 --> 00:09:50.920
+sie nÃ¤mlich irgendwie Beamte eines Eichamtes sein oder einer anderen hoheitlich befugten
+
+00:09:50.920 --> 00:09:58.600
+Institution. Und das sind die meisten, die diese Behauptung aufstellen, nicht. Wir haben in Deutschland,
+
+00:09:58.600 --> 00:10:06.340
+es gibt es auch in anderen LÃ¤ndern, ein Gesetz fÃ¼r das Messwesen und da steht eben genau dieser
+
+00:10:06.340 --> 00:10:13.840
+Begriff des Eichens auch drin. Das heiÃŸt hier muss in regelmÃ¤ÃŸigen AbstÃ¤nden eine Verifizierung
+
+00:10:13.920 --> 00:10:18.200
+durchgefÃ¼hrt werden. Also einfach nur eine ÃœberprÃ¼fung, ob mein MessgerÃ¤t innerhalb
+
+00:10:18.200 --> 00:10:25.480
+GewÃ¤ssergrenzen bleibt. Aber das macht eine entsprechend befugte Person. Das heiÃŸt die ist
+
+00:10:25.480 --> 00:10:32.520
+von irgendeinem Eichamt beispielsweise und fÃ¼hrt diese Eichung dann durch. Was dort ermittelt wird,
+
+00:10:32.520 --> 00:10:38.560
+ist nichts anderes, ob diese sogenannten Eichfehlergrenzen eingehalten werden. Das heiÃŸt
+
+00:10:38.560 --> 00:10:44.840
+mit den Normalen, die derjenige dann mitbringt, wird die Messung oder die ÃœberprÃ¼fung dann
+
+00:10:44.840 --> 00:10:52.160
+durchgefÃ¼hrt und dann schaut der Eichbeamte, ob dann diese Erbweichung zu dem Normal und der
+
+00:10:52.160 --> 00:10:58.280
+Anzeige, ob die innerhalb dieser sogenannten Eichfehlergrenzen bleiben. Die Eichfehlergrenzen
+
+00:10:58.280 --> 00:11:04.480
+sind halb so groÃŸ wie die sogenannten Verkehrsfehlergrenzen. Der Grundgedanke ist einfach,
+
+00:11:04.480 --> 00:11:09.880
+dass man dort Ã¼ber den Zeitraum bis zur nÃ¤chsten Eichung sicherstellen mÃ¶chte,
+
+00:11:09.880 --> 00:11:15.280
+dass das MessgerÃ¤t mit seinen Anzeigewerten innerhalb dieser Verkehrsfehlergrenzen bleibt.
+
+00:11:15.280 --> 00:11:19.440
+Das heiÃŸt die Eichfehlergrenzen, nach denen der schaut, sind nur halb so groÃŸ wie die
+
+00:11:19.440 --> 00:11:24.200
+Verkehrsfehlergrenzen. Das muss man immer da noch im Kopf behalten, dass so eine Trift dort
+
+00:11:24.200 --> 00:11:31.040
+eigentlich mit reingerechnet werden kann, die eben halb so groÃŸ ist wie die Verkehrsfehlergrenzen.
+
+00:11:31.040 --> 00:11:37.600
+So, das ist das, wie wir unsere Kennlinien Ã¼berprÃ¼fen. Die Fragestellung, welche Kennlinienarten
+
+00:11:37.600 --> 00:11:40.880
+haben wir? Wir haben schon festgestellt gehabt, dass wir eigentlich am liebsten solche schÃ¶nen
+
+00:11:40.880 --> 00:11:48.160
+linearen Kennlinien haben. Da gibt es aber auch noch so ein paar Ausnahmen, die entsprechend
+
+00:11:48.160 --> 00:11:54.480
+der Anwendung sinnvoll sind. Das kÃ¶nnte beispielsweise eine solche Kennlinie sein,
+
+00:11:54.480 --> 00:11:59.960
+die hier mit einem unterdrÃ¼ckten Nullpunkt arbeitet oder mit einem sogenannten lebenden
+
+00:11:59.960 --> 00:12:05.800
+Nullpunkt. Der lebende Nullpunkt, den treffen Sie in der Prozessindustrie relativ hÃ¤ufig an.
+
+00:12:05.800 --> 00:12:13.080
+Warum? In der Vergangenheit hat man Signale, die von einzelnen Messstellen in der Prozessindustrie
+
+00:12:13.080 --> 00:12:21.240
+weggeleitet werden mÃ¼ssen, das sogenannte Einheitsstromsignal verwendet. Das Messsignal
+
+00:12:21.240 --> 00:12:29.920
+wurde linear auf einem Bereich von 4 mA bis 20 mA abgebildet. Diese lineare Abbildung
+
+00:12:29.920 --> 00:12:36.520
+kann man natÃ¼rlich mit einem einfachen StrommessgerÃ¤t dann hinterher auch auslesen. Das geht recht gut.
+
+00:12:36.520 --> 00:12:44.080
+Aber wozu sind diese 4 mA Ã¼berhaupt gut? Diese 4 mA haben einfach den Hintergrund,
+
+00:12:44.080 --> 00:12:50.880
+dass man diesen Sensor selbst schon mal mit Strom versorgen kann. Das ist der eine groÃŸe Vorteil.
+
+00:12:50.880 --> 00:12:57.480
+Und der zweite Vorteil, der sich daraus ergibt, ist, wenn Ihre Leiterschleife, mit dem der Sensor
+
+00:12:57.520 --> 00:13:02.960
+an die Leitstelle angeschlossen ist, unterbrochen wird, flieÃŸt ja auch kein Strom mehr. Dann wissen
+
+00:13:02.960 --> 00:13:07.000
+Sie also automatisch dadurch, dass dort eine Unterbrechung da ist und der Sensor keine Signale
+
+00:13:07.000 --> 00:13:14.000
+mehr liefern kann. Das heiÃŸt, die Fehlersicherheit ist bei diesem Konzept eigentlich relativ hoch und
+
+00:13:14.000 --> 00:13:17.880
+das ist der Grund, warum es in der Vergangenheit recht gerne eingesetzt wurde. Das heiÃŸt,
+
+00:13:17.880 --> 00:13:24.000
+diese 4 mA zur Versorgung bzw. auch gleich der Denektion, ob wirklich die Uertragung
+
+00:13:24.000 --> 00:13:29.200
+auch funktionieren kann. So, dann haben wir natÃ¼rlich auch solche Kennen, die immer in
+
+00:13:29.200 --> 00:13:35.400
+eine SÃ¤ttigung reingehen. Das Messsystem hat beispielsweise irgendeinen Signal,
+
+00:13:35.400 --> 00:13:42.480
+was irgendwie durch die VerstÃ¤rkerschaltung, die da drin eingebaut sind, wenn die Spannungswerte
+
+00:13:42.480 --> 00:13:46.600
+erreicht werden, die von den Quellen kommen, Ã¼berschritten werden, irgendwann einfach nicht
+
+00:13:46.600 --> 00:13:51.760
+mehr weiter grÃ¶ÃŸere Signal ausgibt. Das heiÃŸt also, diese SÃ¤ttigung ist relativ hÃ¤ufig bei den
+
+00:13:51.760 --> 00:13:58.120
+Messsignalen zu sehen, wie sie hier auf der rechten Seite dargestellt sind. Kennen, die uns am
+
+00:13:58.120 --> 00:14:05.440
+unangenehmsten sind, das sind Hysteresen. Wenn wir die in der Messtechnik irgendwo drin haben,
+
+00:14:05.440 --> 00:14:10.400
+sollten wir immer schÃ¶n vorsichtig sein mit irgendwelchen Genauigkeitsangaben. Warum? So
+
+00:14:10.400 --> 00:14:15.800
+eine Hysterese kann einerseits aus mechanischen Eigenschaften kommen, sie kann aber oft auch aus
+
+00:14:15.800 --> 00:14:23.640
+elektromagnetischen Eigenschaften kommen. Wenn Sie beispielsweise an irgendwelche Magnetanordnungen
+
+00:14:23.640 --> 00:14:30.680
+denken, dann wird Ã¼ber die entsprechende innere Verluste, die dort auftreten, eine solche Hysterese
+
+00:14:30.680 --> 00:14:35.800
+hervorgerufen, die vielleicht so aussieht, wie das hier dargestellt ist. Das heiÃŸt also, diese
+
+00:14:35.800 --> 00:14:41.040
+innere Reibung in dem System verursacht dann diese unterschiedliche Verhalten beim Anstieg
+
+00:14:41.040 --> 00:14:48.120
+entlang der Kennlinie und beim Abfallen entlang der Kennlinie. Das Problem ist jetzt, Sie mÃ¼ssten
+
+00:14:48.120 --> 00:14:52.720
+eigentlich an der Stelle wissen, von welche Richtungen Sie gerade gekommen sind und was die
+
+00:14:52.720 --> 00:14:58.200
+vorhergehenden Ausgangswerte waren, um wirklich einen Messwert konkret aufschreiben zu kÃ¶nnen.
+
+00:14:58.200 --> 00:15:04.440
+Ansonsten kÃ¶nnen Sie nur irgendetwas GeschÃ¤tztes zwischen diesen beiden Linien irgendwo ausgeben.
+
+00:15:04.440 --> 00:15:08.840
+Wir haben das also hier in dem Falle, wenn also diese Aussteuerung relativ groÃŸ ist, dann ist die
+
+00:15:08.840 --> 00:15:14.280
+Hysterese auch groÃŸ, also prozentual zur Aussteuerung typischerweise. Wenn die Aussteuerung
+
+00:15:14.280 --> 00:15:20.320
+klein wird, wird diese Hysterese meistens auch kleiner. Das heiÃŸt, kleine Aussteuerungen im
+
+00:15:20.320 --> 00:15:27.600
+Messbetrieb wÃ¤ren dort eigentlich zu bevorzugen. Also eher statische Signale typischerweise. So,
+
+00:15:27.600 --> 00:15:32.400
+so eine Hysterese kann aber beispielsweise auch mechanisch hervorgerufen werden, so wie das hier
+
+00:15:32.400 --> 00:15:37.720
+links dargestellt ist. Denken Sie einfach mal an einen Spindelantrieb, der eben ein gewisses Spiel
+
+00:15:37.800 --> 00:15:41.640
+hat. Wenn ich den in die eine Richtung drehe, wird der Schlitten mit der Spindel irgendwie
+
+00:15:41.640 --> 00:15:47.520
+vorgeschoben und fÃ¤ngt erst spÃ¤ter an zu drehen, bis er nÃ¤mlich in dem Zeitpunkt erst,
+
+00:15:47.520 --> 00:15:53.240
+wo er mit der FlÃ¤che von der Spindel in Kontakt kommt und von der vorgetrieben wird. Wenn Sie
+
+00:15:53.240 --> 00:15:59.880
+eine Richtungsumkehr machen, wird diese Spindel erstmal natÃ¼rlich das Umkehrspiel dieser Spindel
+
+00:15:59.880 --> 00:16:05.000
+ausnutzen und an der Stelle stehen bleiben der Tisch, bis dann wieder die Anlage da ist und dann
+
+00:16:05.080 --> 00:16:10.480
+dreht sich das wieder zurÃ¼ck. Was heiÃŸt das im Umkehrschluss? Wenn Sie irgendwie versuchen,
+
+00:16:10.480 --> 00:16:16.480
+mit so einem mechanischen Getriebe irgendwie einen Punkt anzufahren, sollten Sie das immer so machen,
+
+00:16:16.480 --> 00:16:23.760
+dass Sie von einer Seite langsam rankurbeln an den Punkt, damit Sie ihn von der einen Seite
+
+00:16:23.760 --> 00:16:31.760
+austreffen. Denn das andere wieder zurÃ¼ckkurbeln ist ja mit der Hysterese behaftet. Das heiÃŸt,
+
+00:16:31.760 --> 00:16:35.880
+wenn Sie so eine Messung mit so einem mechanischen System durchfÃ¼hren, wo so ein Umkehrspiel drin
+
+00:16:35.880 --> 00:16:42.720
+ist, dann sollten Sie immer versuchen von einer Seite aus ranzufahren. Wenn das nicht geklappt hat,
+
+00:16:42.720 --> 00:16:49.040
+lieber viel, richtig weit zurÃ¼ckfahren und nochmals versuchen von der Seite ranzufahren. Das ist das,
+
+00:16:49.040 --> 00:16:52.720
+was als Konsequenz eigentlich daraus kommt, um diese Hysterese rauszunehmen aus diesen Messungen.
+
+00:16:52.720 --> 00:16:59.720
+So, dann haben wir natÃ¼rlich, wenn wir unsere Kinnlinien anschauen, auch die MÃ¶glichkeit zu
+
+00:16:59.760 --> 00:17:05.360
+sagen, wenn wir so eine stetige Kinnlinie haben, kÃ¶nnen wir das als analoges Messverfahren bezeichnen.
+
+00:17:05.360 --> 00:17:11.120
+Das heiÃŸt also, diese analogen Messverfahren sind dadurch gekennzeichnet, dass wir eben eine solche
+
+00:17:11.120 --> 00:17:17.320
+analoge Messmethode vorliegen haben und eine stufenlose Verarbeitung des Signals stattfindet.
+
+00:17:17.320 --> 00:17:22.280
+Also das ist ein ganz wichtiger Punkt an der Stelle, dass das stufenlos ist. DemgegenÃ¼ber,
+
+00:17:22.280 --> 00:17:29.000
+sobald wir mit einem AD-Wandler arbeiten, machen wir eine Digitalisierung. Wir haben dann eine
+
+00:17:29.000 --> 00:17:35.640
+stufenweise Verarbeitung, so wie das hier auf dieser Folie zu sehen ist. Und wenn wir jetzt diese
+
+00:17:35.640 --> 00:17:41.400
+stufenweise Verarbeitung anschauen, dann ist das erstmal eine wertmÃ¤ÃŸige Diskretisierung. Das heiÃŸt,
+
+00:17:41.400 --> 00:17:49.560
+die einzelnen Spannungsstufen, die dort erfasst werden, haben eben konkrete Plateaus dann. So,
+
+00:17:49.560 --> 00:17:55.080
+der Wertebereich, der sich damit ergibt, ist natÃ¼rlich dann dadurch eingegrenzt. Bei einer
+
+00:17:55.080 --> 00:18:02.040
+analogen Methode kÃ¶nnten Sie theoretisch unendlich viele Werte angezeigt bekommen. Hier bei der digitalen
+
+00:18:02.040 --> 00:18:07.040
+Methode ist es so, dass Sie eben nur die Anzahl der Stufen, die zur VerfÃ¼gung stehen, auch als
+
+00:18:07.040 --> 00:18:15.440
+Wertebereich haben. Mehr nicht. So, wenn wir eine wertmÃ¤ÃŸige Diskretisierung durchfÃ¼hren, wird es
+
+00:18:15.440 --> 00:18:20.520
+natÃ¼rlich auch eine zeitliche Diskretisierung geben, dass wir eben nur zu gewissen Zeitpunkten
+
+00:18:20.520 --> 00:18:26.840
+unsere Werte aufnehmen. Wir haben also hier rot dargestellt, eine kontinuierliche Verarbeitung,
+
+00:18:26.840 --> 00:18:35.400
+und blau dargestellt, nur bei gewissen Zeitpunkten eigentlich ein Wert, den wir Ã¼bernehmen. Das ist
+
+00:18:35.400 --> 00:18:43.280
+eine zeitliche Diskretisierung. AD-Wandler machen beides. Die machen immer eine wertmÃ¤ÃŸige und
+
+00:18:43.280 --> 00:18:48.840
+eine zeitliche Diskretisierung. Beides. Da kommen wir spÃ¤ter auch nochmal genauer drauf zu sprechen.
+
+00:18:49.240 --> 00:18:56.480
+Dazwischen, zwischen diesen blauen Punkten, die hier dargestellt sind, verlieren wir leider an
+
+00:18:56.480 --> 00:19:01.840
+der Stelle die ganzen Informationen. Das heiÃŸt, wir werden uns spÃ¤ter noch mit dem Thema Alizing
+
+00:19:01.840 --> 00:19:08.640
+beschÃ¤ftigen. Die Informationen, die in diesem Zwischenraum verloren gehen, mÃ¼ssten wir eigentlich
+
+00:19:08.640 --> 00:19:14.080
+haben, wenn wir das Signal vollstÃ¤ndig beschreiben wollen. Und wir mÃ¼ssen dort das Abtasttheorie
+
+00:19:14.080 --> 00:19:24.760
+beachten. Die AuflÃ¶sung selbst, die fÃ¼r solche Messsysteme definiert ist, kann man natÃ¼rlich fÃ¼r
+
+00:19:24.760 --> 00:19:30.400
+ein solches digitales System, das was nur mit gewissen Wertschritten arbeitet, relativ einfach
+
+00:19:30.400 --> 00:19:34.840
+angeben. Hier ist das mal mit so einer Anzeige einfach dargestellt, wenn ich also wirklich so
+
+00:19:34.840 --> 00:19:41.760
+eine Ziffern-Anzeige habe, die als kleinste Stelle mehr oder weniger hier mal dargestellt diese 3,
+
+00:19:41.760 --> 00:19:47.320
+4 und 5 Mio. Liefern kÃ¶nnte, dann ist eben dieser kleinste Schritt, der dort machbar ist,
+
+00:19:47.320 --> 00:19:52.520
+dann die AuflÃ¶sung des MessgerÃ¤tes. Ganz allgemein heiÃŸt es, die AuflÃ¶sung ist eben die kleinste
+
+00:19:52.520 --> 00:20:00.280
+Ã„nderung der MessgrÃ¶ÃŸe, die eben eine Ã„nderung in der Anzeige verursacht. Wir reden hier immer
+
+00:20:00.280 --> 00:20:07.720
+von dem Delta X der MessgrÃ¶ÃŸe nur. Die soll nur eine Auswirkung auf die Anzeige haben. Wie groÃŸ die
+
+00:20:07.720 --> 00:20:13.400
+Auswirkung auf der Anzeige ist, keine Aussage. Sie soll nur eine merkliche Ã„nderung hervorrufen.
+
+00:20:13.400 --> 00:20:20.520
+Wenn Sie also an diese AD-Wanderschaltungen denken, dann wÃ¼rde genau dieser eine Schritt mehr oder
+
+00:20:20.520 --> 00:20:28.840
+weniger, der in Delta X ausgefÃ¼hrt wird, eben genau diese AuflÃ¶sung entlang der X-Achse dann
+
+00:20:28.840 --> 00:20:35.040
+bedeuten. Wenn Sie dieses Umkehrspiel aus dieser mechanischen Spindel nochmal hervornehmen, dieses
+
+00:20:35.040 --> 00:20:42.480
+Beispiel, dann kÃ¶nnten Sie ja eigentlich sagen, naja, die AuflÃ¶sung kÃ¶nnte ich auch Ã¼ber dieses
+
+00:20:42.480 --> 00:20:47.600
+Umkehrspiel noch mit beschreiben. Wenn ich sage, ich fahre immer hin und her, dann wÃ¼rde eben dieses
+
+00:20:47.600 --> 00:20:52.320
+Umkehrspiel in die AuflÃ¶sung mit reinspielen, die AuflÃ¶sung mit definieren. Wenn ich dagegen nur
+
+00:20:52.320 --> 00:20:58.760
+von einer Seite anfahre, dann wÃ¼rde eigentlich diese Ablesegenauigkeit unserer Spindel mehr oder
+
+00:20:58.760 --> 00:21:04.600
+weniger das definieren. Das ist der Grund warum man immer eigentlich versucht solche Hysteresen
+
+00:21:04.600 --> 00:21:12.880
+wirklich rauszudrÃ¼cken. Ein zweiter Begriff, der etwas Ã¤hnlich in der Definition ist, ist die
+
+00:21:12.880 --> 00:21:18.200
+Empfindlichkeit. Also wir haben jetzt die AuflÃ¶sung gehÃ¶rt, das ist das kleinste Delta X und der
+
+00:21:18.200 --> 00:21:23.160
+nÃ¤chste Begriff, den wir brauchen, das ist die Empfindlichkeit. Das ist jetzt das VerhÃ¤ltnis
+
+00:21:23.160 --> 00:21:33.040
+Delta Y zu Delta X. Das heiÃŸt, die GrÃ¶ÃŸe der Ã„nderung des Ausgabesignals zum VerhÃ¤ltnis
+
+00:21:33.040 --> 00:21:39.040
+gesetzt zur Ã„nderung des Eingangssignals. Wenn man das auf die Kennlinie bezieht, ist das nichts
+
+00:21:39.040 --> 00:21:44.560
+anderes als der Anstieg der Kennlinie. Man hat die Steigung, die wir dort haben. Das kann man also fÃ¼r
+
+00:21:44.560 --> 00:21:49.400
+einen gewissen Arbeitspunkt auch aufschreiben, so wie das hier dasteht. Das heiÃŸt also, dass Delta
+
+00:21:49.400 --> 00:21:55.320
+Y zu Delta X fÃ¼r eben genau den Arbeitspunkt, den ich hier betrachte und das ist nichts anderes,
+
+00:21:55.320 --> 00:22:01.320
+wie gesagt, als der Anstieg. So, die beide Definitionen, die hier oben stehen, besagen eigentlich
+
+00:22:01.400 --> 00:22:09.520
+inhaltlich das Gleiche. Die sieht man als equivalent eigentlich an. So, jetzt haben wir den Anstieg der
+
+00:22:09.520 --> 00:22:14.760
+Kennlinie. Wir haben die AuflÃ¶sung des GerÃ¤tes definiert. Es fehlt natÃ¼rlich noch der Messbereich.
+
+00:22:14.760 --> 00:22:21.360
+So und das machen wir auch an der Kennlinie fest. So, die Idee, die jetzt dahinter steckt, ist relativ
+
+00:22:21.360 --> 00:22:27.960
+simpel. Sie wollen mit ihrer Kennlinie ja ihr Messignal abbilden. Sie haben vielleicht irgendwelche
+
+00:22:27.960 --> 00:22:34.080
+NichtlinaritÃ¤ten in der Kennlinie korrigiert, so dass sie dann mit der Verifikation irgendwelche
+
+00:22:34.080 --> 00:22:40.480
+Abweichungen der Kennlinie von ihrem eigentlichen MessgrÃ¶ÃŸe, die sie haben, feststellen konnten.
+
+00:22:40.480 --> 00:22:47.960
+Und jetzt sagt man einfach, wenn ich einen Messbereich definieren mÃ¶chte, dann schaue
+
+00:22:47.960 --> 00:22:53.840
+ich mir einfach an, wann meine Kennlinie eine gewisse Abweichung von dem richtigen Wert hat.
+
+00:22:53.840 --> 00:23:02.320
+Das heiÃŸt, dieses Delta x Min bzw. Delta x Max gebe ich mir einfach vor. Das sind die Grenzabweichungen,
+
+00:23:02.320 --> 00:23:07.840
+die ich habe und daraus definiert sich letzten Endes der Bereich, in dem ich meine Kennlinie
+
+00:23:07.840 --> 00:23:14.360
+nutzen kann. NÃ¤mlich Ã¼berall da, wo ich diese Werte unterschreite in der Abweichung. So, das kann
+
+00:23:14.360 --> 00:23:18.240
+also sein bei so einer Kennlinie, wie sie hier dargestellt ist, dass ich hier irgendwann diesen
+
+00:23:18.240 --> 00:23:24.960
+Delta x Min Wert Ã¼berschreite bzw. Ã¼berschreite mit dem Delta x Max und dann ist das auÃŸerhalb meines
+
+00:23:24.960 --> 00:23:31.200
+Messbereiches. Was wir eigentlich immer als zweite Angabe immer noch haben, was mir viele
+
+00:23:31.200 --> 00:23:35.720
+Leute dann auch als Messbereich verkaufen wollen, das ist der Anzeigebereich. Das ist das, was ich
+
+00:23:35.720 --> 00:23:40.720
+auf dem Display oder sonst wie an dem MessgerÃ¤t sehe. Das heiÃŸt, er kann vielleicht ein bisschen
+
+00:23:40.720 --> 00:23:46.200
+grÃ¶ÃŸer sein als der Messbereich, aber eigentlich, was fÃ¼r uns relevant ist, weil fÃ¼r den Bereich
+
+00:23:46.440 --> 00:23:52.240
+nur die Genauigkeit auch angegeben ist mit den Grenzabweichungen, ist der Messbereich. Der
+
+00:23:52.240 --> 00:23:57.120
+Anzeigebereich, schÃ¶n, da sieht man, dass es Ã¼beraus gelaufen ist. Ja, aber ich kann dort auÃŸerhalb
+
+00:23:57.120 --> 00:24:04.280
+des Messbereichs nicht mehr messen, sondern noch irgendwas angezeigt bekommen. So, soweit erst mal
+
+00:24:04.280 --> 00:24:10.280
+zu diesen Grundbegriffen aus der Messtechnik. Jetzt wollen wir uns mal noch ein paar Signale und
+
+00:24:10.280 --> 00:24:16.200
+Informationen anschauen, die natÃ¼rlich typischerweise mit diesen Messsignalen,
+
+00:24:16.200 --> 00:24:22.080
+die wir ja von dem Sensor bekommen, Ã¼bertragen werden sollen. So, ganz allgemein, Signale sind
+
+00:24:22.080 --> 00:24:28.240
+also physikalische GrÃ¶ÃŸe, die bei ein oder mehreren Parameterinformationen Ã¼ber ein oder
+
+00:24:28.240 --> 00:24:37.040
+mehrere VariablegrÃ¶ÃŸen tragen kann. Das ist das, was eigentlich so in der DIN-EC 6455
+
+00:24:40.400 --> 00:24:49.600
+dann Blatt 351 so definiert ist. Mehr oder weniger heiÃŸt das nichts anderes, dass die GrÃ¶ÃŸe mehr
+
+00:24:49.600 --> 00:24:54.520
+oder weniger, die eine MessgrÃ¶ÃŸe reprÃ¤sentiert, das Ganze sein kann. So ist es mal in dem alten
+
+00:24:54.520 --> 00:25:01.120
+WIMMA definiert gewesen oder eben die GrÃ¶ÃŸe in einem MessgerÃ¤t oder einer Messeinrichtung,
+
+00:25:01.120 --> 00:25:07.000
+die der MessgrÃ¶ÃŸe eindeutig zugeordnet ist, als Messsignal. Also das sind diese Definitionen,
+
+00:25:07.080 --> 00:25:11.960
+die man da so finden kann. Wichtig an der Stelle ist, dass natÃ¼rlich die Information in
+
+00:25:11.960 --> 00:25:19.040
+unterschiedlicher Weise in diesem Signal enthalten sein kann. Und der Informationsparameter eines
+
+00:25:19.040 --> 00:25:24.400
+solchen Signals, der kann natÃ¼rlich dann entsprechend der Aufgabe sehr unterschiedlich
+
+00:25:24.400 --> 00:25:30.480
+ausfallen. Das heiÃŸt also, der Signal kann also ein Parameter haben, der eben die Information nach
+
+00:25:30.480 --> 00:25:35.680
+einer gewissen Vorschrift dann abbildet. FÃ¼r viele Signale ist es so, dass man einfach den
+
+00:25:35.680 --> 00:25:41.240
+Amplitudenwert, also den Wert selbst des Signals als Informationsparameter nimmt. Das ist die
+
+00:25:41.240 --> 00:25:46.920
+einfachste Variante. Die findet man relativ hÃ¤ufig. Aber es gibt natÃ¼rlich auch andere
+
+00:25:46.920 --> 00:25:52.120
+MÃ¶glichkeiten, Informationen auf ein solches Signal aufzubrÃ¤gen. Und die mÃ¶chte ich Ihnen mal
+
+00:25:52.120 --> 00:25:58.440
+kurz hier zeigen. Das wÃ¤re zum einen die Amplitude, also der Wert selbst. Das heiÃŸt, wenn ich das als
+
+00:25:58.440 --> 00:26:03.560
+Gleichsignal betrachte, das sich einfach mit der MessgrÃ¶ÃŸe irgendwo verÃ¤ndert, dann ist das die
+
+00:26:03.560 --> 00:26:09.560
+Amplitude oder der Wert selbst. Ich kÃ¶nnte natÃ¼rlich auch hergehen und sagen, ich habe wirklich ein
+
+00:26:09.560 --> 00:26:15.680
+Sinusformig-Signal und die Amplitude der Sinusschwingung ist meine Information. Das wÃ¤re auch denkbar.
+
+00:26:15.680 --> 00:26:22.800
+Genauso auch die Frequenz einer solchen Schwingung kÃ¶nnte meine Information Ã¼bertragen. Und ich kann
+
+00:26:22.800 --> 00:26:29.440
+natÃ¼rlich auch eine Phasenlage zu irgendeinem Referenzsignal als Information nutzen. Genauso
+
+00:26:29.440 --> 00:26:35.360
+geht es auch mit einer Pulsbreite das Ganze irgendwo zu beschreiben. Das heiÃŸt, ein gewisses
+
+00:26:35.360 --> 00:26:40.760
+TastverhÃ¤ltnis zu haben. Also wenn ich wirklich den Wert als Informationsparameter nehme, ist das,
+
+00:26:40.760 --> 00:26:44.920
+was hier unten dargestellt ist, das heiÃŸt, da sage ich wirklich, die Amplitude ist das Entscheidende.
+
+00:26:44.920 --> 00:26:50.440
+Wenn das Ganze ein Sinusformig-Signal ist, kann es auch wirklich der Spitzenwert sein, der dort mit
+
+00:26:50.440 --> 00:26:55.080
+beschrieben wird. Auf der anderen Seite haben wir natÃ¼rlich dann auch hier eine Quantisierung
+
+00:26:55.080 --> 00:26:59.280
+eventuell drin. Das heiÃŸt, diese Informationsparameter Amplitude kann eben irgendwie begrenzt sein.
+
+00:26:59.280 --> 00:27:04.600
+So, dann haben wir natÃ¼rlich dieses TastverhÃ¤ltnis. Das heiÃŸt, ich habe hier eine konstante Frequenz,
+
+00:27:04.600 --> 00:27:12.080
+in der diese Tastperioden kommen. Und innerhalb einer Tastperiode variiere ich einfach das
+
+00:27:12.080 --> 00:27:19.000
+VerhÃ¤ltnis von den Low-Phasen zu den High-Phasen. Und in dem VerhÃ¤ltnis steckt dann analog drin,
+
+00:27:19.000 --> 00:27:26.880
+wie groÃŸ meine MessgrÃ¶ÃŸe ist. Das Signal ist zwar digital, zwischen 0 und 1 irgendwie Ã¼bertragen,
+
+00:27:26.880 --> 00:27:33.600
+aber dadurch, dass der Informationsparameter Ã¼ber die Zeit codiert wird, Ã¼ber das TastverhÃ¤ltnis,
+
+00:27:33.600 --> 00:27:41.480
+ist das nach wie vor analog da drin. Also auch wenn ich die Frequenz selbst Ã¼bertrage und die
+
+00:27:41.480 --> 00:27:49.000
+Frequenz analog Ã¤ndern lasse, kann auch mehr oder weniger das TrÃ¤gersignal ein digitales Signal sein.
+
+00:27:49.000 --> 00:27:53.120
+Es kann ein sinusvermÃ¶gensignal sein, es kann aber auch wirklich so ein Wechsel zwischen 1 und 0 sein.
+
+00:27:53.120 --> 00:27:59.800
+Beides ist denkbar. Und da steckt auch, obwohl das digital ist dann vielleicht, steckt die
+
+00:27:59.800 --> 00:28:06.120
+Frequenz analog da drin. Also da muss man immer aufpassen, was ist denn wirklich der Informationsparameter
+
+00:28:06.120 --> 00:28:15.160
+und was wird da wie Ã¼bertragen. So, bei diesen Signalen kÃ¶nnen wir deswegen auch eine unterschiedliche
+
+00:28:15.160 --> 00:28:20.880
+Einteilung vornehmen. Das heiÃŸt, wir kÃ¶nnen sogenannte wertkontinuierliche Signale definieren.
+
+00:28:20.880 --> 00:28:25.360
+Das heiÃŸt, dass wir hier jeden beliebigen Wert in einem gewissen Wertebereich das Ganze annehmen
+
+00:28:25.360 --> 00:28:29.760
+kann. Wir kÃ¶nnen natÃ¼rlich auch diese Wertdiskretensignale haben, dass wir nur eine
+
+00:28:29.760 --> 00:28:35.280
+gewisse Menge an Stufen beispielsweise haben, die dort ausgegeben werden kann. Und wenn das Ganze auf zwei
+
+00:28:35.400 --> 00:28:40.200
+Werte nur reduziert ist, dann ist es natÃ¼rlich nur ein binÃ¤res Signal. So, dann haben wir natÃ¼rlich
+
+00:28:40.200 --> 00:28:47.560
+auch hinsichtlich der zeitlichen Eigenheiten auch so eine MÃ¶glichkeit das Ganze zu definieren. Das
+
+00:28:47.560 --> 00:28:55.760
+heiÃŸt also zeitkontinuierliches Signal, zeitdiskretes Signal oder eben auch ein analoges Signal, das
+
+00:28:55.760 --> 00:29:02.840
+wirklich zu jedem beliebigen Zeitpunkt eine beliebige GrÃ¶ÃŸe annehmen kann. So, ausgehend von diesen
+
+00:29:02.840 --> 00:29:08.080
+Grundarten kann man natÃ¼rlich mal versuchen so einen Baum aufzuzeigen, wie solche Signale
+
+00:29:08.080 --> 00:29:13.840
+aussehen kÃ¶nnen. Die groÃŸe Einteilung, die wir hier machen, ist erstmal, dass wir sagen, wir haben
+
+00:29:13.840 --> 00:29:19.680
+sogenannte detamistische Signale. Also Signale, die in gleicher Weise immer wieder vorhanden sind.
+
+00:29:19.680 --> 00:29:25.320
+Also solche Signale, die einfach nur in Rauschen beinhalten, die wÃ¼rde ich erstmal hier an der
+
+00:29:25.320 --> 00:29:30.200
+Stelle ausschlieÃŸen. So, dann kÃ¶nnen wir mit diesen detamistischen Signalen die einteilen in
+
+00:29:30.320 --> 00:29:36.680
+analoge und wertdiskrete. Bei den Analogen ist natÃ¼rlich klar, dass wir das Ganze entweder
+
+00:29:36.680 --> 00:29:40.560
+kontinuierlich oder diskontinuierlich Ã¼bertragen kÃ¶nnen. Das ist hier mal dargestellt mit einer
+
+00:29:40.560 --> 00:29:45.160
+solchen zeitlich kontinuierlichen Kennlinie, beziehungsweise nur den einzelnen Punkten,
+
+00:29:45.160 --> 00:29:52.160
+die dann eben zu gewissen Zeitpunkten dann da sind. So, bei diesen Wertdiskreten kann natÃ¼rlich auch
+
+00:29:52.160 --> 00:29:57.600
+die Fragestellung sein, mehr Punkt oder digital, nachdem ich das unterscheiden kann. Digital ist
+
+00:29:57.600 --> 00:30:03.120
+klar, das ist das, was wir eigentlich typischerweise in der ganzen Digitaltechnik vorliegen haben. Bei
+
+00:30:03.120 --> 00:30:09.480
+den Mehrpunktsignalen wÃ¼rde man hier mehr oder weniger dann zwei Punktsignale nochmal unterscheiden,
+
+00:30:09.480 --> 00:30:14.120
+drei Punktsignale und die ganzen Ã¼brigen Mehrpunktsignale, wobei auch hier immer wieder
+
+00:30:14.120 --> 00:30:20.080
+die Unterscheidung dann mÃ¶glich ist, zeitlich kontinuierlich oder diskontinuierlich. So kann
+
+00:30:20.080 --> 00:30:26.720
+man das Ganze grob auch einteilen. So, eine zweite MÃ¶glichkeit, das Ganze einzuteilen,
+
+00:30:26.720 --> 00:30:32.720
+hÃ¤ngt natÃ¼rlich auch damit zusammen, dass die Signale Ã¼ber die Zeit hinweg sich verÃ¤ndern kÃ¶nnen.
+
+00:30:32.720 --> 00:30:38.160
+Das heiÃŸt, wenn ich solche dynamischen Signale mir anschaue, dann habe ich zum einen stochastische
+
+00:30:38.160 --> 00:30:44.560
+Signale, das heiÃŸt, die verÃ¤ndert sich irgendwie Ã¼ber die Zeit, das ist rein Zufallszahlen, das ist
+
+00:30:44.560 --> 00:30:49.760
+das, was hier ganz rechts dargestellt ist, aber die deterministischen Signale, die spielen natÃ¼rlich
+
+00:30:49.760 --> 00:30:54.400
+auch eine wichtige Rolle bei uns in der ganzen Technik, die wir betrachten wollen. Das heiÃŸt,
+
+00:30:54.400 --> 00:30:59.960
+wir haben zum einen periodische Signale und zum anderen nicht periodische Signale. Periodische
+
+00:30:59.960 --> 00:31:04.480
+Signale wÃ¤ren das, was wir beispielsweise, wenn wir eine FrequenzÃ¼bertragung machen, erwarten wird,
+
+00:31:04.480 --> 00:31:10.360
+dass wir immer wieder die Frequenz wiederkehrend in dem Signal drin sehen. Das heiÃŸt also, die tauchen
+
+00:31:10.360 --> 00:31:16.840
+immer wieder auf. Im einfachsten Fall ist das eine Frequenz, das kÃ¶nnen aber auch mehrere
+
+00:31:16.840 --> 00:31:22.560
+Frequenzen sein. Ich kann das ja als Ãœberlagerung von mehreren Frequenzen betrachten, wie wir spÃ¤ter
+
+00:31:22.560 --> 00:31:26.800
+noch sehen werden. Das heiÃŸt also, ich kann hier einen harmonischen Signal haben, also einen
+
+00:31:26.800 --> 00:31:33.320
+Sinus-Signal oder disharmonisch das Ganze eben, beispielsweise ein Rechtecksignal, ein Dreiecksignal
+
+00:31:33.320 --> 00:31:39.760
+oder sowas in Richtung SÃ¤gezahnsignal. Also gibt es verschiedenste AusprÃ¤gungen an der Stelle. Bei den
+
+00:31:39.760 --> 00:31:44.560
+nicht periodischen Signalen gehe ich immer davon aus, dass sich an dem Signalverlauf Ã¼ber die Zeit
+
+00:31:44.560 --> 00:31:50.760
+etwas systematisch verÃ¤ndert. Was sie dort als wesentliches Beispiel haben, sind irgendwelche
+
+00:31:50.760 --> 00:31:55.920
+Abklingfunktionen. Das heiÃŸt, sie regen irgendwas an und dann schauen sie, wie da irgendwas abklingt
+
+00:31:55.920 --> 00:32:00.440
+dann langsam. Das heiÃŸt, sie haben dann so einen Verlauf, wie das hier dargestellt ist, dass mehr
+
+00:32:00.440 --> 00:32:04.560
+oder weniger erst eine groÃŸe Schwingung da ist und dann pendelt sich das auf einen kleinen Wert ein,
+
+00:32:04.560 --> 00:32:11.200
+bis es irgendwann ausgeschwungen ist. Der andere Fall, das sind solche Sprungfunktionen. Das heiÃŸt,
+
+00:32:11.200 --> 00:32:16.280
+sie haben einen Wechsel von einem Wert auf einen anderen und dann haben sie dort auch typischerweise
+
+00:32:16.560 --> 00:32:23.640
+einen entsprechend deterministischen Verlauf, mit dem dann dieser Wechsel stattfindet. Die einfache
+
+00:32:23.640 --> 00:32:27.800
+Variante, wie diese hier dargestellt ist, das wÃ¤re so ein PT-1-Kniet, das heiÃŸt, das steigt langsam
+
+00:32:27.800 --> 00:32:34.400
+so an und bleibt dann auf dem Endwert drauf. Das sind immer einfache Objekte, muss man wirklich so sagen,
+
+00:32:34.400 --> 00:32:39.520
+die nicht schwingfÃ¤hig sind. Wenn sie so einen Wechsel haben, so einen Sprungwechsel haben, dann
+
+00:32:39.520 --> 00:32:44.160
+kÃ¶nnte ihnen auch Folgendes passieren, dass sie eigentlich von dem ursprÃ¼nglichen Wert den Sprung
+
+00:32:44.160 --> 00:32:49.520
+nach oben machen und dann sich das um den neuen Wert herum auch als eine abklingende Schwingung
+
+00:32:49.520 --> 00:32:53.040
+dann darstellt. Das sind dann immer die GliederhÃ¶herordnung, die wir eigentlich an
+
+00:32:53.040 --> 00:32:58.640
+der Stelle haben, die so ein Verhalten aufzeigen. Das sind also eine ganze Menge von Signalen,
+
+00:32:58.640 --> 00:33:02.640
+die wir jetzt schon mal so grob unterscheiden kÃ¶nnen und ich wÃ¼rde ganz gerne noch mal ein
+
+00:33:02.640 --> 00:33:09.000
+paar andere Beispiele hier noch mal aufzeigen. Wenn wir mal an gewisse Sensoren denken, die wir
+
+00:33:09.000 --> 00:33:14.120
+in der Messtechnik bei uns verwenden, kÃ¶nnte beispielsweise ein solcher Konfokalsensor ein
+
+00:33:14.120 --> 00:33:19.160
+gewisses Signal abliefern, was eben einen solchen charakteristischen Verlauf hat. Das mÃ¶chte ich
+
+00:33:19.160 --> 00:33:24.800
+mal so ganz kurz skizzieren, das heiÃŸt, ich habe dort so einen Verlauf, das sieht irgendwie so aus,
+
+00:33:24.800 --> 00:33:31.360
+wie so eine Gausskurve fast und wenn praktisch mein signalische den Maximalwert hat, sage ich
+
+00:33:31.360 --> 00:33:37.280
+einfach, dass meine OberflÃ¤che genau in dem Fokuspunkt meines Konfokalsensors gerade drin ist
+
+00:33:37.280 --> 00:33:42.160
+und wenn ich also diesen OberflÃ¤chenpunkt in der HÃ¶he messen mÃ¶chte, muss ich also diesen
+
+00:33:42.160 --> 00:33:49.400
+Maximalwert beispielsweise suchen. Also das wÃ¤re eine MÃ¶glichkeit. Oder WeiÃŸlichtinterferometer,
+
+00:33:49.400 --> 00:33:55.640
+auch zur optischen OberflÃ¤chenmessung eingesetzt. Da ist es so, dass wir eine solche Interferenz eben
+
+00:33:55.640 --> 00:34:01.680
+nur dann kriegen, wenn der Referenz und der Messarm etwa gleich groÃŸ ist. Normalerweise,
+
+00:34:01.680 --> 00:34:06.720
+wenn sie Ã¼ber eine groÃŸe KohÃ¤renzlÃ¤nge verfÃ¼gen, wird die Interferenz sinusfÃ¶rmig sich Ã¼ber einen
+
+00:34:06.720 --> 00:34:13.160
+grÃ¶ÃŸeren Wegbereich eigentlich gleichmÃ¤ÃŸig ausbilden. Wenn sie aber jetzt so eine OberflÃ¤chenmessung
+
+00:34:13.160 --> 00:34:17.760
+mit einem WeiÃŸlichtinterferometer machen, haben sie nur dann, wenn die Wegstrecken gleich lang
+
+00:34:17.760 --> 00:34:25.400
+sind, wirklich ihre maximale Amplitude der Interferenz. Zu kleineren HÃ¶henwerten und zu
+
+00:34:25.400 --> 00:34:30.320
+grÃ¶ÃŸeren HÃ¶henwerten hin reduziert sich diese Schwingung. Das kÃ¶nnte also dann wieder so aussehen,
+
+00:34:30.320 --> 00:34:35.480
+dass sie einen gewissen Gleichanteil im Licht haben und dann kommt so ein Schwingungssignal und dann
+
+00:34:35.480 --> 00:34:43.000
+klingt das Ganze irgendwie wieder ab. Dass das so ein Verlauf irgendwie beispielsweise wÃ¤re. Das ist
+
+00:34:43.000 --> 00:34:49.120
+auch relativ hÃ¤ufig in der Messtechnik sowas anzutreffen. Dann wÃ¼rden sie auch hier entweder
+
+00:34:49.120 --> 00:34:54.840
+Ã¼ber so eine HÃ¶helkurve, die sie hier drÃ¼ber legen, den Maximalwert suchen oder kombiniert
+
+00:34:54.840 --> 00:35:00.680
+noch mal zusÃ¤tzlich mit der Phaseninformation fÃ¼r diese hohe Periode dann auch noch mal eine
+
+00:35:00.680 --> 00:35:05.120
+hÃ¶here AuflÃ¶sung erzÃ¤hlen kÃ¶nnen, indem sie den Phasenwert noch mit reinrechnen. Das ist also
+
+00:35:05.200 --> 00:35:11.320
+noch mal eine speziellere Auswertung an der Stelle. Was sie auch in der LÃ¤ngenmesstechnik relativ
+
+00:35:11.320 --> 00:35:20.600
+hÃ¤ufig haben, das sind sogenannte Quadratursignale. Wo kommt der Name her? Eigentlich von Quadrat
+
+00:35:20.600 --> 00:35:29.120
+irgendwie und bei optischen Encodern finden sie das eben typischerweise. Was heiÃŸt das? In
+
+00:35:29.120 --> 00:35:38.040
+der Vergangenheit hat man diese Encodersignale eigentlich nur mit zwei Werten digitalisiert
+
+00:35:38.040 --> 00:35:43.680
+gehabt. Das heiÃŸt also entweder der Wert lag Ã¼ber einer Schwelle oder der lag unter einer
+
+00:35:43.680 --> 00:35:50.600
+Schwelle und damit ergab sich eigentlich dann immer auf dem Oszilloskop, wenn man das Ganze
+
+00:35:50.600 --> 00:35:56.240
+von der entsprechenden HÃ¶he her oder von dem Weg her betrachtet hat, irgendwo immer so ein Signal.
+
+00:35:56.240 --> 00:36:01.040
+So was hier. Das ist also einfach so eine Stufenfunktion und dann gab es eben ein
+
+00:36:01.040 --> 00:36:22.320
+zweites Signal noch dazu, was eben zeitversetzt war. So und jetzt konnte man anhand dieser Werte,
+
+00:36:22.320 --> 00:36:27.440
+dieser Pegel eigentlich, die wir hier haben, klar unterscheiden, ob sich das System vorwÃ¤rts oder
+
+00:36:27.440 --> 00:36:34.120
+rÃ¼ckwÃ¤rts bewegt. Ich brauche einfach nur die Wechsel mehr oder weniger auswertend, die ich hier
+
+00:36:34.120 --> 00:36:40.840
+habe, ob ich mich dann vorwÃ¤rts oder rÃ¼ckwÃ¤rts bewegt habe. Das heiÃŸt, im Endeffekt ergeben sich
+
+00:36:40.840 --> 00:36:48.160
+hier eigentlich vier ZustÃ¤nde. Der erste Zustand wÃ¤re hier, alle beiden Signale sind Null. Der
+
+00:36:48.160 --> 00:36:56.400
+nÃ¤chste Zustand wÃ¤re dieser, dieser und dieser. So, die kommen immer in derselben Reihenfolge,
+
+00:36:56.400 --> 00:37:01.480
+wenn ich mich in einer Richtung bewege. Das hat man eigentlich dann dahingehend auch modellieren
+
+00:37:01.480 --> 00:37:06.160
+kÃ¶nnen, dass man so ein sogenanntes Date Machine aufbaut. Das heiÃŸt also vier solche ZustÃ¤nde
+
+00:37:06.160 --> 00:37:11.840
+definiert hat, die eben beide Signale auf Null, beide Signale auf Halb, das wÃ¤re meinetwegen
+
+00:37:11.840 --> 00:37:17.880
+jetzt hier das Null Null, hier hÃ¤tte ich meinetwegen das eins eins, hier hÃ¤tte ich meinetwegen das Null
+
+00:37:17.880 --> 00:37:24.080
+eins und hier das eins Null. So und jetzt wird, wenn ich praktisch eine Weginformation kontinuierlich
+
+00:37:24.080 --> 00:37:28.600
+mich gerade entlang des Beweges bewege, wird hier immer zwischen diesen einzelnen ZustÃ¤nden in
+
+00:37:28.600 --> 00:37:35.040
+derselben Richtung das Ganze durchlaufen. Sobald ich einen Richtungswechsel habe, dann lÃ¤uft das
+
+00:37:35.040 --> 00:37:41.040
+andersherum in der Schleife. So und diese Zustandswechsel kann man eigentlich, wenn man diese
+
+00:37:41.040 --> 00:37:47.560
+digitalen Signale, die ich hier gerade dargestellt habe, in einer XY-Darstellung aufzeigt, auch
+
+00:37:47.560 --> 00:37:53.600
+wunderbar sehen, dann springt nÃ¤mlich ihr Signal zwischen diesen vier Eckpunkten ihrer Funktion
+
+00:37:53.600 --> 00:38:03.440
+immer so in ein Quadrat hin und her. Daher kommt der Name Quadratursignale. Wenn man es rein wirklich
+
+00:38:03.440 --> 00:38:09.600
+auf solche digitalisierten Signale schon bezieht. Wenn Sie heutzutage solche Encoder-Systeme
+
+00:38:09.600 --> 00:38:15.960
+anschauen, dann werden Sie auf dem Osteliskop typischerweise als Ausgang dieser Encoder-Systeme
+
+00:38:15.960 --> 00:38:24.000
+eher irgend so so einen Kreis sehen, der nach MÃ¶glichkeit seinen Mittelpunkt wirklich im
+
+00:38:24.000 --> 00:38:30.200
+Koordinaten Ursprung hat. Und jetzt kann man hier nicht nur praktisch binÃ¤r das Ganze auswerten,
+
+00:38:30.200 --> 00:38:34.360
+sondern das kann man auch noch Zwischenwerte auswerten. Sie sehen schon, es gibt eine ganz
+
+00:38:34.360 --> 00:38:40.320
+groÃŸe Vielfalt an Signalen, die hier immer wieder auftreten kann. Ein weiteres Beispiel,
+
+00:38:40.320 --> 00:38:45.320
+was eigentlich, was Sie wahrscheinlich auch tagtÃ¤glich vielleicht nutzen, wenn Sie mal Radio
+
+00:38:45.320 --> 00:38:52.680
+hÃ¶ren, Frequenzmodulation oder, falls Sie so einen speziellen Sender eingeschalten haben sollen,
+
+00:38:52.680 --> 00:38:59.280
+Amplitudenmodulation. Was heiÃŸt das? Bei der Frequenzmodulation ist es so, dass ihr in
+
+00:38:59.360 --> 00:39:07.680
+Informationen, die wir hier mal als Signal abgebildet haben, auf Ihre TrÃ¤gerwelle in der Art aufgeprÃ¤gt
+
+00:39:07.680 --> 00:39:21.360
+wird, dass eben sich hier die Frequenz in AbhÃ¤ngigkeit von dem Signal verÃ¤ndert. Das heiÃŸt immer dann,
+
+00:39:21.360 --> 00:39:26.120
+wenn das Signal hier einen niedrigen Wert hat, ist die Frequenz gering und sobald das einen hohen
+
+00:39:26.120 --> 00:39:31.400
+Wert hat, wird die Frequenz hoch. Das heiÃŸt, die Frequenz steckt dort analog drin und kann so
+
+00:39:31.400 --> 00:39:35.760
+Ã¼bertragen werden. Das TrÃ¤gersignal hat eben unterschiedliche Frequenzen. Das ist das,
+
+00:39:35.760 --> 00:39:41.720
+was Sie im Rundfunk normalerweise bei der FM-Modulation auch haben und so werden die
+
+00:39:41.720 --> 00:39:47.800
+Signale dort heutzutage Ã¼bertragen. FrÃ¼her, als es diese FM-Modulation noch nicht gab, hat man auf
+
+00:39:47.800 --> 00:39:54.160
+eine konstante TrÃ¤gerwelle eine Ã„nderung der Amplitude aufgetragen. Das ist die Amplitudenmodulation,
+
+00:39:54.160 --> 00:40:01.800
+die Sie im Radio einstellen kÃ¶nnen. Das sind meistens eher langweilige Ãœbertragungswellen gewesen,
+
+00:40:01.800 --> 00:40:06.160
+mit denen das gemacht wurde. Die QualitÃ¤t der Ãœbertragung war natÃ¼rlich nie so besonders
+
+00:40:06.160 --> 00:40:14.720
+im Vergleich zu den Frequenzmodulationssignalen. Das wÃ¤re in dem Sinne eine kontinuierliche
+
+00:40:14.720 --> 00:40:19.640
+Messmethode, weil Sie natÃ¼rlich diese Frequenz stÃ¤ndig irgendwie Ã¤ndern kÃ¶nnen. Wenn Sie die
+
+00:40:19.640 --> 00:40:23.840
+Frequenz unheimlich hoch aufgelÃ¶st, dann auch die Ã„nderung feststellen kÃ¶nnten, das sind
+
+00:40:23.840 --> 00:40:29.840
+Bruchteile von einer Periode, dann wÃ¼rden Sie eigentlich damit auch so eine kontinuierliche
+
+00:40:29.840 --> 00:40:35.840
+Beschreibung haben. Das ist immer die Frage, kÃ¶nnen Sie die Frequenz ausreichend fein irgendwo
+
+00:40:35.840 --> 00:40:44.640
+noch auflÃ¶sen? Mehr ist es nicht, was dahinter steckt. Das sind so die Signale, mit denen wir
+
+00:40:44.640 --> 00:40:50.440
+typischerweise eigentlich zu tun haben. Ein weiterer Punkt ist natÃ¼rlich, wenn wir mal
+
+00:40:50.440 --> 00:40:55.560
+unsere Informationen erfassen wollen, dass wir immer von einer Datenerfassung reden. Das heiÃŸt also
+
+00:40:55.560 --> 00:41:01.080
+den Prozess zur Abtastung von physikalischen GrÃ¶ÃŸen und deren Umwandlung in digitale GrÃ¶ÃŸenwerte.
+
+00:41:01.080 --> 00:41:08.440
+Wenn man mal Ã¼ber unsere Vorlesung, die wir uns jetzt anschauen wollen, draufschaut, ist das genau
+
+00:41:08.440 --> 00:41:11.240
+das, was wir eigentlich mit der ganzen Signalverarbeitungskette hier machen wollen.
+
+00:41:12.000 --> 00:41:19.080
+Diese Datenerfassung. Man kann das Ganze natÃ¼rlich dann auch mehr oder weniger noch ergÃ¤nzen,
+
+00:41:19.080 --> 00:41:23.680
+dass da eben gewisse Komponenten dann dazu gehÃ¶ren. Das heiÃŸt also die Sensoren, die wir natÃ¼rlich in
+
+00:41:23.680 --> 00:41:28.320
+der Veranstaltung hier nicht betrachten wollen, die eben erstmal diese physikalische GrÃ¶ÃŸe in
+
+00:41:28.320 --> 00:41:33.480
+elektrische Signale umwandeln. Dann kommen natÃ¼rlich die ganzen Konzentrierungsschaltungen dazu,
+
+00:41:33.480 --> 00:41:38.840
+um die Signale anzupassen und die in eine entsprechende Form, die wir weiter verarbeiten kÃ¶nnen,
+
+00:41:38.840 --> 00:41:45.480
+umzuwandeln und eventuell sogar schon zu digitalisieren. Das ist auch schon ein Punkt,
+
+00:41:45.480 --> 00:41:51.200
+aber auch Frequenzanalog noch zu Ã¼bertragen und dann natÃ¼rlich auch die AD-Wandler, die dann
+
+00:41:51.200 --> 00:41:56.000
+selbst eine solche Wandlung dann selbst nochmal durchfÃ¼hren kÃ¶nnen. Das heiÃŸt also das ist das,
+
+00:41:56.000 --> 00:42:01.240
+was wir mit der Datenerfassung im Grunde insgesamt meinen. Wir hatten jetzt gerade schon gesehen,
+
+00:42:01.240 --> 00:42:07.400
+gehabt, dass solche Signale, die dort Ã¼ber die Zeitentweck sich Ã¤ndern, mit gewissen Methoden
+
+00:42:07.400 --> 00:42:13.720
+beschrieben werden mÃ¼ssten, um die auch sinnvoll auswerten zu kÃ¶nnen. Eine Methode, die wir dafÃ¼r
+
+00:42:13.720 --> 00:42:20.280
+haben, das ist die Fourier-Transformation. Mal ganz allgemein gesprochen, wenn ich also so ein
+
+00:42:20.280 --> 00:42:26.240
+sinusfÃ¶rmiges Signal habe, kann ich dieses sinusfÃ¶rmige Signal Ã¼ber einen Offsetwert,
+
+00:42:26.240 --> 00:42:33.360
+Ã¼ber die Amplitude, die Frequenz und die Phasenlage beschreiben. In dem Fall, wie das Bild hier
+
+00:42:33.360 --> 00:42:39.000
+dargestellt ist, hÃ¤tten wir ein Offset von 0. Die Amplitude wÃ¼rde also von dem Nullwert bis eben zur
+
+00:42:39.000 --> 00:42:43.680
+Spitze dann irgendwo gehen und dann hÃ¤tten wir die Frequenz, das heiÃŸt also das Kehrwert der
+
+00:42:43.680 --> 00:42:49.160
+Periodendauer, die wir hier einzeichnen kÃ¶nnten auch und natÃ¼rlich eine Phasenlage, wann ist
+
+00:42:49.160 --> 00:42:55.320
+der Signal Nullmal gewesen. Das Ganze kÃ¶nnen wir mit zwei verschiedenen mathematischen Formulierungen
+
+00:42:55.320 --> 00:43:00.240
+aufschreiben. Erste Formulierung ist das, was eigentlich so aus dieser Beschreibung hervorgeht.
+
+00:43:00.240 --> 00:43:09.240
+A0 Offset, A1 ist die Amplitude, das Omega ist die Frequenz, die wir hier reingepackt haben als
+
+00:43:09.240 --> 00:43:16.640
+Kreisfrequenz, das heiÃŸt also 2Ï€ mal f steckt ja dahinter in der Kreisfrequenz und auf der anderen
+
+00:43:16.640 --> 00:43:21.160
+Seite brauchen wir natÃ¼rlich noch in dem Sinus dann diese Phi als Anfangsphasenwinkel, um das
+
+00:43:21.160 --> 00:43:25.520
+zu beschreiben. Das ist eine mathematische Beschreibung, wie ich das machen kann. Die
+
+00:43:25.520 --> 00:43:33.800
+zweite mathematische BeschreibungsmÃ¶glichkeit, die es gibt, sehen wir hier. Wir haben ein Offset und
+
+00:43:33.800 --> 00:43:39.920
+wir haben zwei Terme. Der eine Termin ist ein Sinustherm, der andere Termin ist ein Cosinustherm mit
+
+00:43:39.920 --> 00:43:49.720
+der gleichen Kreisfrequenz Omega. Das einzige, was ich jetzt Ã¤ndere, sind die Amplituden A1 und B1
+
+00:43:49.720 --> 00:43:56.960
+zu verÃ¤ndern, um damit die Phasenlage anzupassen. Ich kann beide BeschreibungsmÃ¶glichkeiten
+
+00:43:56.960 --> 00:44:02.480
+nehmen, um ein solches sinusfÃ¶rmiges Signal in all diesen vier Parametern, die wir hier gerade sehen,
+
+00:44:02.480 --> 00:44:10.040
+zu beschreiben. Das geht, sind ausreichend genug. Es ist auch die Frage, wie gehe ich denn mit solchen
+
+00:44:10.040 --> 00:44:15.680
+Signalen hier unten vor? Das sieht eindeutig nicht nach einem Sinus Signal aus, sondern nach irgendeinem
+
+00:44:15.680 --> 00:44:24.920
+Gemisch aus. Da gab es natÃ¼rlich den Ansatz von dem Herrn Foyer, dass man einfach diese Signale,
+
+00:44:24.920 --> 00:44:32.080
+die periodisch wiederkehrend auftreten, auch mit Sinus Signalen beschreiben kann, die unterschiedliche
+
+00:44:32.080 --> 00:44:37.520
+Frequenzen und Phasenlagen und Amplituden haben. Das war der Grundgedanke, der dahinter steckt.
+
+00:44:37.520 --> 00:44:41.840
+Das heiÃŸt also ausgehend beispielsweise von so einem Rechtecksignal, was wir hier haben, das ist
+
+00:44:41.840 --> 00:44:46.480
+mal nullsymmetrisch, das heiÃŸt den Offset haben wir mal rausgenommen an der Stelle, glÃ¼cklicherweise,
+
+00:44:46.480 --> 00:44:50.560
+kÃ¶nnen wir das Ganze mit einer Grundwelle beschreiben. Das wÃ¤re genau das, was ich hier als
+
+00:44:50.560 --> 00:44:55.640
+Grundwelle hier reinpassen wÃ¼rde. Das wÃ¤re der Teil, den ich dann mit einer gewissen Amplituden
+
+00:44:55.640 --> 00:45:01.480
+werde und einer Frequenz, nÃ¤mlich genau dieser Grundwelle, dann hier angeben wÃ¼rde. Das nÃ¤chste,
+
+00:45:01.480 --> 00:45:06.640
+was ich dann brauche, um ein solches Rechtecksignal zu beschreiben, sind natÃ¼rlich Frequenzen hÃ¶herer
+
+00:45:06.640 --> 00:45:12.720
+Verordnung, um auch diese entsprechende Steilheit dieser Kanten auch mit abbilden zu kÃ¶nnen. Das heiÃŸt,
+
+00:45:12.720 --> 00:45:17.880
+ich nehme hier zunehmend weitere, hÃ¶here Frequenzen mit Amplituden entsprechend der Berechnung dann
+
+00:45:17.880 --> 00:45:24.840
+hinzu und kann dann damit sagen, dass man dieses Signal, was ich hier hatte, in einzelne Sinus-
+
+00:45:24.840 --> 00:45:30.080
+fÃ¶rmige Signale zerlegen konnte, so wie sie hier dargestellt sind. Wenn ich diese Signale jetzt
+
+00:45:30.080 --> 00:45:37.560
+aufaddiere, so wie sie hier dargestellt sind, komme ich auf ein Signal, was diesem ursprÃ¼nglichen
+
+00:45:37.560 --> 00:45:43.760
+Signal, was ich damit beschreiben mÃ¶chte, ziemlich Ã¤hnlich ist. Das heiÃŸt, ich kann diese
+
+00:45:43.760 --> 00:45:50.240
+Beschreibungsformen mit diesen sinus- fÃ¶rmigen Signalen nutzen und damit auch Rechtecksignale,
+
+00:45:50.240 --> 00:45:58.400
+Dreiecksignale zu beschreiben. Wie funktioniert das? Mit diesen sinus- fÃ¶rmigen Beschreibungen,
+
+00:45:58.560 --> 00:46:03.000
+in dem ich jetzt nicht nur ein Sinussignal beschreiben muss, sondern eine entsprechende
+
+00:46:03.000 --> 00:46:07.880
+Reihe von Sinussignalen beschreiben muss, das heiÃŸt, angefangen von n gleich 1 bis unendlich,
+
+00:46:07.880 --> 00:46:14.160
+sagt man an der Stelle, wÃ¼rde ich eben entweder mit der Beschreibungsform mit der Phase oder mit
+
+00:46:14.160 --> 00:46:20.800
+den Cosinus- und Sinusthermen das Ganze hier abbilden. Und so kann ich also ein solches
+
+00:46:20.800 --> 00:46:27.280
+wiederkehrendes Signal rein mathematisch Ã¼ber sinus- fÃ¶rmige Anteile beschreiben. Wenn man
+
+00:46:27.280 --> 00:46:31.040
+das Ganze nochmal hier vorstellt, sieht das Ganze so aus, ich habe hier oben irgendeinen
+
+00:46:31.040 --> 00:46:36.480
+Signalverlauf, das ist ein harmonisches Signal, da steckt eben die Grundfrequenz drin und
+
+00:46:36.480 --> 00:46:41.560
+entsprechende hÃ¶here Frequenzen. Und wenn ich das in dem Frequenzbereich mir gedacht darstellen
+
+00:46:41.560 --> 00:46:47.440
+mÃ¶chte, Ã¤ndere ich also nicht die eine Achse um und sage einfach, wir haben jetzt hier anstelle
+
+00:46:47.440 --> 00:46:52.840
+von der Zeit jetzt hier die Frequenz stehen. Und dann habe ich natÃ¼rlich diese einzelnen Anteile
+
+00:46:52.840 --> 00:46:59.640
+bei gewissen Frequenzen f1, f2, f3 und so weiter und jeweils zugeordnete Amplitoden in der
+
+00:46:59.640 --> 00:47:05.160
+Beschreibung. Und ich kann also aus diesem Spektrum heraus dann meine Beschreibung dann
+
+00:47:05.160 --> 00:47:12.520
+mir anschauen. So, ich denke, warum das Fourier-Transformation heiÃŸt, dÃ¼rfte ziemlich klar sein,
+
+00:47:12.520 --> 00:47:18.640
+ein Herr Fourier hat das mal als erster gemacht und beschrieben, der wies das eben 1822 nach,
+
+00:47:18.640 --> 00:47:24.080
+dass das so mÃ¶glich ist. Ja und dahingehend heiÃŸt das eben jetzt auch Fourier-Transformation
+
+00:47:24.080 --> 00:47:28.840
+und der Grundgedanke ist eben, dass ich eine Transformation aus dem Zeitbereich in dem
+
+00:47:28.840 --> 00:47:34.000
+sogenannten Frequenzbereich damit realisieren kann und damit diese Signale im Frequenzbereich
+
+00:47:34.000 --> 00:47:39.920
+beschreiben kann. So, das ist hier nochmal dargestellt, das heiÃŸt also, wenn ich das
+
+00:47:39.920 --> 00:47:46.000
+als Frequenz-, als Zeitsignal auftrage, wÃ¼rde es eben so aussehen und das Ganze transformiert
+
+00:47:46.000 --> 00:47:50.800
+in dem Frequenzbereich funktioniert eben so, dass ich dieses Signal f von t Ã¼ber diese
+
+00:47:50.800 --> 00:47:55.720
+Funktion, wie sie hier dargestellt ist, dann in den Frequenzbereich transformiere und
+
+00:47:55.720 --> 00:48:01.160
+damit die Kreisfrequenz, die wir hier haben, als Parameter dann habe, um das Ganze darzustellen.
+
+00:48:01.160 --> 00:48:07.160
+So, die mathematische Beschreibung wÃ¼rde also, wie ich schon gesagt habe, Ã¼ber beispielsweise
+
+00:48:07.160 --> 00:48:11.640
+diese Cosinus- und Sinusfunktion funktionieren mit einem Offset, der vielleicht noch dabei
+
+00:48:11.640 --> 00:48:19.040
+ist, wobei eben die Kreisfrequenz, die hier verwendet wird, eben 2Ï€ mal f oder 2Ï€ durch t0,
+
+00:48:19.040 --> 00:48:23.760
+also die Periodendauer ist, ja und dann wÃ¼rde ich die einzelnen Fourier-Kurvezenten, die ich hier
+
+00:48:23.760 --> 00:48:29.880
+brauche, um das Signal zu beschreiben, Ã¼ber diese Integrale, die ich hier stehen habe, dann auch aus
+
+00:48:29.880 --> 00:48:34.720
+dem ursprÃ¼nglichen Signal errechnen kÃ¶nnen. Das gibt es natÃ¼rlich fÃ¼r manche Signale, die immer
+
+00:48:34.720 --> 00:48:38.360
+wieder hÃ¤ufiger verwendet werden, in irgendwelchen Tabellenwerken auch, das heiÃŸt, das brauchen wir
+
+00:48:38.360 --> 00:48:43.360
+nicht nochmal nach, selber nachrechnen, aber wenn man ein beliebiges Signal hÃ¤tte, kÃ¶nnte man das
+
+00:48:43.360 --> 00:48:50.600
+auch selber nachrechnen dann. Hier ist das nochmal als Beispiel dargestellt, warum das Ganze eigentlich
+
+00:48:50.600 --> 00:48:56.000
+so schÃ¶n funktioniert, die einzelnen sinus- fÃ¶rmigen Signale mit der Grundwelle zusammengesetzt,
+
+00:48:56.000 --> 00:49:00.120
+also sprich, addiert, wÃ¼rde dann eben das Rechtecksignal, was ursprÃ¼nglich damit beschrieben
+
+00:49:00.120 --> 00:49:05.440
+werden sollte, mit einer gewissen GÃ¼te dann, das heiÃŸt, ich breche irgendwann mal diese Reihe dann
+
+00:49:05.440 --> 00:49:11.280
+auch ab, weil ich nicht die ganzen kleinen infinitizimalen, kleinen Teile mitnehmen mÃ¶chte und
+
+00:49:11.280 --> 00:49:15.000
+nur bis zu gewissen Kurvezenten das Ganze betrachte, deswegen gibt es immer so eine Restabweichung,
+
+00:49:15.000 --> 00:49:22.120
+die hier auch nochmal schÃ¶n zu sehen ist. So, in dem Falle bis K gleich 10 hier mal gerechnet und
+
+00:49:22.120 --> 00:49:27.680
+sei, wÃ¼rde das eben doch recht gut eine AnnÃ¤herung sein. Warum mache ich das eigentlich? Das ist mal
+
+00:49:27.680 --> 00:49:34.520
+hier auf der Folie nochmal dargestellt. Viele Systeme werten eben die Signale frequenzselektiv aus,
+
+00:49:34.520 --> 00:49:42.240
+das heiÃŸt also Radiofrequenzen, TonhÃ¶hen oder auch beispielsweise das visuelle Sehen, was wir haben,
+
+00:49:42.240 --> 00:49:47.600
+funktioniert frequenzselektiv. Die Farben sind ja auch unterschiedliche Frequenzen bzw. WellenlÃ¤ngen.
+
+00:49:47.600 --> 00:49:55.480
+Die Analyse von System wird dadurch teilweise Ã¼berhaupt erst mÃ¶glich und auch stark vereinfacht,
+
+00:49:55.480 --> 00:50:00.000
+das ist auch ein ganz wichtiger Grund. Also die SchwingungsvorgÃ¤nge in der Mechanik, ich weiÃŸ,
+
+00:50:00.000 --> 00:50:04.480
+dass die Differenzzeitgleichungen ganz gerne immer noch eingesetzt werden, aber es ist halt eine
+
+00:50:04.480 --> 00:50:10.560
+bessere BeschreibungsmÃ¶glichkeit, die man hier auch nutzen kann und vor allem der Nachrichtentechnik
+
+00:50:10.560 --> 00:50:16.120
+ist diese Beschreibungsform eigentlich Ã¼ber den Frequenzbereich Ã¼berhaupt nicht mehr wegzudenken.
+
+00:50:16.120 --> 00:50:22.240
+Ja, die Frequenzbereichsbetrachtung muss man glaube ich an der Stelle nochmal betonen, bringt
+
+00:50:22.240 --> 00:50:27.840
+keine neuen Informationen rein, sondern es wird nur in einem anderen Bereich betrachtet, nichts anderes.
+
+00:50:28.600 --> 00:50:34.920
+Das heiÃŸt also es kommen keine zusÃ¤tzlichen Informationen hier hinzu und natÃ¼rlich die
+
+00:50:34.920 --> 00:50:40.720
+Informationen in dem Frequenzbereich enthalten also alle Informationen, die auch in dem Zeitbereich
+
+00:50:40.720 --> 00:50:46.840
+mehr oder weniger vorhanden sind. Wie gesagt, nur die Darstellungsform Ã¤ndert sich. So,
+
+00:50:46.840 --> 00:50:53.680
+wenn wir das dynamische Ãœbertragungsverhalten von Systemen beschreiben wollen, stellt sich immer
+
+00:50:53.680 --> 00:50:58.720
+die Frage, warum tun wir dies? Naja, ein Punkt ist immer, dass ich, wenn ich eine Messeinrichtung
+
+00:50:58.720 --> 00:51:04.440
+habe, da etwas zuschalte oder damit einen sprungfÃ¶rmigen Wechsel in der MessgrÃ¶ÃŸe habe,
+
+00:51:04.440 --> 00:51:11.640
+ich diesen zeitlichen Verlauf mir natÃ¼rlich anschauen sollte, wie mehr oder weniger das
+
+00:51:11.640 --> 00:51:16.080
+Ganze auf das Messsystem sich auswirkt. Das heiÃŸt also zeitlich verÃ¤nderliche MessgrÃ¶ÃŸen spielen
+
+00:51:16.080 --> 00:51:21.400
+eine Rolle. Auf der anderen Seite kann man natÃ¼rlich dynamische Messungen auch herannehmen,
+
+00:51:21.640 --> 00:51:28.720
+die eben bewusst nicht statisch sind, sondern wirklich Ã¼ber die Zeit hinweg starke Variationen
+
+00:51:28.720 --> 00:51:32.920
+haben. Und da brauche ich natÃ¼rlich Methoden, um das Ganze zu beschreiben. Das eine wÃ¤re die
+
+00:51:32.920 --> 00:51:39.440
+MÃ¶glichkeit zu sagen, ich nutze Differenzalkleichung, relativ komplex teilweise. Man muss das System auch
+
+00:51:39.440 --> 00:51:44.440
+vollstÃ¤ndig mathematisch beschreiben kÃ¶nnen dafÃ¼r. Eine weitere MÃ¶glichkeit ist, dass ich einfach
+
+00:51:44.440 --> 00:51:51.120
+mir die Antwortfunktionen anschaue. Das heiÃŸt, in der Prozessanalyse wird das relativ gerne gemacht,
+
+00:51:51.120 --> 00:51:57.640
+dass man einfach Sprungfunktionen auf Systeme drauf gibt und schaut, wie hinten die Signale dann an
+
+00:51:57.640 --> 00:52:04.640
+dem System ausgegeben werden, inwiefern die dort eine Sprungantwort haben. Und was wir natÃ¼rlich
+
+00:52:04.640 --> 00:52:10.640
+auch nutzen kÃ¶nnen, ist das Ãœbertragungsverhalten in Form von FrequenzgÃ¤ngen. Das heiÃŸt also,
+
+00:52:10.640 --> 00:52:17.280
+welche Frequenzen werden von den Systemen in welcher Art Ã¼bertragen. Ganz wichtig an der Stelle,
+
+00:52:17.280 --> 00:52:22.800
+nicht dass das zu einer Verwechslung fÃ¼hrt, es gibt auch diesen schÃ¶nen Begriff Messdynamik,
+
+00:52:22.800 --> 00:52:27.720
+der von den Messtechnikern ganz gerne vernutzt wird. Ich versuche den immer so ein bisschen zu
+
+00:52:27.720 --> 00:52:34.240
+vermeiden, weil fÃ¼r mich eigentlich da so ein bisschen ein Zielspalt in der Bezeichnung da ist.
+
+00:52:34.240 --> 00:52:38.080
+Zum einen kÃ¶nnte man sagen, das ist eine dynamische Messung, wÃ¤re eine MÃ¶glichkeit,
+
+00:52:38.080 --> 00:52:42.320
+so beschreiben es manche eben auch. Und auf der anderen Seite wird darunter verstanden,
+
+00:52:42.320 --> 00:52:48.680
+welcher Ã„nderung des Werteumfangs, wie bei der Musik habe ich da beispielsweise. Das heiÃŸt also,
+
+00:52:48.680 --> 00:52:53.080
+das was ich in der Musik unter Dynamik verstehe, kÃ¶nnte man genauso auch auf die Messsignale
+
+00:52:53.080 --> 00:53:00.040
+beziehen und es so betrachten. Es ist nicht sauber definiert an der Stelle, das fehlt leider im WIM,
+
+00:53:00.040 --> 00:53:04.120
+deswegen wÃ¼rde ich sagen, sollte man ihn eigentlich eher vermeiden, diesen Begriff
+
+00:53:04.120 --> 00:53:10.840
+Messdynamik. Lieber sagen, dass das ganze dynamische Messungen sind. So, diese dynamischen
+
+00:53:10.840 --> 00:53:15.880
+Messungen, die wir ja haben, werden natÃ¼rlich mehr oder weniger mit verschiedenen Methoden
+
+00:53:15.880 --> 00:53:19.320
+wirklich behandelt. Das heiÃŸt also, die Differenzalkleichungsrechnung,
+
+00:53:19.320 --> 00:53:25.400
+das ist aufwendig, nicht wirklich die praktikabel LÃ¶sung. Deswegen sind die Transformationen
+
+00:53:25.400 --> 00:53:31.480
+eigentlich so wichtig hier an der Stelle, die wir aus der Systemtechnik kennen. VE-Transformation,
+
+00:53:31.480 --> 00:53:36.160
+die erste, die wir eigentlich schon gerade kennengelernt haben. Das heiÃŸt, ich gehe
+
+00:53:36.240 --> 00:53:41.240
+aus dem Zeitbereich in den Frequenzbereich Ã¼ber und kann Ã¼ber diese Transformationsvorschrift,
+
+00:53:41.240 --> 00:53:46.800
+wie sie hier steht, das Signal in seine Frequenzinhalte zerlegen. Erstmal das Signal
+
+00:53:46.800 --> 00:53:53.720
+selbst. Und jetzt schaue ich mir aber auch das System an, was das Ã¼bertragen soll und kann auch
+
+00:53:53.720 --> 00:53:59.520
+dort entsprechend die FrequenzÃ¼bertragung von dem System beschreiben. Das heiÃŸt also,
+
+00:53:59.520 --> 00:54:08.280
+fÃ¼r solche periodisch wiederkehrenden Signale nutze ich einfach diese Frequenzanalyse, um zu
+
+00:54:08.280 --> 00:54:14.280
+sagen, was durch mein Messsystem dann hinterher durchgehen kann. Das ganze Ãœbertragungsverhalten
+
+00:54:14.280 --> 00:54:19.480
+wird also im Frequenzbereich beschrieben, in dem ich einen sogenannten Amplituden und einen
+
+00:54:19.480 --> 00:54:25.880
+Phasengang habe. Das heiÃŸt, ich gebe hier ein Eingangssignal, j Omega, drauf. Das System hat
+
+00:54:25.960 --> 00:54:31.680
+ein Ãœbertragungsverhalten, was ich mit dem Fj Omega beschreibe. Und am Ausgang steht irgendwo
+
+00:54:31.680 --> 00:54:38.480
+natÃ¼rlich wieder ein Ausgabesignal im Frequenzbereich. Das Ganze kann man auch
+
+00:54:38.480 --> 00:54:42.000
+natÃ¼rlich als Ãœbertragungsverhalten mit dem Quotienten hier mal aufschreiben. Das heiÃŸt,
+
+00:54:42.000 --> 00:54:49.600
+also das Fj Omega ist mehr oder weniger dann das Ãœbertragungsverhalten als Frequenzgang,
+
+00:54:49.600 --> 00:54:55.400
+was man dann von unserem System angeben kÃ¶nnte. Und dieses Ãœbertragungsverhalten werden wir in der
+
+00:54:55.400 --> 00:54:59.560
+Art spÃ¤ter jetzt in dem Kapitel bzw. auch in den nachfolgenden Kapiteln Ã¶fters nochmal wieder
+
+00:54:59.560 --> 00:55:05.480
+sehen. Das wird man typischerweise mit einem solchen sogenannten Bodediagramm oder Bodeplot
+
+00:55:05.480 --> 00:55:12.080
+beschreiben. Dieser Bodeplot besteht immer aus zwei Teilen. Der erste Teil ist immer, dass man die
+
+00:55:12.080 --> 00:55:17.640
+Amplitude sich anschaut, also den Amplitudengang. Und auf der anderen Seite ist immer dann eine
+
+00:55:17.640 --> 00:55:23.400
+zweite Darstellung der Phasengang, den wir hier sehen. Wir haben unten an der Achse die Frequenz,
+
+00:55:23.400 --> 00:55:30.680
+typischerweise logarithmisch eingetragen. Und fÃ¼r unsere Amplitude verwendet man auch eine
+
+00:55:30.680 --> 00:55:37.840
+doppelt logarithmische Darstellung mit Dezibel typischerweise. Das heiÃŸt, diese Umrechnung dieser
+
+00:55:37.840 --> 00:55:43.480
+Amplitudenwerte oder AmplitudenÃ¼bertragung wÃ¼rde man darÃ¼ber machen, dass man einfach den effektiven
+
+00:55:43.480 --> 00:55:50.200
+Ausgangswert durch den effektiven Eingangswert teilt, davon dem der Logarithmus bildet, und das mal
+
+00:55:50.200 --> 00:55:56.640
+20 rechnet. Damit wÃ¼rde man den Wert in dB bekommen. Das ist eine Pseudoeinheit, die wir hier haben.
+
+00:55:56.640 --> 00:56:02.440
+Wenn wir von Spannungssignalen oder Stromsignalen reden, dann funktioniert das immer mit der Formel,
+
+00:56:02.440 --> 00:56:08.320
+wie das hier dargestellt ist. Sobald wir aber von Leistungssignalen reden, das heiÃŸt also U mal I,
+
+00:56:08.320 --> 00:56:15.840
+dann wird einfach nach den Logarithmen gesetzt, dieses Jahr als Quadratmeter weniger an
+
+00:56:15.840 --> 00:56:21.920
+Spannungswertes oder als Stromwerts interpretiert werden kÃ¶nnen. Und dann zieht man einfach die 2,
+
+00:56:21.920 --> 00:56:27.360
+die hier vorne mit dem 20-mal Logarithmus drinsteht, nach innen. Das heiÃŸt also fÃ¼r Leistungswerte
+
+00:56:27.360 --> 00:56:36.720
+heiÃŸt diese Formel dann immer P durch P Logarithmus davon mal 10. Das ist der Unterschied dann.
+
+00:56:36.720 --> 00:56:43.080
+Das heiÃŸt einfach, Ã¼ber die Rhythmengesetze wird die 2 nach innen in den Logarithmus reingezogen.
+
+00:56:43.080 --> 00:56:49.240
+Mehr ist das nicht, weil ich dort U Quadrat stehen habe oder I Quadrat stehen habe oder P als Leistung
+
+00:56:49.240 --> 00:56:57.440
+stehen habe. Deswegen bitte nicht wundern, wenn dort mal 10 mal steht oder mal 20 steht. Das ist der
+
+00:56:57.440 --> 00:57:03.240
+Hintergrund von der ganzen Geschichte. Der Phasengang selbst, der wird typischweise in Grad angegeben.
+
+00:57:03.240 --> 00:57:08.960
+Das heiÃŸt, Sie haben hier bei so einem einfachen System, wie es hier mal dargestellt ist, ein PT1-Glied,
+
+00:57:08.960 --> 00:57:17.480
+haben Sie eine Phasenverschiebung von 90 Grad in dem Falle. Und genau dieser Knickpunkt, den wir hier
+
+00:57:17.480 --> 00:57:25.840
+in dem Amplitudengang haben, der wird nÃ¤mlich genau fÃ¼r diese Absenkung um minus 3 dB angegeben.
+
+00:57:25.840 --> 00:57:36.920
+Minus 3 dB heiÃŸt, dass Ihr Wert auf einen Wert von 1 durch Wurzeln 2 abgesunken ist oder 0,707.
+
+00:57:37.680 --> 00:57:43.400
+Egal wie man es angibt, das ist immer das selbe Wert irgendwo. Das heiÃŸt also, das ist meine
+
+00:57:43.400 --> 00:57:50.480
+Eckfrequenz, die ich hier habe oder Knickfrequenz. In der Darstellung von solchen FrequenzgÃ¤ngen macht
+
+00:57:50.480 --> 00:57:54.360
+man es sich oft einfach, dass man diesen kontinuierlichen Abfall, den wir hier haben,
+
+00:57:54.360 --> 00:57:59.080
+gar nicht einzeichnet, sondern da wird einfach hier eine gerade Linie gezogen und hier eine
+
+00:57:59.080 --> 00:58:05.120
+gerade Linie gezogen und der Schnittpunkt, das ist genau meine Eckfrequenz. Das ist die vereinfachte
+
+00:58:05.120 --> 00:58:12.360
+Darstellung. Ist, um es wirklich schneller zeichnen zu kÃ¶nnen, eine LÃ¶sungsmÃ¶glichkeit. Aber wenn man
+
+00:58:12.360 --> 00:58:18.520
+es wirklich, sagen wir mal, richtig mathematisch sauber ausrechnet, kommt eben dieses abgerundete
+
+00:58:18.520 --> 00:58:26.720
+raus, so wie das hier zu sehen ist. Das heiÃŸt also, diese Darstellungsform werden wir uns dann
+
+00:58:26.720 --> 00:58:33.400
+weiter noch natÃ¼rlich anschauen. Was natÃ¼rlich auch immer mehr oder weniger ganz wichtig ist,
+
+00:58:33.400 --> 00:58:38.440
+das ist auch immer, dass man sich einfach mal das Ãœbertragungsverhalten anschaut von einzelnen
+
+00:58:38.440 --> 00:58:42.680
+Gliedern. Beispielsweise, ich habe hier mal so ein PD1 Glied, was wir ja gerade in dem Bodeplot
+
+00:58:42.680 --> 00:58:48.480
+auch gesehen hatten von dem Verhalten her. Hier mal als Zeitantwort, als Pumpfunktion mal dargestellt.
+
+00:58:48.480 --> 00:58:53.440
+Das heiÃŸt, das Signal steigt am Anfang relativ schnell an und geht dann irgendwann langsam auf
+
+00:58:53.440 --> 00:58:59.920
+den Endwert rein. Und dieses Verhalten, dieses VerzÃ¶gerungsverhalten, erster Ordnung, kann man
+
+00:59:00.040 --> 00:59:05.440
+natÃ¼rlich mathematisch auch wunderbar beschreiben. Ich habe mir mal als Beispiel fÃ¼r das Ganze mal
+
+00:59:05.440 --> 00:59:11.840
+jetzt hier ein elektrisches Beispiel rausgesucht, nÃ¤mlich den Tiefpasserster Ordnung. Das heiÃŸt,
+
+00:59:11.840 --> 00:59:17.560
+wir haben hier unseren Widerstand und unseren Kondensator, der diesen Tiefpasserster Ordnung
+
+00:59:17.560 --> 00:59:21.640
+ausmacht. Jetzt habe ich hier eine Eingangsspannung anliegen und schaue mir an, was Ã¼ber den
+
+00:59:21.640 --> 00:59:27.840
+Kondensator als Ausgangsspannung rauskommt. Ich kann eine Differenzalkleichung dafÃ¼r aufschreiben.
+
+00:59:27.840 --> 00:59:33.800
+Das ist ja nichts anderes, als dass ich jetzt hier eine Spannungsteilerregel hier aufschreibe,
+
+00:59:33.800 --> 00:59:41.600
+nÃ¤mlich von dem ohmschen Widerstand und diesem komplexen Widerstand dieser KapazitÃ¤t. Und das
+
+00:59:41.600 --> 00:59:45.960
+Ganze dann mehr oder weniger als Spannungsteilerregel dann hier formuliere und damit meine
+
+00:59:45.960 --> 00:59:51.960
+Differenzalkleichung aufstelle. So, das wÃ¤re die Differenzalkleichung im Zeitbereich. Geht noch
+
+00:59:51.960 --> 00:59:58.280
+einfach zu lÃ¶sen, keine Frage. Aber ich kann es im Frequenzbereich auch mehr anschauen und da
+
+00:59:58.280 --> 01:00:01.640
+schreibe ich das eben wirklich mit dieser Spannungsteilerregel eins zu eins wirklich
+
+01:00:01.640 --> 01:00:07.080
+auf. Das heiÃŸt also, ich schaue mir das Ganze Ã¼ber den Kondensator an. Das heiÃŸt, nach
+
+01:00:07.080 --> 01:00:13.200
+Spannungsteilerregel steht hier der komplexe Widerstand des Kondensators und im Nenner steht
+
+01:00:13.200 --> 01:00:17.880
+nichts anderes als die Summe dieser beiden WiderstÃ¤nde. Das heiÃŸt, der ohmsche Widerstand
+
+01:00:17.880 --> 01:00:23.720
+plus eben dieser Widerstand dieser KapazitÃ¤t. So, jetzt kann ich natÃ¼rlich fÃ¼r eine solche
+
+01:00:23.720 --> 01:00:28.840
+KapazitÃ¤t auch mal den Widerstand, den komplexen Widerstand eintragen und das ist nÃ¤mlich genau
+
+01:00:28.840 --> 01:00:38.360
+dann dieses 1 durch j Omega und das wird dann C und das wird mehr oder weniger dann hier gleich
+
+01:00:38.360 --> 01:00:44.040
+mal rÃ¼bergezogen, sodass ich als Ãœbertragungsfunktion dann diesen Term bekomme. Ja, und das kann ich
+
+01:00:44.040 --> 01:00:49.080
+mehr oder weniger natÃ¼rlich dann auch nicht nur in dem Frequenzbereich mehr anschauen,
+
+01:00:49.080 --> 01:00:52.440
+sondern auch im Laplace-Bereich. Das ist eine Erweiterung, die wir uns dann auch gleich noch
+
+01:00:52.440 --> 01:00:57.440
+anschauen werden. Da wÃ¼rde ich dann einfach das Ganze nicht mit dem j Omega schreiben,
+
+01:00:57.440 --> 01:01:01.640
+sondern da wÃ¼rde ich das Ganze mit einer entsprechenden Zeitkonstanz mal dem S schreiben,
+
+01:01:01.640 --> 01:01:08.640
+diesen Laplace-Operator. Werden wir spÃ¤ter uns noch anschauen, was das ist. So, das heiÃŸt also,
+
+01:01:08.640 --> 01:01:14.160
+ausgehend von diesem Bildbereich mal, also sprich in dem Fall Frequenzbereich diese Beschreibung,
+
+01:01:14.160 --> 01:01:19.160
+kann ich jetzt diesen Amplitudenverlauf und auch den Frequenzverlauf mir natÃ¼rlich ableiten. Das
+
+01:01:19.160 --> 01:01:25.080
+heiÃŸt der Frequenzverlauf g von j Omega wÃ¼rde eben genau mit der Formel beschreibbar sein und der
+
+01:01:25.080 --> 01:01:30.120
+Phasenverlauf wÃ¼rde eben mit dieser Argos-Tangens-Funktion dann beschreibbar werden. So,
+
+01:01:30.120 --> 01:01:34.680
+und in der vereinfachten Darstellung, wie ich das vorhin schon gesagt habe, wÃ¼rde man einfach fÃ¼r
+
+01:01:34.760 --> 01:01:40.200
+die niedrigen Frequenzen in dem Fall so eine gerade Linie einzeichnen bis zur 3 dB Eckfrequenz und
+
+01:01:40.200 --> 01:01:46.960
+ab der 3 dB Eckfrequenz geht das eben dann mit 20 dB ProtÃ©gate nach unten und fÃ¤llt damit dann auch
+
+01:01:46.960 --> 01:01:55.880
+ab. So, diese Grenzfrequenz, die wir hier angeben kÃ¶nnen, das ist nichts anderes als eins durch
+
+01:01:55.880 --> 01:02:07.080
+Omega RC. Nichts anderes. Die kann ich recht einfach ausrechnen an der Stelle. Das heiÃŸt,
+
+01:02:07.080 --> 01:02:11.840
+diese 3 dB Eckfrequenz, die ist bei einem solchen einfachen Gliederstuhrordnung unheimlich schnell
+
+01:02:11.840 --> 01:02:18.120
+ausrechnbar. So, ich kann natÃ¼rlich mir von diesem Tiefpass, wie ich ihn hier dargestellt habe,
+
+01:02:18.120 --> 01:02:24.040
+auch das Ganze als Sprungantwort anschauen. Das ist genau das, was wir hier sehen. Das heiÃŸt,
+
+01:02:24.040 --> 01:02:29.440
+diese Systemreaktion wÃ¼rde ich dann eben als Antwortfunktion beschreiben. Das heiÃŸt,
+
+01:02:29.440 --> 01:02:35.240
+ich gebe auf das System die sogenannte Sprungfunktion drauf. Zum Zeitpunkt t gleich 0 wechselt das von
+
+01:02:35.240 --> 01:02:41.960
+dem Wert 0 auf 1. Das Ganze muss ich natÃ¼rlich auf meinen Eingangsbereich skalieren, deswegen
+
+01:02:41.960 --> 01:02:50.880
+hier das x0. Ich kriege am Ausgang meines Systems das Ganze skaliert mit y0 raus und muss das Ganze
+
+01:02:50.880 --> 01:02:58.320
+umrechnen wieder auf den Bereich von 0 bis 1. Und dann kann ich den Verlauf Sprungfunktion am
+
+01:02:58.320 --> 01:03:03.680
+Eingang, Sprungantwort am Ausgang miteinander vergleichen und daraus irgendwelche SchlÃ¼sse Ã¼ber
+
+01:03:03.680 --> 01:03:10.600
+die Dynamik des Systems ziehen. Das ist eigentlich das typische, was man dort macht. In dem Fall ist
+
+01:03:10.600 --> 01:03:15.720
+das ja so ein aperiodisches Signal. Das heiÃŸt, da schwingt nichts in dem Falle, sondern das ist
+
+01:03:15.720 --> 01:03:20.640
+ja wirklich nur ein reines Einlaufen. Das ist der aperiodische Grenzfall, der bei einem solchen
+
+01:03:20.640 --> 01:03:25.920
+PD1 Glied beispielsweise auftritt. Ansonsten kann das natÃ¼rlich stÃ¤rker bedÃ¤mpft sein und dann noch
+
+01:03:25.920 --> 01:03:30.800
+ein bisschen flacher ablaufen. Oder wenn so ein schwingfÃ¤higes System kommt, dann wird das eben
+
+01:03:30.800 --> 01:03:35.400
+schwingen und dann irgendwann auslaufen. Das ist genau das, was ich mal hier auch fÃ¼r die Einschwingzeit
+
+01:03:35.400 --> 01:03:40.000
+nochmal als Beispiel herangenommen habe. Das heiÃŸt also mindestens ein Glied zweiter Ordnung muss
+
+01:03:40.000 --> 01:03:45.280
+dafÃ¼r vorhanden sein, dass das wirklich schwingfÃ¤hig ist. Und dann kÃ¶nnte man eben nach der
+
+01:03:45.280 --> 01:03:51.600
+Sprungfunktion dann eben als Sprungantwort sowas dann als Antwort bekommen. Und hier wÃ¼rde man
+
+01:03:51.600 --> 01:03:57.240
+beispielsweise als einen wichtigen Parameter dann die sogenannte Einschwingzeit einfach hernehmen.
+
+01:03:57.240 --> 01:04:03.560
+Das heiÃŸt aus dem Zeitpunkt, wo am Eingang der Sprung angelegen hat, bis zu dem Zeitpunkt, wo ich
+
+01:04:03.560 --> 01:04:09.480
+hier in ein gewisses vorgegebenes Toleranzband das letzte Mal reinlaufe, wÃ¼rde man dann diese
+
+01:04:09.480 --> 01:04:15.280
+Zeitdauer als sogenannte Einschwingzeit bewerten. Das ist auch eine relativ einfache Variante,
+
+01:04:15.280 --> 01:04:25.200
+um das Ganze zu beschreiben. So, das wÃ¼rde ein verhalten, so ein apÃ¤odisches Verhalten relativ
+
+01:04:25.200 --> 01:04:31.440
+gut abbilden. Wir haben den Frequenzbereich genutzt gehabt bisher, um damit periodisch
+
+01:04:31.440 --> 01:04:36.360
+wiederkehrende Signale zu beschreiben. Das ist nÃ¤mlich die Grundvoraussetzung, die fÃ¼r die
+
+01:04:36.360 --> 01:04:41.760
+VE-Transformation auch noch notwendig ist, dass das Signal in der gleichen Art und Weise
+
+01:04:41.760 --> 01:04:48.040
+wiederkehrend ist. Periodisch wiederkehrend. Das heiÃŸt, diese Frequenzbeschreibung geht
+
+01:04:48.040 --> 01:04:54.000
+immer davon aus, dass ich periodisch wiederkehrende Signale habe, die sich nicht Ã¤ndern. Wie gehe ich
+
+01:04:54.000 --> 01:04:58.520
+jetzt mit solchen FÃ¤llen um, wie diesen Einschwingvorgang? Kann ich den auch irgendwie
+
+01:04:58.520 --> 01:05:06.920
+im Frequenzbereich beschreiben? Ja, das geht Ã¼ber die Laplace-Transformation. Und das funktioniert
+
+01:05:06.920 --> 01:05:13.360
+so, dass ich einfach eigentlich fast das Gleiche mache wie bei der Fourier-Transformation mit einem
+
+01:05:13.360 --> 01:05:19.840
+kleinen Unterschied. Ich fÃ¼hre noch eine DÃ¤mpfungskonstante ein. Und diese DÃ¤mpfungskonstante ist
+
+01:05:19.840 --> 01:05:26.040
+genau das Sigma, was hier in der Formel steht. Das heiÃŸt, dieses S, dieser Laplace-Operator,
+
+01:05:26.040 --> 01:05:36.160
+ist nichts anderes als die Summe aus dem J Omega plus diesem Sigma als DÃ¤mpfung. Wenn ich dieses
+
+01:05:36.160 --> 01:05:41.280
+Sigma weglassen wÃ¼rde, wÃ¤re es wieder die Fourier-Transformation. Oder das Frequenzgang.
+
+01:05:41.280 --> 01:05:46.720
+Das kann man hier unten nochmal als Spezialfall auch aufzeigen, dass dann wirklich hinterher dann
+
+01:05:46.720 --> 01:05:51.720
+wieder die Fourier-Transformation rauskommt. Das heiÃŸt also, das was ich vorhin schon gerade so ein
+
+01:05:51.720 --> 01:05:57.240
+bisschen mit angedeutet hatte, ich kann nicht hier nur hinschreiben F von J Omega, sondern ich kann
+
+01:05:57.240 --> 01:06:03.120
+ein G von S auch aufschreiben, was in Ã¤hnlicher Weise definiert ist, nur dass ich jetzt solche
+
+01:06:03.120 --> 01:06:09.000
+aperiodischen Signale damit auch beschreiben kann. Das ist der Vorteil. Falls Sie mal in
+
+01:06:09.000 --> 01:06:13.320
+irgendwelche Literatur reinschauen, wo die Laplace-Transformation oder deren Anwendung
+
+01:06:13.320 --> 01:06:23.000
+beschrieben ist. Bitte nicht wundern, teilweise steht anstelle von S auch P da. Beide Schreibweisen
+
+01:06:23.000 --> 01:06:31.520
+sind hier Ã¼blich. P oder S fÃ¼r den Laplace-Operator. So, welchen groÃŸen Vorteil bringt das Ganze, dass
+
+01:06:31.520 --> 01:06:37.400
+ich jetzt mein SystemÃ¼bertragungsverhalten im Frequenzbereich oder im Laplace-Bereich
+
+01:06:37.400 --> 01:06:44.280
+beschreibe? Der Grund ist ganz einfach, dass ich solche Signalverarbeitungsketten, die ich hier
+
+01:06:44.280 --> 01:06:50.920
+habe, damit schÃ¶ner beschreiben kann. Weil, wenn ich jetzt einfach mal so eine Reinstruktur hernehme,
+
+01:06:50.920 --> 01:06:54.600
+ich habe ein Ãœbertragungsglied hier und ein zweites Ãœbertragungsglied in Reihe geschalten.
+
+01:06:54.600 --> 01:07:01.040
+Das GesamtÃ¼bertragungsverhalten dieser Kette ergibt sich einfach aus dem Produkt der beiden
+
+01:07:01.040 --> 01:07:08.840
+EinzelÃ¼bertragungskennlinien. Nix anderes. Also einfach als Produkt geschrieben. Dann haben Sie
+
+01:07:08.840 --> 01:07:15.600
+natÃ¼rlich relativ hÃ¤ufig diese Kreisstruktur hier. Das heiÃŸt eine RÃ¼ckkopplung von dem Ausgang des
+
+01:07:15.600 --> 01:07:20.960
+Eingliedes auf den Eingang auf so einen Summationsknoten. Das ist hier mal dargestellt,
+
+01:07:20.960 --> 01:07:27.080
+das ist der Summationsknoten, das heiÃŸt das G von S, G1 von S, was den VorwÃ¤rtszweig ausmacht und
+
+01:07:27.080 --> 01:07:34.080
+das RÃ¼ckwÃ¤rtszweig, das G2 von S, wird hier Ã¼ber dieses Minus wieder rÃ¼ckgekoppelt. Das ist der Typ,
+
+01:07:34.080 --> 01:07:39.160
+diese typische Reglerstruktur, die wir in der Systemtheorie eigentlich immer drin haben. Das
+
+01:07:39.160 --> 01:07:44.560
+lÃ¤sst sich mathematisch mit dieser Laplace-Transformation einfach Ã¼ber diesen Termen
+
+01:07:44.560 --> 01:07:49.120
+hier beschreiben, dass man diesen Ring geschlossen hat. Da steht nÃ¤mlich einfach im ZÃ¤hler oben drin,
+
+01:07:49.120 --> 01:07:57.320
+G1 von S und im Nenner steht einfach immer dieses 1 plus dem Produkt aus dem VorwÃ¤rtszweig und dem
+
+01:07:57.320 --> 01:08:02.440
+RÃ¼ckwÃ¤rtszweig. Das ist das, was in dieser Kreisstruktur immer dann so in der Form dasteht.
+
+01:08:02.440 --> 01:08:06.360
+So und jetzt brauche ich natÃ¼rlich dieses nur noch irgendwie zusammen zu rechnen dann und
+
+01:08:06.360 --> 01:08:10.640
+vereinfachen. Auch die Parallelschaltung funktioniert recht gut, das ist einfach die
+
+01:08:10.640 --> 01:08:16.160
+Addition von diesen zwei ÃœbertragungsklÃ¤dern. So, warum ist das jetzt so eine schÃ¶ne einfache
+
+01:08:16.160 --> 01:08:23.720
+MÃ¶glichkeit, ich sage mal solche dynamisch wirkenden Glieder zu beschreiben? Der Grund ist
+
+01:08:23.720 --> 01:08:30.120
+ziemlich einfach, das sieht man dann deutlich, wenn man mal diese Umrechnoperation sich anschaut und
+
+01:08:30.120 --> 01:08:37.600
+die Tabellenwerke dazu, wie ich aus dem Zeitbereich in den Frequenzbereich reinkomme. Wenn Sie also
+
+01:08:37.600 --> 01:08:44.240
+hergehen und sagen, Sie wollen beispielsweise eine Differenzierung machen hier, also das Signal f und
+
+01:08:44.240 --> 01:08:50.360
+t wird einfach Ã¼ber die Zeit differenziert, dann bedeutet das in unserem Laplace Bereich nichts
+
+01:08:50.360 --> 01:08:59.240
+anderes, dass ich diese Funktion mit dem Laplace-Operator multipliziere. Nur multiplizieren,
+
+01:08:59.240 --> 01:09:06.160
+nichts anderes, relativ einfach, simpel. Auf der anderen Seite, wenn ich dieses Integral hier
+
+01:09:06.160 --> 01:09:10.880
+lÃ¶sen mÃ¶chte, was in der Differenzalkleichung natÃ¼rlich dann auch wieder das ganze komplexer
+
+01:09:10.880 --> 01:09:18.560
+macht, dann muss ich einfach nur noch durch s dividieren bei der Funktion. Das heiÃŸt, ich kann
+
+01:09:18.560 --> 01:09:23.600
+eine solche Transformation eines solchen Signals, wenn ich es mehrfach integriere, mehrfach
+
+01:09:23.600 --> 01:09:30.400
+differenziere, relativ einfach durch dieses mal s durch s halt beschreiben und das ist der groÃŸe
+
+01:09:30.400 --> 01:09:35.560
+Vorteil. Ansonsten gibt es halt diese ganzen Rechenregeln, die wir hier so mal grob abgebildet
+
+01:09:35.560 --> 01:09:39.120
+sehen, also die finden Sie in jedem Tafelwerk, wo die Laplace-Transformation drinne steht, finden
+
+01:09:39.160 --> 01:09:44.600
+Sie das immer wieder und die beschreiben eigentlich genau, wie ich dann im Frequenzbereich
+
+01:09:44.600 --> 01:09:51.000
+bzw. Laplace-Bereich dann diese Rechnung durchfÃ¼hre. Der nÃ¤chste Schritt ist, ich mÃ¶chte ja wieder auf
+
+01:09:51.000 --> 01:09:58.440
+mein Zeitsignal zurÃ¼ckkommen. Ich habe also mein ursprÃ¼ngliches Eingangssignal in den Frequenzbereich
+
+01:09:58.440 --> 01:10:03.400
+oder Laplace-Bereich transformiert, habe es durch mein Ãœbertragungsglied, was ich auch in dem
+
+01:10:03.400 --> 01:10:08.040
+Frequenz- oder Laplace-Bereich beschrieben habe, durchgeschickt, indem ich einfach das
+
+01:10:08.040 --> 01:10:13.480
+miteinander multipliziere und damit das y von s eigentlich als Ausgang dort stehen habe. Das
+
+01:10:13.480 --> 01:10:18.120
+muss ich jetzt einfach nur wieder rÃ¼cktransformieren, im letzten Schritt und dann habe ich das Zeitsignal,
+
+01:10:18.120 --> 01:10:23.480
+was mich interessiert. Das heiÃŸt, diese Zweit-Transformation, die kann man relativ gut
+
+01:10:23.480 --> 01:10:28.520
+automatisieren bzw. gibt es vorgeschrieben Regeln, wie man das machen kann und dazwischen die Rechnung
+
+01:10:28.520 --> 01:10:33.360
+fÃ¤llt mir auch bei gliedern hÃ¶herer Ordnung relativ einfach, aufgrund dieser Rechenregeln,
+
+01:10:33.360 --> 01:10:38.560
+die wir im Laplace-Bereich haben. Das ist also der Grund, warum man hier diese Laplace-Transformation
+
+01:10:38.560 --> 01:10:43.280
+wirklich gerne auch fÃ¼r die Beschreibung in der Elektrotechnik und der Automationstechnik nutzt.
+
+01:10:43.280 --> 01:10:54.000
+So, das sind abklingende Funktionen gewesen. Bei unserer VE-Transformation haben wir eher diese
+
+01:10:54.000 --> 01:10:59.120
+immer wiederkehrenden, in gleicher Weise wiederkehrenden Informationen gehabt. Jetzt mÃ¶chte ich
+
+01:10:59.120 --> 01:11:05.040
+Ihnen noch eine andere Transformation mal ganz kurz vorstellen, die heutzutage auch natÃ¼rlich eine
+
+01:11:05.040 --> 01:11:10.960
+relativ groÃŸe Bedeutung hat und das ist die sogenannte Wavelet-Transformation. Diese Wavelet-Transformation
+
+01:11:10.960 --> 01:11:19.640
+beinhaltet nicht nur die Frequenzen aus der VE-Transformation, sondern die beinhaltet zusÃ¤tzlich
+
+01:11:19.640 --> 01:11:28.560
+auch noch die Information Ã¼ber den Zeitpunkt, wann diese Frequenz aufgetreten ist. Das ist der Grundgedanke,
+
+01:11:28.560 --> 01:11:34.840
+der hier dahinter steckt. Das heiÃŸt, die haben irgendwie so ein Wavelet, das heiÃŸt eigentlich,
+
+01:11:34.840 --> 01:11:41.480
+man Ã¼bersetzt dann kleine Welle irgendwo. Das heiÃŸt also eine kleine abschwingende Schwingungsform.
+
+01:11:41.480 --> 01:11:49.120
+Das kann entweder so ein Havelet sein oder so ein Mexican-Hat-Wavelet beispielsweise. Das sind eben so
+
+01:11:49.120 --> 01:11:54.000
+verschiedenste Formen, die man dann fÃ¼r die Beschreibung nutzen kann. Wichtig ist an der Stelle,
+
+01:11:54.000 --> 01:11:59.120
+dass das einfach eine festgelegte Funktion wirklich dann im Zeitbereich ist, die eben eine gewisse
+
+01:11:59.120 --> 01:12:06.800
+Form hat, die eben auch wenn man dann Ã¼ber dieses Wavelet drÃ¼ber hinweg integriert, ein Mittelwert von
+
+01:12:06.800 --> 01:12:11.600
+Null, einen Wert von Null hat. Also das Integral Ã¼ber den Bereich dieses Wavelets, das ist Null.
+
+01:12:11.600 --> 01:12:18.960
+So, ausgehend natÃ¼rlich von diesen Wavelets kann ich die jetzt skalieren in der Amplitude und
+
+01:12:18.960 --> 01:12:24.760
+natÃ¼rlich Strecken in der Zeitrichtung. Beide ist es mÃ¶glich. Ich kann die einfach skalieren.
+
+01:12:24.760 --> 01:12:33.600
+So und damit komme ich eigentlich auf eine solche Beschreibung meines Zeitsignals Ã¼ber eben diese
+
+01:12:33.600 --> 01:12:39.400
+Wavelets. Das heiÃŸt, wenn ich also so ein sinusformiges Signal mal beispielsweise mit so
+
+01:12:39.400 --> 01:12:45.120
+einem Gauss-Funktion multipliziere, komme ich eben beispielsweise auf dieses Morlet-Wavelet,
+
+01:12:45.120 --> 01:12:50.080
+was relativ hÃ¤ufig auch fÃ¼r die Beschreibung verwendet wird. Und so sind eigentlich diese
+
+01:12:50.080 --> 01:12:54.440
+Wavelets typischerweise entstanden, dass man Frequenzanteile fÃ¼r einen gewissen Zeitpunkt
+
+01:12:54.440 --> 01:13:01.200
+beschreiben mÃ¶chte. Nichts anderes ist das. So, Ã¼ber diesen Bereich, Zeitbereich hinweg, wie gesagt,
+
+01:13:01.200 --> 01:13:06.840
+ist das Integral Null. Das ist eine wichtige Voraussetzung, die wir brauchen und es ist eine
+
+01:13:06.840 --> 01:13:12.160
+periodisch mittelwertfreie Funktion damit, die mit einem schnellen beidseitigen Amplitudenabfall
+
+01:13:12.160 --> 01:13:20.440
+behaftet sein muss. Die Form ist eigentlich zweitrangig. So, jedes Wavelet, jede Waveletfunktion
+
+01:13:20.440 --> 01:13:25.560
+kann eben als sogenanntes Mava-Wavelet dann damit bezeichnet werden und durch diese Skalierung,
+
+01:13:25.560 --> 01:13:31.120
+also in der Amplitude und in der Zeitverschiebung mehr oder weniger, kann ich das Ganze eben dann
+
+01:13:31.120 --> 01:13:37.240
+auch anpassen fÃ¼r die Signale, die dann damit beschrieben werden sollen. So, dann entsteht
+
+01:13:37.240 --> 01:13:42.200
+damit eine solche sogenannte Waveletfamilie, die eben auch als Waveletbasis bezeichnet wird.
+
+01:13:42.200 --> 01:13:48.400
+So, und wichtig an der Stelle ist, dass alle Wavelets einer solchen Waveletfamilie die
+
+01:13:48.400 --> 01:13:53.840
+gleiche Energie besitzen muss und die gleichen SignalverlÃ¤ufe, also die selbe Form haben muss,
+
+01:13:53.840 --> 01:14:01.160
+wie das Mava-Wavelet. So, und mehr oder weniger kann ich damit natÃ¼rlich einen solchen Vektorraum
+
+01:14:01.160 --> 01:14:06.960
+dann aufbauen, mit dem ich das Ganze dann beschreiben kann. So, und die SignalverlÃ¤ufe werden dann als
+
+01:14:06.960 --> 01:14:14.920
+Linearkombination von solchen Elementen dieser Waveletfamilie dann rekonstruiert bzw. reprÃ¤sentiert
+
+01:14:14.920 --> 01:14:20.320
+und das ist dann genau das, was man unter dieser Wavelet-Transformation versteht. So, um das Ganze
+
+01:14:20.320 --> 01:14:27.080
+nochmal mit der Skalierung zu zeigen, also ich habe jetzt beispielsweise bei dieser Waveletbasis mehr
+
+01:14:27.080 --> 01:14:32.120
+oder weniger in dem Fall mal dieses Mava-Wavelet hier, ich kann also Ã¼ber den einen Parameter in
+
+01:14:32.120 --> 01:14:37.760
+der Beschreibung dieses Wavelets, nÃ¤mlich B, diese Verschiebung realisieren. Jetzt muss ich ganz
+
+01:14:37.760 --> 01:14:41.360
+kurz schauen, das ist hier oben gemacht, genau, das heiÃŸt hier Ã¤ndert sich das B in der Zeile.
+
+01:14:41.360 --> 01:14:47.440
+Dann haben wir die MÃ¶glichkeit natÃ¼rlich das A anzupassen, das heiÃŸt das ist die Amplitude
+
+01:14:47.440 --> 01:14:55.640
+bzw. die Frequenz, die damit auch einhergeht und damit es mit der entsprechenden Energie passt,
+
+01:14:55.640 --> 01:14:59.840
+muss natÃ¼rlich das Ganze hier vorne mit dem A auch nochmal in die Normalisierung mit rein.
+
+01:15:00.320 --> 01:15:06.560
+Ausgehend davon kann ich jetzt diese einzelnen Wavelets dieser Waveletfamilie nehmen, um damit
+
+01:15:06.560 --> 01:15:11.680
+mein Signal zu beschreiben. Wie muss man sich das vorstellen? Na ja, eigentlich nichts anderes als
+
+01:15:11.680 --> 01:15:18.280
+wenn ich ein MusikstÃ¼ck habe und Noten zu einem gewissen Zeitpunkt spiele. Das ist eigentlich der
+
+01:15:18.280 --> 01:15:24.240
+Grundgedanke, der dahinter steckt. Das heiÃŸt also, irgendeine Note, irgendeine Frequenz wird zu
+
+01:15:24.240 --> 01:15:30.080
+einem gewissen Zeitpunkt gespielt, einer gewissen LÃ¤nge und so beschreibe ich das Ganze. Also
+
+01:15:30.080 --> 01:15:37.520
+relativ einfache Idee, die dahinter steckt und ich kann also jedes beliebige Signal Ã¼ber die Zeit
+
+01:15:37.520 --> 01:15:44.760
+hinweg, also in dem Fall die Musik, Ã¼ber diese einzelnen Wavelets beschreiben. Das wÃ¼rde also
+
+01:15:44.760 --> 01:15:50.760
+beispielsweise so aussehen, wenn Sie hier oben irgendwo so einen Signalverlauf hÃ¤tten, wÃ¼rden
+
+01:15:50.760 --> 01:15:55.920
+Sie eben mit der Waveletbasis, die Sie hier verwendet haben, das mit dem grÃ¶ÃŸten Wavelet hier an der
+
+01:15:55.920 --> 01:15:59.400
+Stelle haben und dann wÃ¤ren die einzelnen Wavelets natÃ¼rlich mit den einzelnen Anteilen entsprechend
+
+01:15:59.400 --> 01:16:04.040
+in der Frequenz hÃ¶her und in den Amplituden unterschiedlich dann ausfallen. Und Sie wÃ¼rden
+
+01:16:04.040 --> 01:16:11.880
+einfach nur die Wavelets fÃ¼r die gewissen Bereiche dann angeben. Das sind die verschiedenen Wavelets
+
+01:16:11.880 --> 01:16:17.920
+dann selbst, die dann eingesetzt werden hier mit den verschiedenen Frequenzen genau und Amplituden
+
+01:16:17.920 --> 01:16:23.400
+die dann zusammen, also Sie addieren ja auch die Signale wie bei der VE-Transformation,
+
+01:16:23.400 --> 01:16:34.120
+addieren Sie ja die Signale um das ursprÃ¼ngliche Signal abzubilden. Richtig, richtig, genau, das ist
+
+01:16:34.120 --> 01:16:41.080
+der Grundgedanke. So, welchen Vorteil bringt das jetzt im Vergleich zur VE-Transformation? Das sieht
+
+01:16:41.080 --> 01:16:46.560
+man mal eigentlich sehr schÃ¶n an diesem Beispiel hier. Ich habe einfach mal drei Frequenzen, die
+
+01:16:46.560 --> 01:16:52.160
+zu unterschiedlichen Zeitpunkten gespielt werden. So, also der tiefe Ton in der Mitte,
+
+01:16:52.160 --> 01:16:56.880
+mittlere Ton am Anfang und der hohe Ton hier am Ende und dann kehre ich das Ganze mal rum,
+
+01:16:56.880 --> 01:17:04.320
+als erster hohe Ton und als letztes der mittlere Ton. In der VE-Transformation kriege ich dieselben
+
+01:17:04.320 --> 01:17:12.080
+Darstellungen. Kein Unterschied. Wenn ich dieses Signal Ã¼ber diesen Bereich hier auswerte, habe
+
+01:17:12.080 --> 01:17:16.840
+ich eben die drei Frequenzen drin gehabt mit ihren Amplituden. So, und das sehe ich eben als
+
+01:17:16.840 --> 01:17:22.720
+drei Amplituden in dem Spektrum dann drin. So, bei der VE-Transformation, klar nicht klar,
+
+01:17:22.720 --> 01:17:29.720
+unterscheiden das eben hier ein anderer Ton gespult wurde als hier. Ja, dass diese Ã„nderung da ist.
+
+01:17:29.720 --> 01:17:36.800
+Und das ist der Vorteil dieser VE-Transformation. So, die wird heutzutage relativ gern eingesetzt,
+
+01:17:36.800 --> 01:17:41.920
+um solche dynamischen Signale mit zu beschreiben. Wir werden hier in der Vorlesung uns nicht weiter
+
+01:17:41.960 --> 01:17:47.800
+damit beschÃ¤ftigen. Das soll nur mal zeigen, dass es eben auch neben dem Laplace und neben der
+
+01:17:47.800 --> 01:17:51.760
+Foyer-Analyse weitere MÃ¶glichkeiten gibt, das zu beschreiben.
+
+01:17:51.760 --> 01:17:57.760
+Um dieses Beispiel mit Foyer darzustellen zu kÃ¶nnen, mÃ¼ssen Sie sich also den MessgerÃ¤t von kleiner Beiden...
+
+01:17:57.760 --> 01:18:01.760
+Richtig. Sie mÃ¼ssten das in die drei Zeitabschnitte separieren.
+
+01:18:01.760 --> 01:18:03.760
+Ja.
+
+01:18:03.760 --> 01:18:05.760
+Ja?
+
+01:18:05.760 --> 01:18:07.760
+Ja?
+
+01:18:07.760 --> 01:18:13.760
+Der Unterschied ist im Wesentlichen, dass ich bei VE-Transformation davon ausgehe, dass dieses Signal
+
+01:18:13.760 --> 01:18:20.760
+periodisch in gleicher Weise wiederkehrend ist. Und diese Annahme ist ja hier in dem Bild nicht gegeben.
+
+01:18:20.760 --> 01:18:25.760
+Wenn ich das Ã¼ber diesen groÃŸen Bereich einfach eine VE-Transformation mache.
+
+01:18:25.760 --> 01:18:34.760
+So. Ja, Wert- und Zeitdiskritisierung. Wir wollen AD-Wandler einsetzen. Wir haben damit gewisse Probleme auch.
+
+01:18:34.760 --> 01:18:39.760
+Wir hatten schon gesagt gehabt, wir haben hier noch so ein analoges Signal vorliegen und irgendwann
+
+01:18:39.760 --> 01:18:45.760
+kommen wir in dieses digitale Signal hinein. Und das ist das, was wir hier in der Vorlesung
+
+01:18:45.760 --> 01:18:52.760
+mit VE-Transformation machen. Und das ist das, was wir hier in der Vorlesung mit VE-Transformation machen.
+
+01:18:52.760 --> 01:18:58.760
+Wir haben hier noch so ein analoges Signal vorliegen und irgendwann kommen wir in dieses digitale Signal hinein.
+
+01:18:58.760 --> 01:19:04.760
+Die Digitalisierungskette, die wir hier haben, das ist so die typische Kette, die Sie eigentlich mit
+
+01:19:04.760 --> 01:19:11.760
+jeden AD-Wandler aufbauen. Sie haben am Eingang ein analoges Bandbegrenzungsfilter.
+
+01:19:11.760 --> 01:19:17.760
+Kommen wir noch drauf, ist dafÃ¼r da, um das Allizing zu unterdrÃ¼cken.
+
+01:19:17.760 --> 01:19:23.760
+Was fÃ¼r ein Aufbau des AD-Wandlers ist? Ein Multiplexer drin, der zwischen verschiedenen Signalquellen umschalten kann.
+
+01:19:23.760 --> 01:19:34.760
+Ein sogenanntes Abtast- und Halteklied, das dafÃ¼r da ist, wÃ¤hrend der Konvertierungszeit des AD-Wandlers
+
+01:19:34.760 --> 01:19:42.760
+das Signal auf einen konstanten Wert zu halten. Nachfolgend kommt dann die eigentliche AD-Wandlung.
+
+01:19:42.760 --> 01:19:50.760
+In AbhÃ¤ngigkeit von der Art der AD-Wandlung muss der Sample Enholted dabei sein oder es kann eben auch entfallen.
+
+01:19:50.760 --> 01:19:58.760
+Das hÃ¤ngt vom AD-Wandler-Typ ab. Danach haben wir natÃ¼rlich dann aus dem AD-Wandler die digitalen Signale,
+
+01:19:58.760 --> 01:20:04.760
+die wir zwischenspeichern kÃ¶nnen, beispielsweise in Flipflops oder Schieberegistern oder in FIFO-Speichern.
+
+01:20:04.760 --> 01:20:09.760
+Und dann wird das Ganze typischerweise irgendwie noch weiter digital vorverarbeitet, bevor es dann irgendwo
+
+01:20:09.760 --> 01:20:15.760
+Ã¼ber ein Netzwerk oder ein Bussystem rausgegeben oder Ã¼bertragen wird.
+
+01:20:15.760 --> 01:20:23.760
+Aber mit dem Schritt der Digitalisierung, sprich von dem analogen zum digitalen Signal, haben wir eben diese zwei Effekte
+
+01:20:23.760 --> 01:20:27.760
+der wertmÃ¤ÃŸigen Diskritisierung und der zeitlichen Diskritisierung.
+
+01:20:27.760 --> 01:20:35.760
+Wenn man also ein solches analoges Signal betrachtet und nur zu gewissen Zeitpunkten sampled,
+
+01:20:35.760 --> 01:20:43.760
+das heiÃŸt also zu diesen Zeitpunkten immer nur die Werte aufnimmt, wÃ¼rde man ein wertanaloges, zeitlich diskretes Signal bekommen.
+
+01:20:43.760 --> 01:20:48.760
+Genauso kÃ¶nnte man auch andersrum anfangen, dass wir sagen, wir machen erst eine wertmÃ¤ÃŸige Diskritisierung.
+
+01:20:48.760 --> 01:20:55.760
+Das heiÃŸt, wir haben hier gewisse Stufen dann in den Werten vorliegen, aber die zu jedem Zeitpunkt noch definiert sind.
+
+01:20:55.760 --> 01:21:00.760
+Wenn wir beides jetzt kombinieren, also wertmÃ¤ÃŸige und zeitliche Diskritisierung,
+
+01:21:00.760 --> 01:21:03.760
+kommen wir auf das Signal, was hier mit den roten Punkten dargestellt ist.
+
+01:21:03.760 --> 01:21:10.760
+Und das ist das, was wir aus den AD-Wandlern eigentlich rausbekommt, weil der macht beides, eine wertmÃ¤ÃŸige und eine zeitliche Diskritisierung.
+
+01:21:10.760 --> 01:21:20.760
+Diese Diskritisierung kann man mathematisch auch recht schÃ¶n beschreiben, indem wir die sogenannten Dirac-Impulse verwenden,
+
+01:21:20.760 --> 01:21:28.760
+um das zu beschreiben. Der Dirac-Impuls oder Dirac-CAM dann auch, wenn es mehrere sind, wird Ã¼ber dieses Delta beschrieben.
+
+01:21:28.760 --> 01:21:36.760
+Das heiÃŸt, das ist die Dirac-Funktion. Und der Zeitpunkt t ist hier natÃ¼rlich in der Zeitachse abgetragen.
+
+01:21:36.760 --> 01:21:42.760
+Die Verschiebung entlang der Zeitachse wird eben Ã¼ber diese Verschiebung k mal groÃŸ t beschrieben.
+
+01:21:42.760 --> 01:21:47.760
+t ist in dem Fall die Samplingzeit, also die AbstÃ¤nde zwischen den einzelnen Datenerfassungen.
+
+01:21:47.760 --> 01:21:54.760
+So, jetzt kann ich das Ganze als eine Summe von diesen Dirac-Impulsen auffassen, mein ganzes Signal,
+
+01:21:54.760 --> 01:21:59.760
+wobei ich jeweils natÃ¼rlich irgendeine Skalierung in hinsichtlich der Amplitude irgendwo reinbringen muss.
+
+01:21:59.760 --> 01:22:04.760
+Und das, was man dann eigentlich sieht, dass hier das x von t mehr oder weniger als Skalierungsfaktor genutzt wird,
+
+01:22:04.760 --> 01:22:13.760
+um damit dann diese Dirac-Impulse-CAM eigentlich in der Summe dann zu einem Signal zu machen, was zeitlich nur zu gewissen Punkten vorliegt.
+
+01:22:13.760 --> 01:22:20.760
+So, wenn man das hernimmt und dann transformiert, also sprich diese VE-Transformierte von dem Signal bildet,
+
+01:22:20.760 --> 01:22:30.760
+kommt eigentlich heraus, dass man hier an der Stelle auch wirklich mit der Samplingperiode wirklich mehr oder weniger dann das Ganze quantisiert vorliegen hat.
+
+01:22:30.760 --> 01:22:41.760
+Und diese gesamplte Spektrum, was sich damit auch ergibt, tritt eben mit der Periode 2Ï€ durch t periodisch wieder auf.
+
+01:22:41.760 --> 01:22:46.760
+Das ist immer dann das, was ich dann in diesen entsprechenden Signalen dann auch sehe.
+
+01:22:46.760 --> 01:22:53.760
+Wenn ich mir also jetzt mal so ein digitalisiertes Signal Ã¼ber die Zeit hinweg anschaue, heiÃŸt das,
+
+01:22:53.760 --> 01:23:02.760
+ich habe so eine Zeitbereich irgendwo mal so ein Sinusignal, sample das zu gewissen Zeitpunkten mit der Abtastzeit t, a.
+
+01:23:02.760 --> 01:23:08.760
+Die Abtastzeit t, a kann ich natÃ¼rlich mir aus der Abtastfrequenz auch ausrechnen, indem ich den Kehrwert einfach bilde.
+
+01:23:08.760 --> 01:23:17.760
+So, und dann wird man an der Stelle sehen, dass natÃ¼rlich diese Abtastfrequenz f, a, die ich hier habe, eine Symmetrieachse ist,
+
+01:23:17.760 --> 01:23:22.760
+wÃ¤hrend auch genauso auch diese halbe Abtastfrequenz eine Symmetrieachse ist.
+
+01:23:22.760 --> 01:23:29.760
+Das heiÃŸt, das Signal, was ich hier sinusfÃ¶rmig habe, tritt einmal mit einem PiG hier auf, nÃ¤mlich mit der Signalfrequenz,
+
+01:23:29.760 --> 01:23:34.760
+und das andere Mal hier mit f, a minus dieser Signalfrequenz.
+
+01:23:35.760 --> 01:23:38.760
+Das sind zwei Pulse, die ich dann in diesem Signal sehe.
+
+01:23:38.760 --> 01:23:47.760
+Wenn ich also so eine Fourier-Transformation rechne, kriege ich immer das Spektrum von 0 bis f, a dargestellt, typischerweise.
+
+01:23:47.760 --> 01:23:59.760
+Das heiÃŸt, bei f, a halbe bis dahin ist das, ich sage mal, separat, und der andere Teil Ã¼berhalb von f, a halbe bis f, a,
+
+01:23:59.760 --> 01:24:05.760
+das ist einfach nur der gespiegelte Teil von dem, was da unten schon mal war, gespiegelt bei f, a halbe.
+
+01:24:05.760 --> 01:24:13.760
+Deswegen kann ich eigentlich den oberen Teil von f, a halbe aus typischerweise ignorieren und kann den aus der Analyse rauswerfen.
+
+01:24:13.760 --> 01:24:17.760
+Also nur bis f, a halbe interessiert mich dann typischerweise.
+
+01:24:17.760 --> 01:24:24.760
+So, wenn ich jetzt diese Abtastung, hier habe ich ausreichend Punkte fÃ¼r diese sinusfÃ¶rmige Kurve verwendet,
+
+01:24:24.760 --> 01:24:33.760
+jetzt dahin gehe ich mit der Abtastfrequenz mal runter, dass ich dieses sinusfÃ¶rmige Signal nicht mehr vollstÃ¤ndig rekonstruieren kann.
+
+01:24:33.760 --> 01:24:41.760
+Dann habe ich eben das Problem, dass sich jetzt aus dem ursprÃ¼nglich hier blau dargestellten Sinusfremigsignal hÃ¶herer Ordnung
+
+01:24:41.760 --> 01:24:48.760
+plÃ¶tzlich in der Abtastung ein sinusfÃ¶rmiges Signal sich darstellt, was wesentlich geringer in der Frequenz aussieht.
+
+01:24:49.760 --> 01:24:58.760
+Und das ist dieses Alizing. Das heiÃŸt, ich interpretiere dort eine andere Frequenz rein, die aufgrund dieser Spiegelung zustande gekommen ist.
+
+01:25:00.760 --> 01:25:08.760
+Das heiÃŸt also, wenn ich nicht ausreichend Datenpunkte dort reingesetzt habe, kriege ich durch die Spiegelung eventuell eine falsche Information rein.
+
+01:25:08.760 --> 01:25:11.760
+Durch die Abtastung kommt eben diese Spiegelung rein.
+
+01:25:11.760 --> 01:25:19.760
+In der DIN IEC wird das Ganze dann als AbtaststÃ¶rung auch bezeichnet.
+
+01:25:19.760 --> 01:25:26.760
+Das heiÃŸt also, Fehler, die in das Frequenzspektrum reinkommen, weil eben dann die Komponenten der Frequenzen zu hoch sind,
+
+01:25:26.760 --> 01:25:33.760
+die mehr oder weniger dann fÃ¼r das Abtasten dabei dann eben nicht ausreichend mit der Messung gepasst haben.
+
+01:25:33.760 --> 01:25:40.760
+Prinzipiell ist es so, dass ich also dieses sogenannte Abtasttheorien oder dieses Schennen-Nagwitz-Theorien einhalten muss.
+
+01:25:40.760 --> 01:25:49.760
+Das heiÃŸt also, wenn ich eine Frequenz in dem Signal auch wieder eins zu eins rekonstruieren mÃ¶chte,
+
+01:25:49.760 --> 01:25:57.760
+muss ich mindestens mit der doppelten Frequenz dieser maximalen Frequenz, die mich interessiert, abtasten.
+
+01:25:57.760 --> 01:25:59.760
+Mindestens.
+
+01:26:02.760 --> 01:26:09.760
+Ansonsten treten eben diese Spiegelungen auf. Und das mÃ¶chte ich mal ganz kurz hier an der Stelle mit diesem Diagramm nochmal zeigen.
+
+01:26:09.760 --> 01:26:17.760
+Wenn Sie so ein analoges Signal haben, dann hat das irgendwo so ein Frequenzbereich unten bis FA Max beispielsweise.
+
+01:26:17.760 --> 01:26:23.760
+Das ist in der analogen Welt noch wunderbar, da bleibt das auch da unten in dem Feld.
+
+01:26:23.760 --> 01:26:29.760
+Sobald ich aber diese Digitalisierung durchfÃ¼hre, diese Abtastung durchfÃ¼hre, nur zu gewissen Zeitpunkten das aufnehme,
+
+01:26:29.760 --> 01:26:35.760
+kommt es eben, dass ich an dieser FA Halbe diese Spiegelungen habe.
+
+01:26:35.760 --> 01:26:41.760
+Das heiÃŸt, ich habe hier jetzt plÃ¶tzlich das Signal erneut in dem Bereich bis FA.
+
+01:26:41.760 --> 01:26:45.760
+Das Ganze setzt sich aber nochmal mehrfach fort.
+
+01:26:45.760 --> 01:26:53.760
+Das heiÃŸt, auch diese FA Achse und auch diese FA Dreihalbe-Frequenz, die ich hier habe,
+
+01:26:53.760 --> 01:26:58.760
+die dienen wieder als Spiegelachsen, genauso wie auch die 2FA.
+
+01:26:58.760 --> 01:27:02.760
+Das Signal wird mehrfach hier an diesen Achsen gespiegelt.
+
+01:27:02.760 --> 01:27:09.760
+Das heiÃŸt, wenn ich also irgendeine Frequenz wie in dem Beispiel, was ich vorhin falsch abgetastet habe,
+
+01:27:09.760 --> 01:27:17.760
+was meinetwegen jetzt hier lag, die Frequenz, wird die Ã¼ber diese Spiegelung in den eigentlichen Bereichen unten hinein gespiegelt.
+
+01:27:17.760 --> 01:27:23.760
+Und ich sehe nur noch die Spiegelung dort drin, in dem Bereich, den ich mit der Fourier-Analyse betrachtet habe.
+
+01:27:24.760 --> 01:27:26.760
+Ich sehe nur noch die Spiegelung.
+
+01:27:26.760 --> 01:27:33.760
+So, das ist stÃ¶rend, wenn mich wirklich nur der Frequenzbereich hier unten interessiert.
+
+01:27:33.760 --> 01:27:39.760
+In dem Falle muss ich also sicherstellen, dass meine maximale Frequenz, die in den Signalen auftritt,
+
+01:27:39.760 --> 01:27:44.760
+eben halb kleiner ist als die halbe Abtastfrequenz.
+
+01:27:44.760 --> 01:27:47.760
+Ansonsten habe ich diesen Ãœberlap hier drin und ich kann es nicht mehr separieren,
+
+01:27:47.760 --> 01:27:50.760
+ob das eine Spiegelung ist oder an der Grundfrequenz lag.
+
+01:27:50.760 --> 01:27:57.760
+Das ist der Grund, warum ich bei einer solchen AD-Wandler Schaltung immer diesen analogen Filter einbaue,
+
+01:27:57.760 --> 01:28:03.760
+der das ganze eben, das analoge Signal, auf diesen Frequenzbereich bis FA halb begrenzt,
+
+01:28:03.760 --> 01:28:11.760
+damit ich klar sagen kann, das ist nur der Bereich, der durch das untere Spektrum gekommen ist.
+
+01:28:11.760 --> 01:28:15.760
+Dass ich gar nicht irgendwelche hÃ¶heren Frequenzen noch zusÃ¤tzlich mit auswerte.
+
+01:28:15.760 --> 01:28:20.760
+Das ist der Grundgedanke, warum dieser analoge Filter da drin steckt, in dieser AD-Wandler Kette.
+
+01:28:20.760 --> 01:28:26.760
+Eine andere MÃ¶glichkeit, die ich aber auch habe, ist zu sagen, ich habe vielleicht ein Signal,
+
+01:28:26.760 --> 01:28:30.760
+was von der Frequenz her so hoch ist, dass ich es nicht vernÃ¼nftig auswerten kann,
+
+01:28:30.760 --> 01:28:32.760
+wenn ich es einfach nur AD wandeln wÃ¼rde.
+
+01:28:32.760 --> 01:28:39.760
+Ich tasse das bewusst unterab. Ich weiÃŸ, dass es beispielsweise hier irgendwo in dem Bereich liegt,
+
+01:28:40.760 --> 01:28:44.760
+nehme es aber trotzdem mit der niedrigen Abtastfrequenz auf,
+
+01:28:44.760 --> 01:28:49.760
+kann aber aufgrund der mir bekannten Abtastfrequenz dann aber genau ausrechnen,
+
+01:28:49.760 --> 01:28:54.760
+wo dieses gespiegeltes Signal, was ich ja aus den Messwerten rauskriege,
+
+01:28:54.760 --> 01:28:59.760
+Ã¼ber die Abtastfrequenz hier in der Originalfrequenz liegt.
+
+01:29:01.760 --> 01:29:04.760
+Das kann ich mir als messtechnischen Trick zu Nutze machen.
+
+01:29:04.760 --> 01:29:10.760
+Wir haben da beispielsweise mal darÃ¼ber fÃ¼r ein Interferometersystem damit eine Analyse machen kÃ¶nnen
+
+01:29:10.760 --> 01:29:16.760
+von Lichtfrequenzen, die wir sonst nicht hÃ¤tten messen kÃ¶nnen mit den Interferenzen,
+
+01:29:16.760 --> 01:29:20.760
+weil wir dort einfach zu niedrig fÃ¼r eine Abtastfrequenz gewesen wÃ¤ren.
+
+01:29:20.760 --> 01:29:26.760
+Wir haben einfach die Anzahl der Spiegelungen genutzt und konnten damit dann die Frequenzen im Licht messen.
+
+01:29:27.760 --> 01:29:33.760
+Das ist also eine gÃ¤ngige Variante, um damit auch bewusst mit den Spiegelungen zu arbeiten.
+
+01:29:34.760 --> 01:29:39.760
+Mit Blick auf die Uhr wÃ¼rde ich sagen, stoppe ich das Ganze mal fÃ¼r heute hier an der Stelle ab.
+
+01:29:39.760 --> 01:29:43.760
+Wir setzen das Ganze dann nÃ¤chste Woche hier fort.
+
+01:29:43.760 --> 01:29:47.760
+Vielen Dank fÃ¼r die Aufmerksamkeit und eine schÃ¶ne Restwoche. Danke.
+
