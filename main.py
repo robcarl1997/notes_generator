@@ -93,9 +93,12 @@ if __name__ == "__main__":
 # for file in os.listfiles("assets/")
 markdown = ""
 for i, item in enumerate(times_dict):
-    save_img(video_path, item["total_seconds"], item["img"], content_coordinates)
+    if i < len(times_dict):
+        save_img(video_path, times_dict[i+1]["total_seconds"]-3, times_dict[i]["img"], content_coordinates)
+    else:
+        save_img(video_path, item["total_seconds"], item["img"], content_coordinates)
     title_img = f'2_{item["img"]}'
-    save_img(video_path, item['total_seconds'], title_img, title_coordinates)
+    save_img(video_path, times_dict[i+1]['total_seconds']-3, title_img, title_coordinates)
     markdown = markdown + f'\n### {item["title"]}\n'
     markdown = markdown + f'\n![]({os.path.join("assets", title_img)})\n'
     markdown = markdown + f'\n![]({os.path.join("assets",item["img"])})\n'
