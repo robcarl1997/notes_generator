@@ -234,12 +234,12 @@ def draw_rectangle(video_path, time_sec, title = None):
             break
         elif key == ord('a') or key == 81:  # Left arrow or 'a' key
             print("Left Arrow Pressed")
-            time_sec -= 10
+            time_sec -= 15
             frame, clone = update_image()
             # cv2.imshow("Image", clone)
         elif key == ord('d') or key == 83:  # Right arrow or 'd' key
             print("Right Arrow Pressed")
-            time_sec += 10
+            time_sec += 15
             frame, clone = update_image()
             # cv2.imshow("Image", clone)
         # if cv2.waitKey(1) & 0xFF == ord('q'):

@@ -29,8 +29,8 @@ if __name__ == "__main__":
     remove_old_images()
 
     # Example usage
-    video_path = "/home/robin/dwhelper/Rechnergestutzte Messtechnik RMT - Vorlesungen Sommersemester 20.mp4"
-    time_sec = 8  # Time in seconds
+    video_path = r"/home/robin/dwhelper/Kapitel 2 Teil 3 asymmetrische Kryptographie.mp4"
+    time_sec = 20  # Time in seconds
 
     # Example usage
     # x, y = 1500, 700  # Top-left corner coordinates of the ROI
@@ -72,10 +72,8 @@ if __name__ == "__main__":
         title = get_title(title_coordinates, time, video_path)
         print(title)
 
-        if time >= 600:
+        if time == video_length:
             break
-        # if time == video_length:
-        #     break
         elif time - times[-1] > 15:
             times.append(time)
             hours, minutes, seconds = get_time(time)
@@ -93,15 +91,17 @@ if __name__ == "__main__":
 # for file in os.listfiles("assets/")
 markdown = ""
 for i, item in enumerate(times_dict):
-    if i < len(times_dict):
-        save_img(video_path, times_dict[i+1]["total_seconds"]-3, times_dict[i]["img"], content_coordinates)
+    if i < len(times_dict)-1:
+        save_img(video_path, times_dict[i+1]["total_seconds"]-5, times_dict[i]["img"], content_coordinates)
     else:
         save_img(video_path, item["total_seconds"], item["img"], content_coordinates)
     title_img = f'2_{item["img"]}'
-    save_img(video_path, times_dict[i+1]['total_seconds']-3, title_img, title_coordinates)
+    save_img(video_path, times_dict[i]['total_seconds'], title_img, title_coordinates)
+    markdown = markdown + f'\n---\n'
     markdown = markdown + f'\n### {item["title"]}\n'
-    markdown = markdown + f'\n![]({os.path.join("assets", title_img)})\n'
-    markdown = markdown + f'\n![]({os.path.join("assets",item["img"])})\n'
+    markdown = markdown + f'\n---\n'
+    markdown = markdown + f'\n![[{title_img}]]\n'
+    markdown = markdown + f'\n![[{item["img"]}]]\n'
     markdown = markdown + f'\ntimestamp:{ext(item["hours"])}:{ext(item["minutes"])}:{ext(item["seconds"])}\n'
     # if i < len(times_dict)-1:
     #     next_item = times_dict[i+1]

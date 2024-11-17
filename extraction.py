@@ -9,15 +9,25 @@ sys.path.append(open_ai_dir)
 import test_open_ai
 import gpt
 
-header = """Erstelle stichpunktartige Karteikarten mit den gegebenen Informationen.
-            Setze die Überschriften bzw. die Vorderseite der Karten in <u></u> tags (unterstreichen!).
-            Du kannst wichtige Aspekte hervorheben durch unterschreichen oder Farbe (HTML)!
-            """
+
+
+lang = input("Bitte Sprache eingeben (deu/eng): ")
+if lang == "deu":
+    header = """Erstelle stichpunktartige Karteikarten mit den gegebenen Informationen.
+                Überschriften sollen fett gemacht werden (markdown).
+                Du kannst wichtige Aspekte hervorheben durch unterschreichen oder Farbe (HTML)!
+                Setze (Latex) Formeln zwischen zwei $. Mehrere Formeln hintereindander sollen wie folgt dargestellt werden: $$ Formeln $$.
+                """
+else:
+    header = """Create flashcards in form of bullet points with the given informations.
+                Make the headlines (content of the front of the cards) in Bold (markdown).
+                You can emphasize important information with underscoring or color (HTML)!
+                Set (Latex) formulas between two $. In case of several formulas place them like this: $$ formulas $$.
+                """
 
 messages = [
-            {"role": "system", "content": header}, # {"role": "user", "content": prompt}
+            {"role": "system", "content": header} # {"role": "user", "content": prompt}
 ]
-
 
 def ext(input):
     """Extend input number to two digits for function of chat gpt
@@ -84,7 +94,8 @@ def find_next_slide(start_time, video_path, rectangle_coordinates):
 
     return time
 
-if __name__ == "__main__":
+def main():
+    global messages
     # copy_lines = [line.replace("timestamp:","") for line in lines if "timestamp" in line]
     lines = get_lines()
     for i, line in enumerate(lines):        
@@ -123,13 +134,15 @@ if __name__ == "__main__":
         if prompt_ls != None:
             response_ls = []
             for prmpt in prompt_ls:
-                print(prmpt)
+                # print("--------- Prompt -------------")
+                # print(prmpt)
                 messages = gpt.update_chat(messages,"user", prmpt)
                 response = gpt.ask_gpt(messages)
                 response_ls.append(response)
                 messages = gpt.update_chat(messages,"system",response)
             response = "\n".join(response_ls)
-            print(response)
+            # print("--------- Responce -------------")
+            # print(response)
             
             with open("summary.md", "r") as f:
                 data = f.read()
@@ -167,3 +180,15 @@ if __name__ == "__main__":
     #                 response_ls.append(response)
     #                 messages = update_chat(messages,"system",response)
     #             response = "\n".join(response_ls)
+
+
+if __name__ == "__main__":
+    # start_hour = "00"
+    # start_minute = "07" 
+    # start_sec = "46"
+
+    # end_hour = "00"
+    # end_minute = "08"
+    # end_sec = "02"
+    # prompt, prompt_ls = test_open_ai.load_lecture_part(start_hour, start_minute, start_sec, end_hour = end_hour, end_minute = end_minute, end_sec= end_sec)
+    main()
