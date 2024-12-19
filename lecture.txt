@@ -1,2466 +1,2350 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:14.480
-So, dann willkommen zu sicheren Systeme heute. Heute schlieÃŸen wir den Teil Ã¼ber Kryptographie
+00:00:00.000 --> 00:00:15.800
+So willkommen zu sicherer Systeme heute. Es gibt ein paar AnkÃ¼ndigungen zur Mini-Klausur von Maximilian.
 
-00:00:14.480 --> 00:00:20.160
-ab und machen asymmetrische Kryptographie und das wird auch manchmal als die moderne
+00:00:15.800 --> 00:00:21.840
+Genau, hallo zusammen. Heute ist die letzte MÃ¶glichkeit sich noch fÃ¼r die Mini-Klausur
 
-00:00:20.160 --> 00:00:26.040
-Kryptographie genannt. Das heiÃŸt, das was wir insbesondere im ersten Teil gemacht haben,
+00:00:21.840 --> 00:00:27.840
+anzumelden. Bis heute Abend 23.59 Uhr habt ihr noch die MÃ¶glichkeit euch fÃ¼r die Mini-Klausur
 
-00:00:26.040 --> 00:00:32.040
-das ist die symmetrische Kryptographie, ist eher so die klassische Kryptographie und die moderne
+00:00:27.840 --> 00:00:40.600
+anzumelden. Danach ist die Anmeldung zu. Noch Fragen? Das war eindeutig. Gut, vielen Dank.
 
-00:00:32.040 --> 00:00:42.280
-Kryptographie kommt heute. Das heiÃŸt, wir schlieÃŸen hier den Teil zu spÃ¤t kommen oder noch reden.
+00:00:40.600 --> 00:00:49.440
+Vielleicht mal kurze Handmeldung. Wer hat sich angemeldet von Ihnen schon? Okay,
 
-00:00:42.280 --> 00:00:51.480
-Was waren die dann? Okay, also bitte jetzt, ich bin etwas mÃ¼de heute, deswegen bin ich etwas
+00:00:49.440 --> 00:01:18.760
+das ist die. Danke. So ein Mist ey. Ich hÃ¤nge mir das Ding um. So mÃ¼ssen Sie ein bisschen
 
-00:00:51.600 --> 00:00:57.040
-kÃ¼rzer angebunden, bin ich um VerstÃ¤ndnis, aber helfen sie mir, indem sie ruhig sind.
+00:01:18.760 --> 00:01:25.320
+deiser sein. Jetzt nehme ich das andere Mikro. Gut, danke Maximilian. So, dann willkommen
 
-00:00:57.040 --> 00:01:04.720
-Gut, heute machen wir den dritten Teil, also moderne Kryptographie. Wenn Sie das interessiert
+00:01:25.320 --> 00:01:29.320
+noch mal zur Sicherung des Stemms heute. Heute machen wir das neue Kapitel. Starten ein neues
 
-00:01:04.720 --> 00:01:11.000
-und vertiefen wollen zum Beispiel, dann kÃ¶nnen Sie auch im Vertiefungsbereich, im Informatik
+00:01:29.320 --> 00:01:35.840
+Kapitel. Nummer fÃ¼nf, die angeblich PrivatsphÃ¤re. Letzte Vorlesung vor Weihnachten, nÃ¤chste Woche
 
-00:01:11.000 --> 00:01:16.520
-Bachelor zum Beispiel die Kryptographie vertiefen. Es gibt die einfung der moderne Kryptographie,
+00:01:35.840 --> 00:01:42.840
+wie gesagt die Mini-Klausur. Eben in der Vorlesung sind wir schon ziemlich weit durch. Heute angeblich
 
-00:01:16.520 --> 00:01:22.880
-die Paul RÃ¼sseler zum Beispiel liest momentan. Also wenn Sie das interessiert, kÃ¶nnen Sie da auch
+00:01:42.840 --> 00:01:47.440
+PrivatsphÃ¤re. NÃ¤chstes Jahr geht es dann fangen wir dann an mit Sicherheitsanalyse, drei Doppelstunden
 
-00:01:22.880 --> 00:01:29.160
-reinschauen. So was haben wir beim letzten Mal gemacht? Wir haben uns die Sicherheit von
+00:01:47.840 --> 00:01:52.320
+und dann haben wir noch Cybercrime, ein oder zwei Doppelstunden, weiÃŸ ich gar nicht genau,
 
-00:01:29.160 --> 00:01:33.400
-Kryptosystemen allgemein angeschaut und wir haben gesehen, es gibt unterschiedliche Angriffsziele,
+00:01:52.320 --> 00:01:59.040
+in der Abschlussvorlesung. Das heiÃŸt im Prinzip sind wir schon durch. Insofern trainieren Sie
 
-00:01:33.400 --> 00:01:43.480
-unterschiedliche Angreiferarten, Angriffstypen und Sicherheitsklassen von Kryptosystemen und
+00:01:59.040 --> 00:02:03.160
+noch mal gut fÃ¼r die Mini-Klausur. Das ist denke ich ein GroÃŸteil der Vorbereitung, der dann auch
 
-00:01:43.480 --> 00:01:47.960
-natÃ¼rlich kann man immer nur sagen, dass ein Kryptosystem sicher ist oder generell ein System
+00:02:03.160 --> 00:02:10.160
+fÃ¼r die Hauptklausur dann sich auszahlen wird. Gut, heute geht es um Anonytheten PrivatsphÃ¤re,
 
-00:01:47.960 --> 00:01:53.240
-sicher ist, wenn man halt diese Angreiferannahmen hat und auch Sicherheitsziele, die man versuchen
+00:02:10.160 --> 00:02:16.080
+digitale IdentitÃ¤t, AnonythetsmaÃŸ, Anonyme Kommunikation. Der erste Teil der Vorlesungen,
 
-00:01:53.240 --> 00:01:59.320
-will zu erreichen. Im zweiten Teil der Vorlesung beim letzten Mal haben wir uns um IntegritÃ¤t und
+00:02:16.080 --> 00:02:21.520
+da geht es erstmal so um das allgemeine VerstÃ¤ndnis von IdentitÃ¤t und PrivatsphÃ¤re.
 
-00:01:59.320 --> 00:02:05.080
-AuthentizitÃ¤t bemÃ¼ht, das heiÃŸt wir haben Mechanismen angeschaut, um IntegritÃ¤t und
+00:02:21.520 --> 00:02:26.440
+Und im zweiten Teil nach der Pause wird es ein bisschen technischer. Da geht es um anonyme
 
-00:02:05.080 --> 00:02:10.960
-AuthentizitÃ¤t zu erreichen mit symmetrischer Kryptographie und eine wichtige Rolle spielten
+00:02:26.440 --> 00:02:32.240
+Kommunikation, DC-Netze, Mix-Netzwerk und das Tor-Netzwerk als praktisches Beispiel.
 
-00:02:11.960 --> 00:02:16.000
-dabei die kryptographischen Hashfunktionen. Sie erinnern sich an die Merkel-Darmgard-Konstruktion,
+00:02:32.800 --> 00:02:47.280
+So vielleicht kennen Sie diesen Cartoon aus dem New Yorker, der ist 1983 publiziert worden und
 
-00:02:16.000 --> 00:02:22.640
-die aber anfertig ist fÃ¼r Hashlength-Extension-Angriffe. Wir haben auch gesehen, wie so was aussieht und wie
+00:02:47.280 --> 00:02:52.120
+stammt aus den urauffangszeiten des Internet. Damals konnte man vielleicht noch gar nicht so
 
-00:02:22.640 --> 00:02:30.800
-man sich davor schÃ¼tzt. Das sind die sogenannten H-Max. Aber hinter allem steht immer das Problem,
+00:02:52.120 --> 00:02:57.760
+richtig vom Internet sprechen und das drÃ¼ckt das ja auch so ein bisschen aus. Da sagt der eine Hund
 
-00:02:30.800 --> 00:02:37.000
-dass man symmetrische Kryptographie hat, das heiÃŸt beide, sowohl Alice als auch Bob, brauchen einen
+00:02:57.760 --> 00:03:04.960
+zum anderen on the Internet, nobody knows you're a dog. Das hat so ein bisschen damals in den
 
-00:02:37.000 --> 00:02:43.400
-gemeinsamen geheimen SchlÃ¼ssel K und bisher sind wir davon ausgegangen, dass die den irgendwann
+00:03:04.960 --> 00:03:12.160
+80ern der Auffassung Ausdruck verdienen, dass es eigentlich schwer, also dass das Internet immer
 
-00:02:43.400 --> 00:02:49.120
-mal ausgetauscht haben und austauschen. Wir gehen immer davon aus, dass der Angreifer in der Leitung
+00:03:12.160 --> 00:03:20.960
+noch so ein anonymer Raum ist, wo man eintreten kann, niemand weiÃŸ wer die anderen sind. Und ja,
 
-00:02:49.120 --> 00:02:53.800
-sitzt oder alle Nachrichten abhÃ¶ren kann, die zwischen Alice und Bob ausgetauscht werden. Das
+00:03:20.960 --> 00:03:27.360
+das war so die Auffassung damals vom Internet. Heutzutage ist das natÃ¼rlich ganz anders. Im
 
-00:02:53.800 --> 00:02:59.840
-heiÃŸt, man kann nicht irgendwie anfangen, dieses K im Klartext auszutauschen. Deswegen macht die
+00:03:27.360 --> 00:03:35.560
+Internet hat sich verÃ¤ndert seitdem und wÃ¤hrend man damals noch dachte, dass am Internet alles
 
-00:02:59.840 --> 00:03:06.120
-klassische Kryptographie immer die Annahme, es gibt einmal eine sichere MÃ¶glichkeit, den geheimen
+00:03:35.560 --> 00:03:40.640
+natÃ¼rlicherweise anonym ist, weil ja alles elektronisch und digital stattfindet, weiÃŸ
 
-00:03:06.120 --> 00:03:11.080
-SchlÃ¼ssel auszutauschen. Das heiÃŸt, in der Regel nimmt man dann an, es gibt hier so eine Art BetonrÃ¶hre,
+00:03:40.640 --> 00:03:46.800
+man heute, dass sowas wie Vertraulichkeit oder auch Privatheit oder AnonymitÃ¤t etwas ist,
 
-00:03:11.080 --> 00:03:17.160
-die zwischen Alice und Bob gebaut worden ist und da kann man auch, wenn man da dran klopft,
+00:03:46.800 --> 00:03:50.120
+was im Internet vielleicht sogar noch viel schwieriger zu erreichen ist als in der realen
 
-00:03:17.160 --> 00:03:22.320
-man hÃ¶rt nichts, man sieht nichts, was da drinnen vor sich geht und Ã¼ber diese BetonrÃ¶hre haben
+00:03:50.120 --> 00:03:56.200
+Welt. Und das liegt hauptsÃ¤chlich daran, dass man im Internet alles automatisieren kann,
 
-00:03:22.320 --> 00:03:26.920
-Alice und Bob einmal die MÃ¶glichkeit beim Setup einen gemeinsamen geheimen SchlÃ¼ssel auszutauschen
+00:03:56.680 --> 00:04:02.000
+also insbesondere natÃ¼rlich Datensammlung kann man automatisieren, automatische Interferenz,
 
-00:03:26.920 --> 00:03:33.480
-und dann stellt man sich vor, plÃ¶tzlich diese BetonrÃ¶hre weg und man kann nicht mehr, weil wenn
+00:04:02.000 --> 00:04:07.360
+Data-Mining, schnelle Suche, man kann groÃŸe DatenbestÃ¤nde schnell verknÃ¼pfen, hat entsprechende
 
-00:03:33.480 --> 00:03:37.000
-die BetonrÃ¶hre dauernd da wÃ¤re, dann kÃ¶nnte man ja darÃ¼ber auch kommunizieren, da brÃ¤uchte man
+00:04:07.360 --> 00:04:14.040
+Ãœberwachungstechnik im Internet. Und der zweite Grund ist, dass Vertraulichkeit basiert ja immer
 
-00:03:37.000 --> 00:03:41.360
-gar keine Kryptographie, aber dann ist plÃ¶tzlich die BetonrÃ¶hre weg und man muss nur noch mit
+00:04:14.040 --> 00:04:21.080
+darauf, dass Leute irgendwas sehen, was vielleicht nicht fÃ¼r sie bestimmt war. Und Vertraulichkeit,
 
-00:03:41.360 --> 00:03:47.800
-diesem SchlÃ¼ssel K arbeiten. Und die moderne Kryptographie sagt, diese BetonrÃ¶hre braucht
+00:04:21.080 --> 00:04:26.000
+die Verlust von Vertraulichkeit hat man frÃ¼her oft dadurch festgestellt, dass etwas gefehlt
 
-00:03:47.800 --> 00:03:55.000
-man nicht. Man kann, wie hier angedeutet, man kann offen, das heiÃŸt so, dass der Angreifer
+00:04:26.200 --> 00:04:31.680
+hat. Also ein Buch hat gefehlt oder ein Dokument hat gefehlt. Bei digitalen Dokumenten, da kann man
 
-00:03:55.000 --> 00:04:04.600
-mithÃ¶ren kann, sich unterhalten und plÃ¶tzlich versteht der Angreifer nichts mehr. Der Angreifer
+00:04:31.680 --> 00:04:35.360
+die kann man stehlen, ohne dass man merkt, dass sie gestohlen worden sind, weil man einfach
 
-00:04:04.600 --> 00:04:09.400
-kann alles mithÃ¶ren, aber ab irgendeiner Stelle versteht er nichts mehr und er kann, also dann
+00:04:35.360 --> 00:04:40.400
+eine Kopie macht. Das heiÃŸt also auch die Kopierbarkeit, die einfache Kopierbarkeit
 
-00:04:09.400 --> 00:04:14.360
-haben Alice und Bob tatsÃ¤chlich einen sicheren SchlÃ¼ssel vereinbart, ohne dass der Angreifer
+00:04:40.400 --> 00:04:48.280
+von Daten katalysiert auch den Verlust an Vertraulichkeit und dann natÃ¼rlich auch AnonymitÃ¤t.
 
-00:04:14.360 --> 00:04:20.360
-eine Chance hat, diesen SchlÃ¼ssel rauszukriegen. Und das ist die moderne Kryptographie, der Angreifer
+00:04:48.280 --> 00:04:55.280
+Und heutzutage, es gibt nÃ¤mlich eine Replik auf diesen New Yorker-Kartun, heutzutage sieht
 
-00:04:20.360 --> 00:04:25.640
-kann jede Nachricht mithÃ¶ren, aber trotzdem kann man eine geheime Nachricht, gemeinsame
+00:04:55.280 --> 00:05:00.680
+er so aus, das ist von 2010, wieder zwei Hunde und da eine sagt, how the hell does Facebook know
 
-00:04:25.640 --> 00:04:33.240
-geheime Nachricht vereinbaren. Und das ist die, also das das geht, das zeigt die sogenannte
+00:05:00.680 --> 00:05:10.440
+I'm a dog? Das drÃ¼ckt im Prinzip die um 180 Grad geÃ¤nderte Auffassung des Internet aus. Und um
 
-00:04:33.240 --> 00:04:39.600
-Diffie-Hellmann-SchlÃ¼ssel-Vereinbarung und Diffie und Hellmann, die haben, das sind zwei Personen,
+00:05:10.440 --> 00:05:15.560
+diese Aspekte soll es heute gehen in der Veranstaltung. Wir betrachten die Vertraulichkeit
 
-00:04:39.600 --> 00:04:43.960
-das eine ist Whitfield Diffie und Martin Hellmann, das sind zwei bekannte Kryptographen aus den
+00:05:15.560 --> 00:05:22.240
+von personenbezogenen Daten, also im Prinzip das, was man Privatheit nennt, personenbezogene Daten
 
-00:04:43.960 --> 00:04:51.640
-Vereinigten Staaten, die haben 1976 ein Papier verÃ¶ffentlicht, ein Konferenzbeitrag, der hieÃŸ
+00:05:22.240 --> 00:05:28.200
+und den Schutz von personenbezogenen Daten. Und das ist ein Thema, was natÃ¼rlich, brauche ich
 
-00:04:51.640 --> 00:04:59.400
-New Directions in Cryptography und da haben sie geschrieben, ja die klassische Kryptographie sagt
+00:05:28.200 --> 00:05:33.320
+nicht zu erzÃ¤hlen, Ã¼ber die letzten Jahrzehnte auch ein relevantes gesellschaftliches Thema ist.
 
-00:04:59.400 --> 00:05:03.360
-ja, man jeder hat so einen gemeinsamen geheimen SchlÃ¼ssel und der symmetrisch wird verschlÃ¼sselt
+00:05:33.320 --> 00:05:40.600
+Ich gehe mal so ein bisschen zurÃ¼ck aus der aktuellen Zeit. Es gab und zeigt ein paar Dokumente,
 
-00:05:03.360 --> 00:05:09.440
-und entschlÃ¼sselt und so weiter. WÃ¤re es nicht toll, wenn es folgende, wenn man Folgenidee umsetzen
+00:05:40.600 --> 00:05:46.200
+die vielleicht auch charakteristisch sind fÃ¼r DiskussionsstrÃ¶me zu entsprechenden Zeiten in
 
-00:05:09.440 --> 00:05:16.120
-kÃ¶nnte, jede Partei hat zwei SchlÃ¼ssel, von denen einer geheim gehalten wird und einer Ã¶ffentlich ist
+00:05:46.200 --> 00:05:52.640
+der Vergangenheit. Das ist von Christopher Wiley das Buch, weiÃŸ nicht, ob man das
 
-00:05:16.120 --> 00:05:22.960
-und diesen Ã¶ffentlichen SchlÃ¼ssel kann man austauschen frei, ohne dass es vertraulich sein
+00:05:52.640 --> 00:05:59.640
+aussprechen kann, aussprechen darf, auf Tone Mind. BEEP, fuck Cambridge Analytica and the Plot to
 
-00:05:22.960 --> 00:05:27.120
-muss und alles was man mit diesem einen SchlÃ¼ssel verschlÃ¼sselt, das kann man nur mit diesem anderen
+00:05:59.640 --> 00:06:09.400
+Break America. Da geht es um die Beeinflussung von der Firma Cambridge Analytica, oder die
 
-00:05:27.120 --> 00:05:33.440
-geheimen SchlÃ¼ssel entschlÃ¼sseln. WÃ¤re das nicht toll, wenn es so eine Kryptographie gÃ¤be. Sie haben
+00:06:09.400 --> 00:06:16.480
+potenzielle Beeinflussung der Firma Cambridge Analytica auf die US-Wahl 2019. Und das war damals
 
-00:05:33.440 --> 00:05:38.640
-aber kein kryptographisches Verfahren vorgeschlagen, was diese Eigenschaft erfÃ¼llt, sie haben aber in
+00:06:16.480 --> 00:06:22.800
+auch groÃŸ in den Medien. Das Problem war, dass halt Facebook Daten ungeschÃ¼tzt online zur
 
-00:05:38.640 --> 00:05:45.000
-dem Papier die Diffie-Hermann-SchlÃ¼ssel-Vereinbarung dargestellt, die den ersten Schritt dafÃ¼r erledigt,
+00:06:22.800 --> 00:06:26.600
+VerfÃ¼gung gestellt hatte. Die konnten also massenweise Facebook-Daten abziehen und hatten
 
-00:05:45.000 --> 00:05:50.880
-nÃ¤mlich tatsÃ¤chlich zwei Parteien einigen sich auf einen gemeinsamen geheimen SchlÃ¼ssel und der
+00:06:26.600 --> 00:06:33.280
+da die MÃ¶glichkeit natÃ¼rlich dann gezielt Leute gemÃ¤ss ihren PrÃ¤ferenzen anzusprechen. Und wenn
 
-00:05:50.880 --> 00:05:59.160
-Angreifer kann jede Nachricht, die ausgetauscht wird, mitlesen. Erst wenige kurze Zeit darauf haben dann
+00:06:33.280 --> 00:06:38.000
+man das Buch liest, also Christopher Wiley war einer von den Leuten, die bei Cambridge Analytica
 
-00:05:59.160 --> 00:06:03.840
-Rivers, Jemme und Adelman das erste asymmetrische Kryptosystem vorgestellt, das war wenige Jahre
+00:06:38.000 --> 00:06:44.160
+gemacht haben, da wird einem teilweise auch so Angst und Bange, wenn man liest, wie sich ein
 
-00:06:03.840 --> 00:06:09.600
-spÃ¤ter, die haben dann das implementiert diese Idee, aber Diffie und Hellmann haben das erfunden
+00:06:44.160 --> 00:06:50.160
+SpaÃŸ draus gemacht haben, einzelne DatensÃ¤tze da rauszuziehen und die Leute anzurufen und zu
 
-00:06:09.600 --> 00:06:14.640
-sozusagen und haben mit der Diffie-Hermann-SchlÃ¼ssel-Vereinbarung den ersten Ansatz dazu geliefert.
+00:06:50.160 --> 00:06:55.440
+pranken, also den irgendwie vorzumachen, sie wÃ¤ren unter Versicherung und die irgendwie vorzufÃ¼hren
 
-00:06:14.640 --> 00:06:19.200
-Und die will ich Ihnen jetzt mal gleich vorstellen, die Diffie-Hermann-SchlÃ¼ssel-Vereinbarung,
+00:06:55.440 --> 00:07:00.440
+oder so. Also da wird es einem ganz anders. Aber das kann man natÃ¼rlich machen, wenn man entsprechende
 
-00:06:19.200 --> 00:06:23.640
-aber da mÃ¼ssen wir noch mal kurz uns dran erinnern, was die Modulo-Rechnung war, sie haben das beim
+00:07:00.440 --> 00:07:08.400
+Daten hat. Dass diese Daten bei privaten Firmen vorrÃ¤tig sind, das weiÃŸ man. Das weiÃŸ man heute
 
-00:06:23.640 --> 00:06:29.840
-letzten Mal schon mitgekriegt, also nehmen wir an, es ist 1 Uhr und in 49 Stunden wird Alice abreisen,
+00:07:08.400 --> 00:07:12.920
+natÃ¼rlich, wusste man vielleicht auch schon frÃ¼her. Google und Facebook waren ja schon immer in der
 
-00:06:29.840 --> 00:06:37.720
-um wie viel Uhr reiÃŸt Alice ab? Na ja, 49 Stunden ist zwei Tage spÃ¤ter plus eine Stunde,
+00:07:12.920 --> 00:07:19.280
+Kritik. Aber dass diese Daten natÃ¼rlich auch im Besitz von staatlichen BehÃ¶rden sind, auch
 
-00:06:37.720 --> 00:06:43.560
-das heiÃŸt die zwei Tage ziehen wir ab, das heiÃŸt Alice wird um zwei Uhr abreisen und das, was man
+00:07:19.280 --> 00:07:27.400
+Nachrichtendiensten, das weiÃŸ man seit 2015 bzw. 2013 als Edward Snowden, die die NSA-Leaks
 
-00:06:43.560 --> 00:06:50.360
-da macht, ist Modulo-Rechnung, man nimmt den Rest nach dem Teilen durch 24, also die Zahlen mit denen
+00:07:27.400 --> 00:07:33.640
+herausgebracht hat und Glenn Greenwald darÃ¼ber dann berichtet hat in der Zeitung natÃ¼rlich und
 
-00:06:50.360 --> 00:06:56.960
-man rechnet sind immer nur zwischen 0 und 23. Und die Schreibweisen sind mannigfaltig, Ã¼berall wenn
+00:07:33.640 --> 00:07:38.680
+auch dieses Buch geschrieben hat, das sehr empfehlenswert ist. Seitdem weiÃŸ man, dass es
 
-00:06:56.960 --> 00:07:01.160
-Sie so ein Modulo sehen oder wenn Sie so was in Klammern sehen oder so ein Unterstrich M,
+00:07:38.680 --> 00:07:45.720
+auch nicht unwahrscheinlich ist, dass auch staatliche BehÃ¶rden halt sehr, sehr tiefen Einblick
 
-00:07:01.160 --> 00:07:05.840
-dann hat das irgendwas mit Modulo-Rechnung zu tun. Die Rechnung in Gruppen und so weiter,
+00:07:45.720 --> 00:07:55.040
+darin haben, was man privat macht. In der Zeit war das auch so, dass die GeschÃ¤ftsmodelle von
 
-00:07:05.840 --> 00:07:10.400
-das kriegen die Informatiker, dann im Studium ist das Mathe C3 oder Informatik, Mathe fÃ¼r
+00:07:55.080 --> 00:08:00.760
+Google, Facebook und anderen auch tatsÃ¤chlich hinterfragt worden sind. Es ist vielleicht auch
 
-00:07:10.400 --> 00:07:14.560
-Ingenieure 3, also im dritten Semester, aber Modulo-Rechnung haben sie vielleicht auch schon
+00:08:00.760 --> 00:08:06.840
+nur eine Diskussion, die Sie sich erinnern vor zehn Jahren. Da kam von Jaron Lanier dieses Buch
 
-00:07:14.560 --> 00:07:24.080
-in der Schule gehabt. Gut, das was wir fÃ¼r die Diffie-Hermann-SchlÃ¼ssel-Vereinbarung brauchen,
+00:08:06.840 --> 00:08:15.200
+aus Who Owns the Future. Jaron Lanier, ein bekannter Technikphilosoph aus den Vereinigten
 
-00:07:24.080 --> 00:07:29.920
-ist die sogenannte diskrete Exponentialfunktion. Was ist die diskrete Exponentialfunktion? Das
+00:08:15.200 --> 00:08:20.120
+Staaten, der fÃ¼r dieses Buch auch den Friedenspreis des deutschen Buchhandels gekriegt hat. Da geht es
 
-00:07:29.920 --> 00:07:37.120
-ist diese Funktion hier, das heiÃŸt es ist eine Funktion mit einer Eingabe und die berechnet die
+00:08:20.120 --> 00:08:26.000
+auch darum, diese GeschÃ¤ftsmodelle erstmal zu verstehen. Er hat damals auch den Begriff
 
-00:07:37.120 --> 00:07:44.560
-Exponenzierung dieser Eingabe Ã¼ber einen festen Wert G Modulo P. Das heiÃŸt, was wir uns jetzt
+00:08:26.000 --> 00:08:32.880
+geprÃ¤gt, dass im Prinzip, wenn man diese kostenlose Dienste von Google, Facebook und so weiter benutzt,
 
-00:07:44.560 --> 00:07:51.080
-vornehmen ist, P ist irgendeine groÃŸe Primzahl, dass es eine Primzahl ist, das ist ein wichtiges
+00:08:32.880 --> 00:08:38.120
+dass man denkt, okay, das ist kostenlos, also habe ich ja nichts zu verlieren, wenn ich die benutze,
 
-00:07:51.080 --> 00:07:58.560
-Detail, aber spielt jetzt erstmal keine grÃ¶ÃŸere Rolle. Die zwei Zahlen G und A sind natÃ¼rliche
+00:08:38.120 --> 00:08:42.520
+kostet ja nichts. Aber heutzutage weiÃŸ man natÃ¼rlich, dass man mit seinen eigenen Daten
 
-00:07:58.560 --> 00:08:05.120
-Zahlen und G muss kleiner als P sein, G ist die Basis der Exponenzierung und die diskrete
+00:08:42.520 --> 00:08:49.560
+bezahlt. Jaron Lanier hat damals diesen Begriff oder diesen Hausdruck geprÃ¤gt. You are the
 
-00:08:05.120 --> 00:08:11.840
-Exponentialfunktion nimmt halt dieses Funktionswert A, nimmt G hoch A und rechnet dann Modulo P.
+00:08:49.560 --> 00:08:56.880
+product, not the customer von diesen Diensten. Und das trifft, glaube ich, relativ gut, was mit
 
-00:08:11.840 --> 00:08:19.560
-Das heiÃŸt, was man dabei macht ist, man hat sozusagen diese zwei Seiten, man hat auf der
+00:08:56.880 --> 00:09:03.560
+Ihnen und Ihren Daten da passiert. Das ist im Prinzip auch schon lange da gewesen. Ich kann
 
-00:08:19.560 --> 00:08:29.480
-einen Seite diese Zahl G, man hat die Zahl A und die Zahl P und berechnet daraus dann G hoch A Modulo P.
+00:09:03.560 --> 00:09:08.400
+mich noch erinnern an die Anfangszeit vom Internet, wo auch Google hochkam und Google hatte ja damals
 
-00:08:29.480 --> 00:08:36.440
-Und das ist was, das geht relativ einfach, also das kÃ¶nnen wir auch, also da kann man Algorithmen
+00:09:08.400 --> 00:09:18.400
+das Motto, do no evil oder so was, also mÃ¶glichst positiv auf die Welt zu wirken. Aber auch so
 
-00:08:36.440 --> 00:08:45.160
-verschreiben, das geht auch mit ganzer Arithmetik, also Beispiele zum Beispiel. Wenn wir P gleich 5
+00:09:18.400 --> 00:09:24.800
+Anfang der Nuda Jahre oder in den Nuda Jahren kam dann, wurde dann auch so, als Google angefangen
 
-00:08:45.160 --> 00:08:50.040
-haben, das ist also der Modulus, in dem wir rechnen, das heiÃŸt, die Zahlen, die wir haben, sind nur zwischen
+00:09:24.800 --> 00:09:29.560
+hat, ein kommerzielles GeschÃ¤ftsmodell anzuwenden und zu gucken, wie man mit den Daten, die sie
 
-00:08:50.040 --> 00:08:59.200
-0 und 4 und der Generator, also die Basis ist mal 3 und wenn wir jetzt zum Beispiel sagen F von 2,
+00:09:29.560 --> 00:09:34.600
+sammeln, Geld verdienen kann. Da kam Google immer mehr in Kritik, in die Kritik und das ist mal hier
 
-00:08:59.200 --> 00:09:14.320
-was ist das? F von 2 ist ja G hoch A, also das heiÃŸt 3 hoch 2 Modulo 5. 3 hoch 2 ist 9, 3 mal 3 ist 9 Modulo 5.
+00:09:34.600 --> 00:09:41.200
+so von 2011, ein Tiertelbild im Spiegel. Da kam auch sozusagen der Umschwung in der Ã¶ffentlichen
 
-00:09:15.080 --> 00:09:24.160
-Das heiÃŸt, das ist also 9 Modulo 5. 9 Modulo 5, was ist der Rest, wenn man durch 5 teilt, da kommt 4 raus.
+00:09:41.200 --> 00:09:48.160
+Meinung von den positiven Weltverbesserern zu den unersÃ¤ttlichen, wie man hier sagt. Also kam
 
-00:09:24.160 --> 00:09:32.720
-Das heiÃŸt, F von 2 ist 4, die diskrete Exponentialfunktion von 2 mit Modulo 5 mit dem Generator,
+00:09:48.320 --> 00:09:56.840
+auch die negativen Aspekte hoch, die von der Datensammelwut der Internetkonzerne entspringt.
 
-00:09:32.720 --> 00:09:38.280
-also mit dem Binderbasis 3. Wer ist jetzt noch dabei von Ihnen? Okay, dann machen wir noch ein
+00:09:56.840 --> 00:10:03.320
+Und das finde ich immer noch ein sehr schÃ¶nes Bild, wo man sieht, wie die Leute hier aus den
 
-00:09:38.360 --> 00:09:51.080
-Beispiel F von 3. Das ist 3 hoch 3 Modulo 5, das ist dann 27 Modulo 5, 27 Modulo 5 ist 2. Das geht
+00:10:03.320 --> 00:10:09.480
+HochhÃ¤usern diese komische Krake da anschauen, die mit ihrer Kamera vorne ausgestattet ist. Und
 
-00:09:51.080 --> 00:10:00.480
-relativ einfach. Der Umstand, warum das so eine interessante Funktion ist, ist, dass das Umgedrehte,
+00:10:09.560 --> 00:10:18.760
+man sieht, die springen aus den Fenstern auf diese Krake drauf. Also sehr schÃ¶ne Metapher dafÃ¼r,
 
-00:10:00.480 --> 00:10:10.880
-das heiÃŸt der diskrete Logarithmus, sagt man da, der gilt als ein schweres Problem. Das heiÃŸt,
+00:10:18.760 --> 00:10:25.520
+dass man im Prinzip freiwillig sich in die FÃ¤nge dieser Konzerne begibt. Gibt es eine
 
-00:10:10.880 --> 00:10:20.600
-was bedeutet der diskrete Logarithmus? Man hat irgendwie gegeben ein Wert V und der Wert V ist
+00:10:25.520 --> 00:10:26.280
+Meldung ganz hinten?
 
-00:10:20.600 --> 00:10:31.560
-kleiner als P, also irgendeine Zahl kleiner als P und ich suche jetzt, gesucht ist ein A, so das
+00:10:39.480 --> 00:10:51.360
+Das kann gut sein, dass da noch eine Referenz drinne steckt. Das ist gut beobachtet. Vielleicht
 
-00:10:31.560 --> 00:10:46.760
-gilt G hoch A Modulo P gleich V. Das heiÃŸt, ein Beispiel, wenn ich Ihnen jetzt gebe, P gleich 5,
+00:10:51.360 --> 00:10:55.120
+kÃ¶nnen Sie mir noch mal eine Referenz schicken auf oder ins Forum posten, dann kann ich das noch
 
-00:10:47.640 --> 00:10:56.760
-G gleich 3, so wie in dem Beispiel rechts und ich sage Ihnen jetzt V gleich 4, dann suchen Sie die
+00:10:55.120 --> 00:11:00.920
+in den Unterlagen mit aufnehmen. Oder ich schreibe es mir auf. Ich habe jetzt gerade nichts zum
 
-00:10:56.760 --> 00:11:05.280
-Zahl A, die Sie 3, also G hoch nehmen mÃ¼ssen, damit Modulo 5 4 rauskommt. Also der Logarithmus,
+00:11:00.920 --> 00:11:06.320
+Schreiben dabei. Vielleicht schicken Sie mir einfach noch eine E-Mail. Danke. Das ist aber
 
-00:11:05.280 --> 00:11:12.640
-halt der diskrete Logarithmus im Restklassenring, also beziehungsweise Modulo P. Was kommt da raus?
+00:11:06.400 --> 00:11:11.120
+der Anfang der Diskussion gewesen. In den kritischen Informatikkreisen gibt es ja schon
 
-00:11:12.640 --> 00:11:22.640
-2, warum? Genau, das haben wir hier rechts ausgerechnet.
+00:11:11.120 --> 00:11:20.920
+seit den 80ern die Diskussion in den Vereinigten Staaten wie in Deutschland. Und ein Ausdruck dieser
 
-00:11:38.040 --> 00:11:42.080
-Genau, also hier bei P gleich 5 kann man natÃ¼rlich alle Zahlen ausprobieren.
+00:11:20.920 --> 00:11:26.640
+kritischen Diskussion ist dieses Buch von Simpson Garfinkel, das 2001 erschienen ist,
 
-00:11:42.080 --> 00:11:50.680
-Aber hier haben wir es ja rechts ausgerechnet, also F von 2 gleich 4, das heiÃŸt, von 2 nach 4
+00:11:26.640 --> 00:11:35.880
+also vor fast 25 Jahren, das viele plastische Beispiele enthÃ¤lt fÃ¼r was aus mangelndem
 
-00:11:50.680 --> 00:11:55.480
-zu kommen, das ist einfach, sozusagen die Richtung von links nach rechts. Von 4 auf 2 zu kommen,
+00:11:35.880 --> 00:11:40.400
+Datenschutz passieren kann. Und ein paar von den Beispielen bringe ich auch nachher noch in
 
-00:11:55.480 --> 00:12:01.960
-okay, das kann man jetzt hier auch relativ einfach machen, also A ist gleich 2, aber das gilt als
+00:11:40.400 --> 00:11:48.800
+der Vorlesung. Und alles geht im Prinzip zurÃ¼ck auf Diskussionen, die schon eigentlich in den
 
-00:12:01.960 --> 00:12:10.080
-schwer, wenn P groÃŸ genug ist. Das heiÃŸt, noch mal auf einer Folie der diskrete Logarithmus,
+00:11:48.800 --> 00:11:53.800
+80er Jahren, in den 1980er Jahren, in den 80er Jahren des letzten Jahrhunderts gefÃ¼hrt worden
 
-00:12:10.240 --> 00:12:18.400
-die gegebene Zahl P, eine groÃŸe Primzahl und man hat eine Zahl G kleiner als P und ich gebe Ihnen
+00:11:53.800 --> 00:12:00.000
+sind und die in Ursprungnahmen in einem Gerichtsurteil, was 1983 ergangen ist,
 
-00:12:18.400 --> 00:12:23.800
-jetzt das Ergebnis der diskreten Exponentialfunktionen und Sie mÃ¼ssen mir das zurÃ¼ckrechnen auf den
+00:12:00.000 --> 00:12:05.280
+durch das Bundesverfassungsgericht, jedenfalls die deutsche Diskussion, das Urteil trÃ¤gt das Datum
 
-00:12:23.800 --> 00:12:32.640
-Exponenten, den diskreten Logarithmus ausrechnen. Und allgemein wird angenommen, dass die Berechnung des
+00:12:05.680 --> 00:12:12.640
+15. Dezember 1983. Und das ist das sogenannte VolkszÃ¤hlungsurteil des Bundesverfassungsgerichts.
 
-00:12:32.640 --> 00:12:39.040
-diskreten Logarithmus schwer ist. Da fragt man die ganzen, da fragt man die Kriptografen und die sagen,
+00:12:12.640 --> 00:12:19.480
+Und in diesem Urteil ist ein neues Grundrecht entwickelt worden. Es gibt ja die verschiedenen
 
-00:12:39.040 --> 00:12:45.520
-ja, das ist schwer. Dann fragt man sie, warum und dann sagen die, ja weiÃŸ auch nicht, aber es haben
+00:12:19.480 --> 00:12:24.440
+Grundrechte, die in der Verfassung fixiert sind. Aber Grundrechte kÃ¶nnen auch sozusagen neu
 
-00:12:45.520 --> 00:12:49.840
-schon viele von uns probiert, das effizient auszurechnen, haben es noch nicht geschafft. Also
+00:12:24.440 --> 00:12:30.240
+entwickelt werden durch das Verfassungsgericht, aus den anderen Grundrechten abgeleitet. Und dort
 
-00:12:49.840 --> 00:12:53.840
-es gibt keinen Beweis, dass das tatsÃ¤chlich schwer ist, aber es ist einfach noch lange genug nicht
+00:12:30.240 --> 00:12:34.600
+entwickeln sie das Grundrecht auf informationelle Selbstbestimmung. Und informationelle
 
-00:12:53.840 --> 00:12:58.480
-gebrochen worden und es haben schon viele gute Leute versucht. Das heiÃŸt, wir nehmen erstmal an,
+00:12:34.600 --> 00:12:41.480
+Selbstbestimmung, das ist im Prinzip ein Grundrecht, was den Schutz des einzelnen
 
-00:12:58.480 --> 00:13:05.520
-dass es schwer ist fÃ¼r hinreichend groÃŸe P den diskreten Logarithmus zu berechnen. Und jetzt kommen
+00:12:41.480 --> 00:12:46.200
+Ausdrucks gegen unbegrenzte Erhebung, Speicherung, Verwendung und Weitergabe seiner persÃ¶nlichen
 
-00:13:05.520 --> 00:13:10.000
-wir zur Diffie-Hellmann-SchlÃ¼sselvereinbarung. Das spielt nÃ¤mlich der diskrete Logarithmus
+00:12:46.200 --> 00:12:53.040
+Daten. In dem Urteil geht es im Wesentlichen Ã¼ber die staatliche Verarbeitung von Daten,
 
-00:13:10.000 --> 00:13:15.240
-beziehungsweise die diskrete Exponentialfunktion eine ganz entscheidende Rolle. So wie sieht das
+00:12:53.040 --> 00:12:59.640
+weil da war die VolkszÃ¤hlung, da gab es einen Riesenaufstand damals. Wenn man heute schaut,
 
-00:13:15.240 --> 00:13:25.840
-aus? Wir haben zwei Parteien, Alice und Bob und die telefonieren jetzt miteinander, sie mÃ¼ssen sich
+00:12:59.640 --> 00:13:03.400
+was da an Daten erhoben worden sind und von wem ist es eigentlich lÃ¤cherlich. Also es gab ja
 
-00:13:25.840 --> 00:13:31.800
-nicht treffen, also die sprechen jetzt Ã¶ffentlich miteinander und vereinbaren ein paar Sachen. Die
+00:13:03.560 --> 00:13:10.440
+vor kurzem diesen Zensus, den alle vÃ¶llig kritiklos mitgemacht haben. Aber das war
 
-00:13:31.800 --> 00:13:41.440
-vereinbaren eine groÃŸe Primzahl P und die vereinbaren eine natÃ¼rliche Zahl G, kleiner P,
+00:13:10.440 --> 00:13:16.720
+damals sozusagen der Ausgangspunkt fÃ¼r dieses neue Grundrecht. Und was wir heute in der Vorlesung
 
-00:13:41.440 --> 00:13:50.480
-natÃ¼rliche Zahl. Also die sprechen jetzt Ã¶ffentlich miteinander und der Angreifer kann das ruhig
+00:13:16.720 --> 00:13:25.360
+machen, das neben diesem geschichtlichen RÃ¼ckblick, schauen wir uns mal an, wie es zu
 
-00:13:50.480 --> 00:13:57.520
-mithÃ¶ren, das kÃ¶nnen alle von uns hier mithÃ¶ren. Das ist sozusagen das Setup fÃ¼r die Diffie-Hellmann-SchlÃ¼sselvereinbarung.
+00:13:25.360 --> 00:13:30.840
+diesem Grundrecht kam und warum vor allem dieses Grundrecht existiert. Und da geht es auch erstmal
 
-00:13:57.520 --> 00:14:04.800
-So Alice, was macht Alice jetzt als nÃ¤chstes? Alice wÃ¤hlt jetzt geheim, also vertraulich
+00:13:30.960 --> 00:13:37.400
+um Begriffe natÃ¼rlich. Es geht um Privatheit, Vertraulichkeit, ist die Frage, was ist eigentlich
 
-00:14:04.800 --> 00:14:24.240
-ohne Bob, wÃ¤hle Zahl klein a, zufÃ¤llig und geheim und berechne und Alice berechnet jetzt a ist G hoch a
+00:13:37.400 --> 00:13:44.760
+der Unterschied. Und begrifflich ist es so, dass es auch in der englischen Literatur diesen
 
-00:14:24.240 --> 00:14:34.680
-modulo P. Das a hat sich gerade ausgesucht und G und P sind Ã¶ffentlich vereinbart worden. So was macht Bob?
+00:13:44.760 --> 00:13:50.400
+Unterschied gibt zwischen Secrecy, Confidentiality und Privacy. Confidentiality ist dieses
 
-00:14:34.680 --> 00:14:45.120
-Bob wÃ¤hlt auch eine Zahl, eine kleine Zahl, also eine Zahl b, klein b, zufÃ¤llig und geheim
+00:13:50.400 --> 00:13:54.920
+Sicherheitsziel der Vertraulichkeit, was wir schon mal, was wir ganz am Anfang kennengelernt
 
-00:14:45.120 --> 00:14:58.920
-und berechnet jetzt b, also groÃŸ b, als G hoch b modulo P. Das klein b hat er sich gerade ausgedacht
+00:13:54.920 --> 00:14:01.080
+haben. Und eigentlich das Grundprinzip, was hinter beidem steckt, ist, dass etwas geheim ist,
 
-00:14:58.920 --> 00:15:07.400
-und klein g und klein p sind die Ã¶ffentlich vereinbarten Zahlen. Und was macht Alice jetzt?
+00:14:01.080 --> 00:14:09.680
+Secret ist. Also gemÃ¤ÃŸ den Definition von Gollmann, the effect of mechanisms that used to limit the
 
-00:15:07.400 --> 00:15:20.000
-Alice sendet jetzt a an Bob und Bob sendet b an Alice. Und was machen die beiden jetzt? Was macht Alice mit b?
+00:14:09.680 --> 00:14:14.240
+number of principles who can access information. Also das im Prinzip, dass etwas geheim ist,
 
-00:15:20.000 --> 00:15:33.800
-Alice berechnet jetzt b, ist ja irgendeine Zahl, hoch ihren geheimen a modulo P und Bob berechnet a
+00:14:14.240 --> 00:14:20.080
+also dass eine eingeschrÃ¤nkte Personenzahl etwas weiÃŸ. Wenn man jetzt von Confidentiality oder
 
-00:15:33.800 --> 00:15:45.400
-hoch seinem geheimen b modulo P. Und die Behauptung ist jetzt, dass dieser Wert hier und dieser Wert hier die gleichen sind.
+00:14:20.080 --> 00:14:24.160
+Vertraulichkeit spricht, das transportiert immer so ein bisschen mit die Erwartung,
 
-00:15:45.400 --> 00:15:54.200
-Und die Behauptung ist weiterhin, dass das ein Wert ist, den niemand, der die Kommunikation mitschneiden kann,
+00:14:24.160 --> 00:14:30.760
+dass etwas geheim bleibt. Also Secrecy ist die Tatsache, dass es geheim ist und Confidentiality
 
-00:15:54.200 --> 00:16:01.000
-erraten kann, wenn er nicht den diskreten Logarithmus effizient berechnen kann. Also wir schauen uns
+00:14:30.760 --> 00:14:35.920
+auch die Erwartung, dass etwas geheim ist oder geheim bleibt, also deutsch vertraulich bleibt.
 
-00:16:01.000 --> 00:16:07.400
-erstmal an, warum diese Zahlen links und rechts gleich sind. Das heiÃŸt, wir rechnen einfach mal aus.
+00:14:35.920 --> 00:14:44.040
+Da gibt es aber auch noch Privacy oder Privatheit, dass etwas privat bleibt. Das bezieht sich im
 
-00:16:07.400 --> 00:16:20.600
-Was ist denn groÃŸ b? GroÃŸ b ist ja G hoch b und das wird hier hoch a genommen modulo P. Aber die Rechenregeln,
+00:14:44.040 --> 00:14:49.320
+Prinzip auf das Recht oder die FÃ¤higkeit bestimmter Daten, nÃ¤mlich personenbezogene,
 
-00:16:20.600 --> 00:16:28.000
-die nicht modulo P gelten, also G hoch b hoch a, das wissen wir aus der Schule, ist ja das gleiche wie
+00:14:49.320 --> 00:14:56.520
+persÃ¶nliche Daten geheim zu halten, also vertraulich zu halten. Also Privacy oder
 
-00:16:29.000 --> 00:16:42.000
-das gilt hier auch. Das heiÃŸt, man kann das umschreiben in G hoch b mal a modulo P. Aber G hoch b mal a ist das gleiche wie G hoch a mal b.
+00:14:56.520 --> 00:15:01.560
+Privatheit bezieht sich immer auf irgendwas, was Individuen angeht. Privatheit ist etwas,
 
-00:16:42.000 --> 00:16:50.400
-Da kann man also das Kommutativ, die Modifikation da oben kann man einfach umdrehen. G hoch a mal b modulo P.
+00:15:01.560 --> 00:15:06.720
+was also Firmen haben keine PrivatsphÃ¤re, wenn man so will, aber Personen haben PrivatsphÃ¤re.
 
-00:16:51.400 --> 00:16:58.400
-Das kann ich jetzt aber auch umschreiben, so Ã¤hnlich wie ich es eben sozusagen reingezogen habe, kann ich es jetzt auch wieder rausziehen.
+00:15:06.720 --> 00:15:14.720
+Gut, PrivatsphÃ¤re ist natÃ¼rlich ein Begriff, der auch in der Literatur, auch in der Vergangenheit,
 
-00:16:58.400 --> 00:17:11.400
-G hoch a mal b ist ja G hoch a hoch b wieder. Das heiÃŸt, ich kann hier schreiben G hoch a modulo P.
+00:15:14.720 --> 00:15:19.880
+in der Philosophie usw. auch schon viel betrachtet worden ist. PrivatsphÃ¤re ist im Prinzip ein
 
-00:17:11.400 --> 00:17:24.400
-Aber G hoch a hoch b modulo P, dieses G hoch a, das ist ja das groÃŸe a. Dass man da immer das Modulo da reinrechnet,
+00:15:20.920 --> 00:15:35.720
+Konzept, was es erlaubt, dass man persÃ¶nliche VorgÃ¤nge nicht Ã¶ffentlich teilen muss. In der
 
-00:17:24.400 --> 00:17:30.400
-das lernen Sie dann im dritten Semester. Das tut nichts zur Sache, das kann man da reinrechnen, rausrechnen.
+00:15:35.720 --> 00:15:40.720
+Literatur wird das oft unterschiedlich charakterisiert. Es gibt von Louis Brandeis
 
-00:17:30.400 --> 00:17:38.400
-Aber hier haben wir das G hoch a modulo P, das ist das groÃŸe a, groÃŸ a hoch b ist, dass hier was auf der rechten Seite steht.
+00:15:40.720 --> 00:15:47.400
+in einem Artikel von 1890 eine Definition, die sagt, das ist the individual's right to be left
 
-00:17:39.400 --> 00:17:44.400
-Das heiÃŸt, die beiden Zahlen sind tatsÃ¤chlich gleich. Wer ist jetzt noch dabei? Von Ihnen? Gut.
+00:15:47.400 --> 00:15:55.120
+alone, also dass man einfach alleine bleibt und sich nicht mit anderen auseinandersetzen muss. Aber
 
-00:17:44.400 --> 00:17:52.400
-Und jetzt ist die Frage, ein Angreifer, der hier sozusagen dazwischen steckt, was sieht der denn?
+00:15:55.120 --> 00:15:59.440
+im Prinzip ist das einfach die Sicherheit, dass es so einen nicht Ã¶ffentlichen Bereich gibt,
 
-00:17:52.400 --> 00:18:01.400
-Der sieht das P, der sieht das G, der sieht das groÃŸe a und das groÃŸe b. Das ist auf der nÃ¤chsten Folie.
+00:15:59.440 --> 00:16:07.960
+in dem ein Mensch unbehelligt die eigene PersÃ¶nlichkeit entfalten kann. Und wenn man
 
-00:18:02.400 --> 00:18:10.400
-Das hier ist nochmal die Diffie-Hellmann-SchlÃ¼sselvereinbarung. Man sieht jetzt hier, Yves ist dazwischen.
+00:16:07.960 --> 00:16:17.080
+das Buch von Glenn Greenwald Ã¼ber die Snowden Leaks liest, der zweite Teil dieses Buches ist
 
-00:18:10.400 --> 00:18:21.400
-Yves sieht a, sieht b, also groÃŸ a, groÃŸ b, hat P und G. Und die SchlÃ¼sselvereinbarung, also die Tatsache,
+00:16:17.080 --> 00:16:23.440
+im Prinzip eine Legitimation von Privatheit. Also eine flammende Rede, dass es doch wichtig ist,
 
-00:18:21.400 --> 00:18:25.400
-dass die jetzt hier beide einen gemeinsamen SchlÃ¼ssel haben, ist klar. Aber das, was sehr geheim ist, liegt daran,
+00:16:23.440 --> 00:16:29.320
+PrivatsphÃ¤re zu haben und dass auch Gesellschaften PrivatsphÃ¤re als Grundrecht zu schÃ¼tzen haben,
 
-00:18:25.400 --> 00:18:34.400
-dass der Angreifer, also Yves, jetzt aus groÃŸ a, groÃŸ b, P und G nicht den SchlÃ¼ssel K berechnen kann.
+00:16:29.320 --> 00:16:35.000
+weil PrivatsphÃ¤re ein ganz ganz zentraler Mechanismus der gesellschaftlichen Erneuerung
 
-00:18:36.400 --> 00:18:46.400
-Und das liegt entscheidend daran, dass es aus diesem groÃŸ a und aus diesem groÃŸ b nicht das klein a oder das klein b berechnen kann.
+00:16:35.000 --> 00:16:38.440
+und Innovation ist. Also nicht nur der gesellschaftlichen Erneuerung, sondern auch
 
-00:18:47.400 --> 00:18:53.400
-Und das liegt daran, dass man davon ausgeht, dass der diskrete Logarithm schwer ist.
+00:16:38.440 --> 00:16:43.080
+der der Innovation einer Gesellschaft. Das ist nicht nur gesellschaftliche Strukturen,
 
-00:18:56.400 --> 00:18:57.400
-Gut.
+00:16:43.080 --> 00:16:48.320
+sondern auch natÃ¼rlich wirtschaftliche Strukturen. Also dass freiheitliche Gesellschaften nicht nur
 
-00:19:02.400 --> 00:19:12.400
-Man kann die Annahme der Schwierheit dieses Problems, also des Diffie-Hellmann-Problems, auch runterbrechen auf eine eigene Sicherheitsannahme.
+00:16:48.320 --> 00:16:53.280
+besser sind, was die PersÃ¶nlichkeitsentwicklung angeht, sondern auch was auch die Menschheitsentwicklung
 
-00:19:12.400 --> 00:19:20.400
-Das ist die sogenannte Diffie-Hellmann-Sicherheitsannahme, die sagt, wenn man irgendeine Primzahl P hat und ein G,
+00:16:53.280 --> 00:16:59.880
+angeht. Wenn man den Klimawandel und so anschaut, dann kann man daran natÃ¼rlich auch zweifeln,
 
-00:19:21.400 --> 00:19:30.400
-fÃ¼r hinreichend groÃŸe Primzahlen P ist es schwer, aus den Werten groÃŸ a und groÃŸ b, so wie sie in der Diffie-Hellmann-SchlÃ¼sselvereinbarung berechnet werden,
+00:16:59.880 --> 00:17:04.600
+aber ob das jetzt ein alleiniger Grund von freiheitlichen Gesellschaften ist, ist wieder
 
-00:19:30.400 --> 00:19:34.400
-den Wert G hoch a mal b modulo P zu berechnen.
+00:17:04.600 --> 00:17:13.480
+die andere Frage. PrivatsphÃ¤re hat in der Literatur immer so drei verschiedene Dimensionen. So die
 
-00:19:36.400 --> 00:19:42.400
-Also diese Sicherheitseinnahme, die ist die Grundlage fÃ¼r die Tatsache, dass das Diffie-Hellmann-Problem sicher ist.
+00:17:13.480 --> 00:17:18.320
+ersten zwei, das ist so die personenbezogene PrivatsphÃ¤re. Das ist so das Grundrecht,
 
-00:19:43.400 --> 00:19:53.400
-Man hat natÃ¼rlich die Beobachtung, dass wenn man diskrete Logarithmen berechnen kÃ¶nnte leicht, dann kÃ¶nnte man auch so einen Diffie-Hellmann brechen.
+00:17:18.320 --> 00:17:24.520
+dass der eigene KÃ¶rper unbeeinflusst oder unbehelligt von unzulÃ¤ssiger Einflussnahme
 
-00:19:54.400 --> 00:20:03.400
-Das heiÃŸt, diese Annahme, dass der diskrete Logarithm schwer zu berechnen ist und die Diffie-Hellmann-Annahme, die sind sehr eng verwandt.
+00:17:24.520 --> 00:17:30.400
+bleibt. Also zum Beispiel KÃ¶rperdurchsuchung, also eine Durchsuchung, eine Personendurchsuchung
 
-00:20:03.400 --> 00:20:05.400
-Die eine stÃ¼tzt sich auf das andere ab.
+00:17:30.400 --> 00:17:35.720
+oder sowas ist verstÃ¶ÃŸt gegen das Grundrecht der personenbetrogenen PrivatsphÃ¤re. Aber es
 
-00:20:05.400 --> 00:20:10.400
-Deswegen, aber das ist die Diffie-Hellmann-Annahme, die man in der Kryptographie annimmt.
+00:17:35.720 --> 00:17:40.320
+gibt auch die rÃ¤umlich PrivatsphÃ¤re, das ist im Prinzip der Schutz der eigenen vier WÃ¤nde,
 
-00:20:13.400 --> 00:20:23.400
-Gut, das heiÃŸt, mit dem Diffie-Hellmann-Protokoll kÃ¶nnen zwei Gefangene zum Beispiel in einem Raum, die von einem WÃ¤rter bewacht werden,
+00:17:40.320 --> 00:17:49.640
+wenn man so will, des eigenen Hauses, dass da nicht ohne Grund eingegriffen werden kann. Und wie
 
-00:20:23.400 --> 00:20:29.400
-und die kÃ¶nnen sich unterhalten und plÃ¶tzlich sprechen sie eine Sprache, die der WÃ¤rter nicht mehr versteht.
+00:17:49.640 --> 00:17:57.160
+gesagt 1983 entwickelt die informationelle PrivatsphÃ¤re, der Schutz davor, dass andere
 
-00:20:30.400 --> 00:20:33.400
-Ohne dass der WÃ¤rter was dagegen machen kann.
+00:17:57.160 --> 00:18:05.200
+Leute beliebig Ã¼ber einen selbst Daten sammeln kÃ¶nnen und die weitergeben kÃ¶nnen. In diesem
 
-00:20:33.400 --> 00:20:37.400
-Und das ist doch eine fantastische Eigenschaft, die man da hat.
+00:18:05.200 --> 00:18:08.720
+dritten Teil mit der personenbetrogenen, mit der informationellen PrivatsphÃ¤re, da steckt
 
-00:20:38.400 --> 00:20:44.400
-Diffie-Hellmann als SchlÃ¼sselvereinbarungsprotokoll ist auch praktisch unglaublich wichtig.
+00:18:08.720 --> 00:18:16.040
+natÃ¼rlich dieser Datenschutz, dieser Datenschutz oder dieses Konzept von Datenschutz drinne und
 
-00:20:44.400 --> 00:20:48.400
-Zum Beispiel bei jeder TLS-Verbindung, also wenn Sie HTTPS zum Beispiel machen,
+00:18:16.040 --> 00:18:23.480
+da mÃ¼ssen wir kurz drÃ¼ber sprechen, was das eigentlich bedeutet. Also hier steckt immer
 
-00:20:48.400 --> 00:20:51.400
-da wird am Anfang erstmal eine Diffie-Hellmann-SchlÃ¼sselvereinbarung gemacht.
+00:18:23.600 --> 00:18:31.160
+so ein bisschen der Begriff, oder da steckt das Konzept drin, dass es Daten gibt, die fÃ¼r einen
 
-00:20:51.400 --> 00:20:54.400
-Also auch ein sehr praktisch wichtiges Protokoll.
+00:18:31.160 --> 00:18:35.680
+selber irgendwie relevanter sind, weil es Daten sind, die einen selber betreffen,
 
-00:20:58.400 --> 00:21:03.400
-Gut, ich komme nochmal zurÃ¼ck auf den Artikel von Diffie und Hellmann, wo sie gesagt haben,
+00:18:35.680 --> 00:18:41.760
+persÃ¶nlichen Informationen hier. Und da gibt es diesen Begriff, der auch im Datenschutzrecht
 
-00:21:03.400 --> 00:21:10.400
-es wÃ¤re doch toll, wenn es Kryptographie gÃ¤be, wo jede Partei zwei SchlÃ¼ssel hat, einen geheimen und einen Ã¶ffentlichen.
+00:18:41.760 --> 00:18:46.120
+geprÃ¤gt ist, das sind personenbezogene Daten. Personenbezogene Daten ist zunÃ¤chst mal ein
 
-00:21:10.400 --> 00:21:14.400
-Und das will ich jetzt mal erklÃ¤ren, wie sowas aussehen kÃ¶nnte.
+00:18:46.120 --> 00:18:52.960
+rechtlicher Begriff. Personenbezogene Daten sind durch den Datenschutz sozusagen durch das Recht
 
-00:21:14.400 --> 00:21:19.400
-Also das ist das, was Diffie und Hellmann in ihrem Artikel beschrieben hatten.
+00:18:52.960 --> 00:18:59.120
+geschÃ¼tzt. Wenn man in die Literatur reinschaut, insbesondere in die rechtliche Literatur, dann
 
-00:21:19.400 --> 00:21:28.400
-Also das ist jetzt, wenn man verschlÃ¼sseln will, also wir haben ja immer VerschlÃ¼sseln oder Authentifikation.
+00:18:59.120 --> 00:19:04.080
+steht da drinne, Daten sind personenbezogen, wenn sie eindeutig einer bestimmten, natÃ¼rlichen
 
-00:21:29.400 --> 00:21:32.400
-FÃ¼r VerschlÃ¼sseln, da gibt es zwei SchlÃ¼ssel.
+00:19:04.080 --> 00:19:09.240
+Person zugeordnet sind. Also das heiÃŸt der Name, die Adresse zum Beispiel oder ihre Matrikelnummer.
 
-00:21:32.400 --> 00:21:37.400
-Es gibt einen Ã¶ffentlichen SchlÃ¼ssel, mit dem jeder verschlÃ¼sseln kann,
+00:19:09.240 --> 00:19:15.920
+Oder diese Zuordnung zumindest mittelbar erfolgen kann. Also auch ein Datensatz,
 
-00:21:37.400 --> 00:21:44.400
-und einen privaten SchlÃ¼ssel, der auch zum EigentÃ¼mer gehÃ¶rt, den nur der EigentÃ¼mer hat
+00:19:15.920 --> 00:19:19.440
+der sie betrifft und der ihnen irgendwie mit etwas Aufwand zugeordnet werden kann,
 
-00:21:44.400 --> 00:21:47.400
-und mit dem nur der EigentÃ¼mer entschlÃ¼sseln kann.
+00:19:19.440 --> 00:19:26.320
+das sind auch personenbezogene Daten. Jetzt steckt da natÃ¼rlich, hier vielleicht ist es
 
-00:21:47.400 --> 00:21:54.400
-Und Kenntnis des Ã¶ffentlichen SchlÃ¼ssels sagt nichts darÃ¼ber aus, wie der geheime SchlÃ¼ssel aussieht.
+00:19:26.320 --> 00:19:30.240
+eindeutiger bei dem ersten Punkt wie bei dem zweiten Punkt, das ist immer die Frage,
 
-00:21:54.400 --> 00:21:58.400
-Die passen zwar zueinander, aber aus dem einen kann man den anderen nicht berechnen.
+00:19:30.240 --> 00:19:35.720
+wie viel Aufwand muss man denn treiben, damit Daten personenbezogen sind. Also im Prinzip gibt
 
-00:22:00.400 --> 00:22:06.400
-Und dann ist es so, wenn ich jetzt jemandem was schicken mÃ¶chte, verschlÃ¼sselt, dann brauche ich einfach nur den Ã¶ffentlichen SchlÃ¼ssel.
+00:19:35.720 --> 00:19:43.320
+es da die Diskussion, ja es gibt im Prinzip die Diskussion auch von den Datenschutzpuristen,
 
-00:22:06.400 --> 00:22:16.400
-VerschlÃ¼ssel damit und danach kann nur noch der EmpfÃ¤nger, der den dazu passenden privaten SchlÃ¼ssel hat, entschlÃ¼sseln,
+00:19:43.400 --> 00:19:49.800
+die sagen, im Prinzip gibt es keine nicht personenbezogenen Daten. Selbst wenn ich in
 
-00:22:16.400 --> 00:22:19.400
-ohne ein gemeinsames Geheimnis zu haben.
+00:19:49.800 --> 00:19:58.120
+der Antarktis eine Wetterstation habe, die Wetterdaten sammelt, wenn ich die verknÃ¼pfe mit zum
 
-00:22:19.400 --> 00:22:24.400
-Das gleiche kann man auch noch fÃ¼r digitale Signaturen verwenden jetzt plÃ¶tzlich.
+00:19:58.120 --> 00:20:05.120
+Beispiel den EinsatzplÃ¤nen der Techniker, die diese Wetterstation warten oder sowas,
 
-00:22:24.400 --> 00:22:30.400
-Das heiÃŸt, es gibt zwei SchlÃ¼ssel, einen Ã¶ffentlichen SchlÃ¼ssel und einen privaten SchlÃ¼ssel.
+00:20:05.120 --> 00:20:10.080
+dann ist die Tatsache, dass da was gemessen wird, zum Beispiel auch ein personenbezogenes Datum.
 
-00:22:30.400 --> 00:22:33.400
-Mit dem privaten SchlÃ¼ssel, den kennt nur der EigentÃ¼mer.
+00:20:10.160 --> 00:20:14.560
+Das Ding ist repariert worden zu einer bestimmten Zeit von einer bestimmten Person. Mit den
 
-00:22:33.400 --> 00:22:37.400
-Und nur der EigentÃ¼mer kann mit diesem privaten SchlÃ¼ssel was unterschreiben.
+00:20:14.560 --> 00:20:19.560
+entsprechenden flankierenden Daten kann man alles personenbezogen machen, so argumentieren die
 
-00:22:39.400 --> 00:22:46.400
-Der Ã¶ffentlichen SchlÃ¼ssel ist dafÃ¼r da, dass man die Unterschrift, die die Person mit dem privaten SchlÃ¼ssel gemacht hat,
+00:20:19.560 --> 00:20:26.840
+Puristen. Aber das ist natÃ¼rlich eher so eine informatische Diskussion, die Rechtswissenschaftler
 
-00:22:46.400 --> 00:22:48.400
-Ã¶ffentlich verifizieren kann.
+00:20:26.840 --> 00:20:31.440
+wÃ¼rden dann sagen, okay das ist ja abwegig. Aber natÃ¼rlich kÃ¶nnen die Rechtswissenschaftler auch
 
-00:22:49.400 --> 00:22:55.400
-Das sind zwei unterschiedliche Anwendungen von asymmetrischer Kryptographie, die aber gleichermaÃŸen wichtig sind.
+00:20:31.440 --> 00:20:36.560
+nicht sagen, wie viel Aufwand denn exakt notwendig ist, damit etwas personenbezogen ist oder nicht.
 
-00:22:57.400 --> 00:23:02.400
-Wir schauen uns noch mal die VerschlÃ¼sselung an und schauen uns an, wie das technisch oder wie das strukturierter aussieht.
+00:20:36.560 --> 00:20:41.680
+Das ist immer eine EinzelfallabschÃ¤tzung. Und das fÃ¼hrt auch zu der Beobachtung,
 
-00:23:03.400 --> 00:23:07.400
-Das ist jetzt analog zu der Art und Weise, wie wir die symmetrische VerschlÃ¼sselung dargestellt haben.
+00:20:41.680 --> 00:20:47.840
+dass wenn sie jetzt Daten haben, die nicht personenbezogen sind oder die von Gerichten
 
-00:23:07.400 --> 00:23:12.400
-Wir haben also hier auf der linken Seite Alice, will was verschlÃ¼sseln, und auf der rechten Seite Bob.
+00:20:47.840 --> 00:20:51.920
+vielleicht auch nicht als personenbezogen eingeschÃ¤tzt werden, dass sie nÃ¤chstes Jahr
 
-00:23:13.400 --> 00:23:19.400
-Man hat hier den SchiffrierschlÃ¼ssel und den DishiffrierschlÃ¼ssel, also zwei unterschiedliche SchlÃ¼ssel jetzt.
+00:20:51.920 --> 00:20:58.520
+oder morgen schon personenbezogen sein kÃ¶nnten, weil vielleicht Daten liegen, wenn man die verknÃ¼pft
 
-00:23:20.400 --> 00:23:26.400
-Der SchiffrierschlÃ¼ssel, also SchiffrierschlÃ¼ssel und DishiffrierschlÃ¼ssel gehÃ¶ren jetzt zu Bob.
+00:20:58.520 --> 00:21:03.400
+mit den Daten, die plÃ¶tzlich personenbezogen machen. Oder dass es irgendwelche Techniken gibt,
 
-00:23:27.400 --> 00:23:31.400
-Der eine ist nur Ã¶ffentlich und der andere, den kennt nur Bob selbst.
+00:21:03.880 --> 00:21:09.840
+die nÃ¤chstes Jahr schon irgendwie es erlauben, bestimmte Daten mit anderen DatenbestÃ¤nden zu
 
-00:23:32.400 --> 00:23:39.400
-Mit dem SchiffrierschlÃ¼ssel kann man schiffrieren, also man benutzt die Schiffrierfunktion mit diesem Ã¶ffentlichen SchlÃ¼ssel.
+00:21:09.840 --> 00:21:14.600
+verknÃ¼pfen und zu deanalyseieren. Das heiÃŸt, was man eigentlich braucht, ist immer so eine Art
 
-00:23:39.400 --> 00:23:42.400
-Die Schiffrierfunktion ist bekannt, ist ein bekannter Algorithmus.
+00:21:14.600 --> 00:21:22.160
+DatenschutzfolgenabschÃ¤tzung. Das heiÃŸt, wenn man Daten publizieren mÃ¶chte, dann muss man mal sagen,
 
-00:23:43.400 --> 00:23:48.400
-Das Schiffrat, was da rauskommt, das geht Ã¼ber die Leitung, da wo der Angreifer zugreifen kann,
+00:21:22.160 --> 00:21:27.680
+wie hoch ist das Risiko jetzt, dass sie personenbezogen werden und wie groÃŸ ist
 
-00:23:49.400 --> 00:23:54.400
-und wird dann hier entschlÃ¼sselt mit dem privaten SchlÃ¼ssel, also nicht mit dem Ã¶ffentlichen SchlÃ¼ssel hier,
+00:21:27.760 --> 00:21:36.000
+das Risiko, dass sie in Zukunft personenbezogen sein kÃ¶nnen. Also personenbezogene Daten machen
 
-00:23:54.400 --> 00:23:56.400
-sondern mit privatem SchlÃ¼ssel, den nur Bob besitzt.
+00:21:36.000 --> 00:21:41.680
+im Prinzip viel von der eigenen IdentitÃ¤t aus. Wir hatten Ã¼ber IdentitÃ¤t auch kurz mal gesprochen
 
-00:23:57.400 --> 00:24:04.400
-Deswegen startet das auch hier in dem geheimen Bereich und der SchiffrierschlÃ¼ssel, der startet auÃŸerhalb des geheimen Bereichs.
+00:21:41.680 --> 00:21:47.080
+in dem Kapitel Ã¼ber Authentifikation. Also im Prinzip, wenn man jetzt eine digitale IdentitÃ¤t
 
-00:24:04.400 --> 00:24:10.400
-In der Praxis ist es so, dass diese VerschlÃ¼sselung und die EntschlÃ¼sselung meistens dieselbe Operation ist.
+00:21:47.080 --> 00:21:53.880
+anschaut, also wie IdentitÃ¤t in der digitalen Welt reprÃ¤sentiert ist, dann ist es im Prinzip die
 
-00:24:11.400 --> 00:24:16.400
-Das heiÃŸt, dieser Algorithmus E ist der gleiche Algorithmus wie der Algorithmus D.
+00:21:53.880 --> 00:21:59.920
+Sammlung der personenbezogenen Daten, die es Ã¼ber einen selber gibt. Also entweder die, die
 
-00:24:17.400 --> 00:24:20.400
-Ich habe das jetzt aus didaktischen GrÃ¼nden nur noch mal getrennt hingeschrieben,
+00:21:59.920 --> 00:22:05.000
+alle schon da sind oder die da sein kÃ¶nnten. Das ist hier mal in der Grafik dargestellt. Also das
 
-00:24:20.400 --> 00:24:24.400
-damit Sie die Analogie zu den symmetrischen SchlÃ¼sseln sehen.
+00:22:05.000 --> 00:22:10.640
+ist hier die digitale IdentitÃ¤t. Im Prinzip alle Daten, die es Ã¼ber sie geben kÃ¶nnte und die
 
-00:24:26.400 --> 00:24:29.400
-Auch bei der symmetrischen Kryptographie muss man noch gucken, wo kommt der SchlÃ¼ssel her.
+00:22:10.640 --> 00:22:15.200
+irgendwo online gespeichert werden kÃ¶nnten. Das sind dann zum Beispiel ihr Name, Geburtstag,
 
-00:24:29.400 --> 00:24:32.400
-Der wird natÃ¼rlich erzeugt in der SchlÃ¼sselgenerierung.
+00:22:15.200 --> 00:22:21.240
+Alter, Adresse und so weiter. Klar, personenbezogen, Telefonnummer, Blutgruppe, also biologische Aspekte,
 
-00:24:33.400 --> 00:24:35.400
-Das Bild hier unten ist das, was Sie eben gesehen haben.
+00:22:21.240 --> 00:22:27.000
+Steuerklasse, ihr Tagebuch zum Beispiel. Das ist nirgendwo hoffentlich bei jemand anders gespeichert,
 
-00:24:36.400 --> 00:24:37.400
-Jetzt ist die Frage, wo die SchlÃ¼ssel herkommen.
+00:22:27.000 --> 00:22:38.040
+sondern nur bei Ihnen. Und es gibt verschiedene Organisationen oder EntitÃ¤ten, die Teile ihrer
 
-00:24:38.400 --> 00:24:43.400
-Es wird wieder eine Zufallszahl gebraucht, das heiÃŸt also der SchlÃ¼ssel muss unvorher- sagbar zufÃ¤llig sein.
+00:22:38.040 --> 00:22:43.120
+IdentitÃ¤t kennen und auch notwendigerweise. Das heiÃŸt also eine Bank braucht zum Beispiel von
 
-00:24:44.400 --> 00:24:48.400
-Aber jetzt kommt bei der SchlÃ¼sselgenerierung nicht ein SchlÃ¼ssel raus, sondern zwei SchlÃ¼ssel.
+00:22:43.120 --> 00:22:52.040
+Ihnen Name, Adresse, Alter, also Geburtstag. Damit Sie Ihr Alter exakt bestimmen kÃ¶nnen. Wenn Sie
 
-00:24:49.400 --> 00:24:53.400
-Der eine ist der private SchlÃ¼ssel und der andere ist der Ã¶ffentliche SchlÃ¼ssel.
+00:22:52.040 --> 00:22:57.600
+ein Konto erÃ¶ffnen, mÃ¼ssen Sie mindestens 18 sein. Telefonnummer, Kreditrisiko und so weiter,
 
-00:24:54.400 --> 00:24:56.400
-Das ist die VerschÃ¼sselungsoperation.
+00:22:57.600 --> 00:23:01.280
+das speichert die Bank Ã¼ber Sie und auch notwendigerweise. Aber die haben halt nicht
 
-00:24:57.400 --> 00:25:02.400
-Das Gleiche kann man auch fÃ¼r die Signierung machen, also zur Herstellung von AuthentizitÃ¤t.
+00:23:01.280 --> 00:23:06.400
+ihre Blutgruppe, ihre Steuerklasse vielleicht, vielleicht auch nicht, aber vielleicht auch
 
-00:25:03.400 --> 00:25:05.400
-Das heiÃŸt, da ist es genau andersrum.
+00:23:06.400 --> 00:23:12.800
+nicht ihre Interessen oder sowas. Und verschiedene Akteure haben halt unterschiedliche Teile,
 
-00:25:06.400 --> 00:25:07.400
-Ich mache mal die nÃ¤chste Folie.
+00:23:12.880 --> 00:23:20.360
+ihre IdentitÃ¤t, das nennt man dann digitale TeilidentitÃ¤ten. Und die Gefahr ist natÃ¼rlich,
 
-00:25:07.400 --> 00:25:09.400
-Das ist hier die digitale Signatur.
+00:23:20.360 --> 00:23:24.880
+dass wenn sich verschiedene von diesen Akteuren zusammentun, dass sie dann sozusagen ihre
 
-00:25:10.400 --> 00:25:14.400
-Das ist die digitale Signatur, die man in der Verkaufsarbeit vermitteln kann.
+00:23:24.880 --> 00:23:30.560
+vollstÃ¤ndige IdentitÃ¤t oder einen groÃŸen Teil ihrer digitalen IdentitÃ¤t dann zusammenlegen kÃ¶nnen
 
-00:25:15.400 --> 00:25:18.400
-Das ist die digitale Signatur, die man in der Verkaufsarbeit vermitteln kann.
+00:23:30.560 --> 00:23:40.320
+und im Prinzip zusammen mehr Ã¼ber sie wissen als jeweils einzeln. Der Grad des Personenbezugs
 
-00:25:18.400 --> 00:25:19.400
-Das heiÃŸt, da ist es genau andersrum.
+00:23:40.360 --> 00:23:44.520
+von verschiedenen Daten, das war auch unterschiedlich. Und entsprechend unterschiedlich
 
-00:25:20.400 --> 00:25:21.400
-Ich mache mal die nÃ¤chste Folie.
+00:23:44.520 --> 00:23:50.760
+sind die Daten dann einzuschÃ¤tzen bezÃ¼glich der ihre Gefahren fÃ¼r die PrivatsphÃ¤re oder
 
-00:25:21.400 --> 00:25:22.400
-Das ist hier die digitale Signatur.
+00:23:50.760 --> 00:23:55.720
+die Relevanz von Daten fÃ¼r die PrivatsphÃ¤re. Und da gibt es auch im Datenschutz, in der
 
-00:25:24.400 --> 00:25:28.400
-Das heiÃŸt, hier ist es so, es gibt wieder einen Ã¶ffentlichen SchlÃ¼ssel und einen privaten SchlÃ¼ssel.
+00:23:55.720 --> 00:24:02.440
+Datenschutzdiskussion so unterschiedliche Eigenschaften, auf die man schaut, wenn es
 
-00:25:29.400 --> 00:25:33.400
-Jetzt ist es so, dass die Kommunikationsrichtung von hier nach da geht.
+00:24:02.440 --> 00:24:07.440
+darum geht eine DatenschutzeinschÃ¤tzung zu machen. Sind Daten personenbezogen oder nicht oder sind
 
-00:25:35.400 --> 00:25:37.400
-Hier hat man einen Klartext, den man signieren mÃ¶chte.
+00:24:07.520 --> 00:24:12.360
+die relevant fÃ¼r die PrivatsphÃ¤re oder nicht, wenn man also so eine EinschÃ¤tzung machen mÃ¶chte.
 
-00:25:38.400 --> 00:25:39.400
-Und was macht man jetzt?
+00:24:12.360 --> 00:24:17.360
+Also weniger relevant sind sie dann, wenn sie anonym sind, also nicht direkt zuortenbar,
 
-00:25:40.400 --> 00:25:46.400
-Man berechnet auf dem Klartext mit dem privaten SignierschlÃ¼ssel die sogenannte digitale Signatur.
+00:24:17.360 --> 00:24:23.320
+wenn die sich Ã¤ndern, ohne dass man das von nach auÃŸen mitkriegt, wenn die flÃ¼chtig sind,
 
-00:25:46.400 --> 00:25:53.400
-Das ist auch einfach ein Bit-String, der die Unterschrift darstellt auf dieser Nachricht M.
+00:24:23.320 --> 00:24:28.000
+also wenn sie schnell sich Ã¤ndern, wenn sie nur einmal verwendet werden und wenn sie im Prinzip
 
-00:25:54.400 --> 00:25:56.400
-Hier geht es wirklich nur um AuthentizitÃ¤t und nicht um Vertraulichkeit.
+00:24:28.000 --> 00:24:34.800
+so Ã¤hnlich sind wie die Eigenschaften, die alle anderen auch haben. Relevanter sind natÃ¼rlich
 
-00:25:57.400 --> 00:26:04.400
-Deswegen schicken wir jetzt die Nachricht M und die Signatur, die Unterschrift, gemeinsam Ã¼ber die Leitung.
+00:24:34.960 --> 00:24:41.120
+Daten, die sie eindeutig identifizieren, die unverÃ¤nderlich sind, die langfristig
 
-00:26:05.400 --> 00:26:06.400
-Da kann der Angreifer beides sehen.
+00:24:41.120 --> 00:24:53.280
+gespeichert werden, die anderen zugreifbar sind, die sie hÃ¤ufig verwenden und die unnormal und
 
-00:26:07.400 --> 00:26:14.400
-Der erfÃ¤hrt natÃ¼rlich jetzt den Inhalt von M, aber uns geht es ja nicht um den Inhalt von M, sondern Alice soll feststellen, dass das Ding tatsÃ¤chlich von Bob kommt.
+00:24:53.280 --> 00:25:03.680
+herausragend sind. Genau. Und wenn jetzt solche Daten oder Datenmengen dann in die Hand von
 
-00:26:15.400 --> 00:26:32.400
-Was macht Alice? Alice empfÃ¤ngt M und S und berechnet jetzt mit dem TestschlÃ¼ssel, der zu diesem privaten SchlÃ¼ssel passt, hier mit dem Ã¶ffentlichen TestschlÃ¼ssel, Ã¼berprÃ¼ft es die digitale Signatur.
+00:25:03.680 --> 00:25:10.720
+vielleicht bÃ¶sartigen Gegenspielern kommen, dann gibt es natÃ¼rlich Bedrohungen fÃ¼r die PrivatsphÃ¤re
 
-00:26:32.400 --> 00:26:44.400
-Das heiÃŸt, sie testet, ob das, was bei der Anwendung des TestschlÃ¼ssels auf die Signatur rauskommt, das gleiche ist, wie es hier Ã¼bersendet worden ist.
+00:25:10.720 --> 00:25:15.520
+und ich will die mal ganz kurz erlÃ¤utern an ein paar Beispielen. Im Prinzip auch Sachen,
 
-00:26:45.400 --> 00:27:05.400
-Und dann ist es so, dass wenn das gleich ist, wenn das Ergebnis der Anwendung des TestschlÃ¼ssels auf die Signatur die Nachricht ist, die hier mitgeschickt wird, dann akzeptiert Alice, dass die Nachricht von Bob kommt, weil nur Bob es signiert haben kann.
+00:25:15.520 --> 00:25:19.040
+die aus Database Nation kommen, also zum Beispiel Fehlentscheidungen durch Falschinformationen,
 
-00:27:06.400 --> 00:27:11.400
-Also nur der zu dem Ã¶ffentlichen TestschlÃ¼ssel passende private SchlÃ¼ssel kann das erzeugt haben.
+00:25:19.760 --> 00:25:24.920
+also wenn zum Beispiel falsche Daten Ã¼ber sie irgendwo gespeichert sind und sie keine
 
-00:27:15.400 --> 00:27:27.400
-Genau, der SignierschlÃ¼ssel wird auch manchmal als S bezeichnet, das ist hier von der Terminologie, das machen wir in der Ãœbung auch so, der SignierschlÃ¼ssel ist oft als S bezeichnet und der TestschlÃ¼ssel auch oft als T bezeichnet.
+00:25:24.920 --> 00:25:29.960
+MÃ¶glichkeit haben, die zu korrigieren, dann kann das zu Problemen fÃ¼hren. Also das Beispiel aus
 
-00:27:27.400 --> 00:27:48.400
-Genau, auch diese Notation hier mit diesem B-Strich, also in der Praxis ist es so, dass im Prinzip digitale Signaturen und asymmetrische Krypto, also diese beiden Anwendungen der Technik, im Prinzip die gleichen Operationen sind.
+00:25:29.960 --> 00:25:36.160
+Database Nation ist, in den Vereinigten Staaten ist der Datenschutz etwas weniger ausgeprÃ¤gt als in
 
-00:27:48.400 --> 00:28:08.400
-Das heiÃŸt, man sollte nicht mit dem gleichen SchlÃ¼ssel oder mit dem gleichen SchlÃ¼sselpaar sowohl verschlÃ¼sseln als auch signieren, weil die VerschlÃ¼sselung, die VerschlÃ¼sselung, die EntschlÃ¼sselung ist so eine Art Testen.
+00:25:36.160 --> 00:25:43.880
+Europa und da ist es normal, dass Banken das Kreditrisiko von ihren Kunden einschÃ¤tzen und
 
-00:28:08.400 --> 00:28:33.400
-Genau, also wenn man das gleiche SchlÃ¼sselpaar benutzt zum Signieren und zum VerschlÃ¼sseln, dann, Moment, das muss ich selber nachdenken, genau, dann kann ich mir was signieren lassen, also das Signieren ist so eine Art EntschlÃ¼sseln.
+00:25:43.880 --> 00:25:48.040
+diese Daten auch miteinander austauschen. Im Prinzip so eine Art Peer-to-Peer-Schufa,
 
-00:28:33.400 --> 00:28:50.400
-Signieren ist das, was man macht, wenn der private SchlÃ¼ssel angewendet wird. Das heiÃŸt, wenn ich irgendwas VerschlÃ¼sseltes kriege und ich will es entschlÃ¼sselt haben, dann muss ich nur die Person, von dem der SchlÃ¼ssel gehÃ¶rt, muss ich Ã¼berreden, dass sie mir das signiert.
+00:25:48.040 --> 00:25:54.800
+wenn man so will. Das Problem ist, dass man als Privatperson relativ wenig Einfluss darauf hat,
 
-00:28:50.400 --> 00:29:00.400
-Das heiÃŸt, das ist gefÃ¤hrlich, deswegen sollte man zum Signieren und zum VerschlÃ¼sseln zwei unterschiedliche SchlÃ¼sselpaare verwenden.
+00:25:54.800 --> 00:26:01.520
+wie diese Daten zirkulieren. Das heiÃŸt, wenn Sie in den Vereinigten Staaten zum Beispiel in diesen
 
-00:29:00.400 --> 00:29:13.400
-Und wir haben das hier in der Notation gemacht, dass die VerschlÃ¼sselungsschlÃ¼ssel, also wo es um Vertraulichkeit geht, die sind immer als B bezeichnet, B fÃ¼r public und B fÃ¼r private.
+00:26:01.520 --> 00:26:06.680
+Daten, in deren fehlerhafter Eintrag ist, dass Sie zum Beispiel Ihre Kredite nicht bezahlen und diese
 
-00:29:13.400 --> 00:29:20.400
-Und die SignaturschlÃ¼ssel sind immer mit einem B-Strich bezeichnet. Das wird auch in der Ãœbung so durchgehalten werden.
+00:26:06.680 --> 00:26:12.320
+Daten falsch sind, dann kÃ¶nnen Sie sich durch bei der Bank, bei der Sie einen Kredit haben wollen,
 
-00:29:20.400 --> 00:29:34.400
-Gut, jetzt kennen wir also digitale Signaturen, also asymmetrische Kryptographie und wir kÃ¶nnen das jetzt natÃ¼rlich vergleichen mit symmetrischer Kryptographie.
+00:26:12.320 --> 00:26:17.360
+sich beschweren und so weiter. Okay, dann kann die das korrigieren, aber diese Daten sind ja im
 
-00:29:34.400 --> 00:29:46.400
-Bei symmetrischer Kryptographie ist es natÃ¼rlich so, dass wenn Sie einen gemeinsamen GeheimschlÃ¼ssel haben, der ist immer Paarbeziehungen zugeordnet und nicht individuelle Personen oder Individuale IdentitÃ¤ten.
+00:26:17.360 --> 00:26:21.760
+Umlauf, sind schon ausgetauscht worden und irgendwann kommen die wieder zurÃ¼ck zu ihrer Bank, ohne dass
 
-00:29:46.400 --> 00:29:57.400
-Bei asymmetrischen Verfahren, da hat jeder Teilnehmer, jede Teilnehmerin ein SchlÃ¼sselpaar. Das heiÃŸt, es gibt genau bei N Teilnehmern N SchlÃ¼sselpaare.
+00:26:21.760 --> 00:26:25.880
+klar ist, wo das herkommt und plÃ¶tzlich ist ihr Kreditrisiko wieder weg und dann dÃ¼rfen Sie nicht
 
-00:29:57.400 --> 00:30:04.400
-Wenn Sie N Teilnehmer haben und jeder will mit jedem kommunizieren, mÃ¼ssen Sie alle Paarweise unterschiedliche SchlÃ¼ssel austauschen.
+00:26:25.880 --> 00:26:33.320
+mehr mit Ihrer Kreditkarte einkaufen. Da gibt es ganz viele ganz viele Beispiele fÃ¼r sowas. Also
 
-00:30:04.400 --> 00:30:17.400
-Das heiÃŸt, man hat in der GrÃ¶ÃŸenordnung N Quadrat viel, also pro Paarbeziehung jeweils einen SchlÃ¼ssel und das macht auch das SchlÃ¼sselhandling im symmetrischen Verfahren aufwendiger.
+00:26:33.320 --> 00:26:37.760
+auch zum Beispiel in Deutschland ist es falsches Schufa-EintrÃ¤ge. Also ich weiÃŸ nicht, wer von Ihnen
 
-00:30:17.400 --> 00:30:27.400
-Aber symmetrische Verfahren haben leider in gewisser Weise einen Vorteil. Symmetrische Verfahren sind schnell verhÃ¤ltnismÃ¤ÃŸig.
+00:26:37.760 --> 00:26:42.960
+hat seinen Schufa-Eintrag schon mal abgefragt. Ich glaube, ein oder zweimal pro Jahr ist das
 
-00:30:27.400 --> 00:30:36.400
-Also man kann sie in Hardware implementieren. Man kann Gigabit Leitungen symmetrische VerschlÃ¼sseln in Echtzeit.
+00:26:42.960 --> 00:26:49.400
+kostenlos mÃ¶glich. Schauen Sie mal rein, da sehen Sie nÃ¤mlich drinnen, was da fÃ¼r EintrÃ¤ge sind und
 
-00:30:36.400 --> 00:30:42.400
-Und bei asymmetrischen VerschlÃ¼sseln sind die SchlÃ¼ssel auch generell grÃ¶ÃŸer und das dauert einfach viel lÃ¤nger.
+00:26:49.400 --> 00:26:58.320
+wer ihre KreditwÃ¼rdigkeit abgefragt hat. Also durchaus sehr interessant. Langfristig Aufbewahrung
 
-00:30:42.400 --> 00:30:47.400
-Man muss diskrete Mathematik machen, man muss diskret exponenzieren und so weiter.
+00:26:58.320 --> 00:27:05.240
+ist auch ein Problem. Alle Leute, die als Kind oder als Jugendliche, als Kind Facebook-Account hatten
 
-00:30:47.400 --> 00:30:53.400
-Das heiÃŸt, die Vorteile von der symmetrischen VerschlÃ¼sselung sind die Geschwindigkeit.
+00:27:05.240 --> 00:27:10.040
+und da tolle Fotos von sich gepostet haben in allen mÃ¶glichen Situationen, die Ã¤rgern sich vielleicht
 
-00:30:53.400 --> 00:30:58.400
-Die Vorteile der asymmetrischen VerschlÃ¼sselung ist, dass man den SchlÃ¼ssel einfach offen austauschen kann.
+00:27:10.040 --> 00:27:14.800
+spÃ¤ter, wenn sie sich bewerben, dass diese Informationen da noch sind aus der Schule zum
 
-00:30:58.400 --> 00:31:04.400
-Deswegen, was man in der Praxis macht, ist, diese beiden Verfahren zu kombinieren.
+00:27:14.800 --> 00:27:22.800
+Beispiel. Das heiÃŸt, im Prinzip ist eine langfristige Aufbewahrung auch nicht gut fÃ¼r die PrivatsphÃ¤re,
 
-00:31:04.400 --> 00:31:12.400
-Das sind die sogenannten hybriden Kryptosysteme und im Prinzip alles, was Sie heutzutage haben im Bereich E-Mail VerschlÃ¼sselung zum Beispiel, ist alles hybrid.
+00:27:22.800 --> 00:27:30.440
+wenn man nicht die ganze Zeit irgendwie hÃ¶llisch drauf achtet, was man selber gepostet hat zum
 
-00:31:12.400 --> 00:31:22.400
-Und was bedeutet hybride VerschlÃ¼sselung? Man benutzt die symmetrische VerschlÃ¼sselung, um groÃŸe Dateien schnell und effizient zu verschÃ¼tteln.
+00:27:30.440 --> 00:27:39.440
+Beispiel. Und so werden natÃ¼rlich auch die Handlungen, die sie frÃ¼her mal gemacht haben,
 
-00:31:22.400 --> 00:31:29.400
-Das heiÃŸt, wenn zum Beispiel Alice an Bob eine groÃŸe Nachricht M schicken will, die mehrere Gigabyte groÃŸ ist zum Beispiel,
+00:27:39.440 --> 00:27:49.520
+sehr viel einfacher rekonstruierbar. Und das ist die Daten, die man teilweise aus den sogenannten,
 
-00:31:29.400 --> 00:31:38.400
-dann wÃ¤hlt Alice einen geheimen SchlÃ¼ssel K aus und mit dem verschÃ¼ttelt sich dann diese groÃŸe Datei.
+00:27:49.520 --> 00:28:01.120
+bisschen mehr Ruhe bitte, ich hÃ¶re das getuscht Ã¼berall jetzt. Da zum Beispiel, da, vielen Dank.
 
-00:31:39.400 --> 00:31:41.400
-Aber Bob hat natÃ¼rlich diesen SchlÃ¼ssel K nicht.
+00:28:01.120 --> 00:28:12.840
+Was wollte ich jetzt eigentlich erzÃ¤hlen? Ah ja, genau, dass die Daten, die Ã¼ber sie gespeichert
 
-00:31:41.400 --> 00:31:49.400
-Aber jetzt benutzt Alice den Ã¶ffentlichen SchlÃ¼ssel von Bob, um K vertraulich an Bob zu Ã¼bermitteln.
+00:28:12.840 --> 00:28:17.960
+sind, da viel detaillierter sind als ihre eigenen Erinnerungen. Also es gibt ja diesen Begriff der
 
-00:31:49.400 --> 00:32:02.400
-So erhÃ¤lt Bob das verschlÃ¼sselte mit dem symmetrischen SchlÃ¼ssel die verschlÃ¼sselte Datei und den vertraulich gesendeten symmetrischen SchlÃ¼ssel,
+00:28:17.960 --> 00:28:23.840
+Open Source Intelligence, also auch Sachen, die sie Ã¼ber quelloffene Software einsehen kÃ¶nnen.
 
-00:32:02.400 --> 00:32:05.400
-der mit dem Ã¶ffentlichen SchlÃ¼ssel von Bob verschlÃ¼sselt worden ist.
+00:28:23.840 --> 00:28:28.680
+Wenn irgendwann Ã¼ber sie mal ein Zeitungsartikel erschienen ist, ist er auch auf Ewigkeit irgendwie
 
-00:32:06.400 --> 00:32:13.400
-NatÃ¼rlich weiÃŸ Bob jetzt nicht, dass das hier von Alice kommt.
+00:28:28.680 --> 00:28:34.400
+auffindbar. Und da kann man relativ viel Ã¼ber Leute rauskriegen und zwar viel besser und
 
-00:32:13.400 --> 00:32:17.400
-Das heiÃŸt, das kÃ¶nnte auch jetzt der Angreifer eingespielt haben.
+00:28:34.400 --> 00:28:39.800
+detaillierter als an, was sich die Leute teilweise selber noch erinnern kÃ¶nnen. Das ist sogar,
 
-00:32:17.400 --> 00:32:26.400
-Wenn Alice auch noch sagen will, ja das kommt von mir, von Alice, dann muss man es noch ein bisschen komplizierter machen.
+00:28:39.800 --> 00:28:45.360
+wÃ¼rde ich mal sagen, besser als die Stasi-Akten und die sind ja schon relativ detailliert, egal,
 
-00:32:27.400 --> 00:32:35.400
-Dann muss man hier, das ist dieser Ausdruck hier, Alice schickt vertraulich an Bob ein Tupel oder ein Vektor,
+00:28:45.360 --> 00:28:51.440
+was da drinne steht. So was auch geht, ist IdentitÃ¤tstiefstahl. Das ist vielleicht auch
 
-00:32:35.400 --> 00:32:43.400
-wo drin steht B, dieser geheimen SchlÃ¼ssel K und auch nochmal dieses Paar BK.
+00:28:51.440 --> 00:28:57.080
+dem anderen von Ihnen ein Begriff. Das ist im Prinzip die illegitime Nutzung einer anderen
 
-00:32:43.400 --> 00:32:49.400
-Da ist nochmal eine digitale Signatur drauf, also mit A Strich verschlÃ¼sselt.
+00:28:57.080 --> 00:29:04.680
+IdentitÃ¤t, um zum Beispiel irgendwas zu bestellen. Zum Beispiel, also eine Form von Betrug natÃ¼rlich.
 
-00:32:49.400 --> 00:32:52.400
-Das heiÃŸt, und das wird hier verschÃ¼ttelt an Bob geschickt.
+00:29:04.680 --> 00:29:13.280
+Da gibt es die Masche, dass man zum Beispiel einen Account Ã¼bernimmt, einen Amazon-Account
 
-00:32:53.400 --> 00:33:00.400
-Also wenn Sie sowas hier machen, das heiÃŸt, das hier ist das gleiche, fast das gleiche wie hier oben.
+00:29:13.280 --> 00:29:19.520
+oder einen Facebook-Account von jemandem, plÃ¶tzlich funktioniert ihr Passwort nicht mehr und Ã¼ber ihr
 
-00:33:00.400 --> 00:33:03.400
-Das ist hier nur fÃ¼r die Authentikation, genau.
+00:29:19.520 --> 00:29:27.120
+Facebook-Account wird ganz viel Propaganda zum Beispiel oder Ã¼ber ihren Twitter-Account,
 
-00:33:03.400 --> 00:33:07.400
-Jetzt wird hier M rÃ¼bergeschickt, hier geht es also nicht um Vertraulichkeit von M.
+00:29:27.120 --> 00:29:34.480
+X-Account, wird ganz viel Propaganda geretweetet und sie kommen nicht mehr dran und da steht ihr
 
-00:33:07.400 --> 00:33:12.400
-Aber hier wird ein MAC mitgeschickt sozusagen, das kann man effizient prÃ¼fen.
+00:29:34.480 --> 00:29:42.480
+Name drauf. Das ist so Account Takeover, Fall von IdentitÃ¤tstiefstahl. Normalerweise merken sie das,
 
-00:33:12.400 --> 00:33:20.400
-Und hier wird nochmal bestÃ¤tigt, dass dieser SchlÃ¼ssel K von A kommt und fÃ¼r B gedacht ist.
+00:29:42.480 --> 00:29:49.800
+oder wenn zum Beispiel in ihrem Ebay-Account irgendwas ersteigert wird in ihrem Namen und
 
-00:33:22.400 --> 00:33:28.400
-Das heiÃŸt, Bob muss sich jetzt den TestschlÃ¼ssel besorgen von Alice, kann den hinteren Teil entschlÃ¼sseln,
+00:29:49.800 --> 00:29:55.400
+sie sollen dann bezahlen, dann beschweren sich Leute bei ihnen. Das in AnfÃ¼hrungsrichtung geht
 
-00:33:28.400 --> 00:33:33.400
-kriegt dann den SchlÃ¼ssel raus, diesen SchlÃ¼ssel K und kann dann effizient den MAC Ã¼berprÃ¼fen,
+00:29:55.400 --> 00:30:00.840
+noch, weil sie das mitkriegen, aber es gibt ja auch diesen New-Account-IdentitÃ¤tstiefstahl. Das
 
-00:33:33.400 --> 00:33:35.400
-den symmetrischen MAC, der hier vorne dran ist.
+00:30:00.840 --> 00:30:08.680
+heiÃŸt, irgendwer legt in ihrem Namen mit ihren Daten irgendwo einen Account an und bestellt dann
 
-00:33:38.400 --> 00:33:42.400
-Gut, wer ist jetzt noch dabei? Okay, sehr gut.
+00:30:08.680 --> 00:30:16.280
+fleiÃŸig und sie kriegen dann die Rechnung. Hoffentlich merken sie das dann und das ist
 
-00:33:43.400 --> 00:33:50.400
-So, jetzt haben wir gelernt, was asymmetrische Kryptographie ist.
+00:30:16.280 --> 00:30:22.440
+sehr viel schwieriger, dann herauszukriegen, ob so was funktioniert, ob so was passiert.
 
-00:33:51.400 --> 00:33:57.400
-Wir haben aber noch kein Kryptosystem kennengelernt von asymmetrischer Kryptographie.
+00:30:22.440 --> 00:30:32.240
+Genau, fÃ¼r den HÃ¤ndler bei diesem New-Account-Fraud, fÃ¼r den HÃ¤ndler ist es nÃ¤mlich zunÃ¤chst mal
 
-00:33:57.400 --> 00:34:00.400
-Und ich habe schon eins genannt, das ist RSA.
+00:30:32.240 --> 00:30:37.480
+vÃ¶llig unklar, wenn er bei ihnen zum Beispiel anruft oder sie kontaktiert, sie haben da was
 
-00:34:00.400 --> 00:34:02.400
-Aber RSA ist sehr kompliziert.
+00:30:37.480 --> 00:30:43.400
+bestellt und noch nicht bezahlt, bezahlen sie mal endlich. FÃ¼r den HÃ¤ndler kann nicht unterscheiden,
 
-00:34:02.400 --> 00:34:08.400
-In dem Foliensatz, den ich Ihnen jetzt schon vorab zur VerfÃ¼gung gestellt habe, ist im Anhang RSA mal erklÃ¤rt,
+00:30:43.400 --> 00:30:49.840
+ist sehr schwer zu unterscheiden, ist das jetzt IdentitÃ¤tstiefstahl oder sagen sie einfach,
 
-00:34:08.400 --> 00:34:11.400
-wie ich es frÃ¼her in der Vorlesung erklÃ¤rt habe.
+00:30:49.840 --> 00:30:55.800
+ne, das war ich nicht. Also es ist unglaublich schwer, unglaublich fiese Situationen, in die
 
-00:34:11.400 --> 00:34:15.400
-Es ist aber relativ kompliziert und macht relativ viele Annahmen.
+00:30:55.800 --> 00:31:02.120
+man da reinkommen kann. Das wird natÃ¼rlich umso stÃ¤rker vereinfacht, je eher Leute mehr Ã¼ber sie
 
-00:34:15.400 --> 00:34:18.400
-Das war immer im fÃ¼nften Semester, wo ich das gemacht habe, jetzt immer im ersten Semester.
+00:31:02.120 --> 00:31:09.680
+rauskriegen. Das heiÃŸt, wenn, das ist ja auch Account Takeover, englische Journalisten haben ja dann
 
-00:34:18.400 --> 00:34:20.400
-Jetzt muss man es ein bisschen einfacher machen.
+00:31:09.680 --> 00:31:15.000
+teilweise auch Accounts von Prominenten Ã¼bernommen, dadurch, dass sie die Sicherheitsfragen beantworten
 
-00:34:20.400 --> 00:34:25.400
-Und wir nehmen jetzt nicht RSA, sondern wir nehmen das Elgammal-Verfahren.
+00:31:15.000 --> 00:31:21.720
+konnten, die beim Passwortreset zum Beispiel benÃ¶tigt werden. Also auch eine Frage von
 
-00:34:25.400 --> 00:34:33.400
-Das Elgammal-Verfahren ist super einfach, wenn man die Diffie-Hellmann-SchlÃ¼ssel-Vereinbarung kennt.
+00:31:21.720 --> 00:31:30.320
+personenbezogene Daten. Am Ende weitere Gefahren fÃ¼r die PrivatsphÃ¤re, wenn halt die
 
-00:34:34.400 --> 00:34:40.400
-Und ich erklÃ¤re Ihnen jetzt mal, wie das Elgammal-Verfahren funktioniert.
+00:31:30.320 --> 00:31:38.720
+personenbezogenen Daten nicht geschÃ¼tzt sind. Immer das Problem, ja wenn klar ist, dass Ã¼berall,
 
-00:34:40.400 --> 00:34:43.400
-Und dann haben Sie einen Beweis oder haben Sie einen Beleg dafÃ¼r,
+00:31:38.720 --> 00:31:45.880
+wo sie sich online bewegen, Daten Ã¼ber sie gesammelt werden, dann fÃ¼hrt das automatisch dazu,
 
-00:34:43.400 --> 00:34:47.400
-dass es tatsÃ¤chlich asymmetrische VerschlÃ¼sselungsverfahren gibt.
+00:31:45.880 --> 00:31:51.880
+dass sie sich fragen, ist das jetzt gut, was ich jetzt mache oder kann das irgendwie negativ,
 
-00:34:49.400 --> 00:34:58.400
-Das ist jetzt eine Folie, wo nochmal der Diffie-Hellmann-SchlÃ¼ssel-Austausch dargestellt ist.
+00:31:51.880 --> 00:31:58.320
+kann das irgendwie negativ aussehen nach auÃŸen. Es gibt diesen Begriff der Click Fear, ich weiÃŸ
 
-00:34:58.400 --> 00:35:02.400
-Also wir haben hier diese Ã¶ffentlichen vereinbarten P und G.
+00:31:58.320 --> 00:32:03.040
+nicht, ob sie das schon mal hatten, dass sie mit der Maus Ã¼ber einen Link gegangen sind und gesagt
 
-00:35:02.400 --> 00:35:08.400
-Und Alice wÃ¤hlt jetzt dieses kleine A, berechnet dieses groÃŸe A, schickt das groÃŸe A an Bob.
+00:32:03.040 --> 00:32:06.960
+haben, wenn ich jetzt darauf klicke, was fÃ¼r negative Auswirkungen hat es denn fÃ¼r mich,
 
-00:35:08.400 --> 00:35:14.400
-Und Bob berechnet dieses kleine B, berechnet das groÃŸe B und schickt dann das groÃŸe B an Alice.
+00:32:06.960 --> 00:32:12.480
+wenn andere Leute wissen, dass ich da drauf geklickt habe. Und mittlerweile weiÃŸ man ja,
 
-00:35:14.400 --> 00:35:19.400
-Und dann berechnen Sie jeweils, nehmen Sie den Wert jeweils hoch, den eigenen Wert.
+00:32:12.480 --> 00:32:18.800
+dass im Prinzip jeder Klick auch registriert wird. Das heiÃŸt also, der mangelnde Schutz
 
-00:35:19.400 --> 00:35:22.400
-Und dann haben Sie den gemeinsamen GeheimenschlÃ¼ssel.
+00:32:18.800 --> 00:32:25.120
+personenbezogener Daten fÃ¼hrt dazu, dass man sich implizit zurÃ¼ckhÃ¤lt, also die freie Entfaltung
 
-00:35:24.400 --> 00:35:28.400
-Das ist das, was wir schon kennen und wo wir auch gesagt haben, das ist wahrscheinlich sicher,
+00:32:25.120 --> 00:32:29.560
+der PersÃ¶nlichkeit etwas einschrÃ¤nkt. Und schlussendlich Manipulation der PersÃ¶nlichkeit,
 
-00:35:28.400 --> 00:35:31.400
-wenn die Diffie-Hellmann-Sicherheitsannahme gilt.
+00:32:29.560 --> 00:32:36.720
+wie gesagt einer von vielen Bedrohungen der PrivatsphÃ¤re, wenn man sich vÃ¶llig,
 
-00:35:33.400 --> 00:35:38.400
-Das ist jetzt Elgammal. Das sieht relativ Ã¤hnlich aus, aber wir gehen jetzt mal im Einzelnen da durch.
+00:32:36.720 --> 00:32:43.120
+also wenn man sich einem der Internetkonzerne anvertraut, also Google und da entsprechend die
 
-00:35:39.400 --> 00:35:47.400
-Was das Ziel ist hier, ist Alice will an Bob eine vertrauliche Nachricht schicken.
+00:32:43.120 --> 00:32:48.040
+Datenschutzeinstellungen nicht macht, da gibt es diese Google Timeline, also man kann im Prinzip
 
-00:35:48.400 --> 00:35:52.400
-Das heiÃŸt, es braucht den Ã¶ffentlichen SchlÃ¼ssel von Bob.
+00:32:48.040 --> 00:32:55.040
+dann nachgucken, was man vor zehn Jahren an Google Suche eingegeben hat. Und im Prinzip kann man an den
 
-00:35:53.400 --> 00:35:55.400
-Was ist denn der Ã¶ffentliche SchlÃ¼ssel von Bob?
+00:32:55.040 --> 00:32:58.720
+Google Suchen, die man eingegeben hat, nachvollziehen, was man zu dem Zeitpunkt
 
-00:35:55.400 --> 00:35:58.400
-Na, der Ã¶ffentliche SchlÃ¼ssel von Bob, der besteht aus ein paar Elementen.
+00:32:58.720 --> 00:33:06.760
+gedacht hat. Was einen bewegt hat. Und das kann Google im Prinzip so lange wie sie, also Google
 
-00:35:58.400 --> 00:36:03.400
-Also hier steht der Ã¶ffentliche SchlÃ¼ssel von Bob ist P, G und B.
+00:33:06.760 --> 00:33:14.480
+steht nur fÃ¼r Apple, Facebook, fÃ¼r alle diese Konzerne, die die Daten sammeln als GeschÃ¤ftszweck
 
-00:36:03.400 --> 00:36:10.400
-P und G, das sind aber die gleichen Werte, die bei der Diffie-Hellmann-SchlÃ¼sselvereinbarung schon vereinbart worden sind.
+00:33:14.480 --> 00:33:19.800
+haben. Also Google weiÃŸ dann, was sie vor zehn Jahren gedacht haben. Sie wissen es vielleicht
 
-00:36:10.400 --> 00:36:19.400
-Also irgendeine groÃŸe Primzahl P und ein Wert G, also die Basis fÃ¼r die diskrete Exponentialfunktion.
+00:33:19.800 --> 00:33:24.320
+nicht mehr, aber Google weiÃŸ es noch oder kann es im Prinzip rauskriegen. Und das ist natÃ¼rlich
 
-00:36:20.400 --> 00:36:25.400
-Das kann sich jetzt im Prinzip Bob aussuchen, da sucht sich ein P und ein G aus.
+00:33:24.560 --> 00:33:31.640
+was, was ein Datenschutz ist, den man sehr gut nutzen kann, um sie zu beeinflussen. Ihre
 
-00:36:26.400 --> 00:36:30.400
-Und jetzt wÃ¤hlt er wie bei der Diffie-Hellmann-SchlÃ¼sselvereinbarung dieses kleine B
+00:33:31.640 --> 00:33:36.560
+geheimsten WÃ¼nsche weiÃŸ Google und kann natÃ¼rlich auch sie entsprechend manipulieren,
 
-00:36:30.400 --> 00:36:33.400
-und berechnet dieses groÃŸe B.
+00:33:36.560 --> 00:33:43.480
+wie Nachrichtendienste das gerne machen. Bis hin zur Erpressung, also wenn sich, jetzt muss ich
 
-00:36:35.400 --> 00:36:39.400
-Und dieses groÃŸe B kommt jetzt noch in den Ã¶ffentlichen SchlÃ¼sselreihen.
+00:33:43.480 --> 00:33:58.600
+aber tatsÃ¤chlich mal anhalten, Entschuldigung. Gut. Genau. Wie kann man denn da dem abhelfen?
 
-00:36:40.400 --> 00:36:44.400
-Das heiÃŸt, das hier, das ist jetzt der Ã¶ffentliche SchlÃ¼ssel von Bob.
+00:33:58.600 --> 00:34:04.400
+NatÃ¼rlich Datenschutz. Was bedeutet Datenschutz? Im Grunde genommen ist es ja so, dass man als
 
-00:36:46.400 --> 00:36:51.400
-Was ist jetzt der private SchlÃ¼ssel von Bob? Was braucht man jetzt, um das zu entschlÃ¼sseln?
+00:34:04.400 --> 00:34:10.080
+Data Subject, also jemand, der Daten, der personenbezogene Daten besitzt. Also die
 
-00:36:51.400 --> 00:36:56.400
-Da braucht man P und G, das ist auch Ã¶ffentlich bekannt, aber das Kritische beim privaten SchlÃ¼ssel ist dieses kleine B.
+00:34:10.080 --> 00:34:17.280
+personenbezogene Daten, die werden weitergegeben an Leute, die dann diese Daten halten, die auch
 
-00:36:57.400 --> 00:37:03.400
-Das hier ist Ã¶ffentlich bekannt, aber das hier, insbesondere das kleine B, muss geheim bleiben.
+00:34:17.280 --> 00:34:23.120
+rechtmÃ¤ÃŸig vielleicht oder auch brauchen. Und die kÃ¶nnen natÃ¼rlich diese Daten weitergeben. Und das
 
-00:37:06.400 --> 00:37:10.400
-So, was macht Alice jetzt? Alice will an Bob etwas vertraulich schicken.
+00:34:23.120 --> 00:34:31.720
+kann dazu fÃ¼hren, dass man halt Intrusions of Privacy hat. Der klassische Ansatz fÃ¼r Datenschutz
 
-00:37:10.400 --> 00:37:14.400
-Das heiÃŸt, es besorgt sich den Ã¶ffentlichen SchlÃ¼ssel von Bob, dieses P, G, B.
+00:34:31.720 --> 00:34:39.120
+ist, diese Information Collection zu unterbinden. Also das heiÃŸt, also Informationsflusskontrolle
 
-00:37:14.400 --> 00:37:21.400
-Das steht in der Zeitung oder das wird regelmÃ¤ÃŸig im Radio durchgesagt oder steht auf der Webseite von Bob.
+00:34:39.160 --> 00:34:48.760
+zu machen und dafÃ¼r zu sorgen, dass man seine Daten sozusagen bei sich behÃ¤lt. Das ist heute
 
-00:37:22.400 --> 00:37:26.400
-Im Telefonbuch, auf der Visitenkarte steht das Ã¼berall drauf.
+00:34:48.760 --> 00:34:56.040
+natÃ¼rlich schwerer als frÃ¼her. Ãœberall im Prinzip muss man seine Daten preisgeben, egal ob man will
 
-00:37:26.400 --> 00:37:30.400
-Und Alice ist ziemlich sicher, dass das jetzt der Ã¶ffentliche SchlÃ¼ssel von Bob ist.
+00:34:56.040 --> 00:35:03.360
+oder nicht. Und das ist also heutzutage sehr, sehr schwer umzusetzen. Und im Prinzip, der heutige
 
-00:37:31.400 --> 00:37:35.400
-Und was macht Alice jetzt? Alice hat eine Nachricht M, die sie verschÃ¼sseln mÃ¶chte.
+00:35:03.360 --> 00:35:08.560
+Ansatz ist im Prinzip eine Kombination aus datenschutzfÃ¶rdernde Techniken, die wir auch
 
-00:37:36.400 --> 00:37:41.400
-Jetzt wÃ¤hlt Alice so ein kleines A. Das kennen wir auch aus der Diffie-Hellmann-SchlÃ¼sselvereinbarung.
+00:35:08.560 --> 00:35:13.760
+noch kennenlernen werden. Also dass man zum Beispiel bestimmte Datenschutzeinstellungen macht,
 
-00:37:41.400 --> 00:37:45.400
-Und berechnet dieses groÃŸe A. Das kennen wir auch aus der Diffie-Hellmann-SchlÃ¼sselvereinbarung.
+00:35:13.760 --> 00:35:18.280
+dass etwas gar nicht erst erhoben wird oder dass man Techniken benutzt wie VPN, dass bestimmte
 
-00:37:45.400 --> 00:37:51.400
-Und jetzt berechnet Alice aus diesem groÃŸen A und dem Ã¶ffentlichen SchlÃ¼ssel von B
+00:35:18.280 --> 00:35:25.960
+Sachen gar nicht erhebbar sind. Plus rechtliche Bestimmungen, wie zum Beispiel die Datenschutz
 
-00:37:54.400 --> 00:37:57.400
-einen gemeinsamen symmetrischen SchlÃ¼ssel sozusagen.
+00:35:25.960 --> 00:35:30.240
+Grundverordnung, auf die ich auch noch gleich eingehen werde, wo man dann spÃ¤ter, wenn ein
 
-00:37:57.400 --> 00:38:04.400
-Ein gemeinsamer SchlÃ¼ssel, nÃ¤mlich B, das kommt von hier, hoch A modulo P.
+00:35:30.240 --> 00:35:35.160
+VerstoÃŸ gegen Datenschutzregeln offenbar wird, dagegen klagen kann und Leute dazu zwingen kann,
 
-00:38:05.400 --> 00:38:10.400
-Und da wissen wir, wenn Bob dieses A bekommt, dann kann er diesen SchlÃ¼ssel auch berechnen.
+00:35:35.280 --> 00:35:42.240
+den Datenschutz wieder einzuhalten. Aber das Problem heutzutage ist, im Prinzip muss man bei
 
-00:38:10.400 --> 00:38:20.400
-Aber wie verschÃ¼sseln wir denn jetzt eigentlich? Wir nehmen dieses K her und multiplizieren das jetzt auf die Nachricht, die ich verschÃ¼sseln will, drauf modulo P.
+00:35:42.240 --> 00:35:47.840
+der Datensammlung mitmachen heutzutage, um an einem gesellschaftlichen Leben teilzunehmen. Also wer
 
-00:38:22.400 --> 00:38:24.400
-Das heiÃŸt, es ist wie so ein verallgemeinertes XOR.
+00:35:47.840 --> 00:35:53.760
+heutzutage nicht im Internet bestimmte Sachen macht, der ist abgehÃ¤ngt, weiÃŸ ich gar nicht,
 
-00:38:25.400 --> 00:38:30.400
-Also wir multiplizieren den geheimen SchlÃ¼ssel auf die Nachricht modulo P.
+00:35:53.760 --> 00:35:58.920
+oder fÃ¼hlt sich jedenfalls abgehÃ¤ngt. Insofern ist das heutzutage schwieriger als man denkt.
 
-00:38:31.400 --> 00:38:33.400
-Und das ist eine effektive VerschÃ¼sselung.
+00:35:58.920 --> 00:36:04.680
+Deswegen machen wir einen ganz kurzen Schnelldurchlauf durch die Prinzipien
 
-00:38:34.400 --> 00:38:37.400
-Das kann man nicht so leicht rausrechnen, aber es ist ein effektiver VerschÃ¼sselung.
+00:36:04.760 --> 00:36:11.080
+des Datenschutzrechts. Datenschutzrecht ist ja auch was Rechtliches. Es gibt das Bundesdatenschutzgesetz,
 
-00:38:37.400 --> 00:38:42.400
-Das Ergebnis hier, dieses Y, mÃ¼sste man faktorisieren kÃ¶nnen, aber es gibt viele Faktoren davon.
+00:36:11.080 --> 00:36:20.560
+aber auch die DSGVO. Das Datenschutzrecht, das regelt im Prinzip oder das gewÃ¤hrleistet,
 
-00:38:44.400 --> 00:38:47.400
-Und was ist jetzt der Schiffretext oder die geheime Nachricht?
+00:36:20.560 --> 00:36:24.280
+das soll das Recht auf informationelle Selbstbestimmung gewÃ¤hrleisten. Im Prinzip
 
-00:38:47.400 --> 00:38:56.400
-Die geheime Nachricht besteht aus dem A, aus dem Paar Y, wo diese vertrauliche Nachricht M drinne steckt, und A.
+00:36:24.280 --> 00:36:28.200
+beschreibt es einen Interessenausgleich. NatÃ¼rlich die Datenschutzinteressen des
 
-00:38:56.400 --> 00:39:04.400
-A ist das, was hier berechnet worden ist, mit dem, was im Prinzip Teil von der Diffie-Hellmann-SchlÃ¼sselvereinbarung ist.
+00:36:28.200 --> 00:36:35.680
+Einzelnen, also von Ihnen. Aber es gibt natÃ¼rlich berechtigte Interessen staatlicher oder privater
 
-00:39:04.400 --> 00:39:06.400
-So, wenn Bob jetzt die Nachricht erhÃ¤lt, was macht er?
+00:36:35.680 --> 00:36:39.640
+Datenverarbeiter, zum Beispiel das Einwohner-Meldeamt, hatten berechtigtes Interesse,
 
-00:39:06.400 --> 00:39:13.400
-Okay, er hat jetzt dieses A und berechnet jetzt mit diesem A hoch klein b den gemeinsamen SchlÃ¼ssel K.
+00:36:39.640 --> 00:36:44.160
+ihren Namen und ihre Adresse zu wissen. Aber es gibt auch berechtigte Interessen der Allgemeinheit.
 
-00:39:13.400 --> 00:39:15.400
-Das ist wie Diffie-Hellmann wieder.
+00:36:44.160 --> 00:36:50.240
+Also das heiÃŸt, wenn die Polizei zum Beispiel sie sucht, dann muss sie auch irgendwie das Recht
 
-00:39:17.400 --> 00:39:23.400
-Und jetzt benutzt er dieses K und teilt das Y durch K.
+00:36:50.240 --> 00:36:54.960
+haben, ihre Daten zu verarbeiten, also um vor KriminalitÃ¤t zum Beispiel zu schÃ¼tzen.
 
-00:39:24.400 --> 00:39:31.400
-Durch K teilen, sozusagen im Rest der Nachricht, die Diffie-Hellmann-SchlÃ¼sselvereinbarung.
+00:36:54.960 --> 00:37:02.600
+Das Datenschutzrecht heutzutage ist eigentlich bestimmt, es gibt das Bundesdatenschutzgesetz,
 
-00:39:31.400 --> 00:39:41.400
-Durch K teilen, sozusagen im Restklassenring, also wenn man modulo P rechnet, da braucht man das multiplicative Inverse zum SchlÃ¼ssel K.
+00:37:02.600 --> 00:37:06.440
+aber eigentlich durch die Datenschutzgrundverordnung. Die europÃ¤ische,
 
-00:39:41.400 --> 00:39:44.400
-Das kann man aber relativ einfach berechnen, das sehen wir gleich, wie das geht.
+00:37:06.440 --> 00:37:13.240
+es ist eine europÃ¤ische Regulierung, die das Datenschutzrecht in Europa vereinheitlichen
 
-00:39:45.400 --> 00:39:53.400
-Wenn Sie dieses haben, dann multiplizieren Sie das auf Y drauf, und dadurch wird das rausdividiert, dieses K, und was Ã¼brig bleibt, ist dieses M.
+00:37:13.240 --> 00:37:19.440
+sollte oder vereinleichtigt hat. Das kann man denke ich schon, das gilt seit Mai 2018,
 
-00:39:55.400 --> 00:39:58.400
-Und so hat Bob dieses M berechnet.
+00:37:19.440 --> 00:37:24.960
+ist im Prinzip ein Meilenstein, wÃ¼rde ich schon sagen, im Bereich der informationellen
 
-00:39:59.400 --> 00:40:05.400
-Und der Angreifer, der sieht nur dieses Y, dieses A und dieses B.
+00:37:24.960 --> 00:37:30.000
+Selbstbestimmung. Es gab natÃ¼rlich da AusreiÃŸer nach oben und wie nach unten,
 
-00:40:06.400 --> 00:40:15.400
-Und aus der Diffie-Hellmann-Sicherheitseinnahme wissen wir, dass der Angreifer aus diesem B unten im A nicht dieses K berechnen kann.
+00:37:30.000 --> 00:37:35.600
+also hier zum Beispiel AusreiÃŸer nach unten. Also ein mangelndes VerstÃ¤ndnis von DSGVO sagt dann,
 
-00:40:17.400 --> 00:40:22.400
-Wenn er dieses K nicht berechnen kann, dann kann er auch aus dem Y das M nicht rauskriegen.
+00:37:35.600 --> 00:37:42.360
+okay, man darf noch nicht mal als Hausvermieter die Namen der Mieter am Klingelschild haben.
 
-00:40:23.400 --> 00:40:25.400
-Das ist die Sicherheitsargumentation.
+00:37:42.360 --> 00:37:46.800
+Das ist natÃ¼rlich Unsinn, das ist natÃ¼rlich notwendig, dass da der Name der Mieter drauf ist,
 
-00:40:25.400 --> 00:40:35.400
-Also zusammengefasst heiÃŸt das, dass pro Nachricht ein neuer separater Diffie-Hellmann-SchlÃ¼ssel vereinbart wird.
+00:37:47.480 --> 00:37:53.280
+aber solche Meldungen bringen dann die DSGVO immerhin wieder in Verruf, obwohl das vÃ¶llig
 
-00:40:36.400 --> 00:40:43.400
-Der wird auf diese Nachricht drauf multipliziert und kann vom EmpfÃ¤nger rausgerechnet werden.
+00:37:53.280 --> 00:38:03.320
+unsinn ist. Das, wo die DSGVO dann wieder positiv auffÃ¤llt, ist, dass wenn tatsÃ¤chlich Datenverarbeiter
 
-00:40:44.400 --> 00:40:48.400
-Das heiÃŸt pro Nachricht, die man verschickt, muss man einmal Diffie-Hellmann machen.
+00:38:03.320 --> 00:38:07.760
+wie Google oder die groÃŸen Internetkonzerne oder andere gegen das Datenschutzrecht verstoÃŸen und
 
-00:40:48.400 --> 00:40:50.400
-NÃ¤chste Nachricht macht man wieder Diffie-Hellmann.
+00:38:07.760 --> 00:38:14.400
+nicht ihre Einwilligung haben, wenn sie zum Beispiel ihre Daten verarbeiten, dann kÃ¶nnen
 
-00:40:50.400 --> 00:40:52.400
-NÃ¤chste Nachricht wieder Diffie-Hellmann.
+00:38:14.400 --> 00:38:22.080
+tatsÃ¤chlich jetzt auch empfehlliche Strafen verhÃ¤ngt werden. Die Grundprinzipien, die sie
 
-00:40:52.400 --> 00:40:54.400
-NÃ¤chste Nachricht wieder Diffie-Hellmann.
+00:38:22.080 --> 00:38:28.400
+haben, die Rechte, die sie haben, wenn sie oder die Prinzipien, an die sich Datenverarbeiter
 
-00:40:54.400 --> 00:40:57.400
-Der Teil von Bob bleibt immer gleich, das ist dieser Ã¶ffentliche SchlÃ¼ssel.
+00:38:28.400 --> 00:38:37.680
+halten mÃ¼ssen in der DSGVO, sind im Prinzip drei Sachen. Das erste ist Verbot mit Erlaubnisvorbehalt,
 
-00:40:57.400 --> 00:41:01.400
-Aber Alice muss immer wieder eine neue Zahl A auswÃ¼rfeln.
+00:38:37.680 --> 00:38:42.360
+was bedeutet das? Die Verarbeitung ihrer personenbezogenen Daten ist erstmal verboten,
 
-00:41:04.400 --> 00:41:06.400
-Gut, wer ist jetzt noch dabei von Ihnen?
+00:38:42.520 --> 00:38:49.800
+es sei denn, der Betroffene hat eingewilligt, dass die Daten verarbeitet werden oder es gibt
 
-00:41:09.400 --> 00:41:12.400
-Jetzt ist natÃ¼rlich die Frage, ist das sicher?
+00:38:49.800 --> 00:38:55.240
+eine gesetzliche Erlaubnis diese Daten zu verarbeiten. Die Einwilligung, das haben Sie
 
-00:41:17.400 --> 00:41:19.400
-Sie kÃ¶nnen sich gleich unterhalten da hinten.
+00:38:55.240 --> 00:39:00.760
+schon hÃ¤ufig mitgekriegt, das sind die Cookie-Banner zum Beispiel. Also da merkt man, dass die
 
-00:41:19.400 --> 00:41:20.400
-Wir machen gleich eine Pause.
+00:39:00.760 --> 00:39:06.200
+Einwilligung auch manchmal nur pro forma erhoben wird. Sie klicken ja meistens wahrscheinlich weg
 
-00:41:20.400 --> 00:41:22.400
-Halten Sie noch so lange durch.
+00:39:06.200 --> 00:39:13.000
+oder mÃ¶glichst schnell weg damit. Die Frage ist, ob es bestimmte Anforderungen an die Einwilligung
 
-00:41:24.400 --> 00:41:26.400
-Die Frage ist, ist das sicher?
+00:39:13.000 --> 00:39:17.280
+geben muss, wie zum Beispiel bei Banken, die sich dreimal versichern lassen, dass sie die
 
-00:41:27.400 --> 00:41:31.400
-Da kommen wir wieder mal zurÃ¼ck zu einer Idee, die wir auch beim letzten Mal schon gesehen haben.
+00:39:17.280 --> 00:39:23.120
+Informationen Ã¼ber die Risiken von Krediten zum Beispiel wahrgenommen haben, dass sie sich spÃ¤ter
 
-00:41:31.400 --> 00:41:33.400
-Das war diese beweisbare Sicherheit.
+00:39:23.120 --> 00:39:30.960
+nicht beschweren, dass sie nichts davon wussten. Das zweite Prinzip ist die Zweckbindung und
 
-00:41:33.400 --> 00:41:34.400
-Und hier kann man das mal anwenden.
+00:39:31.440 --> 00:39:37.320
+heiÃŸt, die Verarbeitung der Daten muss an einen bestimmten Zweck gebunden sein, ist an einen
 
-00:41:35.400 --> 00:41:45.400
-Bei der beweisbaren Sicherheit ist es ja so, dass man versucht, irgendein Protokoll zu reduzieren auf ein Problem, was man als sicher angenommen hat.
+00:39:37.320 --> 00:39:40.440
+bestimmten Zweck gebunden. Das heiÃŸt, wenn die Daten erhoben werden, dann muss gesagt werden,
 
-00:41:46.400 --> 00:41:51.400
-Hier hat man das Problem, worauf man reduzieren mÃ¶chte.
+00:39:40.440 --> 00:39:46.880
+wofÃ¼r werden die denn erhoben? Und wenn dieser Zweck wegfÃ¤llt, also und die dÃ¼rfen auch nur
 
-00:41:51.400 --> 00:41:53.400
-Das ist das Diffie-Hellmann-Problem.
+00:39:46.880 --> 00:39:50.600
+fÃ¼r diesen Zweck verarbeitet werden, wenn der Zweck wegfÃ¤llt, mÃ¼ssen die Daten auch gelÃ¶scht
 
-00:41:54.400 --> 00:41:56.400
-X ist hier Diffie-Hellmann.
+00:39:50.600 --> 00:39:54.080
+werden und sie dÃ¼rfen auch nicht fÃ¼r einen anderen Zweck verarbeitet werden. Das ist die
 
-00:41:58.400 --> 00:42:02.400
-Das Protokoll, das wir sicher nachweisen wollen, ist Pi.
+00:39:54.080 --> 00:40:00.400
+Zweckbindung. Und das dritte ist die Datenminimierung, das dritte Grundprinzip,
 
-00:42:02.400 --> 00:42:04.400
-Das ist hier Elgammal.
+00:40:00.400 --> 00:40:05.640
+Datenminimierung. Die Verarbeitung von Daten muss auf das notwendige MaÃŸ beschrÃ¤nkt sein. Also es
 
-00:42:07.400 --> 00:42:14.400
-Was wir jetzt zeigen wollen, ist, mal angenommen, wir haben einen Angreifer, der Elgammal, also dieses Pi brechen kann.
+00:40:05.640 --> 00:40:10.760
+dÃ¼rfen auch tatsÃ¤chlich nur Daten erhoben werden, die fÃ¼r den Zweck, der beschrieben ist, tatsÃ¤chlich
 
-00:42:16.400 --> 00:42:26.400
-Wenn wir jetzt mit diesem Angriff auf Elgammal auch es irgendwie schaffen kÃ¶nnen, durch so eine Reduktion, durch irgendein Algorithmus, die Diffie-Hellmann-Sicherheitsannahme zu brechen,
+00:40:10.760 --> 00:40:14.840
+auch notwendig sind. Das heiÃŸt, wenn Sie es nÃ¤chstes Mal im Hotel sind und die alle mÃ¶glichen
 
-00:42:28.400 --> 00:42:36.400
-dann ist das Brechen von Elgammal genau dann leicht, wenn Diffie-Hellmann leicht zu brechen ist.
+00:40:14.840 --> 00:40:18.240
+Daten von Ihnen haben wollen, dann kÃ¶nnen Sie auch einfach Sachen mal leer lassen und sagen,
 
-00:42:37.400 --> 00:42:42.400
-Also Elgammal ist mindestens so schwer zu brechen wie Diffie-Hellmann.
+00:40:18.240 --> 00:40:25.560
+wofÃ¼r brauchen Sie das Ã¼berhaupt? Genau und Sie haben natÃ¼rlich auch Rechte, betroffene Rechte,
 
-00:42:42.400 --> 00:42:46.400
-So hat man ein Problem auf das andere reduziert.
+00:40:25.560 --> 00:40:30.120
+Recht auf Auskunft. Sie kÃ¶nnen bei Leuten, die Daten oder bei Organisationen die Daten von Ihnen
 
-00:42:49.400 --> 00:42:54.400
-Das heiÃŸt also, wenn man das zeigen kann, das versuchen dann die Kryptographen in ihren Sicherheitsbeweisen,
+00:40:30.120 --> 00:40:36.560
+verarbeiten, einfach Fragen der Datenschutzauskunft machen nach Paragraph XY DSGVO. KÃ¶nnen Sie
 
-00:42:54.400 --> 00:43:02.400
-wenn man zeigen kann, dass man mit einer LÃ¶sung, mit einem Angriff auf Pi X brechen kann,
+00:40:36.560 --> 00:40:39.920
+hinschreiben, sagen, was fÃ¼r Daten haben Sie denn mÃ¶glich gespeichert? Und dann warten Sie mal ab,
 
-00:43:03.400 --> 00:43:10.400
-dann heiÃŸt das, dass Pi, also Elgammal, mindestens so schwer zu brechen ist wie X, also wie Diffie-Hellmann.
+00:40:39.920 --> 00:40:46.200
+was fÃ¼r eine Reaktion dann kommt. HÃ¤? Oder meistens kommt dann irgendwie so eine Antwort von der
 
-00:43:10.400 --> 00:43:14.400
-Das heiÃŸt also, wenn Diffie-Hellmann schwer ist, dann ist auch Elgammal schwer.
+00:40:46.200 --> 00:40:51.240
+Rechtsabteilung, sagt, wir machen nichts Schlimmes mit Ihren Daten, aber die Daten, die Sie gespeichert
 
-00:43:15.400 --> 00:43:19.400
-Und ich versuche Ihnen das mal jetzt kurz an dem Beispiel hier darzulegen.
+00:40:51.240 --> 00:40:56.400
+sind, werden Ihnen trotzdem nicht ausgehÃ¤ndigt. Sie haben das Recht auf Berichtigung oder LÃ¶schen
 
-00:43:20.400 --> 00:43:33.400
-Also wir haben auf der rechten Seite nochmal hier das Schaubild, also das Elgammal, also das hier Pi ist Elgammal und X ist Diffie-Hellmann.
+00:40:56.400 --> 00:41:01.920
+von Daten. Also wenn Sie dann die Datenschutzauskunft kriegen und sagen, das stimmt was nicht, dann
 
-00:43:33.400 --> 00:43:41.400
-Das heiÃŸt, was wir hier haben ist, die Eingabe ist eine Instanz des Problems, des Diffie-Hellmann-Problems.
+00:41:01.920 --> 00:41:06.240
+haben Sie das Recht darauf, dass das korrigiert wird und dass auch Daten gelÃ¶scht werden. Und
 
-00:43:42.400 --> 00:43:46.400
-Das heiÃŸt, wir haben P, G, A und B.
+00:41:06.240 --> 00:41:10.800
+Sie haben sogar das Recht auf DatenÃ¼bertragbarkeit, also DatenportabilitÃ¤t. Das soll im Prinzip das
 
-00:43:48.400 --> 00:43:57.400
-Und daraus zu berechnen, daraus dieses G hoch A hoch B zu berechnen, also die gemeine GeheimschÃ¼ssel, das gilt als schwer.
+00:41:10.800 --> 00:41:19.680
+Login auf bestimmte Dienstleister erschweren. Das heiÃŸt, Sie kÃ¶nnen zum Beispiel zu Facebook
 
-00:43:58.400 --> 00:44:06.400
-Wenn wir es jetzt schaffen, mit irgendeinem Angreifer, der Elgammal brechen kann, das Diffie-Hellmann-Problem zu brechen, haben wir das Beweisziel erreicht.
+00:41:19.680 --> 00:41:23.000
+gehen und sagen, so alle meine Daten, die in meinem Facebook-Account gespeichert sind,
 
-00:44:07.400 --> 00:44:12.400
-Das heiÃŸt, was machen wir? Wir nehmen an, wir haben einen Dienstleister, irgendein Orakel, was Elgammal brechen kann.
+00:41:23.000 --> 00:41:28.760
+gib mir die mal, lÃ¶sch die und dann gehen Sie zu Google Plus, gibt es das noch, oder zu irgendeinem
 
-00:44:13.400 --> 00:44:20.400
-Was wir jetzt machen ist, wir berechnen einfach jetzt mal hier, wir wÃ¤hlen ein Y, ein Wert Y
+00:41:28.760 --> 00:41:35.440
+anderen Social Media Anbieter und sagen, so hier habe ich meine Facebook-Daten, importiere die doch
 
-00:44:20.400 --> 00:44:27.400
-und geben jetzt diesem Angreifer eine Instanz des Problems, des Elgammal-Problems.
+00:41:35.440 --> 00:41:40.080
+mal, sodass ich da genauso weitermachen kann, wie ich bei Facebook aufgehÃ¶rt habe. Das Recht haben
 
-00:44:28.400 --> 00:44:37.400
-Wir geben dem dieses Y. Das Y ist ja irgendwie, da steckt ja irgendwie ein geheimer SchlÃ¼ssel drin, aber wir wÃ¤hlen dieses Y zufÃ¤llig.
+00:41:40.080 --> 00:41:46.080
+Sie. Das geht auch teilweise, also das Begriff DatenportabilitÃ¤t. Ich weiÃŸ nicht, hat das jemand
 
-00:44:38.400 --> 00:44:44.400
-Das sieht aus wie eine verschlÃ¼sselte Nachricht, wo dieser verschlÃ¼sselte Wert drin steckt.
+00:41:46.080 --> 00:41:52.000
+schon mal versucht bei Ihnen? Ich kann Sie nur ermutigen, das zu versuchen. Ja, das hat schon
 
-00:44:45.400 --> 00:44:52.400
-Das heiÃŸt, Y ist von der Form K mal M, wo wir den SchlÃ¼ssel K nicht kennen.
+00:41:52.000 --> 00:42:05.080
+jemand versucht. Bitte sagen Sie mal. Mit Passwortmanagern. Okay, okay. Okay, ja, das macht
 
-00:44:53.400 --> 00:44:57.400
-Und M ist irgendeine Nachricht, die durch die VerschlÃ¼sselung von K rauskommt.
+00:42:05.080 --> 00:42:12.000
+Sinn, aber wer das mal bei Facebook oder Google versucht und da Erfahrungen gesammelt hat, der
 
-00:44:58.400 --> 00:45:04.400
-Wenn wir jetzt einen Angreifer haben, der Elgammal lÃ¶sen kann, dann kann er uns diese Nachricht entschlÃ¼sseln.
+00:42:12.000 --> 00:42:17.880
+kann sich gerne mal bei mir melden. Das alles macht so den Eindruck, als wenn Datenschutz ihre
 
-00:45:05.400 --> 00:45:08.400
-Das heiÃŸt, was wir rauskriegen, ist M.
+00:42:17.880 --> 00:42:22.640
+Privatsache ist. Und es ist ja im Prinzip auch ihre Privatsache. Sie mÃ¼ssen darauf achten, was mit
 
-00:45:08.400 --> 00:45:17.400
-Und was wir jetzt nur noch machen mÃ¼ssen, ist, aus diesem Y, das wir hier reingegeben haben,
+00:42:22.640 --> 00:42:28.160
+Ihren Daten passiert. Das ist zwar anstrengend, aber es ist wie so ein bisschen so Ã¶komÃ¤ÃŸig.
 
-00:45:18.400 --> 00:45:25.400
-aus diesem Y, da multiplizieren wir das multiplicative Inverse von M drauf.
+00:42:28.240 --> 00:42:36.000
+Das Problem ist, dass man heutzutage weiÃŸ, dass es nicht immer nur eine Privatsache ist, weil das,
 
-00:45:26.400 --> 00:45:30.400
-Das M haben wir. Das multiplicative Inverse, das berechnen wir effizient.
+00:42:36.000 --> 00:42:41.160
+was andere Leute machen, auch auf sie Einwirkungen hat. Und das ist dieser Begriff prÃ¤diktive
 
-00:45:31.400 --> 00:45:34.400
-Aber das ist ja gerade dieser SchlÃ¼ssel K, der benutzt worden ist.
+00:42:41.160 --> 00:42:48.040
+Privatheit, den der Philosoph Rainer MÃ¼lhoff mal geprÃ¤gt hat. Das Problem ist nÃ¤mlich, dass Alice
 
-00:45:34.400 --> 00:45:36.400
-Und das geben wir hier raus.
+00:42:48.040 --> 00:42:54.120
+zum Beispiel jetzt alles richtig macht und ihre Daten geheim hÃ¤lt, aber bestimmte Daten Ã¼ber Alice
 
-00:45:39.400 --> 00:45:41.400
-Wer ist jetzt noch dabei?
+00:42:54.120 --> 00:42:58.980
+natÃ¼rlich bekannt sind. Also zum Beispiel, wo sie wohnt oder sowas, aber vielleicht nicht andere
 
-00:45:42.400 --> 00:45:48.400
-Es sind nicht mehr so viele, aber das ist so das Argument, weswegen man sagt, wenn ich Elgammal brechen kann,
+00:42:58.980 --> 00:43:04.600
+Sachen. Ihre sexuellen PrÃ¤ferenzen oder ihr Geschlecht oder ihr gefÃ¼hltes Geschlecht zum
 
-00:45:49.400 --> 00:45:51.400
-dann kann ich auch Diffie-Hellmann brechen.
+00:43:04.600 --> 00:43:11.560
+Beispiel. Das Problem ist, wenn es Hilfsdaten oder sonstige Daten Ã¼ber Alice gibt, dann kann man
 
-00:45:52.400 --> 00:45:55.400
-Wenn Diffie-Hellmann schwer ist, muss Elgammal also auch schwer sein.
+00:43:11.560 --> 00:43:19.200
+natÃ¼rlich mit KI-Modellen heutzutage aus diesen Hilfsdaten die andere Daten ableiten. Und warum
 
-00:45:56.400 --> 00:45:59.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:19.280 --> 00:43:24.000
+kann man das? Weil diese prÃ¤diktiven Modelle, diese KI-Modelle auf den Daten von ganz vielen
 
-00:45:59.400 --> 00:46:01.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:24.000 --> 00:43:29.800
+anderen Leuten trainiert worden sind. Also die Hilfsdaten sind zum Beispiel Facebook-Likes von
 
-00:46:02.400 --> 00:46:04.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:29.800 --> 00:43:37.520
+Alice. Die sagen ziemlich viel Ã¼ber einen persÃ¶nlich aus. Und man kann auf den Facebook-Likes zum
 
-00:46:05.400 --> 00:46:07.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:37.520 --> 00:43:43.680
+Beispiel die sexuelle IdentitÃ¤t oder sexuelle PrÃ¤ferenzen lernen, dadurch, dass man diese
 
-00:46:08.400 --> 00:46:10.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:43.680 --> 00:43:48.360
+Daten von anderen Leuten hat. Man kann mit relativ hoher Wahrscheinlichkeit oder hoher
 
-00:46:11.400 --> 00:46:13.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:48.360 --> 00:43:56.560
+Signifikanz dann tatsÃ¤chlich von Alice diese Daten auch auch vorhersagen. Das heiÃŸt, da kann
 
-00:46:14.400 --> 00:46:16.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:43:56.560 --> 00:44:02.120
+Alice so viel machen, wie sie mÃ¶chte. Okay, sollte vielleicht nicht so viele Facebook-Likes setzen,
 
-00:46:17.400 --> 00:46:19.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:44:02.120 --> 00:44:08.200
+aber im Prinzip, Alice kann ihre sexuelle IdentitÃ¤t zum Beispiel geheim halten, aber
 
-00:46:20.400 --> 00:46:22.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:44:08.200 --> 00:44:13.200
+trotzdem wird sie offenbar. Und das liegt daran, dass alle anderen sozusagen nicht auf ihre Daten
 
-00:46:23.400 --> 00:46:25.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:44:13.520 --> 00:44:19.280
+achten. Und das kann natÃ¼rlich auch Auswirkungen auf, also die Privatheit ist also nicht nur ein
 
-00:46:26.400 --> 00:46:28.400
-Und das ist das Problem, dass wir jetzt noch nicht so viele haben.
+00:44:19.280 --> 00:44:28.200
+Problem von Einzelnen, tatsÃ¤chlich von allen. Gut, ich mache noch die AnonymitÃ¤tsmaÃŸe und dann
 
-00:46:30.400 --> 00:46:33.400
-So, wir hatten vor der Pause gesehen, dass wir durch einen Wert teilen mÃ¼ssen.
+00:44:28.200 --> 00:44:34.960
+machen wir eine ganz kurze Pause. Die Frage ist, wenn man jetzt DatenbestÃ¤nde hat, also zum
 
-00:46:34.400 --> 00:46:36.400
-So, wir hatten vor der Pause gesehen, dass wir durch einen Wert teilen mÃ¼ssen.
+00:44:34.960 --> 00:44:40.360
+Beispiel als Wissenschaftler DatenbestÃ¤nde hat, und ich mÃ¶chte gerne die Daten anderen Leuten
 
-00:46:37.400 --> 00:46:38.400
-Modulo P. Und wie geht das?
+00:44:40.360 --> 00:44:47.040
+geben, aber ich mÃ¶chte gerne die PrivatsphÃ¤re von Leuten schÃ¼tzen. Zum Beispiel bei Gesundheitsdaten
 
-00:46:39.400 --> 00:46:41.400
-Also das war hier dieses K auch minus eins, Modulo P.
+00:44:47.040 --> 00:44:51.720
+wird das ja hÃ¤ufig diskutiert. Also unter welchen Bedingungen kann man die zum Beispiel weitergeben?
 
-00:46:42.400 --> 00:46:45.400
-Wie geht das? Da muss man das sogenannte multiplicative Inverse berechnen.
+00:44:51.720 --> 00:44:56.480
+Die LÃ¶sung ist natÃ¼rlich, man analysiert die Daten, die da drin sind, aber die Frage ist,
 
-00:46:46.400 --> 00:46:47.400
-Was ist das multiplicative Inverse?
+00:44:56.480 --> 00:45:01.640
+wie macht man das und wie bewertet man vor allem, wie gut die analysiert sind? Und da gibt es
 
-00:46:48.400 --> 00:46:55.400
-Das ist Modulo P. Die Zahl, mit der man eine Zahl x multiplizieren muss, damit der eins rauskommt, Modulo P.
+00:45:01.640 --> 00:45:07.280
+verschiedene MaÃŸe, die man da machen kann und wir schauen uns jetzt mal zwei von diesen MaÃŸen an.
 
-00:46:56.400 --> 00:47:00.400
-Also das Inverse-Element, damit man auf eins kommt.
+00:45:07.280 --> 00:45:15.440
+Das, was man vermeiden will, sind sogenannte VerknÃ¼pfungsangriffe. VerknÃ¼pfungsangriffe
 
-00:47:04.400 --> 00:47:07.400
-Genau. Wie berechnet man das? Wie berechnet man das ineffizient?
+00:45:15.440 --> 00:45:21.440
+sehen so aus, dass zum Beispiel das hier sind die Daten, die irgendwie ein medizinischer Forscher
 
-00:47:08.400 --> 00:47:10.400
-Also hier das Multiplikative Inverse ist nochmal...
+00:45:21.440 --> 00:45:28.760
+verÃ¶ffentlicht hat. Also zum Beispiel Basisdaten, wo er bestimmte medizinische Sachverhalte,
 
-00:47:12.400 --> 00:47:17.400
-Wir haben die VerschlÃ¼sselung Modulo P im Elgermahl-Verfahren.
+00:45:28.760 --> 00:45:36.880
+Diagnosen vorhergesagt hat aus bestimmten anderen Daten. Und die Daten, die sind jetzt insofern
 
-00:47:18.400 --> 00:47:19.400
-Da braucht man ja das K auch minus eins.
+00:45:36.880 --> 00:45:42.320
+anonymisiert, dass da kein Name drinne steht, keine Adresse drinne steht. Die Adresse ist hier durch
 
-00:47:20.400 --> 00:47:29.400
-Und das Multiplikative Inverse ist die Zahl Modulo P, die man eine Zahl mal nehmen muss, damit eins rauskommt.
+00:45:42.320 --> 00:45:50.520
+SIP, die Postleitzahl zum Beispiel, erproximiert. Aber das sind Daten, die einfach so fÃ¼r sich
 
-00:47:30.400 --> 00:47:32.400
-Und wie man das effizient berechnet, das machen wir jetzt.
+00:45:50.520 --> 00:46:01.680
+verÃ¶ffentlicht worden sind. So hier wollte ich was malen. Also das hier sind die, das sind hier die
 
-00:47:34.400 --> 00:47:37.400
-Und da braucht man den erweiterten Euclidischen Algorithmus dafÃ¼r.
+00:46:01.680 --> 00:46:12.120
+verÃ¶ffentlichten, pseudonymisierten oder verÃ¶ffentlichte Daten aus der medizinischen
 
-00:47:38.400 --> 00:47:43.400
-Der Euclidische Algorithmus ist ein Algorithmus, mit dem man den grÃ¶ÃŸten gemeinsamen Teiler berechnen kann.
+00:46:12.120 --> 00:46:18.520
+Forschung. Jetzt gibt es aber andere Daten, die auch verÃ¶ffentlicht werden kÃ¶nnten. Zum Beispiel
 
-00:47:44.400 --> 00:47:46.400
-Und das ist erstmal die Frage, was ist der grÃ¶ÃŸte gemeinsame Teiler?
+00:46:18.520 --> 00:46:25.120
+hier in den Vereinigten Staaten die die Liste der WÃ¤hler, die in der Ã¶ffentlichen Liste eingetragen
 
-00:47:46.400 --> 00:47:47.400
-Was ist der grÃ¶ÃŸte gemeinsame Teiler?
+00:46:25.120 --> 00:46:38.480
+sind. Also das sind auch verÃ¶ffentlichte Daten aus anderen Quellen. Und wenn die sich jetzt
 
-00:47:48.400 --> 00:47:54.400
-Der grÃ¶ÃŸte gemeinsame Teiler von zwei Zahlen ist die grÃ¶ÃŸte Zahl z, die sowohl x als auch y teilt.
+00:46:38.480 --> 00:46:43.880
+Ã¼berschneiden in bestimmten Aspekten, das ist hier diese Ãœberschneidung hier, dann kann man
 
-00:47:55.400 --> 00:47:59.400
-Also man versucht sozusagen den grÃ¶ÃŸten gemeinsamen Teiler rauszukriegen.
+00:46:43.880 --> 00:46:52.480
+die miteinander verknÃ¼pfen. Und die Attribute, die man da benutzt um die zu verknÃ¼pfen,
 
-00:48:00.400 --> 00:48:02.400
-Sagt man auch Greatest Common Visor oder grÃ¶ÃŸter gemeinsamer Faktor.
+00:46:52.480 --> 00:46:59.200
+die nennt man, also die Menge an Attributen, die nennt man, das sind die sogenannten quasi
 
-00:48:03.400 --> 00:48:07.400
-Das wird auch oft so beschrieben als die Anwendung der GGT-Funktion, der grÃ¶ÃŸte gemeinsamen Teiler-Funktion.
+00:46:59.200 --> 00:47:09.960
+Identifier. Das ist im Prinzip eine Sammlung von Attributen, die eine Person potenziell
 
-00:48:08.400 --> 00:48:10.400
-Bei kleinen Zahlen, da sieht man das noch.
+00:47:09.960 --> 00:47:16.840
+eindeutig identifizieren kÃ¶nnen. Und wenn man jetzt nÃ¤mlich diese beiden DatenbestÃ¤nde verknÃ¼pft
 
-00:48:11.400 --> 00:48:13.400
-GGT 12 und 8 ist 4.
+00:47:16.840 --> 00:47:22.400
+und nicht auf eine bestimmte Eigenschaft der DatenbestÃ¤nde achtet, dann kann man nÃ¤mlich
 
-00:48:13.400 --> 00:48:15.400
-GGT 19 und 7, zwei Primzahlen.
+00:47:22.400 --> 00:47:28.680
+plÃ¶tzlich aus der VerknÃ¼pfung dieser beiden DatenbestÃ¤nde jetzt zum Beispiel den Namen,
 
-00:48:16.400 --> 00:48:18.400
-Da gibt es nur den GGT ist 1.
+00:47:28.680 --> 00:47:33.400
+also den Namen von jemandem ergÃ¤nzen, der hier zum Beispiel eine bestimmte Diagnose hatte.
 
-00:48:19.400 --> 00:48:21.400
-Hier sieht man es nicht mehr so einfach.
+00:47:33.400 --> 00:47:41.120
+Dann gibt es tatsÃ¤chlich Beispiele aus der Praxis in den Vereinigten Staaten, wo ein
 
-00:48:22.400 --> 00:48:29.400
-Und spÃ¤testens hier, wenn die Zahlen groÃŸ sind, da braucht man irgendeinen Algorithmus.
+00:47:41.680 --> 00:47:47.280
+Gouverneur von Massachusetts aus dieser VerknÃ¼pfung plÃ¶tzlich nachgewiesen werden konnte,
 
-00:48:32.400 --> 00:48:36.400
-Und der Algorithmus, es gibt verschiedene Algorithmen, die man benutzen kann.
+00:47:47.280 --> 00:47:52.760
+dass er eine bestimmte medizinische Diagnose hatte, was nicht Ã¶ffentlich bekannt war.
 
-00:48:37.400 --> 00:48:40.400
-Aber der einfachste Algorithmus ist der Euclidische Algorithmus.
+00:47:52.760 --> 00:48:00.560
+Und um so was zu verhindern, braucht man natÃ¼rlich DatenbestÃ¤nde, die eine bestimmte
 
-00:48:40.400 --> 00:48:42.400
-Euclidische Algorithmus ist der Euclidische Algorithmus.
+00:48:00.560 --> 00:48:12.760
+AnonymitÃ¤tqualitÃ¤t haben. Und eine von dieser Art, das zu messen, ist der Begriff der K-AnonymitÃ¤t.
 
-00:48:43.400 --> 00:48:47.400
-Wer hat schon mal den Euclidischen Algorithmus gesehen oder hat ihn gelernt in der Schule?
+00:48:12.760 --> 00:48:21.600
+Und die Definition von K-AnonymitÃ¤t sagt, eine Tabelle oder ein Datenbestand ist K-anonym bezÃ¼glich
 
-00:48:48.400 --> 00:48:49.400
-Okay, ein paar.
+00:48:21.600 --> 00:48:27.440
+eines quasi Identifiers QI, also eine Menge von Attributen. Wenn jede Zeile mindestens
 
-00:48:50.400 --> 00:48:51.400
-Ein wunderschÃ¶ner Algorithmus.
+00:48:27.520 --> 00:48:33.400
+K mal in der Tabelle vorkommt, wenn man nur die Attribute im quasi Identifier sich anschaut.
 
-00:48:52.400 --> 00:48:54.400
-Der erweiterte Euclidische Algorithmus ist wunderschÃ¶n.
+00:48:33.400 --> 00:48:43.000
+Also mal angenommen, das hier ist eine Tabelle, die verÃ¶ffentlicht wird und die quasi Identifier sind
 
-00:48:57.400 --> 00:49:01.400
-Euclid, griechischer Mathematiker und Philosoph, hat nÃ¤mlich ein paar Beobachtungen gemacht.
+00:48:43.000 --> 00:48:51.760
+jetzt diese, das ist Race, Birth, Gender und Zipcode, also die ersten vier Spalten. Das sind
 
-00:49:01.400 --> 00:49:11.400
-Also wenn man eine positive Zahl x hat, falls x ein Teiler von y ist, dann ist GGT x,y gleich x.
+00:48:51.760 --> 00:49:00.440
+unsere quasi Identifier. Und K-anonymitÃ¤t besagt, wenn man diese Tabelle anschaut und
 
-00:49:13.400 --> 00:49:16.400
-x Teiler von y, grÃ¶ÃŸer als x geht es nicht.
+00:49:00.440 --> 00:49:07.840
+nur die quasi Identifier betrachtet, dann muss jede Zeile mindestens K mal vorkommen. Wir kÃ¶nnen
 
-00:49:17.400 --> 00:49:19.400
-Also x muss der GGT sein von x und y.
+00:49:07.840 --> 00:49:13.080
+mal schauen, wenn man die rechte Spalte weglÃ¤sst, da sieht man, hier kommt es zweimal vor, das ist
 
-00:49:20.400 --> 00:49:23.400
-Oder hat auch die Beobachtung gemacht, fÃ¼r zwei positive ganze Zahlen x und y gilt,
+00:49:13.080 --> 00:49:23.880
+zweimal, zweimal, zweimal, hier sogar dreimal und hier auch mal zweimal. Das heiÃŸt, die ist fÃ¼r K
 
-00:49:24.400 --> 00:49:28.400
-wenn x grÃ¶ÃŸer als y ist, dann ist der GGT von x und y der gleiche,
+00:49:23.880 --> 00:49:33.320
+gleich zwei K-Anonymen. Warum ist das gut? Das bedeutet, dass wenn man jetzt Ã¼ber diese quasi
 
-00:49:28.400 --> 00:49:33.400
-wie wenn man von dem GrÃ¶ÃŸeren einmal y abzieht.
+00:49:33.320 --> 00:49:39.960
+Identifier einen VerknÃ¼pfungsangriff macht, dann ist die kleinste Datenmenge, auf die man dann eine
 
-00:49:34.400 --> 00:49:36.400
-Dann ist der GGT der gleiche.
+00:49:39.960 --> 00:49:45.200
+VerknÃ¼pfung machen kann, K-Elemente groÃŸ. Also wenn K gleich zwei ist, dann kann man nicht
 
-00:49:37.400 --> 00:49:40.400
-Ich wÃ¼rde immer sagen, in der Mathematikvorlesung sagt man immer, das sieht man leicht,
+00:49:45.200 --> 00:49:51.000
+eindeutig jemand identifizieren, sondern man landet immer bei zwei Leuten, die man identifizieren kann.
 
-00:49:41.400 --> 00:49:45.400
-aber Euclid hat in Griechenland da ein bisschen lÃ¤nger gebraucht dafÃ¼r.
+00:49:51.000 --> 00:49:57.720
+Und das ist besser, als wenn sie eindeutig identifizierbar sind. Und je grÃ¶ÃŸer K ist,
 
-00:49:46.400 --> 00:49:49.400
-Aber es ist auf jeden Fall eine Beobachtung, die wahr ist.
+00:49:57.720 --> 00:50:05.240
+desto grÃ¶ÃŸer ist natÃ¼rlich auch der Grad anonymitÃ¤t, die man da erreichen kann. Machen wir
 
-00:49:50.400 --> 00:49:55.400
-Aus dieser Beobachtung, aus dieser zweiten Beobachtung, da kann man einen Algorithmus herleiten,
+00:50:05.320 --> 00:50:09.760
+mal ein Beispiel, oder ich frage mal, wer ist jetzt noch dabei? K-AnonymitÃ¤t, okay. Machen wir mal ein
 
-00:49:55.400 --> 00:49:59.400
-dass man sagt, immer wenn man zwei Zahlen hat, die eine grÃ¶ÃŸer als die andere,
+00:50:09.760 --> 00:50:16.640
+Beispiel, auch wo man die Probleme sieht, auch aus dem Originalpapier. Mal angenommen, das hier links
 
-00:50:00.400 --> 00:50:04.400
-dann zieht man immer die kleinere von der grÃ¶ÃŸeren ab und macht das so lange,
+00:50:16.640 --> 00:50:23.840
+oben, PT, das ist die Originalquelle, das ist die Private Table, die man dann publiziert, aber die
 
-00:50:05.400 --> 00:50:09.400
-bis die beiden Zahlen gleich sind oder bis diese Gleichung hier gilt,
+00:50:23.840 --> 00:50:30.160
+publiziert man natÃ¼rlich nicht in der Art, wie sie da steht, sondern K-Anonymen. Also man kann sie
 
-00:50:10.400 --> 00:50:12.400
-wenn das eine Teiler vom anderen ist.
+00:50:30.160 --> 00:50:38.760
+zum Beispiel hier publizieren, dadurch, dass man sagt, okay, ich mache meinen Raster grÃ¶ber,
 
-00:50:13.400 --> 00:50:14.400
-Da ist man fertig.
+00:50:38.760 --> 00:50:44.120
+zum Beispiel. Das Birthdate wird jetzt nicht auf Geburtsdatum runtergebrochen, sondern auf das Jahr.
 
-00:50:15.400 --> 00:50:16.400
-Machen wir ein Beispiel.
+00:50:44.120 --> 00:50:52.000
+Dadurch wird man grÃ¶ber und man schlieÃŸt dann einzelne Zeilen dann zusammen. Und der Quasi-
 
-00:50:18.400 --> 00:50:22.400
-Genau, der Euclidische Algorithmus bei GGT 12 und 8,
+00:50:52.000 --> 00:50:58.800
+Identifier, das sind jetzt nochmal die ersten, das ist hier unser Quasi- Identifier Set. Man sieht,
 
-00:50:22.400 --> 00:50:27.400
-jetzt zieht man die kleinere von der grÃ¶ÃŸeren ab, also hier die 8 von der 12,
+00:50:58.880 --> 00:51:04.280
+dass man auch hier zum Beispiel bei RACE kann man auch K-AnonymitÃ¤t dadurch erreichen, dass man
 
-00:50:28.400 --> 00:50:32.400
-hat man 4 und 8, dann zieht man wieder die 4 von der 8 ab, hat man 4, 4,
+00:51:04.280 --> 00:51:12.120
+verallgemeinert oder dass man EintrÃ¤ge weglÃ¤sst zum Beispiel, oder Black oder White einfach auf
 
-00:50:33.400 --> 00:50:36.400
-und wenn die beiden Zahlen gleich sind, dann hat man den GGT gefunden.
+00:51:12.120 --> 00:51:17.280
+Person geht zum Beispiel, und man nicht mehr weiÃŸ, ob das Black oder White ist. Das heiÃŸt, hier
 
-00:50:37.400 --> 00:50:40.400
-Im Prinzip die erste Beobachtung wÃ¤re auch schon hier bzw. hier, hier nicht,
+00:51:17.280 --> 00:51:25.000
+sieht man, hier hat man K gleich zwei AnonymitÃ¤t, das ist gleich, das ist gleich, das ist gleich.
 
-00:50:41.400 --> 00:50:43.400
-wenn hier ist das eine Teiler vom anderen,
+00:51:25.000 --> 00:51:32.200
+Man kann auch hier verallgemeinern die Postleitzahl, das heiÃŸt, hier hat man fÃ¼r K gleich zwei
 
-00:50:44.400 --> 00:50:47.400
-und da hat man hier eigentlich auch schon den GGT gefunden mit 4.
+00:51:32.200 --> 00:51:37.560
+K-AnonymitÃ¤t. Das Problem ist, wenn man den gleichen Datenbestand auf andere Art zum
 
-00:50:47.400 --> 00:50:52.400
-Bei zwei Primzahlen dauert es ein bisschen lÃ¤nger, weil man da runterrechnen muss bis auf die 1,
+00:51:37.560 --> 00:51:45.560
+Beispiel verÃ¶ffentlicht und auf andere Art zum Beispiel K-AnonymitÃ¤t herstellt, zum Beispiel,
 
-00:50:53.400 --> 00:50:58.400
-19, 7, da zieht man die 7 von der 19 ab, hier die 7 von der 12, hat man 5, 7,
+00:51:45.560 --> 00:51:52.280
+dass man die Jahreszahl verallgemeinert oder hier zum Beispiel das Geschlecht verallgemeinert,
 
-00:50:59.400 --> 00:51:04.400
-dann zieht man die 5 von der 7 ab, hat man 5, 2, dann zieht man die 2 von der 5,
+00:51:52.280 --> 00:51:57.800
+dann kann man natÃ¼rlich aus diesen beiden DatenbestÃ¤nden, wenn das hier wieder der
 
-00:51:05.400 --> 00:51:08.400
-hat man 3, 2, 1, 2, 1, 1, ist man fertig.
+00:51:57.800 --> 00:52:02.920
+Quasi- Identifier ist, kann man durch VerknÃ¼pfungen dann wieder einen Datenbestand erzeugen,
 
-00:51:10.400 --> 00:51:11.400
-Wer ist jetzt noch dabei?
+00:52:02.920 --> 00:52:14.960
+der wieder eindeutiger ist und wo man dann aus dem RÃ¼ckrechnen schon hier die eine Person dann
 
-00:51:12.400 --> 00:51:13.400
-Gut, sehr gut.
+00:52:14.960 --> 00:52:23.960
+entsprechend wieder eindeutig identifizieren kann. Das heiÃŸt, das Problem ist, wenn GT1 und GT2,
 
-00:51:13.400 --> 00:51:16.400
-So, das kann sich manchmal hinziehen bei groÃŸen Zahlen,
+00:52:23.960 --> 00:52:30.440
+diese beiden DatenbestÃ¤nde verÃ¶ffentlicht werden, kann man wieder Ã¼ber die Werte die Tabelle LT
 
-00:51:17.400 --> 00:51:21.400
-und da hat man, da hat nÃ¤mlich Euklid noch eine weitere Beobachtung gemacht,
+00:52:30.440 --> 00:52:38.360
+erstellen und dann, die ist dann nicht mehr K-Gleich-Zwei-Anonymen. Das heiÃŸt, das Problem
 
-00:51:22.400 --> 00:51:27.400
-und er hat gesehen, dass wenn man zwei positive ganze Zahlen hat, x und y,
+00:52:38.360 --> 00:52:42.640
+wÃ¤re nicht entstanden, wenn man natÃ¼rlich aufpassen wÃ¼rde, was man aus PT alles ableitet.
 
-00:51:28.400 --> 00:51:32.400
-wo x grÃ¶ÃŸer ist als y, und man will den GGT von x und y berechnen,
+00:52:42.640 --> 00:52:51.320
+Genau, wenn die nicht unabhÃ¤ngig voneinander abgeleitet worden wÃ¤ren. Das heiÃŸt, K-AnonymitÃ¤t
 
-00:51:33.400 --> 00:51:39.400
-da kann man das anders schreiben, man kann das umschreiben, man kann die kleinere Zahl nehmen
+00:52:51.320 --> 00:53:01.520
+ist leicht herzustellen, aber auch leicht aufzulÃ¶sen. Gut, machen wir noch kurz den zweiten
 
-00:51:39.400 --> 00:51:44.400
-und die Ã¼bernimmt man hier, und die grÃ¶ÃŸere Zahl, die berechnet man modulo y,
+00:53:01.520 --> 00:53:09.680
+Ansatz PrivatsphÃ¤re herzustellen. Das ist der Begriff der Differential Privacy. Die Idee dabei
 
-00:51:45.400 --> 00:51:50.400
-also das, was beim Teilen durch y rauskommt, also man nimmt sozusagen y als Faktor aus x raus,
+00:53:09.680 --> 00:53:15.800
+ist, dass das ein statistisches MaÃŸ fÃ¼r Privatheit ist. Wenn das hinzufÃ¼gen oder
 
-00:51:52.400 --> 00:51:55.400
-und das ist super effizient, da kann man relativ schnell,
+00:53:15.800 --> 00:53:20.600
+entfernen einer Person keinen groÃŸen Unterschied bezÃ¼glich der Analyse macht, dann bleibt die
 
-00:51:56.400 --> 00:52:00.400
-also das, was man eben im normalen Euklidischen Algorithmus muss, muss man mehrfach rechnen,
+00:53:20.600 --> 00:53:28.640
+Privatheit gewahrt. Also wenn man hier eine Datenbank hat, zum Beispiel, und eine Datenbank D1 und D2,
 
-00:52:01.400 --> 00:52:03.400
-hier oben die 4 rausnehmen, nochmal die 4 rausnehmen und so weiter,
+00:53:28.640 --> 00:53:33.440
+und der einzige Unterschied zwischen diesen beiden Datenbanken ist, dass in D1 der Datensatz einer
 
-00:52:04.400 --> 00:52:06.400
-und das kann man hier in einigen Euklidischen Algorithmen auch rechnen,
+00:53:33.440 --> 00:53:39.920
+Person P drin ist und in D2 nicht. Jetzt macht man die gleiche Analyse auf diesen beiden Daten
 
-00:52:06.400 --> 00:52:10.400
-hier oben die 4 rausnehmen und so weiter, und das kann man hier in einem Schritt machen,
+00:53:39.920 --> 00:53:45.160
+setzen und hat zwei verschiedene Antworten. Und wenn die Antworten, die Analysen, die man darauf
 
-00:52:11.400 --> 00:52:16.400
-und das ermÃ¶glicht eine sehr viel effizientere Berechnung des GGT,
+00:53:45.160 --> 00:53:50.920
+machen kann, hinreichend klein oder hinreichend wenig unterscheidbar ist durch so einen Epsilon,
 
-00:52:17.400 --> 00:52:20.400
-und auÃŸerdem, und das sehen wir gleich, das wird gleich noch wichtig sein,
+00:53:50.920 --> 00:54:00.440
+irgendwie statistisch, durch einen ganz kleinen Wert Epsilon, dann sagt man, wenn das fÃ¼r beliebige
 
-00:52:21.400 --> 00:52:27.400
-auÃŸerdem erlaubt das auch eine Darstellung des GGT als Linearkombination von x und y,
+00:54:00.440 --> 00:54:06.240
+Analysen und beliebige Antworten der Fall ist, dann sagt man, das ist Differential Private, diese
 
-00:52:28.400 --> 00:52:32.400
-aber das sehen wir gleich, das will ich nur vorausschicken.
+00:54:06.240 --> 00:54:14.360
+Datenbank. Genau, das ist ein statistischer Privatheitsbegriff, der auch eine formal
 
-00:52:33.400 --> 00:52:37.400
-Machen wir mal ein Beispiel fÃ¼r die Anwendung dieser Beobachtung hier,
+00:54:14.360 --> 00:54:20.920
+nachweisbare Privatsch garantie gibt. Wie erreicht man das? Man muss halt irgendwie in diese Datenbanken
 
-00:52:38.400 --> 00:52:42.400
-also das GrÃ¶ÃŸere, da macht man immer Modulo das Kleinere,
+00:54:20.920 --> 00:54:29.880
+rauschen oder man muss unschÃ¤rf hinschÃ¼gen, damit die Tatsache ob eine Person P drin ist oder
 
-00:52:44.400 --> 00:52:49.400
-da ist es auch immer wieder 19 und 7, das GrÃ¶ÃŸere Modulo das Kleinere,
+00:54:29.880 --> 00:54:36.120
+nicht keinen Unterschied macht, aber im konkreten Fall immer schwierig herzustellen. Da muss man
 
-00:52:50.400 --> 00:52:54.400
-19 Modulo 7 ist 5, hat man 7 und 5,
+00:54:36.120 --> 00:54:40.560
+zum Beispiel Ã¼ber statistische Verteilung von Attributen gut Bescheid wissen, weil die Verteilungen
 
-00:52:55.400 --> 00:52:59.400
-dann macht man wieder die GrÃ¶ÃŸere Modulo die Kleinere, also 7 Modulo 5,
+00:54:40.560 --> 00:54:45.560
+dÃ¼rfen sich nicht Ã¤ndern. Das ist schwer angreifbar, aber auch schwer anwendbar, Differential Privacy.
 
-00:52:59.400 --> 00:53:02.400
-da hat man hier 2, hat man 5 und 2,
+00:54:45.560 --> 00:54:54.240
+Das, um es zu kontrastieren von k-AnonymitÃ¤t. Gut, das war, machen wir eine ganz kurze Pause und
 
-00:53:03.400 --> 00:53:10.400
-und dann berechnet man wieder 5 Modulo 2, ist 1, hat man 2, 1, und da ist man dann schon fertig.
+00:54:54.240 --> 00:55:04.920
+dann geht es weiter mit Anonymy Kommunikation. So, machen wir noch eine halbe Stunde Anonymy
 
-00:53:12.400 --> 00:53:16.400
-Das heiÃŸt, das wo man im einfachen Euklidischen Algorithmus Ã¶fters rechnen musste,
+00:55:04.920 --> 00:55:08.960
+Kommunikation. Das ist wahrscheinlich sogar prÃ¼fungsrelevanter als die ganze Stunde,
 
-00:53:17.400 --> 00:53:22.400
-geht hier sozusagen in einem Rutsch, wenn man die Modulooperation effizient implementiert hat.
+00:55:08.960 --> 00:55:15.840
+die ich vorher geredet habe. Gut, jetzt wird es auch ein bisschen technischer noch. Das andere
 
-00:53:23.400 --> 00:53:31.400
-Also das sieht man hier auch nochmal, 12, 8, GGT 8, 12 Modulo 8 ist 4, GGT 8 und 4 ist 4.
+00:55:15.840 --> 00:55:21.600
+ist eher so Allgemeinbildung gewesen, jetzt wird es ein bisschen technischer. Genau, Anonymy
 
-00:53:34.400 --> 00:53:38.400
-Das heiÃŸt, man stoppt hier, wenn die eine Seite ein Teiler von der anderen Seite ist.
+00:55:21.600 --> 00:55:26.760
+Kommunikation bezieht sich auf im Prinzip die Metadaten der Kommunikation. Vertrauliche
 
-00:53:42.400 --> 00:53:45.400
-So, das ist der erweiterte Euklidische Algorithmus, was wir aber machen wollten,
+00:55:26.760 --> 00:55:31.080
+Kommunikation hat man schon kennengelernt im Kupto-Kapitel, da geht es darum, dass die Inhalte
 
-00:53:46.400 --> 00:53:48.400
-ist ja, wir wollten das Multiplikative in Verse berechnen,
+00:55:31.080 --> 00:55:37.200
+von Nachrichten vertraulich bleiben. Bei Anonymy Kommunikation geht es darum, dass vertraulich
 
-00:53:48.400 --> 00:53:51.400
-aber das kann man mit dem erweiterten Euklidischen Algorithmus machen,
+00:55:37.200 --> 00:55:42.640
+bleibt, wer mit wem kommuniziert. Nicht notwendigerweise Inhalte der Nachricht. Wenn aus der Inhalt der
 
-00:53:52.400 --> 00:53:57.400
-und da muss man jetzt ein paar mathematische Beobachtungen machen, die auf der nÃ¤chsten Folie kommen hier.
+00:55:42.640 --> 00:55:47.520
+Nachricht klar wird, wer mit wem kommuniziert, ist natÃ¼rlich alles verloren, aber anonym bedeutet,
 
-00:54:01.400 --> 00:54:05.400
-Gehen wir mal schrittweise da durch, das heiÃŸt, wenn ich jetzt ein X habe,
+00:55:47.520 --> 00:55:57.880
+dass nicht klar ist, wer mit wem kommuniziert. Das heiÃŸt, man kann auch keine Vertraulichkeit
 
-00:54:07.400 --> 00:54:10.400
-und ich will das Multiplikative in Verse berechnen, Y,
+00:55:57.880 --> 00:56:02.640
+haben und auch Vertraulichkeit der Inhalte, die kÃ¶nnen offen sein, aber man kann trotzdem
 
-00:54:10.400 --> 00:54:18.400
-und bzw. ich habe diese zwei Zahlen, X und Y, und die sind 1 modulo P, das heiÃŸt, Y ist das Multiplikative in Verse von X.
+00:56:02.640 --> 00:56:09.520
+AnonymitÃ¤t haben. Die zwei wesentlichen Konzepte, die erfunden worden sind, um Anonymy Kommunikation
 
-00:54:23.400 --> 00:54:29.400
-Wenn ich jetzt zwei Zahlen A und P habe, und die haben den GGT von 1,
+00:56:09.520 --> 00:56:14.720
+herzustellen, sind DC-Netze und Mix-Verfahren. Beide schauen wir uns jetzt mal an. Fangen wir
 
-00:54:31.400 --> 00:54:37.400
-dann kann ich die 1 darstellen, als die LÃ¤nge, die ich hier habe,
+00:56:14.720 --> 00:56:19.880
+mit den DC-Netzen an. Die sind alle so aus den 1980er Jahren von David Schaum, auch ein berÃ¼hmter
 
-00:54:37.400 --> 00:54:42.400
-dann kann ich die 1 darstellen, als die Linearkombination von A und P.
+00:56:19.880 --> 00:56:24.840
+Kryptograph, erfunden worden in den Grundlagen. Sind da seitdem natÃ¼rlich auch weiterentwickelt
 
-00:54:44.400 --> 00:54:49.400
-Das heiÃŸt, eine Linearkombination bedeutet, ich habe sozusagen eine Linearkombination von A und P,
+00:56:24.840 --> 00:56:35.120
+worden. Fangen wir mit den DC-Netzen an. Das ist eigentlich ein theoretisches Modell, gibt es zwar
 
-00:54:50.400 --> 00:54:54.400
-ich kann A eine bestimmte Anzahl von Malen haben und P eine bestimmte Anzahl von Malen,
+00:56:35.120 --> 00:56:41.040
+auch praktische Implementierungen davon, aber ein theoretisches Modell, wie man AnonymitÃ¤t und
 
-00:54:55.400 --> 00:55:00.400
-Linearkombination heiÃŸt, ich addiere die zusammen, und das was da rauskommt, ist dann 1, ist dann der Zielwert.
+00:56:41.040 --> 00:56:47.120
+zwar perfekte, also informationstheoretisch sichere AnonymitÃ¤t erzeugen kann, in sogenannten
 
-00:55:01.400 --> 00:55:07.400
-Das heiÃŸt, es gibt irgendwelche zwei Zahlen S und T, das sind die Anzahl von Malen, wie ich die nehmen muss,
+00:56:47.120 --> 00:56:54.360
+Broadcast-Netzwerken. Broadcast-Netzwerke sind Netzwerke, wo im Prinzip, wenn einer was sendet,
 
-00:55:08.400 --> 00:55:16.400
-also hier S mal P plus T mal A muss dann 1 ergeben.
+00:56:54.360 --> 00:57:06.520
+sehen das alle gleichzeitig. Das ist jetzt das Szenario. Drei Personen sind da und Alice,
 
-00:55:19.400 --> 00:55:25.400
-Und wenn der GGT von A und P 1 ist, dann gibt es solche zwei Zahlen S und T,
+00:57:06.520 --> 00:57:13.040
+die jetzt hier so eine TÃ¼te auf dem Kopf hat, die das aus dem Bild anonymen kommunizieren. Das
 
-00:55:25.400 --> 00:55:29.400
-wir kÃ¶nnen auch gleich sehen, wie man die berechnet.
+00:57:13.040 --> 00:57:17.680
+Netz ist ein Broadcast-Netz. Alle hÃ¤ngen an der gleichen Leitung dran. Wenn Alice was da drauf
 
-00:55:30.400 --> 00:55:34.400
-Und jetzt hat ein anderer Mathematiker Bezou beobachtet und hat dann festgestellt,
+00:57:17.680 --> 00:57:21.640
+schreibt, dann sehen das alle. Charlie und Bob kÃ¶nnen natÃ¼rlich auch auf dieses Netz drauf
 
-00:55:35.400 --> 00:55:46.400
-dass wenn S mal P plus T mal A gleich 1 ist, dann ist A mal T 1 modulo P.
+00:57:21.640 --> 00:57:24.720
+schreiben. Die mÃ¼ssen sich natÃ¼rlich irgendwie synchronisieren, dass sie sich nicht in die Quere
 
-00:55:47.400 --> 00:55:55.400
-Warum ist das der Fall? Weil in dieser Linearkombination hier das P S mal drinnen steckt.
+00:57:24.720 --> 00:57:30.960
+kommen, aber da gibt es andere Technologien, die das herstellen. Und was man jetzt macht im
 
-00:55:56.400 --> 00:56:02.400
-Und wenn man modulo P rechnet, sind Vielfache von P spielen keine Rolle, die kann man einfach weglassen,
+00:57:31.960 --> 00:57:37.640
+DC-Netz ist, dass alle Parteien, die im DC-Netz vorhanden sind, paarweise geheime SchlÃ¼ssel
 
-00:56:03.400 --> 00:56:06.400
-weil man sowieso nur zwischen 0 und P minus 1 sich befindet.
+00:57:37.640 --> 00:57:42.600
+austauschen, so wie beim One-Time-Pad Sender und EmpfÃ¤nger einen geheimen SchlÃ¼ssel ausgetauscht
 
-00:56:06.400 --> 00:56:11.400
-Das heiÃŸt, wenn man eine Zahl als S mal P plus T mal A gleich 1 darstellen kann,
+00:57:42.600 --> 00:57:48.440
+haben. Hier machen das alle paarweise. Das heiÃŸt Charlie und Alice, Alice und Bob, Bob und Charlie.
 
-00:56:12.400 --> 00:56:16.400
-dann weiÃŸ man, dass A mal T 1 ist modulo P.
+00:57:48.440 --> 00:57:56.280
+Und ich zeige das jetzt mal auf der nÃ¤chsten Folie, wie dann das Protokoll abgeht, sodass
 
-00:56:17.400 --> 00:56:21.400
-Und damit ist dann T auch das Multiplikativinverse zu A.
+00:57:56.280 --> 00:58:01.680
+man anonym kommunizieren kann. Also wir haben also hier das Broadcast-Netz und hier der SchlÃ¼ssel-Graf.
 
-00:56:22.400 --> 00:56:26.400
-Das ist jetzt ein bisschen schwieriger, aber wer ist denn jetzt noch, wer konnte denn bis jetzt folgen?
+00:58:01.680 --> 00:58:07.080
+Das heiÃŸt, Alice hat mit Bob den roten SchlÃ¼ssel vereinbart, den sieht man hier,
 
-00:56:27.400 --> 00:56:29.400
-Okay, gibt es Fragen dazu?
+00:58:07.080 --> 00:58:15.720
+den blauen SchlÃ¼ssel hier und Charlie mit Bob den dunkelgrÃ¼nen SchlÃ¼ssel, das ist hier.
 
-00:56:31.400 --> 00:56:33.400
-Wo ist der schwierige Schritt?
+00:58:15.720 --> 00:58:34.520
+So, wenn jetzt jemand was senden will, dann das passiert sozusagen in Runden. Das passiert in
 
-00:56:33.400 --> 00:56:36.400
-Ist A mal T gleich 1 mal 100 S?
+00:58:34.520 --> 00:58:41.680
+Runden, das heiÃŸt A, B und C senden nacheinander eine Nachricht und wenn man etwas senden will in
 
-00:56:38.400 --> 00:56:43.400
-Die Frage ist, ob A mal T gleich 1 modulo P ist und ob das auch modulo S gilt.
+00:58:41.680 --> 00:58:50.640
+der Runde, dann sendet man die Nachricht und wenn jemand nichts senden will in eine Runde,
 
-00:56:44.400 --> 00:56:46.400
-Wahrscheinlich schon, ja.
+00:58:50.640 --> 00:58:55.800
+sendet er die Null-Nachricht. Das heiÃŸt also zum Beispiel Alice mÃ¶chte eine anonyme Nachricht
 
-00:56:49.400 --> 00:56:53.400
-Aber das ist wahrscheinlich nicht das Problem, das die meisten Leute haben hier, oder?
+00:58:55.800 --> 00:59:01.040
+senden und zwar diese Nachricht hier und Bob und Charlie mÃ¶chten in der gleichen Runde keine
 
-00:56:54.400 --> 00:56:57.400
-Mag ich mir eine Frage stellen oder soll ich die vor dir nochmal erklÃ¤ren?
+00:59:01.040 --> 00:59:08.440
+Nachricht senden und die senden also die Null. Und was schickt man jetzt auf das Broadcast-Netz?
 
-00:56:58.400 --> 00:57:05.400
-Genau, also wir wollen das Multiplikativinverse berechnen zu X und wir wollen Y berechnen,
+00:59:09.000 --> 00:59:14.760
+Man nimmt die Nachricht, die man versenden will und verixort die mit allen SchlÃ¼sseln von allen
 
-00:57:06.400 --> 00:57:08.400
-sodass X mal Y gleich 1 ist modulo P.
+00:59:14.760 --> 00:59:20.520
+Partnern, die man im SchlÃ¼ssel-Graf hat. Also zum Beispiel Alice verixort das mit dem blauen
 
-00:57:11.400 --> 00:57:17.400
-Jetzt werden wir gleich sehen, wenn man den GGT berechnen kann und das G-GT berechnen kann,
+00:59:20.520 --> 00:59:24.080
+SchlÃ¼ssel und dem roten SchlÃ¼ssel, also mit dem SchlÃ¼ssel von Bob und SchlÃ¼ssel von Charlie. Und
 
-00:57:18.400 --> 00:57:20.400
-dann ist das G-GT gleich 1 modulo P.
+00:59:24.080 --> 00:59:31.320
+das was da rauskommt, das sendet Alice dann per Broadcast, das sehen dann alle. Bob und Charlie,
 
-00:57:21.400 --> 00:57:29.400
-Jetzt werden wir gleich sehen, wenn man den GGT berechnen kann und der GGT von zwei Zahlen A und P ist 1.
+00:59:31.320 --> 00:59:37.440
+die machen das Gleiche mit ihren jeweiligen SchlÃ¼sseln und ihrer Nachricht, die sie senden
 
-00:57:31.400 --> 00:57:41.400
-Dann kann man zwei Zahlen bestimmen, S und T, sodass sich 1 als Linearkombination von P und A darstellen kann.
+00:59:37.440 --> 00:59:43.160
+wollen. Und da kommt entsprechend das hier raus. Das ist im Prinzip das XOR der beiden SchlÃ¼ssel,
 
-00:57:42.400 --> 00:57:46.400
-Das sehen wir gleich, wie man die zwei Zahlen S und T berechnet.
+00:59:43.160 --> 00:59:51.160
+die sie mit ihren Partnern miteinander haben. Und was jetzt alle machen ist,
 
-00:57:47.400 --> 00:57:53.400
-Ich berechne die und dann kann ich die 1 darstellen als S mal P plus T mal A.
+00:59:51.160 --> 00:59:55.280
+sie nehmen diese drei Nachrichten, die sie Ã¼ber das Broadcast-Netz empfangen haben und XOR'en die
 
-00:57:54.400 --> 00:57:58.400
-Das geht, wenn der GGT von A und P 1 ist.
+00:59:55.280 --> 01:00:01.840
+mit sich selbst. Das heiÃŸt das XOR dem, XOR dem und da kommt das hier raus. Und da, das ist kein
 
-00:57:59.400 --> 00:58:02.400
-Und diese Zahlen S und T, die gibt uns der Algorithmus gleich.
+01:00:01.920 --> 01:00:10.880
+Zufall, dass da die Nachricht von Alice rauskommt. Der Grund dafÃ¼r ist, dass alle SchlÃ¼sse, die hier
 
-00:58:03.400 --> 00:58:04.400
-Wer ist jetzt noch dabei?
+01:00:10.880 --> 01:00:17.480
+reingeixort worden sind, genau zweimal drin vorkommen. Und wenn man einen Wert XOR't auf
 
-00:58:08.400 --> 00:58:10.400
-Das Schwierige ist wahrscheinlich hier unten.
+01:00:17.480 --> 01:00:21.920
+einen beliebigen Wert und dann noch mal XOR't, dann rechnet der sich wieder raus. Das heiÃŸt,
 
-00:58:11.400 --> 00:58:20.400
-Wenn S mal P plus A mal T 1 ist, und diese Zahlen kÃ¶nnen wir hier berechnen, wenn GGT von A und P 1 ist.
+01:00:21.920 --> 01:00:27.320
+man zieht die dann im Prinzip immer ab, die SchlÃ¼ssel sind immer zweimal drin und dann
 
-00:58:22.400 --> 00:58:29.400
-Wenn das hier gilt, also wenn ich P und A als Linearkombination darstellen kann,
+01:00:27.320 --> 01:00:33.000
+verschwinden sie wieder aus der XOR-Berechnung. Das heiÃŸt, am Ende ist das hier geixort mit dem
 
-00:58:31.400 --> 00:58:35.400
-dann ist es aber auch so, dass A mal T gleich 1 ist modulo P.
+01:00:33.000 --> 01:00:37.880
+hier und mit dem hier da drin und natÃ¼rlich wenn man mit 0 XOR't verÃ¤ndert sich nichts. Das heiÃŸt,
 
-00:58:35.400 --> 00:58:38.400
-Und das ist wahrscheinlich jetzt diskrete Mathematik.
+01:00:37.880 --> 01:00:45.720
+da kommt notwendigerweise das hier raus. Das heiÃŸt, so kann Alice eine Nachricht senden an beide oder
 
-00:58:39.400 --> 00:58:44.400
-Modulo P heiÃŸt, Vielfache von P spielen keine Rolle.
+01:00:45.720 --> 01:00:51.080
+an alle. Bob und Charlie sehen dann diese Nachricht. Aber jetzt ist die Frage, kÃ¶nnen die nicht
 
-00:58:45.400 --> 00:58:57.400
-Also wenn ich zum Beispiel modulo 5 rechne, wenn ich jetzt irgendwie eine 3 habe und ich zÃ¤hle da 10 drauf, Vielfache von 5 modulo P.
+01:00:51.080 --> 01:00:55.320
+rauskriegen, dass die von Alice kommt oder nicht? Und das ist das, was wir jetzt als nÃ¤chstes
 
-00:58:58.400 --> 00:59:02.400
-10 plus 3 ist 13, modulo 5 ist wieder 3.
+01:00:55.320 --> 01:01:01.480
+anschauen. Erstmal, wer ist jetzt noch dabei bezÃ¼glich der Berechnung? Gut. Also die Frage ist,
 
-00:59:02.400 --> 00:59:05.400
-Das verschwindet, also Vielfache von P verschwinden.
+01:01:01.480 --> 01:01:08.680
+ist das jetzt sicher? Also ist das tatsÃ¤chlich perfekt anonym? Und wir schauen uns jetzt mal an
 
-00:59:06.400 --> 00:59:12.400
-Das heiÃŸt, wenn ich das hier modulo P mir anzeigen lassen will, dann kann ich das auch wegstreichen.
+01:01:08.680 --> 01:01:15.000
+aus Sicht des Angreifers. Mal angenommen, Charlie ist der Angreifer. Und wir schauen uns jetzt mal
 
-00:59:13.400 --> 00:59:14.400
-Das spielt keine Rolle.
+01:01:15.000 --> 01:01:23.280
+nur ein einziges Bit an, was Ã¼bertragen wird. Alice und Bob senden jetzt das, was hier auf
 
-00:59:15.400 --> 00:59:20.400
-Das heiÃŸt, wenn das hier gilt, dann ist A mal T 1 modulo P.
+01:01:23.280 --> 01:01:28.360
+der Folie steht. Alice sendet eine 0, Bob sendet eine 0, der Angreifer sendet eine 0, also Charlie.
 
-00:59:21.400 --> 00:59:22.400
-Wer ist jetzt noch dabei?
+01:01:28.360 --> 01:01:33.720
+Und der Angreifer sieht natÃ¼rlich die SchlÃ¼ssel-Bits, die er vereinbart hat. Das Einzige,
 
-00:59:23.400 --> 00:59:25.400
-Okay, ein paar mehr als eben.
+01:01:33.720 --> 01:01:42.160
+was er nicht weiÃŸ, ist der SchlÃ¼ssel, den Alice und Bob miteinander vereinbart haben. Und jetzt
 
-00:59:26.400 --> 00:59:29.400
-Und dann hat man nÃ¤mlich das multiplicative Inverse modulo P berechnet.
+01:01:42.160 --> 01:01:50.000
+ist die Frage, kann er irgendwie rauskriegen, ob Alice oder Bob gesendet haben? Und alles hÃ¤ngt
 
-00:59:29.400 --> 00:59:35.400
-Das heiÃŸt, wenn ich das multiplicative Inverse berechnen mÃ¶chte von A zu T,
+01:01:50.000 --> 01:01:54.640
+im Prinzip davon ab, welchen SchlÃ¼ssel Alice und Bob miteinander vereinbart haben. Da gibt es jetzt
 
-00:59:37.400 --> 00:59:43.400
-dann muss ich, wenn ich das multiplicative Inverse von A modulo P berechnen will,
+01:01:54.640 --> 01:02:01.440
+zwei mÃ¶gliche Szenarien. Das eine Szenario ist, dass der SchlÃ¼ssel zwischen Alice und Bob 0 ist.
 
-00:59:44.400 --> 00:59:51.400
-dann muss ich irgendwie A darstellen, also 1 darstellen als die Linearkombination von A und P.
+01:02:01.440 --> 01:02:11.200
+Und in dem Fall wÃ¤re das tatsÃ¤chlich so, dass Alice die 0 schickt, der schickt die 0, der schickt
 
-00:59:53.400 --> 00:59:58.400
-Und wenn ich diesen Wert dann rausgegeben habe, dann muss ich irgendwie A darstellen,
+01:02:11.200 --> 01:02:24.720
+die 0. Und wenn Alice, Moment, jetzt muss ich selber nochmal nachgucken. Genau, wenn Alice die
 
-00:59:59.400 --> 01:00:02.400
-wenn ich den Wert raus habe, dann habe ich das multiplicative Inverse berechnet.
+01:02:24.720 --> 01:02:30.760
+1 sendet, also wenn Alice sendet, dann verxort das mit dem SchlÃ¼ssel hier und mit dem SchlÃ¼ssel.
 
-01:00:03.400 --> 01:00:06.400
-Und jetzt berechnen wir mal dieses S und dieses T.
+01:02:30.760 --> 01:02:36.360
+Das heiÃŸt, was Alice gesendet hat, das ist das XOR aus dem Wert, den Alice sendet, der 1 und der
 
-01:00:07.400 --> 01:00:09.400
-Okay, das machen wir auf der nÃ¤chsten Seite.
+01:02:36.360 --> 01:02:42.680
+0. Und da muss 0 rauskommen. In dem Falle ist es tatsÃ¤chlich so, wenn der SchlÃ¼ssel von Alice und
 
-01:00:13.400 --> 01:00:20.400
-Also wir berechnen jetzt dieses S und T mit Hilfe des erweiterten euklidischen Algorithmus.
+01:02:42.680 --> 01:02:51.960
+Bob 0 ist, dann hat Alice die Nachricht gesendet, weil 1 XOR 1 XOR 0 dann 0 ergibt. Wer ist jetzt
 
-01:00:21.400 --> 01:00:25.400
-Was hier oben in der Box steht, das ist der erweiterte euklidische Algorithmus.
+01:02:51.960 --> 01:03:01.640
+noch dabei? Okay. Wenn der SchlÃ¼ssel allerdings 1 ist, dann kann Alice das nicht geschickt haben,
 
-01:00:26.400 --> 01:00:28.400
-Und zwar schrittweise angewendet.
+01:03:01.640 --> 01:03:07.920
+dann kann Alice nur die 0 geschickt haben. Dann muss Bob die Nachricht geschickt haben, weil 1 XOR 0
 
-01:00:29.400 --> 01:00:33.400
-Das heiÃŸt, wir berechnen den GGT von 19 und 7.
+01:03:07.920 --> 01:03:17.520
+oder 1 XOR 0 XOR 1 nur die 0 ergibt. Das heiÃŸt, ob jetzt Alice oder Bob geschickt hat, hÃ¤ngt
 
-01:00:34.400 --> 01:00:41.400
-Und da stellen wir das da als 19 als 2 mal 7 plus 5.
+01:03:17.520 --> 01:03:22.080
+einzeln allein von dem Bit-up, von dem SchlÃ¼ssel ab, den Alice und Bob miteinander vereinbart haben.
 
-01:00:42.400 --> 01:00:48.400
-Und 5 ist sozusagen das, was rauskommt, wenn man 19 modulo 7 rechnet.
+01:03:22.080 --> 01:03:28.520
+Da der aber zufÃ¤llig ist, kann ich nicht vernÃ¼nftig raten als Angreifer. Es kann der ein oder andere
 
-01:00:51.400 --> 01:00:55.400
-Und dann im erweiterten euklidischen Algorithmus schieben wir dann die 7 auf die andere Seite.
+01:03:28.520 --> 01:03:32.360
+sein, kann Alice oder Bob sein. Ich kann es nicht rauskriegen. Das Beste, was ich machen kann,
 
-01:00:55.400 --> 01:01:02.400
-Und machen dann hier den Modulus von, machen wir 7 modulo 5.
+01:03:32.360 --> 01:03:38.080
+ist raten. Deswegen sagt man, das Fazit davon ist, das ist informationstheoretisch sicher. Die
 
-01:01:03.400 --> 01:01:06.400
-Das ist also 1 mal 5, bleibt 2 Ã¼brig.
+01:03:38.080 --> 01:03:43.760
+AnonymitÃ¤t ist informationstheoretisch gewÃ¤hrleistet, wenn fÃ¼r jeden Nachrichten-Austausch immer wieder
 
-01:01:07.400 --> 01:01:10.400
-Und dann schieben wir die 5 wieder auf die nÃ¤chste Seite.
+01:03:43.760 --> 01:03:49.280
+ein neuer, geheimer SchlÃ¼ssel vereinbart worden ist. So Ã¤hnlich wie bei One-Time-Pad, wenn Sie sich
 
-01:01:11.400 --> 01:01:14.400
-Und dann machen wir 5 modulo 2, das ist 2 mal 2 plus 1.
+01:03:49.280 --> 01:03:52.480
+noch daran erinnern, da muss der SchlÃ¼ssel immer so lang sein wie die Nachricht, der muss zufÃ¤llig
 
-01:01:15.400 --> 01:01:16.400
-Das Modulus, das rauskommt, ist 1.
+01:03:52.480 --> 01:04:00.360
+sein und er darf nicht wiederverwendet werden. Das gilt hier genauso. Gut, das ist also perfekte
 
-01:01:17.400 --> 01:01:18.400
-Und dann haben wir 2, 1, was rauskommt.
+01:04:00.360 --> 01:04:05.960
+AnonymitÃ¤t analog zur informationstheoretischen Sicherheit beim One-Time-Pad. Wer ist jetzt noch
 
-01:01:19.400 --> 01:01:20.400
-Dann mÃ¼ssen wir glauben, dass ich nicht schummle.
+01:04:05.960 --> 01:04:13.400
+dabei? Okay, gut. Das war es auch schon zu DC-Netzen. Jetzt schauen wir uns mal Mix-Netzwerke an. Mix-Netzwerke
 
-01:01:21.400 --> 01:01:22.400
-Hier gehe ich mal zurÃ¼ck.
+01:04:13.400 --> 01:04:20.240
+sind im Prinzip praktische Alternativen zu DC-Netzen in nachrichtenbasierten Systemen und das sind
 
-01:01:23.400 --> 01:01:25.400
-Das ist genau die Rechnung, die wir hier gemacht haben.
+01:04:20.240 --> 01:04:26.640
+tatsÃ¤chlich praktische Anonymisierungsinstrumente. Also im Prinzip Tor ist auch so eine Art Idee von
 
-01:01:26.400 --> 01:01:29.400
-19, 7, 7, 5, 5, 2, 2, 1.
+01:04:26.640 --> 01:04:33.640
+Mix-Netzwerken. Was braucht man bei Mix-Netzwerken? Da braucht man im Prinzip Mix-Knoten. Mix-Knoten
 
-01:01:30.400 --> 01:01:31.400
-Nur ein bisschen anders dargestellt.
+01:04:33.640 --> 01:04:40.840
+sind Rechner, die Nachrichten entgegennehmen, die Nachrichten intern verarbeiten und dann Nachrichten
 
-01:01:32.400 --> 01:01:35.400
-Okay, wer ist bei dieser Box jetzt noch dabei?
+01:04:40.840 --> 01:04:45.920
+wieder rausschicken. Die Annahme ist, das Angreifermodell ist, der Angreifer sieht das,
 
-01:01:36.400 --> 01:01:37.400
-Gut, danke schÃ¶n.
+01:04:45.920 --> 01:04:52.000
+was in den Mix reingeht und das, was aus dem Mix rauskommt, aber nicht, was in dem Mix selber
 
-01:01:38.400 --> 01:01:43.400
-Jetzt kann man es aber auch umstellen und sagen, wir stellen einfach die 5, wir lÃ¶sen nach der 5 auf.
+01:04:52.000 --> 01:04:57.080
+passiert. Wir haben zwar spÃ¤ter noch die MÃ¶glichkeit, dass ein Angreifer auch reingucken hat in das Mix,
 
-01:01:44.400 --> 01:01:46.400
-Einmal hier, das ist die gleiche Gleichung wie hier.
+01:04:57.080 --> 01:05:01.720
+aber in den Mix-Knoten, aber er darf nicht sozusagen in alle Mix-Knoten reinschauen. Das heiÃŸt,
 
-01:01:47.400 --> 01:01:48.400
-Das ist die gleiche Gleichung wie hier, nur umgestellt.
+01:05:01.720 --> 01:05:07.800
+wir nehmen es erstmal an, er schaut in diesen Mix-Knoten nicht rein. Das heiÃŸt, was macht der
 
-01:01:49.400 --> 01:01:50.400
-Und hier ist auch die gleiche Gleichung.
+01:05:07.800 --> 01:05:14.880
+Mix-Knoten? Der nimmt eine bestimmte Menge von Nachrichten entgegen, streicht da Wiederholungen
 
-01:01:53.400 --> 01:02:00.400
-Und jetzt will ich den GGT als Linearkombination einsetzen.
+01:05:14.880 --> 01:05:20.960
+raus. Wiederholungen wÃ¼rde man erkennen sozusagen in der Eingabe und in der Ausgabe. Das heiÃŸt,
 
-01:02:01.400 --> 01:02:09.400
-Das heiÃŸt, ich will irgendwie rauskriegen, die 1 als eine Linearkombination von 19 und 7.
+01:05:20.960 --> 01:05:28.520
+man verhindert dadurch die Verkettung aufgrund von Gleichheit. Dann anschlieÃŸend wartet er auf eine
 
-01:02:10.400 --> 01:02:16.400
-Also diese zwei Zahlen S und T, das sind die Faktoren, die ich fÃ¼r der 19 und der 7 habe.
+01:05:28.520 --> 01:05:36.320
+bestimmte Menge von Nachrichten, zum Beispiel 10 oder 100. Das vergrÃ¶ÃŸert sozusagen die
 
-01:02:17.400 --> 01:02:19.400
-Und jetzt setze ich rÃ¼ckwÃ¤rts ein.
+01:05:36.320 --> 01:05:44.120
+AnnahmetÃ¤tmenge und verhindert, dass man die Nachrichten verketten kann aufgrund der Reihenfolge,
 
-01:02:19.400 --> 01:02:24.400
-Das heiÃŸt, ich nehme diese Gleichung hier, das ist das orange, das sieht man hier.
+01:05:44.120 --> 01:05:49.120
+wie sie reingehen. Das heiÃŸt, wenn eine Nachricht reingeht und man die gleich weiter schickt,
 
-01:02:26.400 --> 01:02:31.400
-Das ist 5 minus 2 mal irgendwas und hier ist die 1, das ist die rechte Seite hier.
+01:05:49.120 --> 01:05:53.680
+dann kann der Angreifer sagen, diese Nachricht, die hier reinkommt, ist diese Nachricht,
 
-01:02:33.400 --> 01:02:41.400
-Und diese 2 hier, das war ja das, was herauskam hier vorne, was diese 2 hier darstellt.
+01:05:53.680 --> 01:05:59.760
+die hier rausgeht. Das heiÃŸt, wenn man zum Beispiel 100 Nachrichten sammelt, dann kann man sagen,
 
-01:02:42.400 --> 01:02:46.400
-Dass diese 2 hier ist eigentlich das Ergebnis von dieser Berechnung.
+01:05:59.760 --> 01:06:04.240
+okay, diese 100 Nachrichten, die reingehen, eine von denen, die hier reingeht, ist eine von denen,
 
-01:02:46.400 --> 01:02:51.400
-Das heiÃŸt, ich setze in diese 2 hier diesen Term ein, das sieht man hier.
+01:06:04.240 --> 01:06:12.600
+die rausgeht. Da kann man im Prinzip eine von 100 dann raten. Jetzt werden die Nachrichten noch
 
-01:02:52.400 --> 01:02:58.400
-Das heiÃŸt, man hat 5 minus 2 mal 2, aber die 2 kommt aus der Berechnung von hier.
+01:06:12.600 --> 01:06:20.360
+umkodiert und Umkodierung sorgt dafÃ¼r, dass die Nachrichten unterschiedlich aussehen. Die
 
-01:02:59.400 --> 01:03:01.400
-7 minus 1 mal 5.
+01:06:20.360 --> 01:06:26.560
+Nachricht, die reinkommt, wird umkodiert und sieht dann anders aus, wenn sie rausgeht. Und anschlieÃŸend
 
-01:03:02.400 --> 01:03:04.400
-Und die 1, das ist immer noch gleich 1.
+01:06:26.560 --> 01:06:30.280
+werden sie noch umsortiert. Das heiÃŸt, die erste Nachricht, die reingeht, ist nicht die erste
 
-01:03:05.400 --> 01:03:11.400
-Und jetzt haben wir hier in diesem Konstrukt nur noch Faktoren 5 und 7 drin.
+01:06:30.280 --> 01:06:35.200
+Nachricht, die rausgeht. Das heiÃŸt, was man dann sieht als Angreifer ist, es gibt eine Menge von
 
-01:03:11.400 --> 01:03:15.400
-Das sind die, die einen Schritt hÃ¶her eine Rolle gespielt haben.
+01:06:35.200 --> 01:06:39.760
+Nachrichten, die hier reingeht und eine Menge von Nachrichten, die hier rausgeht, aber es gibt keine
 
-01:03:16.400 --> 01:03:17.400
-Jetzt multipliziere ich aus.
+01:06:39.760 --> 01:06:43.880
+MÃ¶glichkeit zu sagen, diese Nachricht, die reingegangen ist, ist diese Nachricht, die
 
-01:03:18.400 --> 01:03:23.400
-Ich habe hier 2 mal 7, das heiÃŸt, das ist diese 2 mal 7, minus 2 mal 7.
+01:06:43.880 --> 01:06:50.120
+rausgegangen ist. Und dadurch verhindert man die Verkettung von Nachrichten. Das heiÃŸt, selbst
 
-01:03:24.400 --> 01:03:26.400
-Und da habe ich noch minus 2 mal minus 1 mal 5.
+01:06:50.120 --> 01:06:55.200
+man weiÃŸ, woher die Nachricht hier kommt, man weiÃŸ nicht, wohin die Nachricht hier weitergeht.
 
-01:03:27.400 --> 01:03:28.400
-Das ist plus 5.
+01:06:55.200 --> 01:07:03.960
+Wer ist jetzt noch dabei? Okay. Man kann natÃ¼rlich mehrere Mixknoten auch hintereinander schalten.
 
-01:03:29.400 --> 01:03:35.400
-Das heiÃŸt, ich habe dann, ich habe plus 2 mal 5 plus 1 mal 5.
+01:07:03.960 --> 01:07:11.920
+Also das ist mal hier dargestellt, ein bisschen visueller dargestellt. Also die Form der Nachricht
 
-01:03:36.400 --> 01:03:38.400
-Da habe ich hier 3 mal 5 minus 2 mal 7 gleich 1.
+01:07:11.920 --> 01:07:16.640
+ist im Prinzip die Kodierung der Nachricht, wenn man so will. Und da ist auch gleich schon so ein
 
-01:03:38.400 --> 01:03:40.400
-Das ist im Prinzip das Ausmultiplizierte.
+01:07:16.640 --> 01:07:24.000
+Prinzip des schalenmÃ¤ÃŸigen Einschlusses, dieses Zwiebelprinzip, das wir auch gleich noch sehen
 
-01:03:41.400 --> 01:03:42.400
-Wer ist jetzt noch dabei?
+01:07:24.000 --> 01:07:29.720
+werden. Man kann also auch mehrere Mixe hintereinander schalten. Der Vorteil davon ist,
 
-01:03:43.400 --> 01:03:44.400
-Okay, danke.
+01:07:29.720 --> 01:07:38.200
+dass jedes Mix macht sozusagen das, was ich eben gesagt habe auf der Folie vorher. Aber wenn man
 
-01:03:45.400 --> 01:03:51.400
-So, aber diese 5 hier, die stammt ja aus einer anderen Berechnung, nÃ¤mlich hier oben.
+01:07:38.200 --> 01:07:42.520
+mehrere Mixe hintereinander schaltet, dann kann man auch noch tolerieren, dass der Angreifer
 
-01:03:52.400 --> 01:03:53.400
-Aus der 19 minus 7 mal 2.
+01:07:42.520 --> 01:07:48.760
+ein Mix kontrolliert und reinschauen kann in den Mix. Das heiÃŸt, wenn man mehrere Mixe hat,
 
-01:03:54.400 --> 01:03:55.400
-Das kommt aus dieser Formel hier.
+01:07:48.760 --> 01:07:54.320
+dann ist man sogar noch sicher gegen einen Angreifer, der Mixe kontrolliert, solange der
 
-01:03:56.400 --> 01:03:57.400
-Jetzt setze ich hier wieder ein.
+01:07:54.320 --> 01:08:02.200
+Angreifer nicht alle Mixe kontrolliert in der Sequenz. Dass ein nicht angegriffenes Mix reicht,
 
-01:03:58.400 --> 01:04:00.400
-Die 5 ersetze ich durch dieses 19 minus 2 mal 7.
+01:08:02.200 --> 01:08:12.080
+um da AnomitÃ¤t herzustellen. Gut, das, was man sich da als Prinzip auch zu nutzen macht,
 
-01:04:03.400 --> 01:04:05.400
-Und jetzt kann ich wieder ausmultiplizieren.
+01:08:12.080 --> 01:08:15.520
+ist das sogenannte Onion Routing. Das heiÃŸt also, das sieht man hier so ein bisschen,
 
-01:04:05.400 --> 01:04:10.400
-Ich habe 3 mal 19 und dann 3 mal minus 2 mal 7.
+01:08:15.520 --> 01:08:21.720
+wenn man hier durchrotet, diese Nachricht wird hier umkodiert und diese Nachricht kommt dann
 
-01:04:11.400 --> 01:04:18.400
-Das sind 6, minus 6 mal 7 plus minus 2 mal 7 habe ich minus 8 mal 7.
+01:08:21.720 --> 01:08:26.280
+raus. Die wird dann hier umkodiert, kommt diese Nachricht raus. Man hat immer so Schichten drum und
 
-01:04:19.400 --> 01:04:23.400
-Also was Ã¼brig bleibt, ist 3 mal 19.
+01:08:26.280 --> 01:08:29.800
+das kann man jetzt mit entsprechenden kryptographischen SchlÃ¼sseln vorbereiten.
 
-01:04:24.400 --> 01:04:28.400
-Das ist hier minus 8 mal 7 gleich 1.
+01:08:29.800 --> 01:08:35.360
+Also wenn das hier zum Beispiel Nachricht ist, die rauskommt, die geht durch dieses Mix, durch
 
-01:04:29.400 --> 01:04:30.400
-Okay, wer ist jetzt noch dabei?
+01:08:35.360 --> 01:08:39.600
+dieses Mix wird sie weitergeleitet und man verschlÃ¼sselt diese Nachricht, man macht da
 
-01:04:31.400 --> 01:04:32.400
-Gut.
+01:08:39.600 --> 01:08:48.200
+so eine Zwiebelschicht drum mit einem geheimen SchlÃ¼ssel, den nur Mix 2 kennt. Und diesen SchlÃ¼ssel,
 
-01:04:33.400 --> 01:04:34.400
-Und jetzt machen wir den letzten Schritt.
+01:08:48.240 --> 01:08:54.000
+der ist vorher mal vereinbart worden und der steckt hier noch sozusagen in der VerschlÃ¼sselung drin.
 
-01:04:35.400 --> 01:04:43.400
-Wir haben nÃ¤mlich 1 dargestellt als Linearkombination von 19 und 7.
+01:08:54.000 --> 01:09:00.160
+Und die Nachricht, die von Mix 1 weitergeleitet wird, da steckt dann auÃŸen noch mal eine
 
-01:04:44.400 --> 01:04:47.400
-Also diese zwei Zahlen S und T.
+01:09:00.160 --> 01:09:05.160
+VerschlÃ¼sselungsschicht drum. Das heiÃŸt, die Nachrichten sind immer so aufgebaut,
 
-01:04:48.400 --> 01:04:53.400
-S ist die 3 und T ist die minus 8.
+01:09:05.160 --> 01:09:10.520
+dass immer ein Adressat steht, also an welches Mix es gesendet wird und dann verschlÃ¼sselt,
 
-01:04:54.400 --> 01:04:55.400
-Okay.
+01:09:10.520 --> 01:09:17.720
+wie die Nachricht weitergeleitet werden soll. Also hier steckt drin, erst geht es an A1. A1
 
-01:04:56.400 --> 01:04:59.400
-Das kann man natÃ¼rlich erst noch als Quellcode hinschreiben.
+01:09:17.720 --> 01:09:24.000
+macht dann diese VerschlÃ¼sselungsschicht ab, das ist dieser blaue Kasten. Dann kommt das hier raus
 
-01:05:00.400 --> 01:05:01.400
-Das kÃ¶nnen Sie im Internet nachlesen, wie das dann aussieht.
+01:09:24.000 --> 01:09:33.560
+und Mix 1 schickt das dann weiter und hier macht Mix 2 diesen grÃ¼nen Kasten drum herum weg,
 
-01:05:02.400 --> 01:05:03.400
-Das kÃ¶nnen Sie also super effizient berechnen lassen.
+01:09:33.560 --> 01:09:38.840
+entschlÃ¼sselt das und da bleibt dann nur Ende M Ã¼brig und das soll dann an eine bestimmte Adresse
 
-01:05:03.400 --> 01:05:10.400
-Das heiÃŸt aus dem erweiterten euklidischen Algorithmus kann man diese Zahlen 3 und minus 8 darstellen.
+01:09:38.840 --> 01:09:43.800
+dann weitergeschickt werden. Das kann man sich zunutze machen, wenn man vorher sozusagen mit
 
-01:05:11.400 --> 01:05:19.400
-Das sind diese Zahlen S und T, die die Linearkombination von 19 und 7 zu 1 ausmachen.
+01:09:43.800 --> 01:09:48.600
+allen Mixknoten in der Sequenz einen geheimen SchlÃ¼ssel vereinbart hat und man verschlÃ¼sselt
 
-01:05:20.400 --> 01:05:32.400
-Das heiÃŸt aus der Berechnung vom GGT von 19 und 7 wissen wir, dass 3 mal 19 minus 8 mal 7 gleich 1 ist.
+01:09:48.600 --> 01:09:54.360
+dann prophylaktisch diese Nachricht in der rÃ¼ckwÃ¤rtigen Reihenfolge fÃ¼r die einzelnen
 
-01:05:33.400 --> 01:05:34.400
-Ja.
+01:09:54.360 --> 01:09:59.680
+Mixknoten und macht da immer die Zwiebelschichten drum rum. Deswegen spricht man da von Onion Routing
 
-01:05:35.400 --> 01:05:41.400
-Und aus der Beobachtung von Bezu wissen wir nÃ¤mlich jetzt, dass wenn man modulo 19 rechnen kann man das hier weglassen.
+01:09:59.680 --> 01:10:05.280
+und Tor steht ja auch fÃ¼r The Onion Router, da steckt das Prinzip auch drin. Also hier
 
-01:05:42.400 --> 01:05:49.400
-Das heiÃŸt wenn das hier gilt, dann muss auch minus 8 mal 7 gleich 1 modulo 19 gelten.
+01:10:05.280 --> 01:10:11.240
+noch mal visuell dargestellt, das Ziel steckt hier drin und der Paleout, den man an das Ziel schicken
 
-01:05:50.400 --> 01:05:53.400
-Vielfache von 19 kÃ¶nnen wir weglassen.
+01:10:11.240 --> 01:10:17.520
+will, es geht erstmal um das dritte Mix, da wird also der SchlÃ¼ssel von Mix 3 benutzt,
 
-01:05:54.400 --> 01:05:58.400
-Und minus 8 modulo 19, da zÃ¤hlen wir einfach 19 drauf.
+01:10:17.520 --> 01:10:22.480
+der blaue SchlÃ¼ssel, dann der SchlÃ¼ssel von Mix 2, der grÃ¼ne SchlÃ¼ssel und dann der SchlÃ¼ssel
 
-01:05:58.400 --> 01:06:03.400
-Also wenn man modulo 19 rechnet, sind eigentlich nur die Zahlen zwischen 0 und 18 relevant.
+01:10:22.480 --> 01:10:30.000
+von Mix 1, der orangen SchlÃ¼ssel. Wenn es dann durch das Netzwerk geht, dann wird in jedem einzelnen
 
-01:06:04.400 --> 01:06:06.400
-Das heiÃŸt minus 8 modulo 19 ist 11.
+01:10:30.000 --> 01:10:33.640
+Schritt bei jedem einzelnen Mix einfach eine Schicht abgemacht mit dem entsprechenden SchlÃ¼ssel,
 
-01:06:07.400 --> 01:06:12.400
-Wenn man also jetzt 11 mal 7 modulo 19 rechnet, kommt 1 raus.
+01:10:33.640 --> 01:10:38.440
+der in dem Mix vorhanden ist, dann der grÃ¼ne und dann der blaue und am Ende kommt dann die Nachricht
 
-01:06:13.400 --> 01:06:19.400
-Was ist also das multiplicative Inverse zu 7 modulo 19? 11.
+01:10:38.440 --> 01:10:48.280
+raus. Genau, was fÃ¼r Sicherheitseigenschaften garantiert jetzt das Mix? Die Annahme ist,
 
-01:06:20.400 --> 01:06:22.400
-Wer ist jetzt noch dabei?
+01:10:48.280 --> 01:10:53.560
+der Angreifer sieht tatsÃ¤chlich alle Nachrichten und bei hinreichend hohen Nachrichtenaufkommen
 
-01:06:22.400 --> 01:06:23.400
-Wer ist jetzt noch dabei?
+01:10:53.560 --> 01:10:59.360
+und sicherer Krypografie ist tatsÃ¤chlich die Zuordnung von Eingangs- zu Ausgangsnachrichten
 
-01:06:24.400 --> 01:06:26.400
-Okay, einige Leute verloren.
+01:10:59.360 --> 01:11:05.600
+auch nur bei einem Mixknoten kann man hinreichend und mÃ¶glich machen, wenn man die AnonymitÃ¤tsmenge,
 
-01:06:27.400 --> 01:06:33.400
-Wenn sie Fragen haben, muss man einfach in Ruhe mal sich anschauen nochmal.
+01:11:05.760 --> 01:11:14.080
+die Menge der zwischengespeicherten Nachrichten so groÃŸ macht, wie es sicher sein muss. Also wenn
 
-01:06:34.400 --> 01:06:43.400
-Okay, also Sie glauben mir jetzt, man kann das multiplicative Inverse effizient mit Hilfe des erweiterten und klinischen Algorithmus berechnen.
+01:11:14.080 --> 01:11:18.880
+man in einer von 100 Nachrichten anonym sein will, dann sammelt man 100 Nachrichten, wenn man in
 
-01:06:44.400 --> 01:06:51.400
-Und das ist die Grundlage dafÃ¼r, dass LgMall funktioniert und auch ziemlich viele andere Sachen effizient funktionieren.
+01:11:18.880 --> 01:11:22.800
+einer von 1 Millionen Nachrichten anonym bleiben will, sammelt man in 1 Millionen Nachrichten,
 
-01:06:53.400 --> 01:06:57.400
-Gut, dann haben Sie die schweren mathematischen Sachen jetzt hinter sich.
+01:11:22.800 --> 01:11:28.000
+bevor man weiterleitet. Aber Nachteil ist davon natÃ¼rlich, dass man erstmal 1 Million Nachrichten
 
-01:06:58.400 --> 01:07:06.400
-Jetzt kann man uns noch ein bisschen auf grÃ¶ÃŸere Sachen konzentrieren, nÃ¤mlich auf wichtige Fragen, die mit asymmetrischen VerschlÃ¼sselungen zusammenhÃ¤ngen.
+01:11:28.000 --> 01:11:35.080
+haben muss und warten muss, bis die da sind. Also das ist ein Problem von Mixknoten. Deswegen gibt es
 
-01:07:07.400 --> 01:07:12.400
-Also bei der symmetrischen VerschlÃ¼sselung war es ja so, dass der geheime SchlÃ¼ssel geheim bleiben musste, der symmetrische.
+01:11:35.080 --> 01:11:40.960
+die sogenannte Low Latency Mix-Dienste wie Tor, die warten nicht unbedingt, bis man diese
 
-01:07:13.400 --> 01:07:18.400
-Und bei der asymmetrischen VerschlÃ¼sselung wissen wir, nur der private SchlÃ¼ssel muss geheim bleiben.
+01:11:40.960 --> 01:11:45.760
+AnonymitÃ¤tsmenge erreicht hat. Die hoffen, dass in der Zwischenzeit mÃ¶glichst viele Nachrichten
 
-01:07:18.400 --> 01:07:24.400
-Und der Ã¶ffentliche SchlÃ¼ssel kann frei in der Gegend rumpausen und werden, aber mit dem Ã¶ffentlichen SchlÃ¼ssel hat es etwas auf sich.
+01:11:45.760 --> 01:11:50.840
+eingegangen sind, aber die kÃ¶nnen es halt nicht garantieren. Die schicken im Prinzip im Interesse,
 
-01:07:25.400 --> 01:07:30.400
-Es gibt auch noch eine zweite Schwierigkeit, die bei der asymmetrischen VerschlÃ¼sselung reinkommt.
+01:11:50.840 --> 01:11:56.800
+dass es schnell geht, die Nachrichten weiter, kriegt dafÃ¼r etwas schwÃ¤chere Sicherheit, dafÃ¼r ist man
 
-01:07:31.400 --> 01:07:33.400
-Das will ich Ihnen versuchen zu erklÃ¤ren an dem Beispiel hier.
+01:11:56.800 --> 01:12:03.720
+schneller. Und man schÃ¼tzt sich dadurch, dass wenn ein Mix angreifen kann, nimmt man halt mehrere
 
-01:07:34.400 --> 01:07:39.400
-Mal angenommen, B ist Bob. Bob erwartet eine Nachricht von Alice.
+01:12:03.720 --> 01:12:12.880
+Mixknoten und hofft, dass mindestens einer der Mixknoten nicht angreift. So machen wir jetzt noch
 
-01:07:39.400 --> 01:07:52.400
-Und Bob, es ist jetzt mal so eine Situation, dass Bob glaubt, also Bob hat einen TestschlÃ¼ssel T und Bob glaubt, dass T der Ã¶ffentliche TestschlÃ¼ssel von Alice ist.
+01:12:12.880 --> 01:12:18.320
+kurz Tor, weil das auch in der Ãœbung drankommt. Also Tor, wer hat schon mal von Tor gehÃ¶rt,
 
-01:07:53.400 --> 01:07:55.400
-Also das glaubt er ganz fest.
+01:12:18.320 --> 01:12:24.560
+dem Tor-Netzwerk? Sehr gut. Wer hat schon mal Tor benutzt, den Tor Browser? Auch gut. In der Ãœbung
 
-01:07:55.400 --> 01:08:09.400
-Und jetzt schickt Alice ihm eine Nachricht M, also es soll authentisch sein und sie signiert mit dem geheimen SignierschlÃ¼ssel die Nachricht M, M ist die Nachricht M.
+01:12:24.560 --> 01:12:30.480
+werden Sie Tor, den Tor Browser mal benutzen, hoffentlich alle. Tor steht fÃ¼r die Onion Router,
 
-01:08:09.400 --> 01:08:16.400
-Jetzt erhÃ¤lt Bob die Nachricht und wendet den TestschlÃ¼ssel auf diese Nachricht, auf die Signatur an und es kommt M raus.
+01:12:30.480 --> 01:12:36.480
+ist ein Forschungsprojekt, was 2006 in den USA gegrÃ¼ndet worden ist. Gibt es auch einen
 
-01:08:17.400 --> 01:08:30.400
-Und jetzt schickt Alice ihm eine Nachricht M, also es soll authentisch sein und sie signiert mit dem geheimen SignierschlÃ¼ssel die Nachricht M und signiert die Nachricht M mit ihrem geheimen SignierschlÃ¼ssel.
+01:12:36.480 --> 01:12:40.800
+eigenen Verein, der das sozusagen betreibt, ist durch Ã¶ffentliche FÃ¶rdergelder auch finanziert
 
-01:08:30.400 --> 01:08:38.400
-Jetzt erhÃ¤lt Bob die Nachricht und wendet den TestschlÃ¼ssel auf diese Nachricht, auf die Signatur an und es kommt M raus.
+01:12:40.800 --> 01:12:47.080
+worden und wird auch weltweit von einer Menge von Freiwilligen unterstÃ¼tzt, die nÃ¤mlich Mixknoten
 
-01:08:39.400 --> 01:08:42.400
-Also denkt Bob jetzt, ja die Nachricht kommt von Alice.
+01:12:47.080 --> 01:12:54.240
+bereitstellen, frei, kostenlos, fÃ¼r die Allgemeinheit. Und es gibt im Tor-Projekt dann auch zum Beispiel
 
-01:08:43.400 --> 01:08:47.400
-Was ist denn im zweiten Szenario der Fall? Ach das kommt auf der nÃ¤chsten Seite hier.
+01:12:54.240 --> 01:13:01.440
+so eine Statistikseite, wo man sich dann anschauen kann, welche Mixknoten es Ã¼berall gibt.
 
-01:08:47.400 --> 01:09:01.400
-Also hier ist weiterhin so, dass Bob glaubt, T ist der Ã¶ffentliche TestschlÃ¼ssel von Alice.
+01:13:01.440 --> 01:13:05.440
+Es gibt ein Ã¶ffentliches Verzeichnis von Mixknoten. Hier ist auch mal gezeigt,
 
-01:09:02.400 --> 01:09:04.400
-Das glaubt er ganz fest.
+01:13:05.440 --> 01:13:09.120
+was fÃ¼r Bandbreite die haben. Sie kÃ¶nnen auch bei sich zu Hause sozusagen sehr
 
-01:09:06.400 --> 01:09:08.400
-Das glaubt er ganz fest.
+01:13:09.120 --> 01:13:13.240
+kostengÃ¼nstige Mixknoten bereitstellen, das ist relativ einfach. Das ist mir die
 
-01:09:10.400 --> 01:09:12.400
-Das stimmt aber nicht.
+01:13:13.240 --> 01:13:20.320
+LÃ¤nderdarstellung. Und ich weiÃŸ nicht, wenn Sie die, das ist hier das Land mit den meisten
 
-01:09:12.400 --> 01:09:14.400
-Das stimmt aber nicht.
+01:13:20.320 --> 01:13:28.400
+Mixknoten, jedenfalls 2023, zweitmeist und drittmeist. Was ist das Land mit den meisten
 
-01:09:15.400 --> 01:09:24.400
-Sondern T ist ein Ã¶ffentlicher TestschlÃ¼ssel, den Yves, der bÃ¶se Angreifer, den Yves erstellt hat.
+01:13:28.400 --> 01:13:39.960
+Mixknoten 2023? Raten Sie mal. Deutschland. Es ist immer noch so, heiÃŸt das. Auf dem zweiten
 
-01:09:26.400 --> 01:09:36.400
-Yves hat irgendwann mal einen Ã¶ffentlichen TestschlÃ¼ssel und einen privaten SignierschlÃ¼ssel erstellt und hat Bob glauben oder hat dem Bob untergeschoben als den Ã¶ffentlichen TestschlÃ¼ssel von Alice.
+01:13:39.960 --> 01:13:44.640
+Platz sind die Vereinigten Staaten und auf dem dritten Platz sind die Niederlande. Also da sieht
 
-01:09:37.400 --> 01:09:40.400
-Aber Alice weiÃŸ von diesem SchlÃ¼ssel nichts, Yves hat aber den SchlÃ¼ssel.
+01:13:44.640 --> 01:13:51.760
+man, wo die Privacy-Aktivisten hocken. Und Tor hat interessanterweise auch was mit Erlangen zu tun,
 
-01:09:41.400 --> 01:09:47.400
-Und jetzt schickt Yves an Bob eine Nachricht M, S von M.
+01:13:51.760 --> 01:13:58.160
+weil es gibt die sogenannten Tor Directory Server. Das sind also eine Reihe von Servern,
 
-01:09:48.400 --> 01:09:53.400
-Und diese Situation ist fÃ¼r Bob jetzt nicht unterscheidbar von dieser Situation.
+01:13:58.160 --> 01:14:03.040
+ich glaube so ein halbes Dutzend Directory Server. Das sind redundant ausgelegte Server,
 
-01:09:54.400 --> 01:10:01.400
-Das heiÃŸt, entsprechend wird in dieser Situation Bob auch fest davon Ã¼berzeugt sein, dass die Nachricht von Alice kommt.
+01:14:03.040 --> 01:14:13.440
+die im Prinzip ein Verzeichnis aller Tor-Relays, aller Mixe enthalten. Das heiÃŸt also auch
 
-01:10:02.400 --> 01:10:04.400
-Aber dabei kommt sie gar nicht von Alice.
+01:14:13.440 --> 01:14:20.840
+Torknoten kÃ¶nnen sich von dort die Liste der aktuell registrierten Tor-Relays herunterladen.
 
-01:10:04.400 --> 01:10:13.400
-Und insbesondere kÃ¤me sie auch nicht von Alice oder sie kÃ¶nnte von Alice kommen, aber nicht notwendigerweise.
+01:14:20.840 --> 01:14:27.080
+Und einer von diesen zentralen Tor Directory Servern wird hier am Rechenzentrum gehostet.
 
-01:10:14.400 --> 01:10:17.400
-Also man kann das ja auch nicht nur fÃ¼r signieren, sondern auch fÃ¼r verschlÃ¼sseln verwenden.
+01:14:27.080 --> 01:14:34.440
+Deswegen gab es auch mal diese Schlagzeile, die NSA schnÃ¼ffelt in Erlangen in der TATS und auch
 
-01:10:18.400 --> 01:10:28.400
-Also wenn jetzt das nicht der Ã¶ffentliche SignierschlÃ¼ssel ist, sondern der Ã¶ffentliche VerschlÃ¼sselungsschlÃ¼ssel, dann kÃ¶nnte natÃ¼rlich Alice an Bob eine Nachricht senden wollen.
+01:14:34.440 --> 01:14:43.280
+in anderen Nachrichten. Und der Administrator dieses Directory Servers, das ist Sebastian Hahn,
 
-01:10:29.400 --> 01:10:42.400
-T. A. hat also hier einen Ã¶ffentlichen und privaten SignierschlÃ¼ssel und kÃ¶nnte jetzt an Bob eine Nachricht senden wollen, irgendwie zum Beispiel M oder M, M'.
+01:14:43.280 --> 01:14:52.160
+der auch sozusagen hier der Uni noch zugetan ist, da gab es diese Schlagzeile, das ist der zweite
 
-01:10:43.400 --> 01:10:51.400
-Und signiert sie, signiert mit dem wirklichen SignierschlÃ¼ssel.
+01:14:52.160 --> 01:14:56.520
+Deutsche nach Angela Merkel, der von der NSA ausspioniert worden ist. Da gab es mal eine
 
-01:10:52.400 --> 01:11:06.400
-Aber wenn Yves jetzt in der Leitung hÃ¤ngt und alle Nachrichten stoppen kann, unterbrechen kann, neu einspielen kann oder so, dann nimmt sie einfach dieses N-Strich raus und signiert das einfach nochmal neu.
+01:14:56.520 --> 01:15:02.440
+Schlagzeile in Erlanger Nachrichten, weil nÃ¤mlich die IP-Adresse seines Rechners mal in den NSA-Files
 
-01:11:06.400 --> 01:11:18.400
-Das heiÃŸt Alice denkt jetzt, es schickt an Bob Nachrichten, von denen Bob glaubt, dass sie von ihr sind.
+01:15:02.440 --> 01:15:09.800
+aufgetaucht sind. Okay, so kann man auch eine Schlagzeile machen. So wie funktioniert Tor?
 
-01:11:19.400 --> 01:11:21.400
-Dabei kommen die Nachrichten alle von Yves.
+01:15:09.800 --> 01:15:17.960
+Tor ist im Prinzip ein Low Latency Mix Netzwerk. Das heiÃŸt Tor sendet Nachrichten weiter Ã¼ber
 
-01:11:22.400 --> 01:11:26.400
-Und so einen Angriff nennt man einen Man in the Middle.
+01:15:17.960 --> 01:15:22.160
+sogenannte Tor-Relays, das sind diese Knoten, die jeder betreiben kann, und zwar Ã¼ber einen
 
-01:11:27.400 --> 01:11:33.400
-Ein Man in the Middle Angriff, das kann man auch in beide Richtungen machen.
+01:15:22.160 --> 01:15:28.560
+sogenannten Circuit. Und der Circuit besteht aus genau drei Mixknoten. Warum genau drei? Ja,
 
-01:11:34.400 --> 01:11:47.400
-Also Yves, es muss nur gewÃ¤hrleistet sein, also Yves muss es nur schaffen, dass Alice und Bob jeweils annehmen, die SchlÃ¼ssel, die sie haben, sind die echten, authentischen SchlÃ¼ssel, von denen, mit denen sie kommunizieren wollen, aber sie sind es in Wirklichkeit gar nicht.
+01:15:28.640 --> 01:15:36.960
+das ist so ein Kompromiss aus so viel wie mÃ¶glich und so wenig wie nÃ¶tig. Also man weiÃŸ ja auch,
 
-01:11:48.400 --> 01:11:57.400
-Das heiÃŸt, von der Sicherheitsbetrachtung her ist es so, dass bei der symmetrischen VerschlÃ¼sselung, da muss auf jeden Fall der geheime SchlÃ¼ssel geheim bleiben, ist klar.
+01:15:36.960 --> 01:15:41.600
+dass Nachrichtendienste Tor-Knoten betreiben. Das heiÃŸt, man mÃ¶chte nicht zufÃ¤llig, wenn man nur
 
-01:11:58.400 --> 01:12:00.400
-Wenn der Ã¶ffentlich ist, dann ist alles vorbei.
+01:15:41.600 --> 01:15:48.640
+ein Relay von einem Hop hat, dann auf einem Server der NSA landen. Man will mÃ¶glichst drei
 
-01:12:01.400 --> 01:12:05.400
-Bei der asymmetrischen VerschlÃ¼sselung hat man gedacht, es reicht, wenn der private SchlÃ¼ssel geheim bleibt.
+01:15:48.640 --> 01:15:54.400
+zufÃ¤llige Tor-Relays haben, einen in den Vereinigten Staaten, einen in Russland und einen in China,
 
-01:12:06.400 --> 01:12:08.400
-Der Ã¶ffentliche SchlÃ¼ssel, der muss nicht geheim sein.
+01:15:54.400 --> 01:16:00.960
+weil man weiÃŸ, die drei kooperieren nicht miteinander. Und dann wird tatsÃ¤chlich Onion
 
-01:12:09.400 --> 01:12:14.400
-Aber das Wichtige ist, dass bei der asymmetrischen VerschlÃ¼sselung, dass der Ã¶ffentliche SchlÃ¼ssel, den man verwendet, authentisch ist.
+01:16:00.960 --> 01:16:07.320
+Routing gemacht, das heiÃŸt, so rÃ¼ckwÃ¤rts verschlÃ¼sselt die Nachricht und dann am Ende
 
-01:12:14.400 --> 01:12:21.400
-Das heiÃŸt, der muss tatsÃ¤chlich auch der Person gehÃ¶ren, wo man glaubt, dass er der Person gehÃ¶rt.
+01:16:07.320 --> 01:16:14.720
+kommt sie beim sogenannten Exit-Knoten raus und wird dann dort weitergeleitet. Und der Tor-Circuit,
 
-01:12:22.400 --> 01:12:24.400
-Und das nennt man Key Trust.
+01:16:14.720 --> 01:16:21.360
+der wird zufÃ¤llig aufgebaut am Anfang aus dieser groÃŸen Liste an Tor-Knoten, die es gibt, werden
 
-01:12:25.400 --> 01:12:30.400
-Also das ist das Vertrauen darin, dass der SchlÃ¼ssel tatsÃ¤chlich der angenommenen IdentitÃ¤t gehÃ¶rt.
+01:16:21.360 --> 01:16:25.920
+einfach drei zufÃ¤llig ausgewÃ¤hlt und mit entsprechenden Ã¶ffentlichen SchlÃ¼sseln sind
 
-01:12:31.400 --> 01:12:35.400
-Also man sagt in der Praxis auch immer, man braucht einen authentischen Ã¶ffentlichen SchlÃ¼ssel.
+01:16:25.920 --> 01:16:34.160
+die ja dort authentifiziert. Und dann wird der Tor, der Circuit aufgebaut. Und da gibt es sehr
 
-01:12:35.400 --> 01:12:40.400
-Und Sie erinnern sich vielleicht an diese SchlÃ¼sselverteilzentralen bei der symmetrischen Kryptographie.
+01:16:34.160 --> 01:16:39.640
+interessante Protokolle. Das ist mal hier, mÃ¼ssen Sie nicht im Detail verstehen, aber so funktioniert
 
-01:12:41.400 --> 01:12:43.400
-Das kann man auch bei der asymmetrischen Kryptographie machen.
+01:16:39.640 --> 01:16:46.720
+das. Das ist mal hier ein Relay, der Ã¼ber zwei Onion-Router aufgebaut wird. Es wird erstmal,
 
-01:12:44.400 --> 01:12:47.400
-Nur da heiÃŸt das dann anders, da heiÃŸt das Public Key Infrastruktur.
+01:16:46.840 --> 01:16:52.200
+also jeder von den Links ist jeweils TLS verschlÃ¼sselt, wie das geht, wissen wir vom
 
-01:12:48.400 --> 01:12:50.400
-Und das ist was tatsÃ¤chlich was sehr Praktisches.
+01:16:52.200 --> 01:16:59.160
+letzten Mal. Und dann wird Ã¼ber TLS wird dann der Tor-Circuit bis zum ersten Relay aufgebaut.
 
-01:12:52.400 --> 01:13:01.400
-Bei asymmetrischer Kryptographie kann man nÃ¤mlich jetzt auch sowas wie SchlÃ¼sselverteilregister oder SchlÃ¼sselverteilzentralen,
+01:16:59.160 --> 01:17:05.160
+Da wird dann Ã¼ber die vier Hellmann ein geheimer SchlÃ¼ssel ausgetauscht zwischen dem Client hier,
 
-01:13:01.400 --> 01:13:06.400
-SchlÃ¼sselverteilregister oder SchlÃ¼sselregister verwenden.
+01:17:05.160 --> 01:17:12.520
+Alice, und dem Relay hier. Und dann hat man hier im Prinzip eine gesicherte Verbindung aufgebaut.
 
-01:13:07.400 --> 01:13:20.400
-Das heiÃŸt, wenn jetzt zum Beispiel Teilnehmer B, wenn Teilnehmer B an Teilnehmer A eine vertrauliche Nachricht senden will,
+01:17:12.680 --> 01:17:20.400
+Und Ã¼ber diesen Hop geht man dann, baut man den Circuit weiter auf, geht sozusagen durch diesen
 
-01:13:21.400 --> 01:13:25.400
-dann braucht B den authentischen Ã¶ffentlichen SchlÃ¼ssel von A.
+01:17:20.400 --> 01:17:25.200
+bis hier in verschlÃ¼sselten Bereich dann zum nÃ¤chsten Onion-Router, baut wieder Ã¼ber die vier
 
-01:13:26.400 --> 01:13:29.400
-Jetzt kann er natÃ¼rlich in die Zeitung gucken oder mal auf dem Flur herumfragen,
+01:17:25.200 --> 01:17:30.280
+Hellmann indirekt dann einen geheimen SchlÃ¼ssel zwischen Alice und dem Onion-Router auf. Und dann,
 
-01:13:29.400 --> 01:13:32.400
-ey du kennst du den Ã¶ffentlichen SchlÃ¼ssel von A?
+01:17:30.280 --> 01:17:37.400
+wenn das tatsÃ¤chlich passiert ist, also hier in der gepunkteten Linie, dann kann Alice, hat gemeinsame
 
-01:13:33.400 --> 01:13:37.400
-Dann sagen die dir, ja der Ã¶ffentliche SchlÃ¼ssel habe ich auch mal gehÃ¶rt, da ist so und so und dann benutzen sie den.
+01:17:37.400 --> 01:17:41.800
+geheime SchlÃ¼ssel mit dem Onion-Router eins und zwei und kann dann diese Zwiebelnachrichten
 
-01:13:38.400 --> 01:13:44.400
-Aber sie sind sich nicht sicher, ob das tatsÃ¤chlich der Ã¶ffentliche SchlÃ¼ssel ist oder ob gerade ein Man in the Middle Angriff lÃ¤uft auf diese Kommunikation.
+01:17:41.800 --> 01:17:49.120
+dann aufbauen. Und der Onion-Router 2, der nimmt dann das, was am Ende rauskommt und schickt das an
 
-01:13:45.400 --> 01:13:51.400
-Das heiÃŸt, was man in so einem Fall machen kann ist, dass A, mit dem B noch nie kommuniziert hat,
+01:17:49.120 --> 01:17:54.880
+die entsprechende Server, der in der Nachricht dann drin steht. Man kann Ã¼ber diese Circuits dann
 
-01:13:52.400 --> 01:13:55.400
-kann seinen Ã¶ffentlichen SchlÃ¼ssel hinterlegen, geht also zum SchlÃ¼sselregister hin und sagt,
+01:17:54.880 --> 01:18:01.000
+im Prinzip, ist wie so ein Tunnel, beliebige TCP-Verbindung aufmachen. Man kann zum Beispiel
 
-01:13:55.400 --> 01:14:00.400
-ja ich bin Alice, guten Tag, ich zeige meinen Ausweis vor und das ist hier mein Ã¶ffentlicher SchlÃ¼ssel.
+01:18:01.000 --> 01:18:08.160
+HTTP darÃ¼ber sprechen oder HTTPS darÃ¼ber sprechen. Das Besondere ist, dass die Webseite hier im
 
-01:14:01.400 --> 01:14:08.400
-Und das Ã¶ffentliche SchlÃ¼sselregister sagt dann, okay wir haben das jetzt abgespeichert und wenn jetzt jemand anfragt bei uns nach ihrem Ã¶ffentlichen SchlÃ¼ssel, dann geben wir den.
+01:18:08.240 --> 01:18:14.360
+Prinzip als IP-Adresse nicht ihre IP-Adresse hier sieht von Alice, sondern die IP-Adresse des letzten
 
-01:14:09.400 --> 01:14:11.400
-Und wir bestÃ¤tigen das sogar noch, dass das von uns kommt.
+01:18:14.360 --> 01:18:24.080
+Onion Relays, des Exit-Servers. Und so wird dann die IP-Adresse des Senders verschleiert. Man ist
 
-01:14:12.400 --> 01:14:18.400
-Das heiÃŸt, einmal muss dieser SchlÃ¼ssel registriert sein und jetzt kann Bob oder Teilnehmer B das SchlÃ¼sselregister bitten,
+01:18:24.080 --> 01:18:32.120
+dadurch dann anonym. Das ist die Idee von Tor. Jetzt gibt es natÃ¼rlich das normale Surfen mit
 
-01:14:18.400 --> 01:14:28.400
-er gibt mir mal den Ã¶ffentlichen SchlÃ¼ssel von A und dann schickt das SchlÃ¼sselregister den Ã¶ffentlichen SchlÃ¼ssel da und beglaub ich das noch mit einer digitalen Unterschrift.
+01:18:32.120 --> 01:18:37.680
+Tor. Also man kann den Tor Browser Ã¼ber die Relays, Ã¼ber den Circuit einfach zum normalen
 
-01:14:29.400 --> 01:14:38.400
-Jetzt hat man das Problem, einen authentischen Ã¶ffentlichen SchlÃ¼ssel zu bekommen von einer Partei reduziert auf das Problem,
+01:18:37.680 --> 01:18:43.240
+Surfen im Web benutzen. Der einzige Vorteil, den man hat, ist, dass die eigene IP-Adresse
 
-01:14:39.400 --> 01:14:42.400
-ja eine Signatur zu Ã¼berprÃ¼fen von einem Ã¶ffentlichen SchlÃ¼sselregister.
+01:18:43.240 --> 01:18:49.640
+verschleiert wird. Jetzt gibt es aber auch noch sogenannte Tor Hidden Services. Das ist das,
 
-01:14:43.400 --> 01:14:46.400
-Also das Problem auf sich selbst sozusagen abgebildet.
+01:18:49.640 --> 01:18:58.080
+was typischweise als Darknet bezeichnet wird. Da ist es so, dass normalerweise sieht der Server
 
-01:14:47.400 --> 01:14:53.400
-Das was es allerdings einfacher macht ist, dass dieses Ã¶ffentliche SchlÃ¼sselregister, das ist Ã¶ffentlich bekannt, also da kann man hingehen
+01:18:58.080 --> 01:19:04.800
+nicht die IP-Adresse des Clients, aber man kann jetzt Tor auch dazu benutzen, dass der Client nicht
 
-01:14:54.400 --> 01:15:04.400
-und einmal sich bestÃ¤tigen lassen, dass der Ã¶ffentliche SchlÃ¼ssel mit dem man oder der TestschlÃ¼ssel mit dem man die Signatur des SchlÃ¼sselregisters beglaubigt, der richtige ist.
+01:19:04.800 --> 01:19:11.360
+die IP-Adresse des Servers sieht. Warum braucht man das? Das braucht man immer dann, wenn der
 
-01:15:05.400 --> 01:15:15.400
-Da ruft man mal an oder man ist gerade in der Stadt, dann geht man halt vorbei und fragt die netten Personen und dann Ã¼berzeugt man sich, dass es tatsÃ¤chlich das Amt ist, in dem man ist.
+01:19:11.360 --> 01:19:20.040
+Server anonym bleiben mÃ¶chte. Wenn es zum Beispiel ein Server ist, der von irgendeiner verfolgten
 
-01:15:16.400 --> 01:15:20.400
-Und dann ist man sich relativ sicher, dass man den authentischen Ã¶ffentlichen SchlÃ¼ssel gekriegt hat.
+01:19:20.040 --> 01:19:24.880
+Minderheit in einem autokratischen Staat zum Beispiel betrieben wird, Ã¼ber den sie sich austauschen,
 
-01:15:23.400 --> 01:15:25.400
-Genau, das ist bei asymmetrischer VerschÃ¼sselung.
+01:19:25.760 --> 01:19:32.560
+oder ein Server, der vielleicht anderweitig problematisch fÃ¼r die BehÃ¶rden ist, zum Beispiel
 
-01:15:26.400 --> 01:15:29.400
-Das kann man natÃ¼rlich auch machen fÃ¼r Signatursysteme.
+01:19:32.560 --> 01:19:38.040
+ein krimineller Server, dann verschleiert er gerne auch seine IP-Adresse. Das geht auch Ã¼ber Tor.
 
-01:15:29.400 --> 01:15:35.400
-Also da hinterlegt Alice halt nicht den VerschÃ¼sselungsschlÃ¼ssel, sondern den Ã¶ffentlichen TestschlÃ¼ssel.
+01:19:38.040 --> 01:19:46.720
+Das ist relativ komplex, das Protokoll, was da passiert. Ich gehe mal ganz grob drauf ein.
 
-01:15:38.400 --> 01:15:44.400
-Und das was man hier hat, also man hat ein Ã¶ffentliches SchlÃ¼sselregister, wo die TestschlÃ¼ssel abgespeichert sind.
+01:19:47.400 --> 01:19:56.880
+So ein Tor Hidden Service, also wenn jetzt Bob so einen Hidden Service betreiben will, dann sucht
 
-01:15:45.400 --> 01:15:54.400
-Und man kann dann die TestschlÃ¼ssel sich vertraulich oder authentisch besorgen und dann kann man auch Signaturen Ã¼berprÃ¼fen, ohne dass man Alice jemals getroffen hat.
+01:19:56.880 --> 01:20:04.560
+er sich drei Tor-Knoten aus, die die Introduction Points sind und annonciert den eigenen Service in
 
-01:15:54.400 --> 01:15:57.400
-Man muss einfach nur die Signatur von dem Ã¶ffentlichen SchlÃ¼sselregister Ã¼berprÃ¼fen kÃ¶nnen.
+01:20:04.560 --> 01:20:10.160
+so einer Datenbank. In dieser Datenbank sagt er was Ã¼ber die Introduction Points und gibt auch noch
 
-01:15:58.400 --> 01:16:07.400
-Und das in der Praxis nennt man so ein Ã¶ffentliches SchlÃ¼sselregister eine Certification Authority oder eine CA, sagt man dazu.
+01:20:10.160 --> 01:20:19.760
+seinen Public Key an. Wenn man jetzt auf diesen Tor Hidden Service zugreifen mÃ¶chte, also kann
 
-01:16:08.400 --> 01:16:18.400
-Das sind Institutionen, die Ã¶ffentliche SchlÃ¼ssel unterschreiben, also TestschlÃ¼ssel unterschreiben, Signaturen ausstellen fÃ¼r Ã¶ffentliche TestschlÃ¼ssel.
+01:20:19.760 --> 01:20:27.000
+jetzt zum Beispiel Alice in dieser Datenbank nachschlagen, sieht die Introduction Points und
 
-01:16:19.400 --> 01:16:22.400
-Und das nennt man ein Zertifikat. Haben Sie alle schon mal gehÃ¶rt?
+01:20:27.000 --> 01:20:33.760
+wÃ¤hlt jetzt selber einen sogenannten Rendezvous-Punkt aus, also baut ein Circuit auf zu einem Rendezvous-Punkt.
 
-01:16:23.400 --> 01:16:30.400
-Also ein Zertifikat ist im Prinzip nichts anderes als eine signierte BestÃ¤tigung dafÃ¼r, dass ein bestimmter Ã¶ffentlicher SchlÃ¼ssel zu einer bestimmten IdentitÃ¤t gehÃ¶rt.
+01:20:33.760 --> 01:20:44.280
+Und diesen Rendezvous-Punkt teilt es dann diesem Introduction Point mit. Was mitgeschickt wird,
 
-01:16:31.400 --> 01:16:43.400
-Das heiÃŸt ein Zertifikat enthÃ¤lt der Name zu dem es gehÃ¶rt, meistens eine E-Mail Adresse oder sowas, der Name des Ausstellers, das heiÃŸt der das unterschrieben hat, und eine Unterschrift.
+01:20:44.280 --> 01:20:51.880
+ist noch hier so ein One-Time-Secret, der kommt hier von Alice, wird hier mitgeschickt.
 
-01:16:43.400 --> 01:16:55.400
-Die man dann Ã¼berprÃ¼fen kann. Und sowas wie X.509-Zertifikate, die in SSL zum Beispiel benutzt werden, sind Beispiele fÃ¼r Zertifikate oder Sie kÃ¶nnen sich auch fÃ¼r die E-Mail VerschlÃ¼sselung hier beim Rechenzentrum so ein S.M.I.M. Zertifikat holen, womit Sie E-Mail verschlÃ¼sseln kÃ¶nnen.
+01:20:51.880 --> 01:20:58.480
+Und jetzt Ã¼ber diesen Introduction Point kriegt jetzt Bob, der Betreiber des Hidden Services,
 
-01:16:56.400 --> 01:16:59.400
-Da mÃ¼ssen Sie persÃ¶nlich zum Rechenzentrum gehen, mÃ¼ssen Ihnen einen Ausweis vorzeigen.
+01:20:58.480 --> 01:21:06.600
+diese Information, das ist mit dem Public Key von Bob verschlÃ¼sselt, den Cookie und den Rendezvous-Punkt.
 
-01:17:00.400 --> 01:17:04.400
-Das ist im Prinzip das delegierte SchlÃ¼sselregister, das man dann Ã¼berprÃ¼fen kann.
+01:21:06.600 --> 01:21:14.160
+Das ist in dem Moment, wo Bob diese Information hat, weiÃŸ er, kennt er den Rendezvous-Punkt und
 
-01:17:04.400 --> 01:17:06.400
-Das sind die sogenannten Public Key Infrastrukturen, wenn man sowas hat.
+01:21:14.160 --> 01:21:19.280
+baut jetzt selber so ein Circuit auf dazu. Jetzt gibt es also Alice, die ein Circuit zum Rendezvous-Punkt
 
-01:17:07.400 --> 01:17:09.400
-Das ist also im Prinzip ein System zum Management von Zertifikaten.
+01:21:19.280 --> 01:21:28.040
+hat und Bob, der auch ein Circuit zum Rendezvous-Punkt hat. Und Bob kann jetzt Ã¼ber den Cookie feststellen,
 
-01:17:10.400 --> 01:17:13.400
-Also X.509, das sind die Zertifikat, die Sie hier im Rechenzentrum haben.
+01:21:28.040 --> 01:21:35.080
+dass er tatsÃ¤chlich mit Alice spricht. Das heiÃŸt, man hat Ã¼ber zwei Circuits jetzt
 
-01:17:14.400 --> 01:17:17.400
-Das ist das Delegierte SchlÃ¼sselregister, das wir hier an der FAU haben.
+01:21:35.080 --> 01:21:41.560
+eine beiderseitig anonyme Verbindung aufgebaut. Das heiÃŸt, Alice sieht nicht die IP-Adresse von
 
-01:17:18.400 --> 01:17:25.400
-Und dann haben Sie ein Zertifikat aus der DFN-PKI und kÃ¶nnen da groÃŸartig dann E-Mail VerschlÃ¼sselungen machen und signieren.
+01:21:41.560 --> 01:21:49.600
+Bob und Bob sieht nicht die IP-Adresse von Alice. Genau, und dann kÃ¶nnen die halt Ã¼ber diesen
 
-01:17:26.400 --> 01:17:29.400
-Gut, das sind die sogenannten Public Key Infrastrukturen, wenn man sowas hat.
+01:21:49.600 --> 01:21:55.000
+doppelten Circuit, wenn man so will, dann so kommunizieren, wie man standardmÃ¤ÃŸig Ã¼ber Tor
 
-01:17:29.400 --> 01:17:32.400
-Das ist also im Prinzip ein System zum Management von Zertifikaten.
+01:21:55.000 --> 01:21:59.400
+kommuniziert. Sie kÃ¶nnen HTTP sprechen, alle mÃ¶glichen. Im Prinzip ist es ein Tunnel,
 
-01:17:33.400 --> 01:17:36.400
-Also X.509, das sind die Zertifikat, die man in SSL zum Beispiel hat.
+01:21:59.400 --> 01:22:09.480
+der Ã¼ber zwei Circuits aufgebaut ist. Gut, jetzt noch vielleicht zusammenfassend, das ist
 
-01:17:37.400 --> 01:17:39.400
-Da stehen alle mÃ¶glichen Sachen drin.
+01:22:09.480 --> 01:22:14.600
+mal so eine Grafik von der Tor-Webseite. Das ist mal hier so dargestellt, jetzt sind das sind Sie,
 
-01:17:40.400 --> 01:17:43.400
-KÃ¶nnen Sie sich auch selber im Browser anzeigen lassen, zum Beispiel wenn Sie HTTPS haben.
+01:22:14.600 --> 01:22:19.680
+Sie sitzen zu Hause an Ihrem Wi-Fi, da ist zum Beispiel ein Hacker in Ihrem Wi-Fi drinnen,
 
-01:17:44.400 --> 01:17:49.400
-KÃ¶nnen Sie sich die Inhalte vom Zertifikat anzeigen lassen, wenn Sie oben auf ein entsprechendes KnÃ¶pfchen drÃ¼cken.
+01:22:19.680 --> 01:22:24.000
+der hÃ¶rt alles mit. Dann geht das Ã¼ber den Interest-Service-Provider, Ã¼ber die Telekom oder
 
-01:17:50.400 --> 01:17:56.400
-Wenn Sie das weiter interessieren, es gibt auch in der Vertiefung noch bei Michael Thielemann eine Vorlesung zu digitalen Signaturen.
+01:22:24.000 --> 01:22:30.240
+wer auch immer. Da gibt es natÃ¼rlich Sysadmins, da gibt es die Polizei, die da auch irgendwie Ã¼ber
 
-01:17:56.400 --> 01:18:00.400
-Dann machen Sie das alles rauf und runter, PKI, Sicherheit und so weiter.
+01:22:30.240 --> 01:22:35.840
+TKÃœ-BeschlÃ¼sse ihre Nachricht, ihre Leitung abhÃ¶ren kann. Im Internet sitzen dann die
 
-01:18:02.400 --> 01:18:11.400
-Das Problem, ich gehe gerade nochmal zurÃ¼ck, ist, wer unterschreibt denn eigentlich den Ã¶ffentlichen SchlÃ¼ssel von der CA?
+01:22:35.840 --> 01:22:43.880
+Nachrichtendienste und hier beim EmpfÃ¤nger, beim Web-Server, wo sie zum Beispiel Daten abfragen,
 
-01:18:12.400 --> 01:18:18.400
-Da wÃ¼rde man sagen, es gibt vielleicht noch eine andere CA, die hÃ¶her gestellt ist und den unterschreibt.
+01:22:43.880 --> 01:22:49.160
+da gibt es natÃ¼rlich genau, also hier site.com, der hat auch einen ISP. Man sieht immer hier in
 
-01:18:19.400 --> 01:18:23.400
-Aber dann ist wieder die Frage, wer unterschreibt denn von dieser hÃ¶her gestellten CA den Ã¶ffentlichen SchlÃ¼ssel?
+01:22:49.240 --> 01:22:54.760
+den orangenen Punkten, was die alles sehen. Also hier das Unterschieden nach, welche URL wird
 
-01:18:23.400 --> 01:18:28.400
-Irgendwann gibt es halt keine hÃ¶here CA, irgendwann ist es halt eine CA, der man vertrauen muss.
+01:22:54.760 --> 01:23:03.200
+angesurft, welcher User ist das, also die Inhalte und wo sitzt die die entsprechende Person. Location
 
-01:18:29.400 --> 01:18:31.400
-Und die unterschreibt normalerweise ihre SchlÃ¼ssel selbst.
+01:23:03.200 --> 01:23:10.120
+heiÃŸt die IP-Adresse, kann man dann rauskriegen. Und im Prinzip, wenn man jetzt hier kein Tor benutzen,
 
-01:18:32.400 --> 01:18:34.400
-Das heiÃŸt, die sogenannten selbst signierten Zertifikate.
+01:23:10.120 --> 01:23:20.000
+kein HTTPS, dann sehen alle alles. Also wenn man jetzt HTTPS macht, dann wird ja von hier
 
-01:18:35.400 --> 01:18:39.400
-Die kÃ¶nnen auch alle Zertifikate selber signieren, die sind aber dann nicht besonders vertrauenswÃ¼rdig hÃ¤ufig.
+01:23:20.000 --> 01:23:28.000
+verschlÃ¼sselt bis zum Server. Das heiÃŸt, die Leute auf der Strecke, die sehen die Inhalte nicht,
 
-01:18:40.400 --> 01:18:42.400
-Also muss man mal gucken, wer es signiert hat.
+01:23:28.000 --> 01:23:33.720
+aber die sehen, wer mit wem kommuniziert. Und natÃ¼rlich die Server-Betreiber und wenn die
 
-01:18:43.400 --> 01:18:46.400
-Und dann gibt es sowas wie Zertifikatsketten, das wird auch in der Ãœbung gemacht.
+01:23:33.720 --> 01:23:39.800
+auch verpflichtet werden von der Polizei, sehen dann wieder alles. Das heiÃŸt, wenn sie Tor nicht
 
-01:18:46.400 --> 01:18:52.400
-Das heiÃŸt, mit Ã¶ffentlichen SchlÃ¼sseln kann man Zertifikate ausstellen.
+01:23:39.800 --> 01:23:45.520
+haben und nur HTTPS benutzen, sind die Inhalte vertraulich. Wenn sie nicht HTTPS benutzen,
 
-01:18:53.400 --> 01:18:59.400
-Das heiÃŸt, Charlie, also Alice, das ist hier die Super CA, die kann ein Zertifikat ausstellen fÃ¼r Charlie.
+01:23:45.520 --> 01:23:50.560
+nicht verschlÃ¼sseln, sondern Tor benutzen, dann sieht man, die Quelle und das Ziel sind plÃ¶tzlich
 
-01:19:00.400 --> 01:19:07.400
-Kann also sagen, okay, ich Alice zertifiziere jetzt, dass dieser Ã¶ffentliche SchlÃ¼ssel Z oder dieser Ã¶ffentliche SchlÃ¼ssel zu Charlie gehÃ¶rt.
+01:23:50.560 --> 01:23:59.800
+verborgen, aber die Inhalte sind plÃ¶tzlich wieder da. Und erst wenn sie Tor und HTTPS benutzen,
 
-01:19:08.400 --> 01:19:14.400
-Und jetzt kann mit diesem Ã¶ffentlichen SchlÃ¼ssel Charlie auch ein Zertifikat fÃ¼r Bob ausstellen.
+01:23:59.800 --> 01:24:05.240
+sehen im Prinzip die meisten Leute, die hier unterwegs sind, nichts mehr. Nur noch hier am
 
-01:19:15.400 --> 01:19:19.400
-Kann also den Ã¶ffentlichen Test SchlÃ¼ssel von Bob zertifizieren damit.
+01:24:05.240 --> 01:24:10.120
+Ende sehen natÃ¼rlich die Inhalte, aber sie wissen nicht, woher es kommt. Da sieht man, dass also
 
-01:19:20.400 --> 01:19:24.400
-Das heiÃŸt, es gibt sowas wie Zertifikatsketten, das ist hier das Wurzelzertifikat.
+01:24:10.120 --> 01:24:14.840
+sowohl Tor als auch HTTPS unterschiedliche Schutzstufen einstellen. HTTPS sorgt fÃ¼r die
 
-01:19:25.400 --> 01:19:32.400
-Und das Zertifikat, was hier weiter ausgestellt wird, kann man immer mit den authentischen Ã¶ffentlichen SchlÃ¼sseln der Zertifikatsketten sozusagen zurÃ¼ck Ã¼berprÃ¼fen.
+01:24:14.840 --> 01:24:21.520
+VerschlÃ¼sselung, Vertraulichkeit und Tor fÃ¼r die AnonymitÃ¤t. Gut, das war alles, was ich heute
 
-01:19:33.400 --> 01:19:42.400
-Bis man am Wurzelzertifikat ankommt und dem muss man dann, dieses Zertifikat muss man dann einmal in die Stadt gehen und bei der BehÃ¶rde dann anklingeln.
+01:24:21.520 --> 01:24:28.120
+erzÃ¤hlen wollte. NÃ¤chstes Mal ist dann im neuen Jahr. Ich wÃ¼nsche Ihnen viel Erfolg bei der
 
-01:19:44.400 --> 01:19:48.400
-Moment, wenn ich mir das hier anschaue, Charlie, das ist doch gar nicht Charlie.
+01:24:28.120 --> 01:24:31.640
+Miniklausur und frohe Weihnachten und wir sehen uns dann im nÃ¤chsten Jahr.
 
-01:19:49.400 --> 01:19:52.400
-Das ist doch, das ist doch Eve.
-
-01:19:53.400 --> 01:19:55.400
-Um Gottes Willen, das ist ja Eve.
-
-01:19:56.400 --> 01:19:58.400
-Die so tut wie Charlie.
-
-01:19:59.400 --> 01:20:00.400
-Also da muss man aufpassen.
-
-01:20:01.400 --> 01:20:10.400
-Es gibt also, man muss nicht nur den Leuten, man muss nicht nur dem SchlÃ¼ssel vertrauen, sondern man muss jetzt plÃ¶tzlich auch noch den Leuten vertrauen, die Zertifikate ausstellen.
-
-01:20:11.400 --> 01:20:17.400
-Also und das ist das sogenannte, das ist der sogenannte Owner Trust.
-
-01:20:18.400 --> 01:20:24.400
-Also das ist das Vertrauen darin, dass die Besitzer von Ã¶ffentlichen SchlÃ¼sseln vertrauenswÃ¼rdig damit umgehen.
-
-01:20:25.400 --> 01:20:28.400
-Also insbesondere nur Sachen unterschreiben, die tatsÃ¤chlich auch wahr sind.
-
-01:20:30.400 --> 01:20:36.400
-Und das Problem ist, dass heutzutage die digitale Infrastruktur im Internet so abhÃ¤ngig ist von CAs.
-
-01:20:37.400 --> 01:20:40.400
-Also das ganze TLS, HTTPS-System ist abhÃ¤ngig von CAs.
-
-01:20:41.400 --> 01:20:44.400
-Ganze Regierungssicherheitsnetze sind abhÃ¤ngig von CAs.
-
-01:20:45.400 --> 01:20:52.400
-Und das Problem ist, wenn diese CAs betrÃ¼gen oder infiltriert werden von fremden Diensten oder sowas, dann kann das ein Problem sein.
-
-01:20:53.400 --> 01:21:04.400
-Und es gibt einen bekannten Fall von 2011, kÃ¶nnen Sie mal nachlesen, der Fall Digi Notar, wo mutmaÃŸlich der iranische Nachrichtendienst oder der iranische Hacker in die RU-CA,
-
-01:21:04.400 --> 01:21:08.400
-des hollÃ¤ndischen Regierungsnetzes eingedrungen sind.
-
-01:21:09.400 --> 01:21:18.400
-Und die haben dann mit einem SignierschlÃ¼ssel, dem alle Leute vertraut haben, plÃ¶tzlich Zertifikate fÃ¼r Google.com ausgestellt.
-
-01:21:19.400 --> 01:21:24.400
-Die haben aber dadurch einen Man in the Middle Angriff auf Google.com aus dem Iran raus machen kÃ¶nnen.
-
-01:21:25.400 --> 01:21:27.400
-Die konnten alles mitlesen, was HTTPS zu Google ging.
-
-01:21:28.400 --> 01:21:32.400
-Google hat das irgendwann spÃ¤ter gemerkt. Dann ist auch dieser Breach aufgefallen.
-
-01:21:32.400 --> 01:21:39.400
-Und mit dem Ergebnis, dass die Firma insolvent gegangen ist und alle Zertifikate neu ausgestellt werden mussten.
-
-01:21:40.400 --> 01:21:47.400
-Das heiÃŸt, das Vertrauen in Zertifikate, da braucht man einerseits Key Trust und dann einmal Owner Trust.
-
-01:21:48.400 --> 01:21:53.400
-Also man braucht den authentischen Ã¶ffentlichen SchlÃ¼ssel und man muss darauf vertrauen, dass die CAs ordentlich arbeiten.
-
-01:21:53.400 --> 01:21:59.400
-Geben Sie mir noch eine Minute, dann sage ich Ihnen noch mal was Positives bzw. was vielleicht nicht ganz so Positives,
-
-01:22:00.400 --> 01:22:02.400
-aber in Zeiten wie heute braucht man gleich positive Nachrichten.
-
-01:22:03.400 --> 01:22:05.400
-Also zur Dauerhaftigkeit, kryptografische Annahmen.
-
-01:22:06.400 --> 01:22:11.400
-Ich habe ja gesagt, die kryptographischen Annahmen, die wir haben, man weiÃŸ nicht, ob sie stimmen.
-
-01:22:12.400 --> 01:22:15.400
-Also zum Beispiel auch diese ganze Frage nach Quantencomputern.
-
-01:22:16.400 --> 01:22:22.400
-Wenn es Quantencomputer gibt, dann wird es RSA und Diffie-Hellmann, die werden gebrochen werden.
-
-01:22:23.400 --> 01:22:31.400
-Weil es gibt effiziente parallele Algorithmen fÃ¼r Quantencomputer, die Diffie-Hellmann lÃ¶sen oder Primfaktorzerlegungen machen.
-
-01:22:32.400 --> 01:22:39.400
-Das heiÃŸt, was man da braucht, sind Krypto-Verfahren, die auf Probleme abgestÃ¼tzt werden, die als schwer beurteilt werden
-
-01:22:40.400 --> 01:22:42.400
-und die nicht durch Quantencomputer gelÃ¶st werden kÃ¶nnen.
-
-01:22:42.400 --> 01:22:45.400
-Da gibt es auch welche. Das Problem ist, die SchlÃ¼ssel sind halt riesengroÃŸ.
-
-01:22:46.400 --> 01:22:49.400
-Mehrere Megabyte groÃŸe SchlÃ¼ssel mÃ¼ssen Sie dann austauschen.
-
-01:22:50.400 --> 01:22:59.400
-Das Problem ist, damit kann man authentifizieren, aber wenn man langfristig Vertraulichkeit gewÃ¤hrleisten mÃ¶chte,
-
-01:23:00.400 --> 01:23:05.400
-wenn Sie was verschlÃ¼sseln mÃ¶chten, die NSA hebt das jetzt auf und man will, dass das unendlich lange sicher ist,
-
-01:23:05.400 --> 01:23:10.400
-dann dÃ¼rfen Sie nur informationstheoretisch sichere VerschlÃ¼sselnverfahren verwenden.
-
-01:23:11.400 --> 01:23:13.400
-Das ist die negative Nachricht.
-
-01:23:14.400 --> 01:23:19.400
-Okay, die positive Nachricht ist jetzt vorbei. NÃ¤chstes Mal machen wir Authentifikation.
-
-01:23:20.400 --> 01:23:21.400
-Bis nÃ¤chste Woche.
-
-01:23:35.400 --> 01:23:38.400
-SWR 2020
 
 

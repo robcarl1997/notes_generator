@@ -29,7 +29,7 @@ if __name__ == "__main__":
     remove_old_images()
 
     # Example usage
-    video_path = r"/home/robin/dwhelper/Kapitel 2 Teil 3 asymmetrische Kryptographie.mp4"
+    video_path = r"/home/robin/dwhelper/Kapitel 5 Identitat und Privatsphare.mp4"
     time_sec = 20  # Time in seconds
 
     # Example usage

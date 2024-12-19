@@ -1,4 +1,7 @@
 # Lecture-Notes-Generator
 
-- [ ] Get image from last "second" of the frame 
-
+- [x] Get image from last "second" of the frame 
+- [x] dfsdf
+- [ ] dfölkdajf
+- [ ] ksdljflkdsaf
+- [ ] dafasdf
