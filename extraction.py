@@ -14,15 +14,17 @@ import gpt
 lang = input("Bitte Sprache eingeben (deu/eng): ")
 if lang == "deu":
     header = """Erstelle stichpunktartige Karteikarten mit den gegebenen Informationen.
-                Vorderseiten der Karte sollen fett gemacht werden (markdown: **text**), sie sollen jedoch nicht als Überschrit (#, ##) formatiert werden.
+                Vorderseiten der Karte sollen fett gemacht werden (markdown: **text**), sie sollen jedoch NICHT als Überschrit (#, ##) formatiert werden.
                 Du kannst wichtige Aspekte hervorheben durch unterschreichen oder Farbe (HTML)!
                 Setze (Latex) Formeln zwischen zwei $. Mehrere Formeln hintereindander sollen wie folgt dargestellt werden: $$ Formeln $$.
+                Erstelle keine Zusammenfassungen oder ein Fazit für die Stichpunkte!
                 """
 else:
     header = """Create flashcards in form of bullet points with the given informations.
-                Make the headlines (content of the front of the cards) in Bold (markdown: **text**) but do not format them as markdown headlines (#, ##).
+                Make the headlines (content of the front of the cards) in Bold (markdown: **text**) but DO NOT format them as markdown headlines (#, ##).
                 You can emphasize important information with underscoring or color (HTML)!
                 Set (Latex) formulas between two $. In case of several formulas place them like this: $$ formulas $$.
+                Do not create a summary for the bullet points!
                 """
 
 messages = [
