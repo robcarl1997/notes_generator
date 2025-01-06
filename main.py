@@ -96,7 +96,7 @@ for i, item in enumerate(times_dict):
     else:
         save_img(video_path, item["total_seconds"], item["img"], content_coordinates)
     title_img = f'2_{item["img"]}'
-    save_img(video_path, times_dict[i]['total_seconds'], title_img, title_coordinates)
+    save_img(video_path, times_dict[i+1]['total_seconds']-5, title_img, title_coordinates)
     markdown = markdown + f'\n---\n'
     markdown = markdown + f'\n### {item["title"]}\n'
     markdown = markdown + f'\n---\n'
